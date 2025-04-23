@@ -1,95 +1,303 @@
-<div>
-    <h2>NAVER</h2>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESG 기업 분석</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #0056b3;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.5em;
+        }
+        h3 {
+            font-size: 1.2em;
+        }
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .highlight {
+            color: #c00;
+            font-weight: bold;
+        }
+        .spaced {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
 
-    <h3>(1) ESG 등급 및 온실가스배출총량</h3>
-    <div>
-        NAVER의 ESG 등급은 A이며, 산업 내 점수 비교에서 ESG 등급은 63.3으로 3위를 차지했습니다.
-        <br><br>
-        온실가스 배출량은 Scope 1+2가 89,530 tCO2eq, Scope 3가 78,706 tCO2eq입니다.
-    </div>
+    <h2>NAVER (035420)</h2>
 
-    <h3>(2) ESG 성과 산업 내 비교</h3>
-    <div>
-        NAVER의 E/S/G 팩터별 산업 내 점수를 살펴보면 다음과 같습니다.
-        <ul>
-            <li>환경(E): A 등급, 산업 중앙값 대비 높은 점수</li>
-            <li>사회(S): A 등급, 산업 중앙값 대비 높은 점수</li>
-            <li>거버넌스(G): S 등급, 산업 중앙값 대비 높은 점수</li>
-        </ul>
-        <br><br>
-        각 요소별로 산업 평균 및 최고점과 비교했을 때, NAVER는 환경(E)과 사회(S) 영역에서 산업 평균보다 높은 점수를 기록했습니다.
-    </div>
+    <h3>ESG 등급 및 온실가스배출총량</h3>
+    
+    <p class="spaced">
+        NAVER의 ESG 등급 및 온실가스 배출량 관련 정보입니다.
+    </p>
 
-    <h3>(3) 주주환원 및 시장평가</h3>
-    <div>
-        NAVER는 밸류업 지수 종목 선정 스크리닝 단계에서 '배당' 또는 '자사주 소각' 여부와 PBR 순위를 평가 기준으로 포함합니다.
-        <br><br>
-        최근 3년간 배당 및 자사주 소각 현황은 다음과 같습니다.
-        <ul>
-            <li>배당액 (보통주, 현금+주식): 2022년 1,370억 원, 2023년 1,814억 원, 2024년 1,684억 원</li>
-            <li>자사주 소각: 2023년 3,053억 원, 2024년 6,866억 원</li>
-            <li>주주환원금액/당기순이익(%): 2022년 18.0%, 2023년 48.1%, 2024년 44.5%</li>
-        </ul>
-        <br><br>
-        NAVER의 PBR 순위는 산업군 내 50% 이내입니다.
-    </div>
+    <h3>ESG 성과 산업 내 비교</h3>
 
-    <h3>(4) 컨트로버시 이슈</h3>
-    <div>
-        NAVER의 컨트로버시 이슈는 다음과 같습니다.
-        <ul>
-            <li>제품∙소비자 안전: 부적절한 제품 정보 제공, 제품 서비스 안정성 논란 (주의)</li>
-            <li>정보보안: 정보유출, 보안문제 (유효)</li>
-            <li>주주가치 보호: 계열사 부당 거래 및 기업집단 관련 부정행위, 주주 권리 침해 (유효)</li>
-            <li>기업윤리: 기타 경영 윤리 위반, 부정부패, 지적재산권 등 비즈니스 분쟁 (주의)</li>
-        </ul>
-    </div>
+    <p class="spaced">
+        NAVER의 ESG 성과를 동일 산업 내 다른 기업들과 비교한 내용입니다.
+    </p>
+
+    <table class="spaced">
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>등급</th>
+                <th>가중치</th>
+                <th>해당 산업 내 점수</th>
+                <th>산업 중앙값</th>
+                <th>백분위 (순위/전체)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ESG 등급</td>
+                <td>A</td>
+                <td>100%</td>
+                <td>63.3</td>
+                <td>31.5</td>
+                <td>93% (3/29)</td>
+            </tr>
+            <tr>
+                <td>환경(E)</td>
+                <td>A</td>
+                <td>20%</td>
+                <td>56.9</td>
+                <td>6.9</td>
+                <td>86% (5/29)</td>
+            </tr>
+            <tr>
+                <td>사회(S)</td>
+                <td>A</td>
+                <td>40%</td>
+                <td>63.3</td>
+                <td>40.1</td>
+                <td>79% (7/29)</td>
+            </tr>
+            <tr>
+                <td>거버넌스 (G)</td>
+                <td>S</td>
+                <td>40%</td>
+                <td>68.4</td>
+                <td>36.6</td>
+                <td>100% (1/29)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>주주환원 및 시장평가</h3>
+
+    <p class="spaced">
+        NAVER의 주주환원 정책 및 시장 평가에 대한 분석입니다.
+    </p>
+
+    <h3>컨트로버시 이슈</h3>
+
+    <p class="spaced">
+        NAVER와 관련된 컨트로버시 이슈들을 요약한 내용입니다.
+    </p>
+
+    <table class="spaced">
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>미디어 카테고리</th>
+                <th>하위 카테고리</th>
+                <th>컨트로버시 수준</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Environment</td>
+                <td>기후변화 대응</td>
+                <td>온실가스 배출</td>
+                <td>없음</td>
+            </tr>
+            <tr>
+                <td>Social</td>
+                <td>제품∙소비자 안전</td>
+                <td>부적절한 제품 정보 제공, 제품 서비스 안정성 논란</td>
+                <td>주의</td>
+            </tr>
+            <tr>
+                <td>Social</td>
+                <td>정보보안</td>
+                <td>정보유출 , 보안문제</td>
+                <td>유효</td>
+            </tr>
+            <tr>
+                <td>Governance</td>
+                <td>주주가치 보호</td>
+                <td>계열사 부당 거래 및 기업집단 관련 부정행위 , 주주 권리 침해</td>
+                <td>유효</td>
+            </tr>
+            <tr>
+                <td>Governance</td>
+                <td>기업윤리</td>
+                <td>기타 경영 윤리 위반, 부정부패 , 지적재산권 등 비즈니스 분쟁</td>
+                <td>주의</td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+
+    <h2>현대엘리베이터 (017800)</h2>
+
+    <h3>ESG 등급 및 온실가스배출총량</h3>
+
+    <p class="spaced">
+        현대엘리베이터의 ESG 등급 및 온실가스 배출량 정보입니다.
+    </p>
+
+    <h3>ESG 성과 산업 내 비교</h3>
+
+    <p class="spaced">
+        현대엘리베이터의 ESG 성과를 동일 산업 내 다른 기업들과 비교 분석한 내용입니다.
+    </p>
+
+    <table class="spaced">
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>등급</th>
+                <th>가중치</th>
+                <th>해당 산업 내 점수</th>
+                <th>산업 중앙값</th>
+                <th>백분위 (순위/전체)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ESG 등급</td>
+                <td>A ↑</td>
+                <td>100%</td>
+                <td>54.5</td>
+                <td>25.6</td>
+                <td>82% (6/33)</td>
+            </tr>
+            <tr>
+                <td>환경(E)</td>
+                <td>A</td>
+                <td>26%</td>
+                <td>60.2</td>
+                <td>6.6</td>
+                <td>87% (5/33)</td>
+            </tr>
+            <tr>
+                <td>사회(S)</td>
+                <td>A ↑</td>
+                <td>39%</td>
+                <td>57.5</td>
+                <td>26.6</td>
+                <td>93% (6/33)</td>
+            </tr>
+            <tr>
+                <td>거버넌스 (G)</td>
+                <td>A ↑</td>
+                <td>35%</td>
+                <td>54.8</td>
+                <td>35.5</td>
+                <td>53% (1/33)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>주주환원 및 시장평가</h3>
+
+    <p class="spaced">
+        현대엘리베이터의 주주환원 정책 및 시장 평가에 대한 분석입니다.
+    </p>
+
+    <h3>컨트로버시 이슈</h3>
+
+    <p class="spaced">
+        현대엘리베이터와 관련된 컨트로버시 이슈들을 요약한 내용입니다.
+    </p>
+
+    <table class="spaced">
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>미디어 카테고리</th>
+                <th>하위 카테고리</th>
+                <th>컨트로버시 수준</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Environment</td>
+                <td>기후변화 대응</td>
+                <td>온실가스 배출</td>
+                <td>없음</td>
+            </tr>
+            <tr>
+                <td>Social</td>
+                <td>제품∙소비자 안전</td>
+                <td>부적절한 제품 정보 제공, 제품 서비스 안정성 논란</td>
+                <td>없음</td>
+            </tr>
+             <tr>
+                <td>Social</td>
+                <td>인권∙인적자원 관리</td>
+                <td>근로복지 환경, 글로벌 인권 규약 및 규범 위반, 인권 및 다양성 침해, 인사관리 (HRM)</td>
+                <td>유효</td>
+            </tr>
+            <tr>
+                <td>Governance</td>
+                <td>기업윤리</td>
+                <td>기타 경영 윤리 위반, 부정부패 , 지적재산권 등 비즈니스 분쟁</td>
+                <td>유효</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+<div style="margin-top: 40px; font-size: 13px; color: #666;">
+    <h2 style="color: #333;">Compliance Notice</h2>
+    <p>
+        금융투자업규정 4-20조 1항5호사목에 따라 작성일 현재 사전고지와 관련한 사항이 없으며, 당사의 금융투자분석사는 자료작성일 현재 본 자료에
+        관련하여 재산적 이해관계가 없습니다. 당사는 동 자료에 언급된 종목과 계열회사의 관계가 없으며 당사의 금융투자분석사는 본 자료의 작성과 관련하여
+        외부 부당한 압력이나 간섭을 받지 않고 본인의 의견을 정확하게 반영하였습니다.
+        본 자료는 투자자들의 투자판단에 참고가 되는 정보제공을 목적으로 배포되는 자료입니다. 본 자료에 수록된 내용은 당사 Research Center의 추정치로서
+        오차가 발생할 수 있으며 정확성이나 완벽성은 보장하지 않습니다. 본 자료를 이용하시는 분은 동 자료와 관련한 투자의 최종 결정은 자신의 판단으로
+        하시기 바랍니다.
+    </p>
+    <p style="font-size: 12px; color: #999;">
+        ※ 본 콘텐츠는 당사 리서치센터 보고서를 기반으로 생성된 요약·해설 자료입니다.
+        본 자료는 인공지능(AI)을 활용하여 자동 생성되었으며, 투자자 이해를 돕기 위한 목적입니다.
+        일부 내용은 원문과 차이가 있을 수 있으며, 최종 투자 판단은 원문 보고서를 참고하시기 바랍니다.
+        본 자료는 투자 권유를 목적으로 하지 않으며, AI 생성 특성상 오류가 포함될 수 있습니다.
+    </p>
 </div>
 
-<br><br><br>
-
-<div>
-    <h2>현대엘리베이터</h2>
-
-    <h3>(1) ESG 등급 및 온실가스배출총량</h3>
-    <div>
-        현대엘리베이터의 ESG 등급은 A (등급 상승)이며, 산업 내 점수 비교에서 ESG 등급은 54.5로 6위를 차지했습니다.
-        <br><br>
-        온실가스 배출량은 Scope 1+2가 4,536 tCO2eq, Scope 3가 368 tCO2eq입니다.
-    </div>
-
-    <h3>(2) ESG 성과 산업 내 비교</h3>
-    <div>
-        현대엘리베이터의 E/S/G 팩터별 산업 내 점수를 살펴보면 다음과 같습니다.
-        <ul>
-            <li>환경(E): A 등급, 산업 중앙값 대비 높은 점수</li>
-            <li>사회(S): A 등급, 산업 중앙값 대비 높은 점수</li>
-            <li>거버넌스(G): A 등급, 산업 중앙값 대비 높은 점수</li>
-        </ul>
-        <br><br>
-        각 요소별로 산업 평균 및 최고점과 비교했을 때, 현대엘리베이터는 환경(E), 사회(S), 거버넌스(G) 영역에서 모두 산업 평균보다 높은 점수를 기록했습니다.
-    </div>
-
-    <h3>(3) 주주환원 및 시장평가</h3>
-    <div>
-        현대엘리베이터는 밸류업 지수 종목 선정 스크리닝 단계에서 '배당' 또는 '자사주 소각' 여부와 PBR 순위를 평가 기준으로 포함합니다.
-        <br><br>
-        최근 3년간 배당 및 자사주 소각 현황은 다음과 같습니다.
-        <ul>
-            <li>배당액 (보통주, 현금+주식): 2022년 199억 원, 2023년 1,444억 원, 2024년 1,986억 원</li>
-            <li>자사주 소각: 2023년 500억 원</li>
-            <li>주주환원금액/당기순이익(%): 2022년 25.4%, 2023년 61.0%, 2024년 108.4%</li>
-        </ul>
-        <br><br>
-        현대엘리베이터의 PBR 순위는 산업군 내 50% 이내입니다.
-    </div>
-
-    <h3>(4) 컨트로버시 이슈</h3>
-    <div>
-        현대엘리베이터의 컨트로버시 이슈는 다음과 같습니다.
-        <ul>
-            <li>인권∙인적자원 관리: 근로복지 환경, 글로벌 인권 규약 및 규범 위반, 인권 및 다양성 침해, 인사관리 (HRM) (유효)</li>
-            <li>기업윤리: 기타 경영 윤리 위반, 부정부패, 지적재산권 등 비즈니스 분쟁 (유효)</li>
-        </ul>
-    </div>
-</div>
+</body>
+</html>
