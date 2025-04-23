@@ -3,73 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>기업분석 보고서</title>
+    <title>유니드 기업분석 보고서</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Malgun Gothic', sans-serif;
             line-height: 1.6;
             color: #333;
             margin: 20px;
-            background-color: #f8f8f8;
         }
-
         h1, h2, h3 {
             color: #0056b3;
-        }
-
-        h2 {
-            border-bottom: 2px solid #0056b3;
-            padding-bottom: 5px;
             margin-top: 30px;
+            margin-bottom: 10px;
         }
-
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1.6em;
+        }
+        h3 {
+            font-size: 1.4em;
+        }
         p {
-            margin-bottom: 15px;
             font-size: 1.1em;
+            margin-bottom: 15px;
         }
-
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
         }
-
         th, td {
             border: 1px solid #ddd;
             padding: 8px;
-            text-align: left;
+            text-align: center;
         }
-
         th {
             background-color: #f2f2f2;
-            color: #555;
+            font-weight: bold;
         }
-
-        strong {
-            color: #c0392b;
+        .highlight {
+            color: #c00;
+            font-weight: bold;
         }
-
-        em {
-            font-style: italic;
-            color: #27ae60;
+        .summary {
+            background-color: #ffffe0;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
-
-        /* 모바일 최적화 */
-        @media (max-width: 600px) {
+        /* 모바일 화면에 최적화 */
+        @media (max-width: 768px) {
             body {
-                font-size: 0.9em;
                 margin: 10px;
             }
-
-            table {
-                width: 100%;
-                font-size: 0.8em;
+            h1 {
+                font-size: 1.8em;
             }
-
+            h2 {
+                font-size: 1.4em;
+            }
+            h3 {
+                font-size: 1.2em;
+            }
+            p {
+                font-size: 1em;
+            }
             th, td {
-                padding: 5px;
+                padding: 6px;
+                font-size: 0.9em;
             }
         }
     </style>
@@ -77,23 +81,25 @@
 <body>
 
     <h2>투자의견 매수, 목표주가 92,000원 유지</h2>
-    <p>목표주가는 25E 169,625원에 Target PBR 0.6배 적용. Target Multiple 은 21년도 이전 염화칼륨 300~350 달러/톤 당시의 멀티플 평균치 감안해 산정</p>
-
-    <br><br>
+    <p>
+        목표주가는 25E 169,625원에 Target PBR 0.6배 적용. Target Multiple 은 21년도 이전 염화칼륨 300~350 달러/톤 당시의 멀티플 평균치 감안해 산정
+    </p>
 
     <h2>1Q25 Review: OP 287억원, 컨센서스(224억원) +28% 상회</h2>
-    <p>전사차원 영업이익 287억원(QoQ +130.5%, YoY +4.4%)으로 컨센서스 상회. 국내 OP 187억원으로 QoQ +233.9% 기록. 전분기 일회성비용 소멸(정기보수, 성과급 등)에 따른 기저효과 및 주요 제품 스프레드 반등(수산화칼륨 118.2달러/톤, QoQ +21.6%)에 기인. 계절적 성수기 접근에 따른 판매량 증가(QoQ +5%, YoY +4%) 및 해상운임 하락(1Q25 SCFI 평균 1,761.9, QoQ -21.9%)에 따른 판관비 감소(30억원 추정) 또한 실적 개선에 기여</p>
-
-    <br><br>
-
-    <p>해외 OP 92억원(QoQ +43.8%, YoY +10.2%)으로 3개 분기 연속 실적 개선. 25년 2월 춘절 이후 염화칼륨 가격 반등과 함께 스프레드 개선 본격화. 중국 내 수산화칼륨 및 탄산칼륨 판가 QoQ +10% 이상 상승. 단, 3월 이후 염소가격 하락에 따른 적자폭 증가로 스프레드 개선효과 일부 상쇄. 2H24 가동을 시작한 CPs 공정 가동률 상승(4Q 50% → 1Q25 65%)은 긍정적이나 염화파라핀(987.1달러/톤, QoQ -2.3%) 및 염소가격 약세로 적자폭 확대</p>
-
-    <br><br>
+    <p>
+        전사차원 영업이익 287억원(QoQ +130.5%, YoY +4.4%)으로 컨센서스 상회. 국내 OP 187억원으로 QoQ +233.9% 기록. 전분기 일회성비용 소멸(정기보수, 성과급 등)에 따른 기저효과 및 주요 제품 스프레드 반등(수산화칼륨 118.2달러/톤, QoQ +21.6%)에 기인. 계절적 성수기 접근에 따른 판매량 증가(QoQ +5%, YoY +4%) 및 해상운임 하락(1Q25 SCFI 평균 1,761.9, QoQ -21.9%)에 따른 판관비 감소(30억원 추정) 또한 실적 개선에 기여
+    </p>
+    <p>
+        해외 OP 92억원(QoQ +43.8%, YoY +10.2%)으로 3개 분기 연속 실적 개선. 25년 2월 춘절 이후 염화칼륨 가격 반등과 함께 스프레드 개선 본격화. 중국 내 수산화칼륨 및 탄산칼륨 판가 QoQ +10% 이상 상승. 단, 3월 이후 염소가격 하락에 따른 적자폭 증가로 스프레드 개선효과 일부 상쇄. 2H24 가동을 시작한 CPs 공정 가동률 상승(4Q 50% → 1Q25 65%)은 긍정적이나 염화파라핀(987.1달러/톤, QoQ -2.3%) 및 염소가격 약세로 적자폭 확대
+    </p>
 
     <h2>상반기 안정적 이익흐름 전망, 업종 내 안정적인 선택지</h2>
-    <p>동사의 2Q25 예상 OP 345억원으로 QoQ +20.3% 개선 전망. 실적 개선 근거는 1) 염화칼륨 가격 상승에 따른 수산화칼륨 스프레드 강세 지속, 2) 해상운임(25년 4월 SCFI 평균 1,385, QoQ -21.4%) 및 전기료 하락에 따른 원가절감, 3) 신규공장(UHC, 9만톤) 가동률 상향에 따른 고정비 감소. 25년 3월 이후 중국 내 염소 가격 약세 지속되며 염소 부문 적자폭 확대 우려 상존하나, 염화칼륨 수급 강세로 적자폭 상쇄 전망. 2Q25 러시아 우랄칼리(Uralkali) 정기보수로 염화칼륨 생산량 감소(30만톤). 중국 역시 4월 이후 염화칼륨 가격 소폭 조정 있었으나, 연초대비 25% 이상 강세 지속중. 이익체력 관점에서 화학 업종 내 안정적인 선택지로 판단.</p>
-
-    <br><br>
+    <p>
+        동사의 2Q25 예상 OP 345억원으로 QoQ +20.3% 개선 전망. 실적 개선 근거는 1) 염화칼륨 가격 상승에 따른 수산화칼륨 스프레드 강세 지속, 2) 해상운임(25년 4월 SCFI 평균 1,385, QoQ -21.4%) 및 전기료 하락에 따른 원가절감, 3) 신규공장(UHC, 9만톤) 가동률 상향에 따른 고정비 감소.
+    </p>
+    <p>
+        25년 3월 이후 중국 내 염소 가격 약세 지속되며 염소 부문 적자폭 확대 우려 상존하나, 염화칼륨 수급 강세로 적자폭 상쇄 전망. 2Q25 러시아 우랄칼리(Uralkali) 정기보수로 염화칼륨 생산량 감소(30만톤). 중국 역시 4월 이후 염화칼륨 가격 소폭 조정 있었으나, 연초대비 25% 이상 강세 지속중. 이익체력 관점에서 화학 업종 내 안정적인 선택지로 판단.
+    </p>
 
     <h2>유니드 분기별 이익 추정 테이블</h2>
     <table>
@@ -186,6 +192,7 @@
             </tr>
         </tbody>
     </table>
+    <p style="font-size: 0.9em; color: #777;">자료: 대신증권 Research&Strategy 본부</p>
 
 
 <div style="margin-top: 40px; font-size: 13px; color: #666;">
