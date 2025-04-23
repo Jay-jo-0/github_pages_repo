@@ -11,25 +11,78 @@
             margin: 20px;
             color: #333;
         }
+
         h1 {
+            font-size: 24px;
             color: #0056b3;
+            margin-bottom: 20px;
         }
+
         h2 {
+            font-size: 20px;
             color: #0056b3;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 5px;
+            margin-top: 30px;
+            margin-bottom: 10px;
         }
-        strong {
+
+        h3 {
+            font-size: 18px;
+            color: #0056b3;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-bottom: 15px;
+        }
+
+        li {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            font-weight: bold;
             color: #007bff;
         }
+
+        .summary-box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .summary-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
         .small-text {
-            font-size: 0.8em;
+            font-size: 12px;
             color: #777;
         }
-        .highlight {
-            background-color: #f0f8ff;
-            padding: 5px;
-            border-radius: 5px;
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
         }
     </style>
 </head>
@@ -37,51 +90,80 @@
 
     <h1>[대신증권 위정원][1Q25 Review] 유니드: 시장 기대치 상회</h1>
 
-    <h2>🚀 핵심 요약 (한눈에 보기!)</h2>
-    <ul>
-        <li><strong>유니드</strong>라는 회사가 올해 1분기에 예상을 훨씬 뛰어넘는 좋은 성적을 냈어요!</li>
-        <li><strong>영업이익</strong>이라는 건데, 287억 원이나 벌었대요.</li>
-        <li>앞으로도 계속 잘될 것 같아서, <strong>주식</strong>을 사도 좋다는 의견입니다.</li>
-    </ul>
+    <div class="summary-box">
+        <div class="summary-title">핵심 요약</div>
+        <ul>
+            <li><b>유니드</b>라는 회사가 올해 1분기에 예상보다 훨씬 좋은 실적을 냈어요!</li>
+            <li>국내에서 <span class="highlight">187억 원</span>의 영업이익을 기록하며 큰 폭으로 성장했어요.</li>
+            <li>주요 제품의 가격이 오르고, 운송비가 줄어든 덕분이에요.</li>
+            <li>앞으로도 좋은 흐름이 이어질 것으로 예상돼요.</li>
+        </ul>
+    </div>
 
-    <h2>1분기 실적 분석: 깜짝 놀랄 만큼 잘했어요!</h2>
-    <p>유니드가 올해 1분기에 <strong>287억 원</strong>이라는 어마어마한 영업이익을 냈어요! 작년보다도 더 많이 벌었답니다. 특히 국내에서 187억 원의 영업이익을 기록하며 큰 폭으로 성장했어요.</p>
-    <p>왜 이렇게 잘했을까요? 비밀은 바로!</p>
+    <h2>1분기 실적 리뷰: 영업이익 287억 원, 예상치보다 28% 높음</h2>
+    <p>
+        유니드라는 회사가 올해 1분기에 <span class="highlight">287억 원</span>이라는 영업이익을 냈어요. 이는 예상했던 금액보다 <span class="highlight">28%</span>나 더 많은 금액이에요! 작년 같은 기간보다도 조금 더 벌었답니다. 특히, 국내에서의 영업이익이 <span class="highlight">187억 원</span>으로 크게 늘었어요.
+    </p>
+    <p>
+        이렇게 실적이 좋아진 이유는 크게 세 가지가 있어요.
+    </p>
     <ul>
-        <li>지난 분기에 있었던 <strong>특별한 비용</strong>이 사라졌고,</li>
-        <li>주요 제품들의 <strong>가격</strong>이 많이 올랐으며,</li>
-        <li>물건을 배로 실어 나르는 <strong>운송비</strong>가 싸졌기 때문이래요.</li>
+        <li>지난 분기에 있었던 특별한 비용이 사라졌어요. (지난 분기에는 돈이 나갈 일이 좀 많았다는 뜻!)</li>
+        <li>주요 제품인 <span class="highlight">수산화칼륨</span>의 가격이 많이 올랐어요.</li>
+        <li>물건을 배로 실어 나르는 비용, 즉 <span class="highlight">해상 운임</span>이 저렴해졌어요.
     </ul>
     <p class="small-text">
-        *영업이익: 회사가 물건을 팔아서 얼마나 돈을 벌었는지 보여주는 중요한 숫자예요.
-        *스프레드: 제품을 팔 때 남는 이익, 즉 가격에서 원가를 뺀 금액을 말해요.
+        * 영업이익: 회사가 물건을 팔아서 얼마나 돈을 벌었는지 보여주는 숫자예요. 영업이익이 높을수록 회사가 장사를 잘하고 있다는 뜻이랍니다.
+        * 수산화칼륨: 여러 산업에서 사용되는 화학 물질이에요. 비누, 세제, 의약품 등을 만드는 데 쓰인답니다.
+        * 해상 운임: 배를 이용해서 물건을 실어 나르는 데 드는 비용이에요.
     </p>
 
-    <h2>앞으로도 계속 좋을까요? 🤔</h2>
-    <p>전문가들은 유니드가 앞으로도 계속 좋은 성적을 낼 거라고 예상하고 있어요. 특히 2분기에는 영업이익이 <strong>345억 원</strong>까지 늘어날 수 있다고 합니다!</p>
-    <p>이유는 다음과 같아요:</p>
-    <ul>
-        <li><strong>염화칼륨</strong>이라는 원료 가격이 계속 오르고 있고,</li>
-        <li><strong>해상운임</strong>과 <strong>전기료</strong>가 싸져서 돈이 덜 들고,</li>
-        <li>새로 지은 공장이 더 많이 돌아가면서 <strong>고정비</strong>가 줄어들기 때문이래요.</li>
-    </ul>
+    <h2>해외에서도 잘 나가요!</h2>
+    <p>
+        해외에서도 좋은 소식이 들려오고 있어요. 해외에서의 영업이익은 <span class="highlight">92억 원</span>으로, 3분기 연속으로 계속 늘고 있답니다. 중국에서 <span class="highlight">염화칼륨</span> 가격이 오르면서 회사가 더 많은 돈을 벌 수 있게 되었어요.
+    </p>
+    <p>
+        하지만 좋은 일만 있는 건 아니에요. <span class="highlight">염소</span> 가격이 떨어지면서 손해를 보는 부분도 있었답니다.
+    </p>
     <p class="small-text">
-        *고정비: 공장을 운영하거나 회사를 운영하는 데 항상 들어가는 돈 (예: 월세, 직원 월급 등)
+        * 염화칼륨: 주로 비료를 만드는 데 사용되는 물질이에요.
+        * 염소: 소독제나 표백제를 만드는 데 사용되는 화학 물질이에요.
     </p>
 
-    <h2>투자는 어떻게 해야 할까요? 💰</h2>
-    <p>대신증권에서는 유니드 주식을 <strong>계속 사도 좋다</strong>는 의견을 유지했어요. 목표 주가는 <strong>92,000원</strong>으로 그대로랍니다.</p>
-    <p>전문가들은 유니드가 앞으로도 안정적인 이익을 낼 수 있을 거라고 보고 있어요. 그래서 화학 업종에서는 <strong>안전한 선택</strong>이 될 수 있다는 거죠!</p>
+    <h2>앞으로도 계속 좋을까요?</h2>
+    <p>
+        전문가들은 유니드가 앞으로도 계속 좋은 실적을 낼 것으로 예상하고 있어요. 다음 분기에는 영업이익이 <span class="highlight">345억 원</span>까지 늘어날 수 있다고 보고 있답니다!
+    </p>
+    <p>
+        이런 전망이 나오는 이유는 다음과 같아요.
+    </p>
+    <ul>
+        <li>염화칼륨 가격이 계속 오르면서 수산화칼륨 가격도 강세를 유지할 것으로 보여요.</li>
+        <li>해상 운임과 전기 요금이 내려가면서 비용을 절약할 수 있을 것 같아요.</li>
+        <li>새로 지은 공장이 점점 더 잘 돌아가면서 고정 비용이 줄어들 것 같아요.</li>
+    </ul>
+    <p>
+        물론, 중국에서 염소 가격이 계속 떨어지는 것은 걱정거리이지만, 염화칼륨 가격이 워낙 좋아서 큰 문제는 없을 것으로 예상됩니다.
+    </p>
 
-    <h2>숫자로 보는 유니드 (단위: 십억원, %)</h2>
-    <table border="1" style="width:100%; border-collapse: collapse;">
+    <h2>투자는 어떻게 해야 할까요?</h2>
+    <p>
+        전문가들은 유니드 주식을 <span class="highlight">사도 좋다</span>고 이야기하고 있어요. 목표 주가는 <span class="highlight">92,000원</span>으로 제시했답니다. 유니드는 화학 회사들 중에서 안정적인 회사로 평가받고 있어요.
+    </p>
+    <p class="small-text">
+        * 목표 주가: 전문가들이 생각하는 주식의 적정 가격이에요.
+    </p>
+
+    <h2>실적 요약 (단위: 십억원, %)</h2>
+
+    <table>
         <thead>
             <tr>
                 <th>구분</th>
                 <th>1Q24</th>
                 <th>4Q24</th>
                 <th>1Q25</th>
-                <th>2Q25E (예상)</th>
+                <th>2Q25 (예상)</th>
             </tr>
         </thead>
         <tbody>
@@ -109,10 +191,10 @@
         </tbody>
     </table>
 
-    <p class="small-text">자료: 유니드, FnGuide, 대신증권 Research Center</p>
+    <p>
+        도움이 되었나요? 궁금한 점이 있다면 언제든지 다시 물어보세요!
+    </p>
 
-    <hr>
-    <p>Disclaimer: This report is for informational purposes only and should not be considered as investment advice. Please consult with a financial advisor before making any investment decisions.</p>
 
 <div style="margin-top: 40px; font-size: 13px; color: #666;">
     <h2 style="color: #333;">Compliance Notice</h2>
