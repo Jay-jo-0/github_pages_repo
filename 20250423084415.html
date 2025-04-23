@@ -11,102 +11,474 @@
             margin: 20px;
             color: #333;
         }
-
         h2 {
             color: #0056b3;
             margin-top: 30px;
             margin-bottom: 10px;
         }
-
         p {
             font-size: 16px;
-            margin-bottom: 20px;
-        }
-
-        .highlight {
-            font-weight: bold;
-            color: #007bff;
-        }
-
-        .news-item {
             margin-bottom: 15px;
         }
-
-        .news-title {
-            font-weight: bold;
-            margin-bottom: 5px;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
-
-        .compliance-notice {
-            font-size: 12px;
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #c0392b;
+        }
+        .small-text {
+            font-size: 14px;
             color: #777;
-            margin-top: 50px;
-            border-top: 1px solid #ccc;
-            padding-top: 20px;
         }
     </style>
 </head>
 <body>
 
-    <h2>일본 금융 시장 동향</h2>
-    <p>
-        TOPIX 지수와 엔/달러 환율
-    </p>
-
-    
-
     <h2>전일 주요 이슈 / 뉴스</h2>
 
-    <h3>IMF 일본 2025년 경제성장률 전망치 0.6% YoY</h3>
     <p>
-        4.22일 국제통화기금(IMF)이 2025년 세계경제전망 자료를 통해 일본의 2025년 경제성장률 전망치를 전년대비 0.6%로 발표했습니다. 이전 전망치 1.1% 대비 -0.5% 하향 조정된 수치에 해당합니다. 전세계 경제성장률 전망치도 2.8%로 기존 3.3% 대비 -0.5%p 하향 조정되었습니다.
+        <span class="highlight">IMF 일본 2025년 경제성장률 전망치 0.6% YoY</span>
+        <br>
+        4.22일 국제통화기금(IMF)이 2025년 세계경제전망 자료를 통해 일본의 2025년 경제성장률 전망치를 전년대비 0.6%로 발표. 이전 전망치 1.1% 대비 -0.5% 하향 조정된 수치에 해당. 전세계 경제성장률 전망치도 2.8%로 기존 3.3% 대비 -0.5%p 하향 조정
     </p>
 
-    
+    <br><br>
 
-    <h3>일본 노무라 증권 – 맥쿼리 자산운용 사업부 인수</h3>
     <p>
-        4.22일 파이낸셜타임스(FT)에 따르면 일본 노무라홀딩스가 맥쿼리 미국·유럽 공개시장 자산운용 사업부를 인수한다고 보도했습니다. 인수대금은 18억 달러로 2025년 연말까지 전액 현금 지급 및 인수 예정입니다. 노무라 투자운용 사업부는 기존 5,900억 달러 규모에서 7,700억 달러 규모로 확대될 예정입니다.
+        <span class="highlight">일본 노무라 증권 – 맥쿼리 자산운용 사업부 인수</span>
+        <br>
+        4.22일 파이낸셜타임스(FT)에 따르면 일본 노무라홀딩스가 맥쿼리 미국·유럽 공개시장 자산운용 사업부를 인수한다고 보도. 인수대금은 18억 달러로 2025년 연말까지 전액 현금 지급 및 인수 예정. 노무라 투자운용 사업부는 기존 5,900억 달러 규모에서 7,700억 달러 규모로 확대
     </p>
 
-    
+    <br><br>
 
     <h2>전일 Nikkei225 주요 종목 변동</h2>
 
-    <p>
-        상승률 상위 종목: 히노자동차, 스미토모금속광산, 미쓰비시상사 등
-        <br>
-        하락률 상위 종목: 베이커런트 컨설팅, 태양유전, 레이저테크 등
-    </p>
+    <h3>상승률 상위 10 종목</h3>
 
-    
+    <table>
+        <thead>
+            <tr>
+                <th>순위</th>
+                <th>종목명</th>
+                <th>섹터</th>
+                <th>현재가 (JPY)</th>
+                <th>시가총액 (Mn USD)</th>
+                <th>상승률 (%)</th>
+                <th>PER</th>
+                <th>PBR</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>히노자동차 (7205)</td>
+                <td>산업재</td>
+                <td>453.3</td>
+                <td>1,850.3</td>
+                <td>5.8</td>
+                <td>9.0</td>
+                <td>1.2</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>스미토모금속광산 (5713)</td>
+                <td>소재</td>
+                <td>3,185.0</td>
+                <td>6,580.1</td>
+                <td>5.0</td>
+                <td>9.6</td>
+                <td>0.5</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>미쓰비시상사 (8058)</td>
+                <td>산업재</td>
+                <td>2,528.5</td>
+                <td>72,252.5</td>
+                <td>3.9</td>
+                <td>13.2</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>마루베니 (8002)</td>
+                <td>산업재</td>
+                <td>2,372.5</td>
+                <td>27,991.0</td>
+                <td>3.9</td>
+                <td>7.8</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>디엔에이 (2432)</td>
+                <td>통신</td>
+                <td>3,584.0</td>
+                <td>3,109.9</td>
+                <td>3.2</td>
+                <td>13.4</td>
+                <td>1.8</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>이토추상사 (8001)</td>
+                <td>산업재</td>
+                <td>6,914.0</td>
+                <td>77,845.5</td>
+                <td>3.0</td>
+                <td>10.8</td>
+                <td>1.5</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>스미토모상사 (8053)</td>
+                <td>산업재</td>
+                <td>3,288.0</td>
+                <td>28,289.0</td>
+                <td>2.8</td>
+                <td>7.2</td>
+                <td>0.8</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>도와홀딩스 (5714)</td>
+                <td>소재</td>
+                <td>4,530.0</td>
+                <td>1,994.9</td>
+                <td>2.8</td>
+                <td>10.0</td>
+                <td>0.6</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>니치레이 (2871)</td>
+                <td>필수소비재</td>
+                <td>2,021.5</td>
+                <td>3,689.7</td>
+                <td>2.7</td>
+                <td>17.3</td>
+                <td>2.0</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>니쓰이 (1332)</td>
+                <td>필수소비재</td>
+                <td>885.0</td>
+                <td>1,964.3</td>
+                <td>2.5</td>
+                <td>10.2</td>
+                <td>0.9</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <h3>하락률 상위 10 종목</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>순위</th>
+                <th>종목명</th>
+                <th>섹터</th>
+                <th>현재가 (JPY)</th>
+                <th>시가총액 (Mn USD)</th>
+                <th>하락률 (%)</th>
+                <th>PER</th>
+                <th>PBR</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>베이커런트 컨설팅 (6532)</td>
+                <td>산업재</td>
+                <td>7,393.0</td>
+                <td>8,162.2</td>
+                <td>-4.7</td>
+                <td>28.1</td>
+                <td>8.8</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>태양유전 (6976)</td>
+                <td>IT</td>
+                <td>1,974.0</td>
+                <td>1,826.1</td>
+                <td>-3.1</td>
+                <td>15.7</td>
+                <td>0.8</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>레이저테크 (6920)</td>
+                <td>IT</td>
+                <td>11,860.0</td>
+                <td>7,944.0</td>
+                <td>-3.0</td>
+                <td>13.9</td>
+                <td>4.5</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>라쿠텐 그룹 (4755)</td>
+                <td>자유소비재</td>
+                <td>754.0</td>
+                <td>11,556.5</td>
+                <td>-2.9</td>
+                <td>-65.0</td>
+                <td>1.9</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>오므론 (6645)</td>
+                <td>IT</td>
+                <td>4,055.0</td>
+                <td>5,941.3</td>
+                <td>-2.8</td>
+                <td>15.5</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>후지쿠라 (5803)</td>
+                <td>산업재</td>
+                <td>4,432.0</td>
+                <td>9,315.3</td>
+                <td>-2.7</td>
+                <td>11.7</td>
+                <td>2.6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>미네베아 미쓰미 (6479)</td>
+                <td>산업재</td>
+                <td>1,957.0</td>
+                <td>5,937.5</td>
+                <td>-2.6</td>
+                <td>10.2</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>양품계획 (7453)</td>
+                <td>자유소비재</td>
+                <td>4,824.0</td>
+                <td>9,622.3</td>
+                <td>-2.4</td>
+                <td>26.4</td>
+                <td>3.7</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>미쓰비시중공업 (7011)</td>
+                <td>산업재</td>
+                <td>2,528.5</td>
+                <td>60,599.4</td>
+                <td>-2.2</td>
+                <td>26.4</td>
+                <td>3.2</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>요코가와전기 (6841)</td>
+                <td>IT</td>
+                <td>2,886.0</td>
+                <td>5,507.4</td>
+                <td>-2.2</td>
+                <td>13.5</td>
+                <td>1.5</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
 
     <h2>전일 일본 REIT 주요 종목 변동</h2>
 
-    <p>
-        대표 ETF: BRJ iShares Core Japan REIT ETF (1476)
+    <h3>상승률 상위 5 종목</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>순위</th>
+                <th>종목명</th>
+                <th>섹터</th>
+                <th>현재가 (JPY)</th>
+                <th>시가총액 (Mn USD)</th>
+                <th>상승률 (%)</th>
+                <th>배당률 (%)</th>
+                <th>거래대금 (Mn USD)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Activia Properties REIT (3279)</td>
+                <td>Diversified</td>
+                <td>344,500</td>
+                <td>1,938.6</td>
+                <td>1.8</td>
+                <td>6.3</td>
+                <td>5.43</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Hankyu Hanshin REIT (8977)</td>
+                <td>Diversified</td>
+                <td>147,200</td>
+                <td>727.0</td>
+                <td>1.4</td>
+                <td>19.7</td>
+                <td>3.54</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>CRE Logistics REIT (3487)</td>
+                <td>Logistics</td>
+                <td>143,700</td>
+                <td>637.2</td>
+                <td>1.2</td>
+                <td>2.1</td>
+                <td>2.23</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Tokyu REIT (8957)</td>
+                <td>Diversified</td>
+                <td>181,000</td>
+                <td>1,257.0</td>
+                <td>1.2</td>
+                <td>16.4</td>
+                <td>3.66</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Sankei Real Estate REIT (2972)</td>
+                <td>Diversified</td>
+                <td>89,500</td>
+                <td>297.0</td>
+                <td>1.1</td>
+                <td>17.6</td>
+                <td>1.09</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <h3>하락률 상위 5 종목</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>순위</th>
+                <th>종목명</th>
+                <th>섹터</th>
+                <th>현재가 (JPY)</th>
+                <th>시가총액 (Mn USD)</th>
+                <th>하락률 (%)</th>
+                <th>배당률 (%)</th>
+                <th>거래대금 (Mn USD)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Mitsubishi Estate Logistics REIT (3481)</td>
+                <td>Logistics</td>
+                <td>117,000</td>
+                <td>1,255.5</td>
+                <td>-0.6</td>
+                <td>2.2</td>
+                <td>3.37</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Samty Residential Investment REIT (3459)</td>
+                <td>Residential</td>
+                <td>94,300</td>
+                <td>571.3</td>
+                <td>-0.5</td>
+                <td>0.2</td>
+                <td>0.85</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Nippon Accommodations Fund REIT (3226)</td>
+                <td>Residential</td>
+                <td>117,600</td>
+                <td>2,103.1</td>
+                <td>-0.5</td>
+                <td>2.4</td>
+                <td>4.6</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Healthcare & Medical Investment REIT (3455)</td>
+                <td>Healthcare</td>
+                <td>109,500</td>
+                <td>279.7</td>
+                <td>-0.5</td>
+                <td>3.3</td>
+                <td>0.75</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Takara Leben Real Estate REIT (3492)</td>
+                <td>Diversified</td>
+                <td>85,600</td>
+                <td>553.9</td>
+                <td>-0.2</td>
+                <td>-0.9</td>
+                <td>2.21</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <p class="small-text">
+        ㆍ본 자료는 특정 금융투자상품의 가치에 대한 주장이나 예측을 목적으로 하는 조사분석자료가 아니며 , 임ㆍ직원 또는 고객에게 도움을 주기 위하여 작성된 것입니다 . 본 자료에 대한 저작권은 당사에 있으며 , 무단전재 및 재배포를 금지합니다 .
         <br>
-        상승률 상위 종목: Activia Properties REIT, Hankyu Hanshin REIT, CRE Logistics REIT 등
+        ㆍ본 자료를 활용하여 고객에게 투자권유를 하고자 하는 경우 금융투자상품에 대한 투자위험을 사전에 숙지하고 , 고객의 투자성향 , 투자경험 , 투자목적 등에 비추어 해당 고객에게 적합한 금융투자상품인지 여부를 확인하여 주시기 바라며 , 설명의무 이행을 위한 투자설명서 또는 설명서를 교부하여 주시기 바랍니다 . 또한 고객 “파생상품등”에 대한 투자가 적정하지 아니한 경우에는 그 사실을 알리고 , 해당 고객으로부터 서명, 기명날인 , 녹취 등의 방법으로 확인을 받으시기 바랍니다.
         <br>
-        하락률 상위 종목: Mitsubishi Estate Logistics REIT, Samty Residential Investment REIT, Nippon Accommodations Fund REIT 등
+        ㆍ본 자료의 정확성과 신뢰성을 확보하기 위하여 공시자료 , 금융투자회사의 조사분석자료 , 신뢰할만한 기구 등이 발표한 자료를 기반으로 하였으나 , 본 자료를 이용하여 투자권유를 하고자 하는 경우 본 자료의 작성자에게 그 정확성과 신뢰성을 확인하시기 바랍니다 .
     </p>
 
-    
 
-    <div class="compliance-notice">
-        Compliance Notice
-        금융투자업규정 4-20조 1항5호사목에 따라 작성일 현재 사전고지와 관련한 사항이 없으며, 당사의 금융투자분석사는 자료작성일 현재 본 자료에 
-        관련하여 재산적 이해관계가 없습니다. 당사는 동 자료에 언급된 종목과 계열회사의 관계가 없으며 당사의 금융투자분석사는 본 자료의 작성과 관련하여 
+<div style="margin-top: 40px; font-size: 13px; color: #666;">
+    <h2 style="color: #333;">Compliance Notice</h2>
+    <p>
+        금융투자업규정 4-20조 1항5호사목에 따라 작성일 현재 사전고지와 관련한 사항이 없으며, 당사의 금융투자분석사는 자료작성일 현재 본 자료에
+        관련하여 재산적 이해관계가 없습니다. 당사는 동 자료에 언급된 종목과 계열회사의 관계가 없으며 당사의 금융투자분석사는 본 자료의 작성과 관련하여
         외부 부당한 압력이나 간섭을 받지 않고 본인의 의견을 정확하게 반영하였습니다.
         본 자료는 투자자들의 투자판단에 참고가 되는 정보제공을 목적으로 배포되는 자료입니다. 본 자료에 수록된 내용은 당사 Research Center의 추정치로서
         오차가 발생할 수 있으며 정확성이나 완벽성은 보장하지 않습니다. 본 자료를 이용하시는 분은 동 자료와 관련한 투자의 최종 결정은 자신의 판단으로
         하시기 바랍니다.
-        
+    </p>
+    <p style="font-size: 12px; color: #999;">
         ※ 본 콘텐츠는 당사 리서치센터 보고서를 기반으로 생성된 요약·해설 자료입니다.
         본 자료는 인공지능(AI)을 활용하여 자동 생성되었으며, 투자자 이해를 돕기 위한 목적입니다.
         일부 내용은 원문과 차이가 있을 수 있으며, 최종 투자 판단은 원문 보고서를 참고하시기 바랍니다.
         본 자료는 투자 권유를 목적으로 하지 않으며, AI 생성 특성상 오류가 포함될 수 있습니다.
-    </div>
+    </p>
+</div>
 
 </body>
 </html>
