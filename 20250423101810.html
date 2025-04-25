@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>주식 보고서 요약</title>
+    <title>주식 보고서</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,21 +19,20 @@
         }
 
         p {
-            margin-bottom: 15px;
-            font-size: 1.1em;
+            font-size: 16px;
+            margin-bottom: 20px;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         th, td {
             border: 1px solid #ddd;
             padding: 8px;
-            text-align: left;
+            text-align: center;
         }
 
         th {
@@ -45,159 +44,154 @@
             font-weight: bold;
             color: #007bff;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background-color: #f9f9f9;
+
+        .small-text {
+            font-size: 12px;
+            color: #777;
         }
     </style>
 </head>
 <body>
-    <div class="container">
 
-        <h2>저평가 우량주</h2>
+    <h2>저평가 우량주 밸류에이션</h2>
+    <p>
+        (P/B, P/E) 이 최근 5년 내 하위 5% 수준에 있는 기업: <span class="highlight">삼성전자, 삼성바이오로직스, 현대차</span> 등
+    </p>
 
-        <p>
-            밸류에이션 (P/B, P/E) 이 최근 5년 내 하위 5% 수준에 있는 기업은 다음과 같습니다: <span class="highlight">삼성전자, 삼성바이오로직스, 현대차</span> 등
-        </p>
+    <table>
+        <thead>
+            <tr>
+                <th>종목</th>
+                <th>종목 코드</th>
+                <th>P/B(배)</th>
+                <th>P/E(배)</th>
+                <th>3M(%)</th>
+                <th>1Y(%)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>삼성전자</td>
+                <td>005930</td>
+                <td>0.87</td>
+                <td>10.7</td>
+                <td>2.4</td>
+                <td>-29.1</td>
+            </tr>
+            <tr>
+                <td>삼성바이오로직스</td>
+                <td>207940</td>
+                <td>6.01</td>
+                <td>54.8</td>
+                <td>-1.1</td>
+                <td>39.4</td>
+            </tr>
+            <tr>
+                <td>현대차</td>
+                <td>005380</td>
+                <td>0.41</td>
+                <td>4.1</td>
+                <td>-9.5</td>
+                <td>-23.0</td>
+            </tr>
+            <tr>
+                <td>기아</td>
+                <td>000270</td>
+                <td>0.52</td>
+                <td>3.5</td>
+                <td>-14.7</td>
+                <td>-23.8</td>
+            </tr>
+            <tr>
+                <td>NAVER</td>
+                <td>035420</td>
+                <td>1.02</td>
+                <td>15.2</td>
+                <td>-5.0</td>
+                <td>-0.5</td>
+            </tr>
+        </tbody>
+    </table>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>종목</th>
-                    <th>종목 코드</th>
-                    <th>P/B(배)</th>
-                    <th>P/E(배)</th>
-                    <th>3M(%)</th>
-                    <th>1Y(%)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>삼성전자</td>
-                    <td>005930</td>
-                    <td>0.87</td>
-                    <td>10.7</td>
-                    <td>2.4</td>
-                    <td>-29.1</td>
-                </tr>
-                <tr>
-                    <td>삼성바이오로직스</td>
-                    <td>207940</td>
-                    <td>6.01</td>
-                    <td>54.8</td>
-                    <td>-1.1</td>
-                    <td>39.4</td>
-                </tr>
-                <tr>
-                    <td>현대차</td>
-                    <td>005380</td>
-                    <td>0.41</td>
-                    <td>4.1</td>
-                    <td>-9.5</td>
-                    <td>-23.0</td>
-                </tr>
-                <tr>
-                    <td>기아</td>
-                    <td>000270</td>
-                    <td>0.52</td>
-                    <td>3.5</td>
-                    <td>-14.7</td>
-                    <td>-23.8</td>
-                </tr>
-                <tr>
-                    <td>NAVER</td>
-                    <td>035420</td>
-                    <td>1.02</td>
-                    <td>15.2</td>
-                    <td>-5.0</td>
-                    <td>-0.5</td>
-                </tr>
-            </tbody>
-        </table>
+    <p class="small-text">
+        * 3M(%): 작성일 기준 60 영업일 전 대비 수익률, 1Y(%) 작성일 기준 252 영업일 전 대비 수익률<br>
+        *: 밸류에이션 하위 5% 수준 이내
+    </p>
 
-        <p>
-            * 3M(%): 작성일 기준 60 영업일 전 대비 수익률<br>
-            * 1Y(%) 작성일 기준 252 영업일 전 대비 수익률<br>
-            * : 밸류에이션 하위 5% 수준 이내
-        </p>
+    
 
-        <h2>고배당 유망주</h2>
+    <h2>고배당 유망주</h2>
+    <p>
+        최근 3년 내 배당을 늘리거나 유지했으며 배당수익률 상위인 기업: <span class="highlight">DB손해보험, 한샘, 삼성증권</span> 등
+    </p>
 
-        <p>
-            최근 3년 내 배당을 늘리거나 유지했으며 배당수익률 상위인 기업은 다음과 같습니다: <span class="highlight">DB손해보험, 한샘, 삼성증권</span> 등
-        </p>
+    <table>
+        <thead>
+            <tr>
+                <th>종목</th>
+                <th>종목 코드</th>
+                <th>예상 배당 수익률 (%)</th>
+                <th>자본유보율 (%)</th>
+                <th>배당주기</th>
+                <th>3M(%)</th>
+                <th>1Y(%)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>DB손해보험</td>
+                <td>005830</td>
+                <td>8.8</td>
+                <td>26,859.6</td>
+                <td>연간</td>
+                <td>-5.9</td>
+                <td>-7.5</td>
+            </tr>
+            <tr>
+                <td>한샘</td>
+                <td>009240</td>
+                <td>8.1</td>
+                <td>2,540.2</td>
+                <td>연3회</td>
+                <td>-15.0</td>
+                <td>-27.2</td>
+            </tr>
+            <tr>
+                <td>삼성증권</td>
+                <td>016360</td>
+                <td>7.9</td>
+                <td>1,497.5</td>
+                <td>연간</td>
+                <td>5.8</td>
+                <td>26.0</td>
+            </tr>
+            <tr>
+                <td>기업은행</td>
+                <td>024110</td>
+                <td>7.7</td>
+                <td>712.8</td>
+                <td>연간</td>
+                <td>-1.8</td>
+                <td>8.3</td>
+            </tr>
+            <tr>
+                <td>기아</td>
+                <td>000270</td>
+                <td>7.5</td>
+                <td>2,430.7</td>
+                <td>연간</td>
+                <td>-14.7</td>
+                <td>-23.8</td>
+            </tr>
+        </tbody>
+    </table>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>종목</th>
-                    <th>종목 코드</th>
-                    <th>예상 배당 수익률 (%)</th>
-                    <th>자본유보율 (%)</th>
-                    <th>배당주기</th>
-                    <th>3M(%)</th>
-                    <th>1Y(%)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>DB손해보험</td>
-                    <td>005830</td>
-                    <td>8.8</td>
-                    <td>26,859.6</td>
-                    <td>연간</td>
-                    <td>-5.9</td>
-                    <td>-7.5</td>
-                </tr>
-                <tr>
-                    <td>한샘</td>
-                    <td>009240</td>
-                    <td>8.1</td>
-                    <td>2,540.2</td>
-                    <td>연3회</td>
-                    <td>-15.0</td>
-                    <td>-27.2</td>
-                </tr>
-                <tr>
-                    <td>삼성증권</td>
-                    <td>016360</td>
-                    <td>7.9</td>
-                    <td>1,497.5</td>
-                    <td>연간</td>
-                    <td>5.8</td>
-                    <td>26.0</td>
-                </tr>
-                 <tr>
-                    <td>기업은행</td>
-                    <td>024110</td>
-                    <td>7.7</td>
-                    <td>712.8</td>
-                    <td>연간</td>
-                    <td>-1.8</td>
-                    <td>8.3</td>
-                </tr>
-                <tr>
-                    <td>기아</td>
-                    <td>000270</td>
-                    <td>7.5</td>
-                    <td>2,430.7</td>
-                    <td>연간</td>
-                    <td>-14.7</td>
-                    <td>-23.8</td>
-                </tr>
-            </tbody>
-        </table>
+    <p class="small-text">
+        * 3M(%): 작성일 기준 60 영업일 전 대비 수익률, 1Y(%) 작성일 기준 252 영업일 전 대비 수익률
+    </p>
 
-        <p>
-            * 3M(%): 작성일 기준 60 영업일 전 대비 수익률<br>
-            * 1Y(%) 작성일 기준 252 영업일 전 대비 수익률
-        </p>
+</body>
 
-    </div>
 
 <div style="margin-top: 40px; font-size: 13px; color: #666;">
     <h2 style="color: #333;">Compliance Notice</h2>
@@ -217,5 +211,4 @@
     </p>
 </div>
 
-</body>
 </html>
