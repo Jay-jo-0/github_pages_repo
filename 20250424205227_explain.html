@@ -9,74 +9,45 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 20px;
-            color: #333; /* 기본 글자 색상 */
+            color: #333;
         }
-
         h1 {
-            font-size: 2.0em; /* 제목 크기 */
-            color: #0056b3; /* 제목 색상 */
-            margin-bottom: 20px;
+            color: #0056b3;
         }
-
         h2 {
-            font-size: 1.6em; /* 부제목 크기 */
-            color: #0056b3; /* 부제목 색상 */
+            color: #0056b3;
             margin-top: 30px;
-            margin-bottom: 10px;
         }
-
         h3 {
-            font-size: 1.4em; /* 소제목 크기 */
-            color: #0056b3; /* 소제목 색상 */
+            color: #007bff;
             margin-top: 20px;
-            margin-bottom: 10px;
         }
-
         p {
-            font-size: 1.1em; /* 본문 글자 크기 */
+            font-size: 16px;
             margin-bottom: 15px;
         }
-
-        ul {
-            margin-bottom: 15px;
-        }
-
-        li {
-            font-size: 1.1em; /* 목록 글자 크기 */
-        }
-
         .highlight {
             font-weight: bold;
-            color: #e44d26; /* 강조 색상 */
+            color: #007bff;
         }
-
         .small-text {
-            font-size: 0.9em; /* 작은 글자 크기 */
-            color: #777; /* 작은 글자 색상 */
+            font-size: 12px;
+            color: #777;
         }
-
+        .summary-box {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+        .summary-item {
+            margin-bottom: 10px;
+        }
         img {
             max-width: 100%;
             height: auto;
             display: block;
             margin: 20px auto;
-        }
-
-        /* 표 스타일 */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f2f2f2;
         }
     </style>
 </head>
@@ -84,114 +55,106 @@
 
     <h1>[대신증권 이하연] 국내 1분기 GDP: 폭싹…</h1>
 
-    <p>
-        안녕하세요! 대신증권의 이하연 애널리스트입니다. 오늘은 국내 경제 소식을 쉽고 재미있게 알려드릴게요. 마치 초등학생에게 설명하듯이, 어려운 경제 용어 없이 풀어드릴 테니 걱정 마세요!
-    </p>
-
-    <h2>핵심 요약</h2>
-    <ul>
-        <li><b>1분기 국내 경제</b>: 살짝 뒷걸음질 쳤어요 (-0.2%).</li>
-        <li><b>연간 경제 성장률 전망</b>: 1.1%로 낮췄어요. 하지만 너무 걱정 마세요!</li>
-        <li><b>수출</b>: 미국 외 다른 나라에서 기회를 찾고, 새로운 공급망을 통해 성장할 수 있어요.</li>
-    </ul>
+    <div class="summary-box">
+        <h2>핵심 요약</h2>
+        <div class="summary-item">
+            <span class="highlight">1분기 국내 경제는 안타깝게도 뒷걸음질쳤어요 (-0.2%).</span> 쉽게 말해, 경제가 성장하지 못하고 오히려 조금 줄어들었다는 뜻이에요.
+        </div>
+        <div class="summary-item">
+            원래 예상했던 것보다 상황이 안 좋아서, 올해 전체 경제 성장률 전망치를 <span class="highlight">1.1%</span>로 낮췄어요.
+        </div>
+        <div class="summary-item">
+            하지만 너무 걱정하지 마세요! 수출은 어렵겠지만, 국내 소비를 중심으로 경제가 다시 살아날 거라고 보고 있어요.
+        </div>
+        <div class="summary-item">
+            미국이 아닌 다른 나라들의 소비가 늘어나는 기회를 잘 잡고, 중국을 견제하는 과정에서 우리나라가 얻을 수 있는 이익도 찾아볼 거예요.
+        </div>
+    </div>
 
     <h2>Ⅰ. 국내 경제 성장 전망치 하향 조정</h2>
 
-    <h3>1분기 국내 경제, 3분기만에 다시 뒷걸음질</h3>
+    <h3>1분기 국내 경제, 3분기만에 다시 역성장</h3>
     <p>
-        올해 1분기에 우리나라 경제가 <span class="highlight">0.2%</span> 줄어들었어요. 쉽게 말해, 3개월 동안 경제가 조금 작아졌다는 뜻이에요.
+        2025년 1분기에 우리나라 경제가 <span class="highlight">0.2%</span> 줄어들었어요. 3개월 만에 다시 경제가 뒷걸음질 친 거예요. 
+        이는 지난 분기에 비해 경제가 얼마나 성장했는지, 혹은 줄어들었는지를 보여주는 지표입니다.
     </p>
     <p>
-        마치 언덕길에서 살짝 미끄러진 것처럼, 경제가 잠시 주춤한 거죠.
+        전문가들은 국내 정치 상황이 불안정하고, 미국의 관세 정책 때문에 사람들이 돈을 잘 안 쓰려고 해서 이런 결과가 나왔다고 보고 있어요.
     </p>
-
-    <h3>2025년 1분기 GDP 0.2% 감소, 민간 소비/투자 부진</h3>
+        <p>
+        수출은 물건을 외국에 파는 것을 말하고, 내수는 국내에서 물건을 사고파는 것을 의미해요.
+    </p>
+    <h3>민간 소비/투자 부진</h3>
     <p>
-        사람들이 물건을 덜 사고, 회사들이 투자를 줄이면서 경제가 움츠러들었어요.
+        자세히 살펴보니, 사람들이 돈을 잘 안 쓰고, 기업들도 투자를 줄여서 경제가 안 좋아졌어요. 특히 수출이 많이 줄어든 것이 걱정이에요.
+        원래 물건값이 오를 것 같으면 미리 사두는 경향이 있는데, 이번에는 그런 효과도 별로 없었어요.
     </p>
     <p>
-        수출이 줄어든 것도 영향을 줬는데, 특히 중국으로 가는 수출이 많이 줄었어요.
-    </p>
-    <p class="small-text">
-        GDP(국내총생산): 우리나라 안에서 만들어진 모든 물건과 서비스의 가격을 합한 거예요. GDP가 줄었다는 건, 그만큼 경제 활동이 줄었다는 뜻이죠.
-    </p>
-
-     <img src="https://img.freepik.com/premium-vector/falling-arrow-economic-downturn-recession-financial-crisis-market-crash-vector-illustration_546675-1019.jpg?w=1060" alt="하락하는 화살표">
-
-    <p>
-        하지만 좋은 소식도 있어요! 정부가 돈을 써서 경제가 더 나빠지는 걸 막았답니다.
-    </p>
-
-    <img src="https://www.daishin.com/resources/images/macro_image1.png" alt="국내 경제성장률 및 기여도">
-
-    <h3>올해 국내 경제성장률 1.0%로 하향 조정</h3>
-    <p>
-        앞으로 경제가 얼마나 성장할지 예상하는 숫자를 낮췄어요. 원래는 1.9% 성장할 거라고 봤는데, 이제는 1.1% 정도 성장할 거라고 예상하는 거죠.
+        수입은 반대로 더 많이 줄어서, 수출보다 수입이 더 적은 "불황형 흑자"가 나타났어요. 이는 좋은 현상은 아니에요.
     </p>
      <p class="small-text">
-        경제성장률: 경제가 얼마나 빠르게 성장하는지 나타내는 숫자예요.
+        *불황형 흑자: 수출은 줄고 수입은 더 줄어서 겉으로는 흑자처럼 보이지만, 실제로는 경제가 안 좋다는 의미입니다.
     </p>
     <p>
-        하지만 너무 걱정하지 마세요! 국내에서는 소비가 늘고 투자가 다시 살아나면서 경제가 조금씩 나아질 거라고 예상하고 있어요. 마치 따뜻한 봄 햇살처럼, 경제에도 희망이 보이고 있답니다.
+        사람들은 여행이나 문화생활 같은 서비스 소비도 줄였고, 기업들은 건물 짓는 것도 줄였어요. 그나마 정부가 돈을 써서 경제가 더 나빠지는 것을 막았답니다.
     </p>
 
-    <img src="https://www.daishin.com/resources/images/macro_image2.png" alt="12.2조원 규모 추경 편성">
-    <img src="https://www.daishin.com/resources/images/macro_image3.png" alt="추경(안) 주요내용">
+    <img src="https://www.daishin.com/data/analytics/20250425/image001.png" alt="국내 경제성장률 및 기여도">
 
+    <h2>Ⅱ. 올해 국내 경제성장률 1.0%로 하향 조정</h2>
+
+    <h3>대외 불확실성 확대 내수 중심 경기 회복</h3>
     <p>
-        정부가 돈을 풀어서 사람들을 돕고, 기업들이 투자를 늘리도록 할 거예요.
+        미국이 우리나라를 포함한 여러 나라에 물건을 팔 때 세금을 더 많이 붙일 수 있다고 해서 걱정이 많아요.
+        미국 기업들은 투자를 미루고 있고, 사람들도 돈을 아끼고 있어서 우리나라 경제에도 안 좋은 영향을 줄 수 있어요.
+    </p>
+    <p>
+        국제통화기금(IMF)도 올해 세계 경제 성장률 전망치를 낮췄고, 우리나라 경제 성장률도 <span class="highlight">1.0%</span>로 낮춰 잡았어요.
     </p>
      <p class="small-text">
-        추경: 정부가 돈이 더 필요할 때 예산을 추가로 짜는 것을 말해요.
+        *국제통화기금(IMF): 세계 여러 나라의 경제를 감시하고, 돈이 부족한 나라를 도와주는 국제기구입니다.
     </p>
-    <img src="https://www.daishin.com/resources/images/macro_image4.png" alt="소비심리 개선 기대">
-    <img src="https://www.daishin.com/resources/images/macro_image5.png" alt="설비투자 선행지표 개선">
     <p>
-        사람들이 돈을 더 많이 쓰고, 기업들이 투자를 늘리면 경제가 다시 활기를 띨 수 있을 거예요.
+        하지만 국내 정치 상황이 안정되고, 정부가 돈을 풀어서 사람들의 소비 심리가 살아나면 경제가 다시 좋아질 수 있을 거예요.
+        기업들도 투자를 다시 시작하고, 수출만 잘 된다면 더 좋겠죠!
     </p>
 
-    <h2>Ⅱ. 끝날때까지 끝난게 아니다</h2>
+    <img src="https://www.daishin.com/data/analytics/20250425/image002.png" alt="추경 편성">
+    <img src="https://www.daishin.com/data/analytics/20250425/image003.png" alt="추경 주요내용">
+    <img src="https://www.daishin.com/data/analytics/20250425/image004.png" alt="소비심리 개선 기대">
+    <img src="https://www.daishin.com/data/analytics/20250425/image005.png" alt="설비투자 선행지표 개선">
+
+    <h2>Ⅲ. 끝날때까지 끝난게 아니다</h2>
 
     <h3>그럼에도 불구하고 찾아보는 기회</h3>
     <p>
-        어려운 상황 속에서도 기회는 있어요! 미국 말고 다른 나라에서 물건을 더 많이 팔고, 새로운 기술을 개발해서 경쟁력을 높일 수 있답니다.
+        미국의 정책 때문에 걱정이 많지만, 오히려 기회가 될 수도 있어요.
     </p>
 
     <h3>1) 비미국 내수 부양</h3>
     <p>
-        미국 말고 다른 나라들이 경제를 살리기 위해 노력하고 있어요.
-    </p>
-    <p>
-        특히 중국과 유럽에서 소비가 늘어나면서 우리나라가 만든 물건들을 더 많이 팔 수 있게 될 거예요.
+        미국 말고 다른 나라들이 소비를 늘리면 우리나라 물건을 더 많이 팔 수 있어요. 중국이나 유럽 같은 나라들이 소비를 늘리고 있어서 좋은 기회가 될 수 있어요.
     </p>
 
-    <img src="https://www.daishin.com/resources/images/macro_image6.png" alt="유로존 소매판매 증가세 확대">
-    <img src="https://www.daishin.com/resources/images/macro_image7.png" alt="중국 소매판매 증가세 확대">
-
-    <p>
-        마치 맛있는 음식을 여러 나라에 수출하는 것처럼, 우리나라 경제도 다양한 곳에서 기회를 찾을 수 있어요.
-    </p>
-
-    <img src="https://www.daishin.com/resources/images/macro_image8.png" alt="소비재 수출: 미국 vs. 비미국">
-    <img src="https://www.daishin.com/resources/images/macro_image9.png" alt="서비스(소비) 수출도 순차적 회복 기대">
+    <img src="https://www.daishin.com/data/analytics/20250425/image006.png" alt="유로존 소매판매 증가세 확대">
+    <img src="https://www.daishin.com/data/analytics/20250425/image007.png" alt="중국 소매판매 증가세 확대">
+    <img src="https://www.daishin.com/data/analytics/20250425/image008.png" alt="소비재 수출">
+    <img src="https://www.daishin.com/data/analytics/20250425/image009.png" alt="서비스 수출">
 
     <h3>2) 대중 견제 및 공급망 재편</h3>
     <p>
-        미국이 중국을 견제하면서 새로운 기회가 생길 수도 있어요.
+        미국이 중국을 견제하면서 우리나라가 얻을 수 있는 이익도 있어요. 예전에는 중국에서 물건을 많이 수입했지만, 이제는 다른 나라에서 수입하는 비중이 늘어나고 있어요.
     </p>
     <p>
-        우리나라는 중국과 경쟁하는 분야에서 더 잘할 수 있도록 노력해야 해요. 마치 운동 경기에서 라이벌을 이기기 위해 훈련하는 것처럼, 우리도 기술력을 키우고 경쟁력을 높여야 한답니다.
-    </p>
-    <p class="small-text">
-        공급망 재편: 물건을 만드는 데 필요한 재료를 구하는 경로를 바꾸는 것을 말해요.
+        우리나라는 기술력이 좋은 제품을 많이 만들기 때문에, 중국을 견제하는 과정에서 우리나라 제품을 더 많이 팔 수 있을 거예요.
     </p>
 
-    <img src="https://www.daishin.com/resources/images/macro_image10.png" alt="트럼프 취임 이후 미국 수입 다변화: 중국↓, 멕시코/베트남↑">
-    <img src="https://www.daishin.com/resources/images/macro_image11.png" alt="여전히 높은 소비재 대중 수입 의존도">
-    <img src="https://www.daishin.com/resources/images/macro_image12.png" alt="미국 품목별 수입 비중(한국 주요 수출품 기준)">
+    <img src="https://www.daishin.com/data/analytics/20250425/image010.png" alt="미국 수입 다변화">
+    <img src="https://www.daishin.com/data/analytics/20250425/image011.png" alt="대중 수입 의존도">
+    <img src="https://www.daishin.com/data/analytics/20250425/image012.png" alt="미국 품목별 수입 비중">
 
     <p>
-        어려운 시기이지만, 우리는 충분히 이겨낼 수 있어요! 긍정적인 마음으로 미래를 향해 나아가면 좋은 결과가 있을 거예요.
+    이 보고서는 대신증권에서 투자자들을 위해 만든 자료이며, 투자를 결정할 때는 반드시 본인의 판단에 따라 신중하게 결정해야 합니다.
     </p>
 
 </body>
