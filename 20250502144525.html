@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon (AMZN) 분석 보고서</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #0056b3;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #c00;
+        }
+        .small {
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>AWS 영업이익률 상승이 견인한 영업이익 서프라이즈</h2>
+    <p>
+        1분기 매출액은 1,557억 달러(+8.6% YoY)를 기록하면서 컨센서스 +0.4% 상회. 영업이익은 184억 달러(+20.2% YoY)로 컨센서스를 +5.3% 상회. EPS는 1.59달러로 컨센서스 +16.4% 상회
+    </p>
+
+    <p>
+        영업이익 서프라이즈는 AWS 영업이익률 상승에 기인. AWS 영업이익률은 39.5%를 기록하면서 사상 최고치를 기록. 커스텀 AI 칩 도입을 통한 효율화 , 소프트웨어 개선, 데이터센터 캐파 최적화 등을 통해 이룬 결과. CAPEX 증가, 일부 서버 상각연수 단축에 따른 감가상각비 증가 영향은 제한적이었음 . 다만, 북미, 국제 부문 영업이익률은 관세 부과에 따른 일회성 비용으로 각각 6.3%, 3.0%를 기록하면서 예상을 하회. 관세는 영업이익률을 -0.7%p, -0.3%p 낮춤
+    </p>
+
+    <h2>다만, 관세 & 경기 둔화 고려하면 성장률 반등 여력 제한. 밸류 부담은 적음</h2>
+    <p>
+        2분기 가이던스는 매출액 1,590~1,640억 달러로 중간값 기준 컨센서스 부합. 영업이익은 130~175억 달러로 중간값 기준 컨센서스 -13.6% 하회
+    </p>
+    <p>
+        경영진은 영업이익 가이던스가 기대를 하회한 것은 주식보상비용 과 저궤도 위성 프로젝트 Kuiper 비용을 반영한 결과라고 발표. 다만, 이와는 별개로 아마존이 2Q24부터 영업이익 가이던스를 보수적으로 주는 경향을 보이고 있음
+    </p>
+
+    <p>
+        향후 아마존은 성장보다는 이익률 관점에서 모멘텀을 찾아야 할 것으로 판단. 북미, 국제, AWS 부문 모두 성장률이 고점을 찍고 하락하고 있기 때문. 경기가 둔화되고 있는 점을 감안하면 이커머스 성장률이 반등할 여력은 크지 않음
+    </p>
+
+    <p>
+        AWS 부문의 경우 마이크로소프트 Azure와 다르게 성장률 반등하지 못함. Azure는 OpenAI ChatGPT 수요가 늘어난 점이 긍정적으로 작용한 것으로 추정되는데 , AWS의 경우 성장률 반등을 이끌만한 추론 수요가 아직 없었음
+    </p>
+
+    <p>
+        북미 이익률은 미국이 중국에 부과하는 관세율이 주요 변수가 될 것. 아마존 상위 판매자의 50% 가량이 중국에서 제품을 조달. 관세로 인해 제품 가격이 크게 상승하면 , 소비자들이 구매하는 제품 수가 감소하면서 운송 효율이 떨어질 가능성. 이는 풀필먼트 재구조화에 따른 효율성 제고를 약화하는 요인
+    </p>
+
+    <p>
+        한편, 12개월 선행 EV/EBITDA 1 2배 수준으로 과거 밴드 하단을 하회하고 있어, 밸류 부담은 적음. 다만, 주가를 견인할 뚜렷한 모멘텀도 부재한 구간
+    </p>
+
+    <h2>1Q25 실적 지표</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>1Q24</th>
+                <th>4Q24</th>
+                <th>1Q25</th>
+                <th>2Q25 컨센</th>
+                <th>서프라이즈</th>
+                <th>YoY (%)</th>
+                <th>QoQ (%)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>매출액</td>
+                <td>143.3</td>
+                <td>187.8</td>
+                <td>155.7</td>
+                <td>155.1</td>
+                <td>0.4</td>
+                <td>8.6</td>
+                <td>-17.1</td>
+            </tr>
+            <tr>
+                <td>영업이익</td>
+                <td>15.3</td>
+                <td>21.2</td>
+                <td>18.4</td>
+                <td>17.5</td>
+                <td>5.3</td>
+                <td>20.2</td>
+                <td>-13.2</td>
+            </tr>
+            <tr>
+                <td>순이익</td>
+                <td>10.4</td>
+                <td>20.0</td>
+                <td>17.1</td>
+                <td>14.6</td>
+                <td>17.2</td>
+                <td>63.9</td>
+                <td>-14.5</td>
+            </tr>
+            <tr>
+                <td>EPS</td>
+                <td>0.98</td>
+                <td>1.86</td>
+                <td>1.59</td>
+                <td>1.37</td>
+                <td>16.4</td>
+                <td>62.2</td>
+                <td>-14.5</td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="small">자료: Factset, 대신증권 Research Center</p>
+    
+
+    <h2>주요 사업부문별 실적</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>발표치 (십억달러)</th>
+                <th>예상치 (십억달러)</th>
+                <th>서프라이즈 (%)</th>
+                <th>YoY (%)</th>
+                <th>QoQ (%)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>매출액</strong></td>
+                <td>155.7</td>
+                <td>155.1</td>
+                <td>0.4</td>
+                <td>8.6</td>
+                <td>-17.1</td>
+            </tr>
+            <tr>
+                <td>이커머스 온라인 스토어</td>
+                <td>57.4</td>
+                <td>56.6</td>
+                <td>1.4</td>
+                <td>5.0</td>
+                <td>-24.0</td>
+            </tr>
+            <tr>
+                <td>제3자 판매 서비스</td>
+                <td>36.5</td>
+                <td>36.8</td>
+                <td>-0.7</td>
+                <td>5.5</td>
+                <td>-23.1</td>
+            </tr>
+            <tr>
+                <td>구독 서비스</td>
+                <td>11.7</td>
+                <td>11.6</td>
+                <td>0.8</td>
+                <td>9.3</td>
+                <td>1.8</td>
+            </tr>
+            <tr>
+                <td>광고</td>
+                <td>13.9</td>
+                <td>17.4</td>
+                <td>-20.0</td>
+                <td>-5.0</td>
+                <td>-2.9</td>
+            </tr>
+            <tr>
+                <td>매장</td>
+                <td>5.5</td>
+                <td>5.4</td>
+                <td>2.6</td>
+                <td>6.4</td>
+                <td>-0.8</td>
+            </tr>
+            <tr>
+                <td>AWS</td>
+                <td>29.3</td>
+                <td>29.4</td>
+                <td>-0.6</td>
+                <td>16.9</td>
+                <td>1.7</td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="small">자료: Amazon, Factset, 대신증권 Research Center</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>발표치 (십억달러)</th>
+                <th>예상치 (십억달러)</th>
+                <th>서프라이즈 (%)</th>
+                <th>YoY (%)</th>
+                <th>QoQ (%)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>매출액</strong></td>
+                <td>155.7</td>
+                <td>155.1</td>
+                <td>0.4</td>
+                <td>8.6</td>
+                <td>-17.1</td>
+            </tr>
+            <tr>
+                <td>북미</td>
+                <td>92.9</td>
+                <td>92.4</td>
+                <td>0.6</td>
+                <td>7.6</td>
+                <td>-19.6</td>
+            </tr>
+            <tr>
+                <td>국제</td>
+                <td>33.5</td>
+                <td>33.1</td>
+                <td>1.2</td>
+                <td>4.9</td>
+                <td>-22.8</td>
+            </tr>
+            <tr>
+                <td>AWS</td>
+                <td>29.3</td>
+                <td>29.4</td>
+                <td>-0.6</td>
+                <td>16.9</td>
+                <td>1.7</td>
+            </tr>
+            <tr>
+                <td><strong>영업이익</strong></td>
+                <td>18.4</td>
+                <td>17.5</td>
+                <td>5.3</td>
+                <td>20.2</td>
+                <td>-13.2</td>
+            </tr>
+            <tr>
+                <td>북미</td>
+                <td>5.8</td>
+                <td>6.1</td>
+                <td>-4.8</td>
+                <td>17.2</td>
+                <td>-36.9</td>
+            </tr>
+            <tr>
+                <td>국제</td>
+                <td>1.0</td>
+                <td>1.0</td>
+                <td>-1.4</td>
+                <td>12.6</td>
+                <td>-22.7</td>
+            </tr>
+            <tr>
+                <td>AWS</td>
+                <td>11.5</td>
+                <td>10.5</td>
+                <td>10.2</td>
+                <td>22.6</td>
+                <td>8.6</td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="small">자료: Amazon, Factset, 대신증권 Research Center</p>
+
+    <h2>아마존 2Q25 가이던스</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>평균 (십억달러)</th>
+                <th>하단</th>
+                <th>상단</th>
+                <th>서프라이즈 (%)</th>
+                <th>YoY (%)</th>
+                <th>QoQ (%)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>매출액</td>
+                <td>161.5</td>
+                <td>159.0</td>
+                <td>164.0</td>
+                <td>0.2</td>
+                <td>9.1</td>
+                <td>3.7</td>
+            </tr>
+            <tr>
+                <td>영업이익</td>
+                <td>15.3</td>
+                <td>13.0</td>
+                <td>17.5</td>
+                <td>-13.6</td>
+                <td>3.9</td>
+                <td>-17.1</td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="small">자료: Amazon, Factset, 대신증권 Research Center</p>
+
+    <h2>컨퍼런스콜 주요 내용</h2>
+
+    <h3>AI & 클라우드</h3>
+    <p>
+        - 웹 브라우저에서 액션을 시행하는 AI 모델인 Nova Act 프리뷰 버전을 공개. 액션 정확도를 지금의 30% 수준에서 60%, 나아가서는 90%+까지 높이는 것이 목표
+    </p>
+    <p>
+        - 유저가 요청한 사항을 처리하는 Alexa+를 몇 주 전에 공개. 초기 반응은 매우 긍정적 . 몇 개월 내로 10만 명 이상이 사용할 것으로 전망
+    </p>
+    <p>
+        - AI 매출은 전년대비 세 자릿수 증가율을 보이면서 연간 수십억 달러 규모로 성장
+    </p>
+    <p>
+        - 스타트업들이 개발하고 있는 서비스가 언제 폭발적으로 성장하면서 클라우드 성장에 기여할지 예상하기 어려움 (마이크로소프트의 OpenAI 사례를 의미하는 것으로 추정)
+    </p>
+
+    <h3>이커머스</h3>
+    <p>
+        - 새로운 인바운드 네트워크 아키텍처를 이번 분기부터 도입. 기존에는 전국 단위 풀필먼트 네트워크를 지역 허브 구조로 바꾸는 것을 중점으로 했다면 , 이번에는 지역 허브에서 처리할 수 있는 제품 개수를 늘리는데 주력하고 있음. 이를 통해 배송 시간을 단축 추진. 인구 밀도가 낮은 지역에도 배송 거점을 확장할 계획
+    </p>
+    <p>
+        - 관세 부과를 앞두고 특정 제품의 경우 재고를 확보하려는 수요가 있었음
+    </p>
+    <p>
+        - 이커머스 이익률이 예상을 하회한 것은, ‘Historical customer return ’ = 고객 재고 반품 관련 일회성 비용 및 관세 부과에 따른 재고 확충 비용이 1분기에 반영된 영향
+    </p>
+    <p>
+        - 필수품 판매 증가율은 다른 사업부문보다 더 2배 더 높았음 . 필수품은 미국 아마존에서 판매되는 제품의 3개 중 1개를 차지
+    </p>
+
+    <h2>분기 실적 추이</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>구분 (단위: 십억달러)</th>
+                <th>4Q23</th>
+                <th>1Q24</th>
+                <th>2Q24</th>
+                <th>3Q24</th>
+                <th>4Q24</th>
+                <th>1Q25</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>매출액</td>
+                <td>170.0</td>
+                <td>143.3</td>
+                <td>148.0</td>
+                <td>158.9</td>
+                <td>187.8</td>
+                <td>155.7</td>
+            </tr>
+            <tr>
+                <td>온라인 스토어</td>
+                <td>70.5</td>
+                <td>54.6</td>
+                <td>55.4</td>
+                <td>61.4</td>
+                <td>75.6</td>
+                <td>57.4</td>
+            </tr>
+            <tr>
+                <td>제3자 판매 서비스</td>
+                <td>43.6</td>
+                <td>34.6</td>
+                <td>36.2</td>
+                <td>37.9</td>
+                <td>47.5</td>
+                <td>36.5</td>
+            </tr>
+            <tr>
+                <td>구독 서비스</td>
+                <td>10.5</td>
+                <td>10.7</td>
+                <td>10.9</td>
+                <td>11.3</td>
+                <td>11.5</td>
+                <td>11.7</td>
+            </tr>
+            <tr>
+                <td>광고</td>
+                <td>14.7</td>
+                <td>11.8</td>
+                <td>12.8</td>
+                <td>14.3</td>
+                <td>17.3</td>
+                <td>13.9</td>
+            </tr>
+            <tr>
+                <td>매장</td>
+                <td>5.2</td>
+                <td>5.2</td>
+                <td>5.2</td>
+                <td>5.2</td>
+                <td>5.6</td>
+                <td>5.5</td>
+            </tr>
+            <tr>
+                <td>AWS</td>
+                <td>24.2</td>
+                <td>25.0</td>
+                <td>26.3</td>
+                <td>27.5</td>
+                <td>28.8</td>
+                <td>29.3</td>
+            </tr>
+            <tr>
+                <td>성장률 (전년대비, %)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>매출액</td>
+                <td>13.9</td>
+                <td>12.5</td>
+                <td>10.1</td>
+                <td>11.0</td>
+                <td>10.5</td>
+                <td>8.6</td>
+            </tr>
+            <tr>
+                <td>온라인 스토어</td>
+                <td>9.3</td>
+                <td>6.8</td>
+                <td>4.6</td>
+                <td>7.2</td>
+                <td>7.1</td>
+                <td>5.2</td>
+            </tr>
+            <tr>
+                <td>제3자 판매 서비스</td>
+                <td>19.9</td>
+                <td>16.0</td>
+                <td>12.0</td>
+                <td>10.3</td>
+                <td>9.0</td>
+                <td>5.5</td>
+            </tr>
+            <tr>
+                <td>구독 서비스</td>
+                <td>14.1</td>
+                <td>11.0</td>
+                <td>9.8</td>
+                <td>10.9</td>
+                <td>9.7</td>
+                <td>9.3</td>
+            </tr>
+            <tr>
+                <td>광고</td>
+                <td>26.8</td>
+                <td>24.3</td>
+                <td>19.5</td>
+                <td>18.8</td>
+                <td>18.0</td>
+                <td>17.7</td>
+            </tr>
+            <tr>
+                <td>매장</td>
+                <td>3.9</td>
+                <td>6.3</td>
+                <td>3.6</td>
+                <td>5.4</td>
+                <td>8.3</td>
+                <td>6.4</td>
+            </tr>
+            <tr>
+                <td>AWS</td>
+                <td>13.2</td>
+                <td>17.2</td>
+                <td>18.7</td>
+                <td>19.1</td>
+                <td>18.9</td>
+                <td>16.9</td>
+            </tr>
+            <tr>
+                <td>비중 (%)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>온라인 스토어</td>
+                <td>41.5</td>
+                <td>38.1</td>
+                <td>37.4</td>
+                <td>38.6</td>
+                <td>40.2</td>
+                <td>36.9</td>
+            </tr>
+            <tr>
+                <td>제3자 판매 서비스</td>
+                <td>25.6</td>
+                <td>24.1</td>
+                <td>24.5</td>
+                <td>23.8</td>
+                <td>25.3</td>
+                <td>23.5</td>
+            </tr>
+            <tr>
+                <td>구독 서비스</td>
+                <td>6.2</td>
+                <td>7.5</td>
+                <td>7.3</td>
+                <td>7.1</td>
+                <td>6.1</td>
+                <td>7.5</td>
+            </tr>
+            <tr>
+                <td>광고</td>
+                <td>8.6</td>
+                <td>8.3</td>
+                <td>8.6</td>
+                <td>9.0</td>
+                <td>9.2</td>
+                <td>8.9</td>
+            </tr>
+            <tr>
+                <td>매장</td>
+                <td>3.0</td>
+                <td>3.6</td>
+                <td>3.5</td>
+                <td>3.3</td>
+                <td>3.0</td>
+                <td>3.6</td>
+            </tr>
+            <tr>
+                <td>AWS</td>
+                <td>14.2</td>
+                <td>17.5</td>
+                <td>17.8</td>
+                <td>17.3</td>
+                <td>15.3</td>
+                <td>18.8</td>
+            </tr>
+            <tr>
+                <td>영업비용</td>
+                <td>156.8</td>
+                <td>128.0</td>
+                <td>133.3</td>
+                <td>141.5</td>
+                <td>166.6</td>
+                <td>137.3</td>
+            </tr>
+            <tr>
+                <td>매출원가</td>
+                <td>92.6</td>
+                <td>72.6</td>
+                <td>73.8</td>
+                <td>81.0</td>
+                <td>98.9</td>
+                <td>77.0</td>
+            </tr>
+            <tr>
+                <td>풀필먼트</td>
+                <td>26.1</td>
+                <td>22.3</td>
+                <td>23.6</td>
+                <td>24.7</td>
+                <td>28.0</td>
+                <td>24.6</td>
+            </tr>
+            <tr>
+                <td>기술 & 콘텐츠</td>
+                <td>22.0</td>
+                <td>20.4</td>
+                <td>22.3</td>
+                <td>22.2</td>
+                <td>23.6</td>
+                <td>23.0</td>
+            </tr>
+            <tr>
+                <td>마케팅</td>
+                <td>12.9</td>
+                <td>9.7</td>
+                <td>10.5</td>
+                <td>10.6</td>
+                <td>13.1</td>
+                <td>9.8</td>
+            </tr>
+            <tr>
+                <td>관리비</td>
+                <td>3.0</td>
+                <td>2.7</td>
+                <td>3.0</td>
+                <td>2.7</td>
+                <td>2.9</td>
+                <td>2.6</td>
+            </tr>
+            <tr>
+                <td>영업이익</td>
+                <td>13.2</td>
+                <td>15.3</td>
+                <td>14.7</td>
+                <td>17.4</td>
+                <td>21.2</td>
+                <td>18.4</td>
+            </tr>
+            <tr>
+                <td>북미</td>
+                <td>6.5</td>
+                <td>5.0</td>
+                <td>5.1</td>
+                <td>5.7</td>
+                <td>9.3</td>
+                <td>5.8</td>
+            </tr>
+            <tr>
+                <td>국제</td>
+                <td>-0.4</td>
+                <td>0.9</td>
+                <td>0.3</td>
+                <td>1.3</td>
+                <td>1.3</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>AWS</td>
+                <td>7.2</td>
+                <td>9.4</td>
+                <td>9.3</td>
+                <td>10.4</td>
+                <td>10.6</td>
+                <td>11.5</td>
+            </tr>
+            <tr>
+                <td>영업이익률 (%)</td>
+                <td>7.8</td>
+                <td>10.7</td>
+                <td>9.9</td>
+                <td>11.0</td>
+                <td>11.3</td>
+                <td>11.8</td>
+            </tr>
+            <tr>
+                <td>북미</td>
+                <td>6.1</td>
+                <td>5.8</td>
+                <td>5.6</td>
+                <td>5.9</td>
+                <td>8.0</td>
+                <td>6.3</td>
+            </tr>
+            <tr>
+                <td>국제</td>
+                <td>-1.0</td>
+                <td>2.8</td>
+                <td>0.9</td>
+                <td>3.6</td>
+                <td>3.0</td>
+                <td>3.0</td>
+            </tr>
+            <tr>
+                <td>AWS</td>
+                <td>29.6</td>
+                <td>37.6</td>
+                <td>35.5</td>
+                <td>38.1</td>
+                <td>36.8</td>
+                <td>39.5</td>
+            </tr>
+            <tr>
+                <td>당기순이익</td>
+                <td>10.6</td>
+                <td>10.4</td>
+                <td>13.5</td>
+                <td>15.3</td>
+                <td>20.0</td>
+                <td>17.1</td>
+            </tr>
+            <tr>
+                <td>순이익률 (%)</td>
+                <td>6.2</td>
+                <td>7.3</td>
+                <td>9.1</td>
+                <td>9.6</td>
+                <td>10.7</td>
+                <td>11.0</td>
+            </tr>
+            <tr>
+                <td>EPS (GAAP, 달러)</td>
+                <td>1.00</td>
+                <td>0.98</td>
+                <td>1.26</td>
+                <td>1.43</td>
+                <td>1.86</td>
+                <td>1.59</td>
+            </tr>
+            <tr>
+                <td>성장률 (% YoY)</td>
+                <td>3,233.3</td>
+                <td>216.1</td>
+                <td>93.8</td>
+                <td>52.1</td>
+                <td>86.0</td>
+                <td>62.2</td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="small">자료: Amazon, 대신증권 Research Center</p>
+
+</body>
+
+
+<div style="margin-top: 40px; padding: 20px; border: 1px solid #ccc; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05); font-size: 13px; color: #666;">
+    <h2 style="color: #333; font-size: 18px; margin-bottom: 12px;">Compliance Notice</h2>
+    <p style="margin-bottom: 10px;">
+        금융투자업규정 4-20조 1항5호사목에 따라 작성일 현재 사전고지와 관련한 사항이 없으며, 당사의 금융투자분석사는 자료작성일 현재 본 자료에
+        관련하여 재산적 이해관계가 없습니다. 당사는 동 자료에 언급된 종목과 계열회사의 관계가 없으며 당사의 금융투자분석사는 본 자료의 작성과 관련하여
+        외부 부당한 압력이나 간섭을 받지 않고 본인의 의견을 정확하게 반영하였습니다.
+        본 자료는 투자자들의 투자판단에 참고가 되는 정보제공을 목적으로 배포되는 자료입니다. 본 자료에 수록된 내용은 당사 Research Center의 추정치로서
+        오차가 발생할 수 있으며 정확성이나 완벽성은 보장하지 않습니다. 본 자료를 이용하시는 분은 동 자료와 관련한 투자의 최종 결정은 자신의 판단으로
+        하시기 바랍니다.
+    </p>
+    <p style="font-size: 12px; color: #999; margin-top: 10px;">
+        ※ 본 콘텐츠는 당사 리서치센터 보고서를 기반으로 생성된 요약·해설 자료입니다.
+        본 자료는 인공지능(AI)을 활용하여 자동 생성되었으며, 투자자 이해를 돕기 위한 목적입니다.
+        일부 내용은 원문과 차이가 있을 수 있으며, 최종 투자 판단은 원문 보고서를 참고하시기 바랍니다.
+        본 자료는 투자 권유를 목적으로 하지 않으며, AI 생성 특성상 오류가 포함될 수 있습니다.
+    </p>
+</div>
+
+</html>
