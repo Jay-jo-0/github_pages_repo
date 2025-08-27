@@ -33,7 +33,7 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 20px;
+            margin-top: 20px;
         }
 
         th, td {
@@ -46,9 +46,26 @@
             background-color: #f2f2f2;
         }
 
-        .highlight {
-            font-weight: bold;
-            color: #007bff;
+        /* 모바일 화면에 최적화 */
+        @media (max-width: 600px) {
+            body {
+                font-size: 1em;
+                margin: 10px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
         }
     </style>
 </head>
@@ -56,10 +73,10 @@
 
     <h1>포트폴리오가 커지는 Stock 25.08.27</h1>
 
-    <h2>이번 주 포커스: 저평가 우량주</h2>
+    <h2>저평가 우량주 밸류에이션 (P/B, P/E)</h2>
+
     <p>
-        밸류에이션 (P/B, P/E) 이 최근 5년 내 하위 5% 수준에 있는 기업:
-        삼성바이오로직스, 한국타이어앤테크놀로지, LG생활건강 등
+        최근 5년 내 하위 5% 수준에 있는 기업: 삼성바이오로직스, 한국타이어앤테크놀로지, LG생활건강 등
     </p>
 
     <table>
@@ -67,10 +84,10 @@
             <tr>
                 <th>종목</th>
                 <th>종목 코드</th>
-                <th>P/B (배)</th>
-                <th>P/E (배)</th>
-                <th>3M (%)</th>
-                <th>1Y (%)</th>
+                <th>P/B(배)</th>
+                <th>P/E(배)</th>
+                <th>3M(%)</th>
+                <th>1Y(%)</th>
             </tr>
         </thead>
         <tbody>
@@ -118,15 +135,18 @@
     </table>
 
     <p>
-        * 3M(%): 작성일 기준 60 영업일 전 대비 수익률, 1Y(%): 작성일 기준 252 영업일 전 대비 수익률<br>
+        * 3M(%): 작성일 기준 60 영업일 전 대비 수익률, 1Y(%) 작성일 기준 252 영업일 전 대비 수익률<br>
         *: 밸류에이션 하위 5% 수준 이내
     </p>
-    <br><br>
+
+    <br>
+    <br>
+    <br>
 
     <h2>고배당 유망주</h2>
+
     <p>
-        최근 3년 내 배당을 늘리거나 유지했으며 배당수익률 상위인 기업:
-        SK텔레콤, DB손해보험, 한국타이어앤테크놀로지 등
+        최근 3년 내 배당을 늘리거나 유지했으며 배당수익률 상위인 기업: SK텔레콤, DB손해보험, 한국타이어앤테크놀로지 등
     </p>
 
     <table>
@@ -137,8 +157,8 @@
                 <th>예상 배당 수익률 (%)</th>
                 <th>자본유보율 (%)</th>
                 <th>배당주기</th>
-                <th>3M (%)</th>
-                <th>1Y (%)</th>
+                <th>3M(%)</th>
+                <th>1Y(%)</th>
             </tr>
         </thead>
         <tbody>
@@ -191,9 +211,12 @@
     </table>
 
     <p>
-        * 3M(%): 작성일 기준 60 영업일 전 대비 수익률, 1Y(%): 작성일 기준 252 영업일 전 대비 수익률
+        * 3M(%): 작성일 기준 60 영업일 전 대비 수익률, 1Y(%) 작성일 기준 252 영업일 전 대비 수익률
     </p>
-    <br><br>
+
+    <br>
+    <br>
+    <br>
 
 </body>
 
