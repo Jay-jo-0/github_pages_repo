@@ -13,20 +13,20 @@
         }
 
         h1 {
-            font-size: 2em;
+            font-size: 24px;
             color: #0056b3;
             margin-bottom: 20px;
         }
 
         h2 {
-            font-size: 1.5em;
+            font-size: 20px;
             color: #0056b3;
             margin-top: 30px;
             margin-bottom: 10px;
         }
 
         p {
-            font-size: 1.1em;
+            font-size: 16px;
             margin-bottom: 15px;
         }
 
@@ -34,6 +34,7 @@
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
+            margin-bottom: 20px;
         }
 
         th, td {
@@ -44,28 +45,17 @@
 
         th {
             background-color: #f2f2f2;
+            font-weight: bold;
         }
 
-        /* 모바일 화면에 최적화 */
-        @media (max-width: 600px) {
-            body {
-                font-size: 1em;
-                margin: 10px;
-            }
+        em {
+            font-style: italic;
+            color: #555;
+        }
 
-            h1 {
-                font-size: 1.8em;
-            }
-
-            h2 {
-                font-size: 1.3em;
-            }
-
-            table {
-                display: block;
-                overflow-x: auto;
-                white-space: nowrap;
-            }
+        strong {
+            font-weight: bold;
+            color: #222;
         }
     </style>
 </head>
@@ -135,13 +125,12 @@
     </table>
 
     <p>
-        * 3M(%): 작성일 기준 60 영업일 전 대비 수익률, 1Y(%) 작성일 기준 252 영업일 전 대비 수익률<br>
-        *: 밸류에이션 하위 5% 수준 이내
+        <em>* 3M(%): 작성일 기준 60 영업일 전 대비 수익률, 1Y(%): 작성일 기준 252 영업일 전 대비 수익률</em>
     </p>
 
-    <br>
-    <br>
-    <br>
+    <p>
+    <em>*: 밸류에이션 하위 5% 수준 이내</em>
+    </p>
 
     <h2>고배당 유망주</h2>
 
@@ -211,12 +200,8 @@
     </table>
 
     <p>
-        * 3M(%): 작성일 기준 60 영업일 전 대비 수익률, 1Y(%) 작성일 기준 252 영업일 전 대비 수익률
+        <em>* 3M(%): 작성일 기준 60 영업일 전 대비 수익률, 1Y(%): 작성일 기준 252 영업일 전 대비 수익률</em>
     </p>
-
-    <br>
-    <br>
-    <br>
 
 </body>
 
