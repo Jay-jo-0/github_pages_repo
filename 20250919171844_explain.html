@@ -1,78 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>포트폴리오가 커지는 Stock | 25.09.22</title>
 <style>
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 20px;
-  color: #333;
-}
-
-.section {
-  margin-bottom: 20px;
-}
-
-.summary {
-  background-color: #f9f9f9;
-  padding: 15px;
-  border: 1px solid #ddd;
-  margin-bottom: 20px;
-}
-
-.highlight {
-  font-weight: bold;
-  color: #007bff;
-}
-
-h1 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-h2 {
-  font-size: 20px;
-  color: #555;
-  margin-bottom: 15px;
-}
-
-p {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-small {
-  font-size: 12px;
-  color: #777;
-}
-
-ul {
-  list-style-type: disc;
-  margin-left: 20px;
-  margin-bottom: 10px;
-}
-
-li {
-  font-size: 16px;
-}
-
-/* 모바일 화면에 최적화 */
-@media (max-width: 768px) {
   body {
-    margin: 10px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    color: #333;
   }
-  h1 {
-    font-size: 20px;
+
+  .section {
+    margin-bottom: 30px;
   }
-  h2 {
-    font-size: 18px;
+
+  .section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #0056b3;
   }
-  p, li {
-    font-size: 14px;
+
+  .summary {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-left: 5px solid #0056b3;
+    margin-bottom: 20px;
   }
-}
+
+  .summary p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .highlight {
+    font-weight: bold;
+    color: #0056b3;
+  }
+
+  .stock-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+
+  .stock-table th, .stock-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  .stock-table th {
+    background-color: #f2f2f2;
+  }
+
+  .small-text {
+    font-size: 12px;
+    color: #777;
+    margin-top: 5px;
+  }
 </style>
 </head>
 <body>
@@ -92,52 +79,40 @@ li {
 <h1>포트폴리오가 커지는 Stock | 25.09.22</h1>
 
 <div class="summary">
-  <p>이번 보고서는 <span class="highlight">방산</span>과 <span class="highlight">전력설비</span> 두 가지 주요 테마에 주목하고 있습니다. 방산주는 해외에서 무기를 더 많이 주문받아 실적이 좋아질 것으로 예상되며, 세계적으로 불안한 상황이 계속되면서 투자 매력이 높아지고 있습니다. 전력설비주는 인공지능 데이터센터가 늘어나면서 전력기기 수요가 증가하고, 오래된 전력망을 바꾸거나 신재생에너지 투자가 늘면서 수혜를 볼 것으로 기대됩니다. 또한, 최근 주가가 많이 오른 기업들도 소개하고 있습니다.</p>
+  <p>이번 보고서에서는 주목해야 할 시장 주도 테마로 <span class="highlight">방산</span>과 <span class="highlight">전력설비</span>를 제시하고 있습니다. 방산주는 해외에서 주문이 늘면서 실적이 좋아질 것으로 예상되며, 세계적으로 안보가 불안해지면서 투자 매력이 높아지고 있습니다. 전력설비주는 AI 데이터센터가 많아지면서 전력 기기 수요가 늘고, 낡은 전력망을 교체하거나 신재생에너지 투자가 늘면서 관심이 높아지고 있습니다. 또한, 최근 주가가 많이 오른 종목들도 함께 소개하고 있습니다.</p>
 </div>
 
 <div class="section">
   <h2>이번 주 포커스: 시장 주도 테마</h2>
 
-  <div class="section">
-    <h3>1. 방산</h3>
-    <p>해외에서 무기를 주문하는 양이 늘어나면서 방산 회사들의 실적이 좋아질 것으로 예상됩니다. 또한, 세계적으로 안보에 대한 불안감이 커지면서 방산 산업에 대한 투자 매력이 증가하고 있습니다.</p>
-    <ul>
-      <li><span class="highlight">현대로템 (064350):</span> 주가가 많이 오른 상태입니다.</li>
-      <li><span class="highlight">한국항공우주 (047810):</span> 주가가 어느 정도 오른 상태입니다.</li>
-      <li><span class="highlight">한화에어로스페이스 (012450):</span> 주가 변동이 크지 않습니다.</li>
-    </ul>
-    <p>위 기업들은 특정 조건들을 만족하며, 이는 투자자들이 관심을 가질 만한 요소입니다.</p>
-    <small>
-    *200MA (200일 이동평균선): 지난 200일 동안의 주가 평균을 이은 선으로, 주가의 장기적인 흐름을 보여줍니다. 60MA (60일 이동평균선): 지난 60일 동안의 주가 평균을 이은 선으로, 주가의 중기적인 흐름을 보여줍니다. 거래대금: 주식이 얼마나 활발하게 거래되었는지를 나타내는 지표입니다.
-    </small>
-  </div>
+  <h3>1. 방산</h3>
+  <p>해외에서 무기를 사들이는 주문이 늘어나면서 방산 회사들의 <span class="highlight">실적이 좋아질 것으로 예상</span>됩니다. 또한, 세계적으로 안보에 대한 불안감이 커지면서 방산에 대한 투자가 더욱 매력적으로 다가오고 있습니다.</p>
+  <ul>
+    <li><span class="highlight">현대로템 (064350)</span>: 주가가 많이 오른 상태입니다.</li>
+    <li><span class="highlight">한국항공우주 (047810)</span>: 주가가 어느 정도 오른 상태입니다.</li>
+    <li><span class="highlight">한화에어로스페이스 (012450)</span>: 주가 변동이 크지 않습니다.</li>
+  </ul>
+  <p>특히, 현대로템은 주가 이동평균선*이 상승 추세에 있으며, 5년 내 최고치를 기록했습니다. 또한, 최근 3개월 동안 하루 평균 거래량도 많은 편에 속합니다.</p>
+  <p class="small-text">*주가 이동평균선: 주가를 일정 기간 동안 평균을 내어 만든 선으로, 주가의 흐름을 파악하는 데 사용됩니다.</p>
 
-  <div class="section">
-    <h3>2. 전력설비</h3>
-    <p>인공지능 데이터센터가 늘어나면서 전력 기기에 대한 수요가 증가하여 관련 회사들이 수혜를 볼 것으로 예상됩니다. 또한, 낡은 전력망을 교체하고 신재생에너지 투자가 확대되면서 이 분야에 대한 투자도 늘어날 것으로 보입니다.</p>
-    <ul>
-      <li><span class="highlight">HD현대일렉트릭 (267260):</span> 주가가 어느 정도 오른 상태입니다.</li>
-      <li><span class="highlight">효성중공업 (298040):</span> 주가가 어느 정도 오른 상태입니다.</li>
-      <li><span class="highlight">LS ELECTRIC (010120):</span> 주가가 소폭 상승했습니다.</li>
-      <li><span class="highlight">일진전기 (103590):</span> 주가가 소폭 하락했습니다.</li>
-    </ul>
-    <small>
-    *AI 데이터센터: 인공지능 기술을 활용하기 위해 많은 데이터를 저장하고 처리하는 시설입니다. 전력망: 전기를 생산하는 곳에서 가정이나 공장 등으로 전기를 보내는 설비입니다. 신재생에너지: 태양광, 풍력 등 환경오염을 일으키지 않는 에너지원입니다.
-    </small>
-  </div>
+  <h3>2. 전력설비</h3>
+  <p><span class="highlight">AI 데이터센터</span>가 늘어나면서 전력 기기에 대한 수요가 증가하고 있으며, 낡은 전력망을 교체하거나 신재생에너지에 대한 투자가 늘면서 전력설비에 대한 관심이 높아지고 있습니다.</p>
+  <ul>
+    <li><span class="highlight">HD현대일렉트릭 (267260)</span>: 주가가 어느 정도 오른 상태입니다.</li>
+    <li><span class="highlight">효성중공업 (298040)</span>: 주가가 어느 정도 오른 상태입니다.</li>
+    <li><span class="highlight">LS ELECTRIC (010120)</span>: 주가 변동이 크지 않습니다.</li>
+    <li><span class="highlight">일진전기 (103590)</span>: 주가가 소폭 하락했습니다.</li>
+  </ul>
 </div>
 
 <div class="section">
   <h2>신고가 특징주</h2>
-  <p>최근 5일 동안 40일 최고가를 기록한 기업 중 시가총액 상위 3개 기업은 다음과 같습니다.</p>
+  <p>최근 5일 동안 40일 최고가를 기록한 회사들 중 시가총액이 높은 3곳을 소개합니다.</p>
   <ul>
-    <li><span class="highlight">필옵틱스 (161580):</span> 앱솔릭스와 기술 협력을 통해 경쟁사보다 우위를 점하고 있습니다. 주가가 많이 오른 상태입니다.</li>
-    <li><span class="highlight">신세계 (004170):</span> 최근 투자자들의 관심이 높아 주가가 많이 올랐지만, 신중하게 접근할 필요가 있습니다.</li>
-    <li><span class="highlight">한국금융지주 (071050):</span> 롯데손해보험 인수를 위한 실사를 진행 중입니다. 주가 변동이 크지 않습니다.</li>
+    <li><span class="highlight">필옵틱스 (161580)</span>: 앱솔릭스와 기술 협력을 통해 경쟁사보다 우위를 점하고 있습니다. 주가가 많이 오른 상태입니다.</li>
+    <li><span class="highlight">신세계 (004170)</span>: 최근 투자자들의 관심이 과도하게 쏠리고 있어 신중하게 접근해야 합니다. 주가가 많이 오른 상태입니다.</li>
+    <li><span class="highlight">한국금융지주 (071050)</span>: 롯데손해보험 인수 실사를 진행 중입니다. 주가 변동이 크지 않습니다.</li>
   </ul>
-  <small>
-  *신고가: 특정 기간 동안 주식 가격이 가장 높았던 가격을 의미합니다. 시가총액: 회사의 전체 주식 가치를 나타내는 금액입니다. 실사: 기업의 가치나 위험 요소를 파악하기 위해 자세히 조사하는 과정입니다.
-  </small>
 </div>
 
 </body>
