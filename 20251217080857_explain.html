@@ -7,71 +7,83 @@
     <style>
         body {
             font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
-            font-size: 1.1em;
-            line-height: 1.6;
-            color: #333;
-            margin: 0;
+            margin: 0 auto;
+            max-width: 800px;
             padding: 20px;
-            background-color: #f7f9fc;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
         }
         h1 {
-            font-size: 1.6em;
-            color: #000080; /* Deep blue for title */
-            margin-bottom: 1.5em;
+            color: #2c3e50;
+            font-size: 2.2em;
             text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 15px;
         }
         h2 {
-            font-size: 1.3em;
-            color: #1a1a70;
-            margin-top: 2em;
-            margin-bottom: 1em;
-            border-bottom: 2px solid #e0e0f0;
-            padding-bottom: 0.5em;
+            color: #34495e;
+            font-size: 1.6em;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border-left: 5px solid #3498db;
+            padding-left: 10px;
         }
         h3 {
-            font-size: 1.15em;
-            color: #2a2a90;
-            margin-top: 1.5em;
-            margin-bottom: 0.8em;
+            color: #555;
+            font-size: 1.3em;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 5px;
         }
         .section {
             background-color: #ffffff;
-            padding: 20px;
+            padding: 25px;
+            margin-bottom: 25px;
             border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-            margin-bottom: 2em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
         }
         .summary {
-            background-color: #e6f7ff; /* Light blue for summary */
-            padding: 1.5em;
-            border-radius: 8px;
-            margin-bottom: 2em;
+            background-color: #e8f7ff; /* Light blue for summary */
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 10px;
             border: 1px solid #cceeff;
-            font-weight: bold;
-            color: #003366;
-            font-size: 1.05em;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+        .summary p strong {
+            color: #2980b9;
         }
         .highlight {
-            color: #000080; /* Deep blue for highlighted terms */
+            color: #c0392b; /* Reddish for important terms */
             font-weight: bold;
         }
-        .explanation {
-            font-size: 0.9em;
-            color: #555;
-            margin-top: 0.5em;
-            padding-left: 10px;
-            border-left: 3px solid #ddd;
-        }
-        p {
-            margin-bottom: 1em;
+        .definition {
+            font-size: 0.85em;
+            color: #777;
+            background-color: #f2f2f2;
+            padding: 10px 15px;
+            border-left: 3px solid #bbb;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
         }
         ul {
             list-style-type: disc;
             margin-left: 20px;
-            margin-bottom: 1em;
+            padding: 0;
         }
         li {
-            margin-bottom: 0.5em;
+            margin-bottom: 8px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        strong {
+            color: #333;
         }
     </style>
 </head>
@@ -92,101 +104,147 @@ li {
     <h1>[대신증권 류형근][4Q25 Preview] 삼성전자: 푸른 피의 힘</h1>
 
     <div class="summary">
-        <p>대신증권이라는 곳에서 삼성전자에 대한 보고서를 발표했습니다. 이 보고서는 삼성전자가 앞으로 돈을 아주 많이 벌 것이라고 예상합니다.</p>
-        <p>특히, 2026년에는 회사의 본업으로 벌어들이는 돈인 <span class="highlight">영업이익</span>이 무려 110조 원에 이를 것이라고 전망합니다. 이는 이전에 예상했던 것보다 훨씬 더 큰 금액입니다.</p>
-        <p>이러한 긍정적인 전망은 크게 네 가지 이유 때문입니다. 메모리 반도체 가격을 과감하게 올렸고, 인공지능(AI)에 쓰이는 특별한 반도체(<span class="highlight">HBM</span>)를 잘 만들게 되었으며, 공장 시설 투자를 효율적으로 바꾸고 있고, 다른 회사들을 위한 반도체 생산 사업(<span class="highlight">파운드리</span>)도 좋아지고 있기 때문입니다.</p>
-        <p>그래서 이 보고서는 삼성전자의 가치가 앞으로 더 커질 가능성이 높다고 보고 있습니다.</p>
-    </div>
-
-    <div class="section">
-        <h2>1. 삼성전자의 돈 버는 힘이 더 강해지는 이유</h2>
-
-        <h3>1-1. 반도체 가격을 과감하게 올렸습니다.</h3>
-        <p>삼성전자는 반도체 가격을 아주 적극적으로 올리는 방법을 썼는데, 그 결과가 생각보다 훨씬 좋았다고 합니다.</p>
-        <p>특히, 2025년 4분기에는 컴퓨터나 스마트폰에 많이 쓰이는 일반적인 메모리 반도체인 <span class="highlight">DRAM</span>의 <span class="highlight">평균 판매 가격</span>이 바로 전 3개월보다 40%나 올랐을 것이라고 예상합니다.</p>
-        <p>물건을 만드는 회사들의 재고가 부족하고, 물건을 더 많이 만들기도 어려운 상황이라 2026년 1분기에도 가격이 크게 오를 것이라고 내다봅니다.</p>
-        <p class="explanation">
-            &#x2022; <span class="highlight">DRAM</span>: 컴퓨터나 스마트폰에 들어가는 '기억장치' 역할을 하는 반도체입니다. 컴퓨터가 여러 가지 작업을 할 때 필요한 정보를 잠시 저장해 두는 곳이라고 생각하면 됩니다.<br>
-            &#x2022; <span class="highlight">평균 판매 가격(ASP)</span>: 어떤 제품을 판 가격들을 모두 합해서 전체 판매 개수로 나눈 값입니다. 보통 이 가격이 오르면 회사에 이익이 더 많이 남을 수 있습니다.
-        </p>
-
-        <h3>1-2. 인공지능 반도체(HBM)를 만드는 실력이 좋아졌습니다.</h3>
-        <p>인공지능(AI) 기술에 꼭 필요한 특별한 반도체인 <span class="highlight">HBM</span>의 경쟁력이 아주 많이 좋아졌다고 합니다.</p>
-        <p>2026년에는 작년보다 140%나 더 많은 HBM을 <span class="highlight">출하</span>할 수 있을 것이라고 예상합니다.</p>
-        <p>이전에는 HBM 사업에 대한 예측이 확실하지 않은 부분이 많았지만, 이제는 목표를 달성할 수 있다는 믿음이 매우 커졌다고 보고 있습니다.</p>
-        <p>특히, HBM4라는 차세대 제품에서도 좋은 결과를 기대하고 있으며, 3개의 주요 고객사 중 2곳에는 곧 제품을 납품할 수 있도록 인증을 마칠 것으로 예상합니다.</p>
-        <p class="explanation">
-            &#x2022; <span class="highlight">HBM (High Bandwidth Memory)</span>: 아주 많은 데이터를 동시에 빠르게 처리해야 하는 인공지능(AI) 분야에 꼭 필요한 특별한 메모리 반도체입니다. 일반 메모리보다 훨씬 빠르고 효율적입니다.<br>
-            &#x2022; <span class="highlight">출하량</span>: 공장에서 만들어져서 고객에게 팔려나가는 물건의 양을 말합니다.
-        </p>
-
-        <h3>1-3. 공장 시설 투자 방향을 더 똑똑하게 바꿉니다.</h3>
-        <p>2026년에는 공장이나 기계 같은 큰 자산을 사는 데 쓰는 돈(<span class="highlight">시설 투자, Capex</span>)을 더 늘릴 것이라고 합니다.</p>
-        <p>하지만 단순히 물건을 많이 만들기 위한 기계 투자보다는, 앞으로 오랫동안 필요한 공장 부지나 건물 같은 '기본적인 시설(인프라)'에 집중해서 투자할 것이라고 합니다.</p>
-        <p>이런 시설 투자가 앞으로 물건을 더 많이 생산할 수 있는 바탕을 만들어줄 것이라고 보고 있습니다.</p>
-        <p class="explanation">
-            &#x2022; <span class="highlight">시설 투자(Capex)</span>: 회사가 공장, 기계, 건물 등 미래에 돈을 벌기 위해 필요한 큰 자산들을 새로 짓거나 사는 데 쓰는 돈을 말합니다.
-        </p>
-
-        <h3>1-4. 다른 회사 반도체를 대신 만들어주는 사업(파운드리)이 좋아집니다.</h3>
-        <p>다른 회사들이 설계한 반도체를 삼성전자가 대신 만들어주는 <span class="highlight">파운드리</span> 사업의 공장 <span class="highlight">가동률</span>이 높아지고 있다고 합니다.</p>
-        <p>삼성전자 자체적으로 만드는 스마트폰 부품(엑시노스) 주문이 늘고, 북미 지역의 다른 고객사들로부터도 새로운 주문이 많아지고 있기 때문입니다.</p>
-        <p>이런 좋은 변화들이 겹쳐서 2026년에는 파운드리 사업이 3개월 단위로 계산했을 때 이익을 내는 <span class="highlight">흑자 전환</span>을 할 것이라고 보고 있습니다.</p>
-        <p class="explanation">
-            &#x2022; <span class="highlight">파운드리</span>: 반도체를 직접 설계하지 않고, 다른 회사들이 설계한 반도체를 주문받아 대신 생산해주는 사업을 말합니다.<br>
-            &#x2022; <span class="highlight">가동률</span>: 공장이나 기계가 실제로 물건을 생산하는 시간의 비율을 말합니다. 가동률이 높을수록 공장이 쉬지 않고 열심히 일해서 돈을 더 많이 번다는 뜻입니다.<br>
-            &#x2022; <span class="highlight">흑자 전환</span>: 이전에는 돈을 벌지 못하고 손해를 보던 사업이 이제는 돈을 벌어서 이익을 내는 상태로 바뀌는 것을 말합니다.
-        </p>
-    </div>
-
-    <div class="section">
-        <h2>2. 삼성전자의 가치가 더 높아질 가능성</h2>
-        <p>보고서는 인공지능 시대에 맞춰 삼성전자가 다양한 사업을 잘 갖추기 위해 투자가 필요하다고 말합니다.</p>
-        <p>또한, 회사의 가치가 실제보다 낮게 평가되는 것을 해결하려면 <span class="highlight">주주환원</span>도 강화하는 것이 중요하다고 봅니다.</p>
-        <p>이 두 가지 목표, 즉 투자도 하면서 주주들에게도 더 많이 돌려주는 것을 동시에 해내려면, 돈을 아주 잘 버는 메모리 반도체 사업으로 회사의 주된 사업 방식이 바뀌어야 한다고 보고서는 설명합니다.</p>
-        <p>대신증권은 이런 변화가 일어날 가능성이 높다고 보고 있습니다. 그래서 지금이 삼성전자에 대한 비중을 늘릴 좋은 시기라고 판단합니다. (이것은 보고서의 의견이며, 투자를 권유하는 말은 아닙니다.)</p>
-        <p class="explanation">
-            &#x2022; <span class="highlight">주주환원</span>: 회사가 이익을 내면 그 이익의 일부를 주식을 가진 사람들(주주)에게 돌려주는 활동을 말합니다. 배당금을 주거나 회사의 주식을 다시 사들이는 방법 등이 있습니다.
-        </p>
-    </div>
-
-    <div class="section">
-        <h2>3. 돈을 효율적으로 쓰고, 안정적인 사업을 만들려는 노력</h2>
-        <p>삼성전자는 회사가 자유롭게 쓸 수 있는 돈(<span class="highlight">자유 현금 흐름</span>)이 얼마나 생길지 더 잘 예측할 수 있도록, 공장 시설 투자를 신중하게 관리할 것이라고 합니다.</p>
-        <p>또한, 그동안 반도체 가격을 충분히 올렸기 때문에, 2027년에서 2028년까지의 긴 기간 동안 안정적으로 물건을 공급하겠다는 계약을 많이 늘릴 것이라고 판단합니다. 이는 반도체 시장의 <span class="highlight">사이클의 변동성</span>이 심한 상황에서 회사의 수입을 더 안정적으로 만들려는 노력입니다.</p>
-        <p class="explanation">
-            &#x2022; <span class="highlight">자유 현금 흐름(FCF)</span>: 회사가 사업을 해서 벌어들인 돈 중에서, 회사를 유지하고 투자하는 데 필요한 돈을 쓰고 남은 현금을 말합니다. 이 돈은 빚을 갚거나 주주들에게 돌려주거나 새로운 투자를 하는 등 회사가 자유롭게 사용할 수 있습니다.<br>
-            &#x2022; <span class="highlight">사이클의 변동성</span>: 반도체 산업처럼 수요와 공급에 따라 가격이나 판매량이 크게 오르내리는 경향이 있는 것을 '사이클'이라고 합니다. '변동성을 낮춘다'는 것은 이런 큰 변화 때문에 회사가 어려움을 겪는 것을 줄이겠다는 의미입니다.
-        </p>
-    </div>
-
-    <div class="section">
-        <h2>4. 삼성전자의 예상 실적 (2023년부터 2026년까지)</h2>
-        <p>보고서에서는 삼성전자의 앞으로 실적이 어떻게 될지 숫자로 보여주고 있습니다. 이해하기 쉽게 주요 내용만 정리해 드립니다.</p>
+        <p>이 보고서는 대신증권이라는 회사에서 <span class="highlight">류형근 전문가</span>가 삼성전자에 대해 쓴 글입니다. 2025년 마지막 3개월 동안의 성적이 어떨지 미리 예상하고, 앞으로 삼성전자가 어떻게 될지를 전망하는 내용입니다.</p>
+        <p>가장 중요한 내용을 먼저 말씀드리겠습니다.</p>
         <ul>
-            <li>
-                <span class="highlight">매출액</span>: 회사가 물건을 팔아서 버는 전체 돈을 말합니다.
-                <ul>
-                    <li>2023년에는 약 258조 9천억 원이었습니다.</li>
-                    <li>이것이 2026년에는 약 427조 9천억 원으로 크게 늘어날 것으로 보고 있습니다.</li>
-                </ul>
-            </li>
-            <li>
-                <span class="highlight">영업이익</span>: 매출액에서 물건을 만드는 데 든 비용과 판매, 관리 비용을 뺀, 회사의 본업으로 번 돈입니다.
-                <ul>
-                    <li>2023년에는 약 6조 5천억 원이었습니다.</li>
-                    <li>이것이 2026년에는 약 110조 7천억 원으로 엄청나게 늘어날 것으로 예상합니다.</li>
-                </ul>
-            </li>
-            <li>
-                <span class="highlight">주식 한 주당 버는 돈 (EPS)</span>: 주식을 한 주 가지고 있을 때 회사 이익 중에서 주주에게 돌아가는 몫이 얼마인지를 나타냅니다.
-                <ul>
-                    <li>2023년에는 2,131원이었습니다.</li>
-                    <li>이것이 2026년에는 12,575원으로 크게 늘어날 것으로 보고 있습니다.</li>
-                </ul>
-            </li>
+            <li>삼성전자가 <span class="highlight">돈을 버는 힘</span>이 점점 더 강해지고 있다고 합니다. 특히 반도체 사업에서 말입니다.</li>
+            <li>2026년에는 삼성전자가 물건을 팔아 얻는 이익이 무려 <span class="highlight">110조 원</span>까지 늘어날 것으로 예상합니다.</li>
+            <li>회사의 <span class="highlight">가치가 지금보다 더 높아질 가능성</span>이 크다고 보고 있습니다. 특히 회사의 사업 구조를 바꾸려는 노력이 성공하면 그럴 것이라고 합니다.</li>
+            <li>보고서는 삼성전자가 앞으로 더 좋아질 것이라고 예상하고 있습니다.</li>
         </ul>
-        <p>이처럼 보고서는 삼성전자가 앞으로 많은 돈을 벌어서 회사의 가치도 더욱 커질 것이라고 판단하고 있습니다.</p>
+        <p>이 보고서는 삼성전자가 어떻게 이렇게 돈을 잘 벌게 될지, 그리고 앞으로 어떤 노력을 할지에 대해 아주 자세히 설명하고 있습니다.</p>
+    </div>
+
+    <div class="section">
+        <h2>삼성전자의 돈 버는 힘이 더욱 강해지고 있습니다</h2>
+        <p>이 보고서에 따르면 삼성전자가 물건을 팔고 사업을 해서 얻는 순수한 이익이 앞으로 더 늘어날 것이라고 합니다. 특히 <span class="highlight">2025년 마지막 3개월</span> 동안의 사업 이익을 <span class="highlight">19조 3천억 원</span>으로, 그리고 <span class="highlight">2026년 한 해 동안의 사업 이익</span>을 무려 <span class="highlight">110조 원</span>으로 예상하며 이전보다 훨씬 좋은 성적을 기대하고 있습니다.</p>
+        <div class="definition">
+            <p><strong>영업이익</strong>이란, 회사가 물건을 팔거나 서비스를 제공해서 벌어들인 돈에서 그 물건을 만들고 파는 데 들어간 비용을 뺀 순수한 사업 이익을 말합니다. 이 숫자가 크면 클수록 회사가 본업으로 돈을 잘 번다는 뜻입니다.</p>
+        </div>
+
+        <h3>1. 오랜 경험에서 나오는 힘: 공격적인 가격 인상</h3>
+        <p>삼성전자는 오랫동안 반도체 사업을 하면서 쌓은 <span class="highlight">경험과 기술력</span>을 바탕으로 아주 중요한 반도체인 <span class="highlight">DRAM(디램)</span>의 가격을 많이 올렸다고 합니다. 이 가격 인상 덕분에 예상보다 훨씬 좋은 결과를 얻고 있다고 합니다.</p>
+        <ul>
+            <li><span class="highlight">2025년 마지막 3개월</span> 동안 일반적인 DRAM 칩 하나의 <span class="highlight">평균 가격(ASP)</span>은 바로 전 3개월보다 <span class="highlight">40%나 올랐을 것</span>으로 예상합니다.</li>
+            <li>현재 반도체 물건을 파는 회사들이 <span class="highlight">재고</span>가 부족하고, 공장에서 물건을 만드는 양도 크게 늘지 못하고 있어서, <span class="highlight">2026년 첫 3개월</span>에도 DRAM 가격이 <span class="highlight">아주 크게 오를 것</span>으로 보고 있습니다.</li>
+        </ul>
+        <div class="definition">
+            <p><strong>DRAM (디램)</strong>은 컴퓨터나 스마트폰 같은 기기에서 정보를 빠르게 저장하고 읽어들이는 데 쓰이는 핵심 반도체입니다. 잠깐 동안 정보를 기억하는 역할을 합니다.</p>
+            <p><strong>ASP (Average Selling Price)</strong>는 평균 판매 가격을 줄여서 부르는 말입니다. 이 숫자가 높을수록 같은 물건을 팔아도 돈을 더 많이 번다는 뜻입니다.</p>
+        </div>
+
+        <h3>2. 특별한 반도체, HBM 경쟁력이 강해지고 있습니다</h3>
+        <p>요즘 인공지능(AI) 기술이 발전하면서 아주 중요해진 <span class="highlight">HBM(고대역폭 메모리)</span>이라는 특별한 반도체 분야에서 삼성전자의 힘이 매우 커지고 있다고 합니다.</p>
+        <ul>
+            <li><span class="highlight">2026년</span>에는 HBM을 시장에 내보내는 양이 <span class="highlight">바로 전해보다 140%나 더 늘어날 것</span>으로 예상합니다.</li>
+            <li>특히 <span class="highlight">HBM3e</span>와 <span class="highlight">HBM4</span> 같은 최신 제품의 생산 목표를 달성할 수 있다는 믿음이 전보다 훨씬 커졌다고 합니다.</li>
+            <li>삼성전자는 세 곳의 중요한 회사에 HBM을 공급하기 위해 준비 중인데, 그중 <span class="highlight">두 곳과는 곧 제품을 성공적으로 검증받을 것</span>으로 기대하고 있습니다.</li>
+        </ul>
+        <div class="definition">
+            <p><strong>HBM (고대역폭 메모리)</strong>은 일반 DRAM보다 훨씬 빠르고 많은 데이터를 한 번에 처리할 수 있는 고성능 반도체입니다. 인공지능(AI) 기술이 발전하면서 AI 칩에 필수적으로 사용됩니다.</p>
+            <p><strong>출하량</strong>은 공장에서 만들어진 제품이 시장으로 나가는 양을 말합니다. 이 숫자가 많을수록 그 제품이 잘 팔리고 많이 쓰인다는 뜻입니다.</p>
+            <p><strong>제품 인증</strong>은 삼성전자의 HBM이 특정 고객사의 제품에 사용될 수 있도록 품질과 성능을 공식적으로 인정받는 과정을 말합니다.</p>
+        </div>
+
+        <h3>3. 미래를 위한 투자, 설비투자는 절제됩니다</h3>
+        <p>삼성전자는 <span class="highlight">2026년</span>에 공장을 짓거나 기계를 사는 데 필요한 큰돈, 즉 <span class="highlight">설비투자(Capex)</span>를 더 많이 할 계획이지만, 이는 <span class="highlight">미래를 위한 기반 시설 투자</span>에 집중될 것이라고 합니다.</p>
+        <ul>
+            <li>당장 물건을 더 많이 만들기 위한 장비 투자는 <span class="highlight">과거보다 신중하게</span> 진행될 예정입니다.</li>
+            <li>대신, <span class="highlight">오랜 시간 동안 늘어날 수요에 대비하기 위한</span> 땅이나 건물 같은 <span class="highlight">기반 시설 투자</span>에 돈을 더 쓸 것이라고 합니다.</li>
+            <li>2026년 메모리 반도체 설비투자는 <span class="highlight">40조 원</span>이 될 것으로 예상되는데, 이는 회사의 규모를 생각했을 때 <span class="highlight">무리하지 않고 건강한 수준</span>이라고 보고서는 말합니다.</li>
+        </ul>
+        <div class="definition">
+            <p><strong>설비투자(Capex)</strong>는 회사가 미래에 더 많은 돈을 벌기 위해 공장을 짓거나 새로운 기계를 사는 데 쓰는 큰돈을 말합니다. 건물을 올리고 장비를 들여놓는 활동을 뜻합니다.</p>
+            <p><strong>기반 시설 투자(인프라 투자)</strong>는 공장이 들어설 부지를 마련하거나, 전기·수도 시설을 갖추는 등 사업 운영의 가장 기본적인 틀을 만드는 데 돈을 쓰는 것을 말합니다.</p>
+        </div>
+
+        <h3>4. 파운드리 사업도 살아나고 있습니다</h3>
+        <p>삼성전자가 다른 회사의 반도체를 대신 만들어주는 <span class="highlight">파운드리 사업</span>도 점점 더 좋아지고 있다고 합니다. 공장이 <span class="highlight">더 바쁘게 돌아가면서</span> 좋은 성적을 낼 것으로 예상합니다.</p>
+        <ul>
+            <li>삼성전자 스마트폰에 들어가는 <span class="highlight">엑시노스</span> 같은 자체 반도체 주문이 다시 늘어나고 있습니다. <span class="highlight">2026년</span>에는 엑시노스 2600 모델이 <span class="highlight">1,300만 개에서 1,500만 개 정도</span> 팔릴 것으로 예상합니다.</li>
+            <li>북미 지역의 큰 회사들을 중심으로 <span class="highlight">외부에서 반도체 생산을 맡기는 주문</span>도 많아지고 있습니다.</li>
+            <li>이런 이유로 <span class="highlight">2026년</span>에는 파운드리 사업이 <span class="highlight">3개월마다 발표하는 성적표에서 손해가 아닌 이익을 보기 시작할 것</span>으로 보고서는 기대합니다.</li>
+        </ul>
+        <div class="definition">
+            <p><strong>파운드리 사업</strong>은 다른 회사가 설계한 반도체를 삼성전자의 공장에서 대신 만들어주는 사업을 말합니다. 설계 기술은 없지만 생산 기술이 좋은 회사들이 주로 이 사업을 합니다.</p>
+            <p><strong>가동률</strong>은 공장이 최대한 만들 수 있는 물건의 양에 비해 실제로 얼마나 많은 물건을 만들고 있는지를 나타내는 비율입니다. 가동률이 높을수록 공장이 효율적으로 돌아가고 있다는 뜻입니다.</p>
+            <p><strong>엑시노스</strong>는 삼성전자가 직접 설계하고 생산하는 스마트폰용 핵심 반도체 브랜드 이름입니다.</p>
+            <p><strong>분기 흑자 전환</strong>은 3개월(한 분기)마다 발표하는 회사 성적표에서 그동안 손해를 보던 사업이 다시 이익을 내기 시작하는 것을 말합니다.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>삼성전자의 가치는 더 높아질 수 있습니다</h2>
+        <p>전문가는 삼성전자가 지금보다 <span class="highlight">더 높은 가치를 인정받을 가능성</span>이 있다고 보고 있습니다. 특히 회사가 인공지능(AI) 시대에 맞춰 주력 사업을 잘 바꾸고, 주주들에게도 더 많은 이익을 돌려주려고 노력하는 점을 높이 평가하고 있습니다.</p>
+        <ul>
+            <li>삼성전자가 <span class="highlight">AI 시대에 맞는 사업 구조</span>를 만들기 위해 투자를 많이 하고 있습니다.</li>
+            <li>회사의 가치가 시장에서 너무 낮게 평가되는 것을 막기 위해 <span class="highlight">주주들에게 이익을 더 많이 돌려주는 노력</span>도 중요하다고 강조합니다.</li>
+            <li>이런 두 가지 목표를 동시에 달성하려면 <span class="highlight">돈을 많이 버는 메모리 반도체 사업으로 회사의 주력 사업을 바꾸는 것</span>이 필요하며, 삼성전자가 그럴 가능성이 매우 높다고 이 보고서는 보고 있습니다.</li>
+            <li>그렇기 때문에 지금이 삼성전자에 대한 <span class="highlight">기대감을 높이고 관심을 가질 좋은 기회</span>라고 판단하고 있습니다.</li>
+        </ul>
+        <div class="definition">
+            <p><strong>Valuation (기업 가치 평가)</strong>은 한 회사의 현재 가치가 얼마인지, 그리고 앞으로 얼마까지 성장할 수 있을지를 예상하는 것을 말합니다. 'Upside'는 가치가 더 높아질 가능성을 뜻합니다.</p>
+            <p><strong>주주환원</strong>은 회사가 번 돈을 주식 투자자(주주)들에게 배당금 형태로 돌려주거나 자사주를 사서 주식의 가치를 높이는 등의 활동을 말합니다.</p>
+            <p><strong>De-Rating</strong>은 어떤 회사의 가치가 실제보다 낮게 평가되어 주식 가격이 떨어지거나 오르지 않는 현상을 말합니다.</p>
+        </div>
+        
+        <h3>미래를 위한 중요한 노력들</h3>
+        <ul>
+            <li>회사가 자유롭게 쓸 수 있는 돈인 <span class="highlight">자유 현금 흐름(FCF)</span>이 얼마나 나올지 더 잘 알 수 있도록, 설비투자를 할 때 <span class="highlight">돈을 아끼고 효율적으로 쓰는 원칙(Capex Discipline)</span>을 강화할 것이라고 합니다.</li>
+            <li>DRAM 가격을 충분히 올린 만큼, <span class="highlight">2027년에서 2028년까지의 긴 기간 동안 물건을 공급하기로 미리 약속하는 계약</span>을 더 많이 맺을 것으로 보고 있습니다. 이는 반도체 시장이 좋았다 나빴다 하는 <span class="highlight">변화의 폭을 줄이려는 노력</span>이라고 설명합니다.</li>
+        </ul>
+        <div class="definition">
+            <p><strong>자유 현금 흐름(FCF)</strong>은 회사가 사업 활동으로 벌어들인 돈 중에서 당장 필요한 투자 비용을 빼고 남은 돈을 말합니다. 이 돈이 많을수록 회사가 여유롭고 튼튼하다는 뜻입니다.</p>
+            <p><strong>Capex Discipline (설비투자 규율)</strong>은 회사가 설비투자를 할 때 무작정 돈을 쓰는 것이 아니라, 꼭 필요한 곳에만 효율적으로 투자하고 불필요한 지출을 줄이려는 노력을 말합니다.</p>
+            <p><strong>장기공급계약</strong>은 제품을 짧게 한 번만 파는 것이 아니라, 오랜 기간 동안 꾸준히 팔기로 미리 약속하는 계약을 말합니다. 이렇게 하면 회사 입장에서는 안정적으로 물건을 팔 수 있습니다.</p>
+            <p><strong>사이클의 변동성</strong>은 반도체처럼 경기에 따라 제품의 수요와 가격이 크게 오르내리는 현상을 말합니다. 변동성이 낮다는 것은 시장 상황이 안정적이라는 뜻입니다.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>삼성전자의 예상되는 실적과 성장</h2>
+        <p>이 보고서는 삼성전자가 앞으로 얼마나 성장할지에 대한 숫자들도 자세히 보여주고 있습니다. 이해하기 쉽게 주요 내용을 정리해 드립니다.</p>
+        
+        <h3>1. 매출액 (총 판매 금액)</h3>
+        <p>삼성전자가 물건을 팔아서 벌어들이는 총 매출액은 계속 늘어날 것으로 예상합니다.</p>
+        <ul>
+            <li><span class="highlight">2024년</span>: 300조 8,710억 원</li>
+            <li><span class="highlight">2025년</span>: 332조 350억 원 (2024년보다 <span class="highlight">10.4% 증가</span>)</li>
+            <li><span class="highlight">2026년</span>: 427조 9,090억 원 (2025년보다 <span class="highlight">28.9% 증가</span>)</li>
+        </ul>
+        <div class="definition">
+            <p><strong>매출액</strong>은 회사가 물건을 팔거나 서비스를 제공해서 얻은 돈의 총합을 말합니다. 회사의 전체적인 덩치를 보여주는 중요한 숫자입니다.</p>
+        </div>
+
+        <h3>2. 영업이익 (순수한 사업 이익)</h3>
+        <p>앞서 설명드렸던 영업이익은 특히 <span class="highlight">2026년에 크게 늘어날 것</span>으로 보고 있습니다. 이는 삼성전자가 돈을 버는 본연의 힘이 매우 강해진다는 것을 보여줍니다.</p>
+        <ul>
+            <li><span class="highlight">2024년</span>: 32조 7,260억 원</li>
+            <li><span class="highlight">2025년</span>: 42조 8,440억 원 (2024년보다 <span class="highlight">30.9% 증가</span>)</li>
+            <li><span class="highlight">2026년</span>: 110조 7,810억 원 (2025년보다 무려 <span class="highlight">158.6% 증가</span>)</li>
+        </ul>
+
+        <h3>3. 순이익 (모든 비용을 빼고 남은 최종 이익)</h3>
+        <p>회사가 벌어들인 돈에서 세금까지 모두 빼고 남은 최종적인 이익도 크게 늘어날 전망입니다.</p>
+        <ul>
+            <li><span class="highlight">2024년</span>: 33조 6,210억 원</li>
+            <li><span class="highlight">2025년</span>: 40조 210억 원 (2024년보다 <span class="highlight">18.7% 증가</span>)</li>
+            <li><span class="highlight">2026년</span>: 84조 7,020억 원 (2025년보다 <span class="highlight">109.3% 증가</span>)</li>
+        </ul>
+        <div class="definition">
+            <p><strong>순이익</strong>은 회사가 벌어들인 총수입에서 물건을 만드는 비용, 파는 비용, 이자, 세금 등 모든 비용을 다 빼고 남은 마지막 돈을 말합니다. 이익이 클수록 회사가 정말 돈을 잘 벌고 있다는 뜻입니다.</p>
+        </div>
+
+        <h3>4. EPS (주식 1개당 벌어들인 이익)</h3>
+        <p>주식 한 개당 얻는 이익인 EPS도 크게 늘어날 것으로 보고 있습니다. 이는 주식 한 개를 가지고 있는 주주에게 돌아가는 이익이 많아진다는 뜻입니다.</p>
+        <ul>
+            <li><span class="highlight">2024년</span>: 4,950원</li>
+            <li><span class="highlight">2025년</span>: 5,935원</li>
+            <li><span class="highlight">2026년</span>: 12,575원</li>
+        </ul>
+        <div class="definition">
+            <p><strong>EPS (Earnings Per Share)</strong>는 주식 한 개당 회사가 벌어들인 이익을 뜻합니다. 이 숫자가 높을수록 주식 한 개가 만들어내는 가치가 크다는 의미이며, 일반적으로 주주에게 좋은 소식입니다.</p>
+        </div>
     </div>
 
 </body>
