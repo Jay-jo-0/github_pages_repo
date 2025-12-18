@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[대신증권 해외주식] 미중 해외주식 일일 동향</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 15px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            font-size: 1.8em;
+            color: #004080;
+            text-align: center;
+            margin-bottom: 2em;
+            word-break: keep-all; /* 단어 단위 줄바꿈 */
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #0056b3;
+            margin-top: 2.5em;
+            margin-bottom: 1em;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 8px;
+            word-break: keep-all;
+        }
+        h3 {
+            font-size: 1.2em;
+            color: #007bff;
+            margin-top: 2em;
+            margin-bottom: 0.8em;
+            word-break: keep-all;
+        }
+        p {
+            margin-bottom: 1.2em;
+            word-break: keep-all;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 1.5em;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 0.5em;
+            word-break: keep-all;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2.5em;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px 8px;
+            text-align: left;
+            font-size: 0.9em;
+            word-break: keep-all;
+        }
+        th {
+            background-color: #eaf4ff;
+            color: #004080;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f6faff;
+        }
+        .table-container {
+            overflow-x: auto; /* Enable horizontal scrolling for wide tables */
+            margin-bottom: 2em;
+        }
+        .analyst-info {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: -0.5em;
+            margin-bottom: 1.5em;
+        }
+        .price-change {
+            font-weight: bold;
+        }
+        .price-increase {
+            color: #28a745; /* Green for increase */
+        }
+        .price-decrease {
+            color: #dc3545; /* Red for decrease */
+        }
+    </style>
+</head>
+<body>
+    <h1>[대신증권 해외주식] 미중 해외주식 일일 동향</h1>
+
+    <h2>주요 지수 수익률</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>종목명</th>
+                    <th>전일대비 (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>미국 S&P 500</td><td><span class="price-change price-decrease">-1.2</span></td></tr>
+                <tr><td>NASDAQ</td><td><span class="price-change price-decrease">-1.8</span></td></tr>
+                <tr><td>DOW JONES</td><td><span class="price-change">0.0</span></td></tr>
+                <tr><td>중국 상해종합지수</td><td><span class="price-change price-increase">1.2</span></td></tr>
+                <tr><td>심천성분지수</td><td><span class="price-change price-increase">2.4</span></td></tr>
+                <tr><td>HSCEI</td><td><span class="price-change price-increase">1.0</span></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2>미국 S&P 500 섹터별 수익률</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>종목명</th>
+                    <th>전일대비 (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>에너지</td><td><span class="price-change price-increase">2.2</span></td></tr>
+                <tr><td>필수소비재</td><td><span class="price-change price-increase">0.5</span></td></tr>
+                <tr><td>소재</td><td><span class="price-change price-increase">0.4</span></td></tr>
+                <tr><td>부동산</td><td><span class="price-change price-increase">0.3</span></td></tr>
+                <tr><td>금융</td><td><span class="price-change">0.0</span></td></tr>
+                <tr><td>헬스케어</td><td><span class="price-change price-decrease">-0.2</span></td></tr>
+                <tr><td>유틸리티</td><td><span class="price-change price-decrease">-0.8</span></td></tr>
+                <tr><td>경기소비재</td><td><span class="price-change price-decrease">-1.2</span></td></tr>
+                <tr><td>산업재</td><td><span class="price-change price-decrease">-1.6</span></td></tr>
+                <tr><td>커뮤니케이션</td><td><span class="price-change price-decrease">-1.9</span></td></tr>
+                <tr><td>IT</td><td><span class="price-change price-decrease">-2.2</span></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2>중국 CSI 300 섹터별 수익률</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>종목명</th>
+                    <th>전일대비 (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>통신</td><td><span class="price-change price-increase">5.6</span></td></tr>
+                <tr><td>IT</td><td><span class="price-change price-increase">2.9</span></td></tr>
+                <tr><td>소재</td><td><span class="price-change price-increase">2.9</span></td></tr>
+                <tr><td>산업재</td><td><span class="price-change price-increase">1.5</span></td></tr>
+                <tr><td>헬스케어</td><td><span class="price-change price-increase">1.3</span></td></tr>
+                <tr><td>금융</td><td><span class="price-change price-increase">1.1</span></td></tr>
+                <tr><td>경기소비재</td><td><span class="price-change price-increase">0.7</span></td></tr>
+                <tr><td>필수소비재</td><td><span class="price-change price-increase">0.5</span></td></tr>
+                <tr><td>부동산</td><td><span class="price-change price-increase">0.2</span></td></tr>
+                <tr><td>유틸리티</td><td><span class="price-change price-increase">0.1</span></td></tr>
+                <tr><td>에너지</td><td><span class="price-change price-decrease">-0.2</span></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2>TOP-PICKS 10</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>종목명</th>
+                    <th>티커</th>
+                    <th>전일대비 (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>알파벳</td><td>GOOGL</td><td><span class="price-change price-decrease">-3.2</span></td></tr>
+                <tr><td>브로드컴</td><td>AVGO</td><td><span class="price-change price-decrease">-4.5</span></td></tr>
+                <tr><td>팔란티어</td><td>PLTR</td><td><span class="price-change price-decrease">-5.6</span></td></tr>
+                <tr><td>아마존</td><td>AMZN</td><td><span class="price-change price-decrease">-0.6</span></td></tr>
+                <tr><td>로빈후드</td><td>HOOD</td><td><span class="price-change price-decrease">-3.0</span></td></tr>
+                <tr><td>텐센트</td><td>700-HK</td><td><span class="price-change price-increase">1.4</span></td></tr>
+                <tr><td>알리바바</td><td>BABA</td><td><span class="price-change price-decrease">-1.5</span></td></tr>
+                <tr><td>홍콩거래소</td><td>388-HK</td><td><span class="price-change price-increase">0.6</span></td></tr>
+                <tr><td>항서제약</td><td>600276</td><td><span class="price-change price-increase">1.9</span></td></tr>
+                <tr><td>허사이</td><td>HSAI</td><td><span class="price-change price-decrease">-1.1</span></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2>미국 주요 이슈/동향</h2>
+    <p class="analyst-info">Analyst 서영재</p>
+
+    <h3><strong>워너브라더스 (WBD):</strong> 파라마운트의 인수 제안 거부, 넷플릭스와의 계약 선호 <span class="price-change price-decrease">전일 주가 ▼ -2.4%</span></h3>
+    <ul>
+        <li>WBD 이사회, 파라마운트의 1,084억 달러 인수 제안에 대해 자금 보증 불충분 및 신용도 우려로 거절했습니다.</li>
+        <li>파라마운트는 엘리슨 가문과 레드버드캐피탈의 410억 달러 자본 조달 및 540억 달러 부채 약정 확보를 주장했습니다.</li>
+        <li>WBD는 해당 자금이 실제로는 불확실한 신탁에서 제공되며 책임 한도도 제한적이라고 지적했습니다.</li>
+        <li>넷플릭스의 277.5억 달러 현금+주식 제안은 구속력 있는 계약이며 자본조달이 불필요하고, 부채 구조도 안정적이라고 평가했습니다.</li>
+    </ul>
+
+    <h3><strong>마이크론 (MU):</strong> AI 수요 급증에 실적·가이던스 모두 시장 기대치 상회, 시외 +9.1% <span class="price-change price-decrease">전일 주가 ▼ -3.1%</span></h3>
+    <ul>
+        <li>FY 1Q26 매출은 136.4억 달러(전년 대비 57% 증가)로 예상치 128.4억 달러를 상회했습니다. 조정 EPS는 4.78 달러로 예상치 3.95달러를 상회했습니다.</li>
+        <li>FY 2Q26 매출 가이던스는 187억 달러로 예상치 142억 달러 대비 대폭 상회했으며, 조정 EPS 전망치는 8.42달러입니다.</li>
+        <li>AI 인프라 확대에 따른 고성능 메모리 수요가 급증했으며, 클라우드 메모리 매출은 전년 대비 2배 증가한 52.8억 달러를 기록했습니다.</li>
+        <li>마이크론은 이번 달 초 일반 소비자 대상 메모리 판매를 중단하고 AI 수요 대응에 집중하겠다고 밝힌 바 있습니다.</li>
+    </ul>
+
+    <h3><strong>테슬라 (TSLA):</strong> 캘리포니아서 '자율주행' 허위 광고 판결, 판매 면허 일시 정지 명령 <span class="price-change price-decrease">전일 주가 ▼ -4.6%</span></h3>
+    <ul>
+        <li>캘리포니아 행정법원은 테슬라가 오토파일럿과 FSD 기능을 완전 자율주행처럼 오도하는 마케팅을 했다고 판결했습니다.</li>
+        <li>이에 따라 차량 판매 및 제조 면허 각각 30일간 정지 조치가 결정되었습니다.</li>
+        <li>캘리포니아 차량국 (DMV)은 제조 면허 정지 명령을 유예하고 테슬라에 60일 내 시정 기회를 부여했습니다.</li>
+    </ul>
+
+    <h3><strong>오라클 (ORCL):</strong> 미시간 100억 달러 데이터센터, 블루 아울 자금 조달 중단 <span class="price-change price-decrease">전일 주가 ▼ -5.4%</span></h3>
+    <ul>
+        <li>오라클은 미시간 새 데이터센터 자금 조달 협상에서 핵심 파트너인 블루 아울 캐피탈과 결렬되었습니다.</li>
+        <li>블루 아울은 높아진 부채 조건과 프로젝트 지연 우려로 투자를 철회했으며, 대체 투자자인 블랙스톤은 아직 계약 미체결 상태입니다.</li>
+        <li>오라클은 AI 인프라 투자 가속으로 부채 부담이 급증했으며, 순부채는 1년 새 780억 달러에서 1,050억 달러로 늘었고, 모건스탠리는 2028년 2,900억 달러를 전망했습니다.</li>
+        <li>해당 프로젝트는 OpenAI와의 5년간 4.5GW 컴퓨팅 공급 계약의 일환으로, 자금 불확실성에 따라 일정에 차질이 생길 가능성이 존재합니다.</li>
+        <li>블루 아울은 이전 텍사스·뉴멕시코 데이터센터 프로젝트에서 높은 수익률을 확보했으나, 이번 프로젝트는 수익성 저하 우려가 제기되었습니다.</li>
+    </ul>
+
+
+    <h2>중국 주요 이슈/동향</h2>
+    <p class="analyst-info">Analyst 박초화</p>
+
+    <h3><strong>텐센트 (700.HK):</strong> OpenAI 전 연구원 영입 <span class="price-change price-increase">전일 주가 ▲ 1.4%</span></h3>
+    <ul>
+        <li>텐센트는 대형 AI 모델 역량 강화를 위해 AI 인프라부· AI 데이터부 등 신규 조직을 신설했습니다.</li>
+        <li>OpenAI 전 연구원 'Vincesyao'를 최고 AI 엔지니어로 영입하여 총재 직속으로 배치하고, AI 인프라·대형 언어모델 부문을 책임지게 했습니다.</li>
+        <li>AI 인프라부는 고성능 분산 훈련 및 추론 기술에 중점을 두며, 알고리즘 연구와 실제 비즈니스 적용을 위한 핵심 기반을 담당합니다.</li>
+    </ul>
+
+    <h3><strong>CATL (300750):</strong> 배터리 생산라인에 휴머노이드 로봇 투입 <span class="price-change price-increase">전일 주가 ▲ 1.3%</span></h3>
+    <ul>
+        <li>CATL은 중저우 기지에서 휴머노이드 로봇 ‘샤오모’를 배터리 Pack 생산라인에 투입했으며, 이는 세계 최초의 배터리 생산라인 대규모 상용화 사례입니다.</li>
+        <li>샤오모는 배터리 팩이 출고되기 전 최종 테스트인 EOL 및 DCR 공정에서 정밀한 작업을 수행할 수 있으며, 인간 대비 안정성과 효율성을 크게 향상시킵니다. 시각-언어-동작(VLA) 통합 모델로 실시간 환경 인식 및 작업 유연성을 확보합니다.</li>
+        <li>샤오모 개발은 CATL 계열사인 첸쉰로보틱스가 담당했으며, CATL 자사 배터리를 탑재했습니다.</li>
+    </ul>
+
+    <h3><strong>BYD (002594):</strong> L3 자율주행 실제 도로 테스트 누적 15만km 완료 <span class="price-change price-increase">전일 주가 ▲ 1.0%</span></h3>
+    <ul>
+        <li>BYD는 선전시 교통 당국과 협력하여 양산형 L3 자율주행 기술의 실제 도로 내부 테스트를 진행했습니다.</li>
+        <li>선전 지역 고속도로 및 도심도로에서 야간, 우천, 공사 구간 등 다양한 상황을 포함하여 총 15만km의 주행 검증을 마쳤습니다.</li>
+        <li>BYD는 2024년 L3 자율주행 시범사업에 선정된 9개 기업 중 하나로 일반 승용차 L3 라이선스 허가를 받았습니다.</li>
+        <li>창안, 아크폭스 외 화웨이, 샤오펑, 리오토 등 주요 기업들도 각 지역에서 L3 주행 테스트에 착수했습니다.</li>
+    </ul>
+
+    <h2>미국 주식 대표종목</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>섹터</th>
+                    <th>종목명</th>
+                    <th>티커</th>
+                    <th>결산</th>
+                    <th>시총 ($bn)</th>
+                    <th colspan="5">주가 수익률 (%)</th>
+                    <th colspan="2">EPS (% yoy)</th>
+                    <th>기업 개요</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th>1D</th>
+                    <th>1M</th>
+                    <th>YTD</th>
+                    <th>FY1</th>
+                    <th>FY2</th>
+                    <th>FY1</th>
+                    <th>FY2</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>IT 하드웨어</td><td>애플</td><td>AAPL</td><td>09월</td><td>4,017</td><td><span class="price-change price-decrease">-1.0</span></td><td><span class="price-change price-increase">1.6</span></td><td><span class="price-change price-increase">8.6</span></td><td><span class="price-change price-increase">10.7</span></td><td><span class="price-change price-increase">10.7</span></td><td><span class="price-change price-increase">10.7</span></td><td><span class="price-change price-increase">10.7</span></td><td>아이폰, 아이패드, 맥북 등을 디자인/판매</td></tr>
+                <tr><td></td><td>시스코</td><td>CSCO</td><td>07월</td><td>300</td><td><span class="price-change price-decrease">-2.0</span></td><td><span class="price-change price-decrease">-2.3</span></td><td><span class="price-change price-increase">28.4</span></td><td><span class="price-change price-increase">8.2</span></td><td><span class="price-change price-increase">8.6</span></td><td><span class="price-change price-increase">8.2</span></td><td><span class="price-change price-increase">8.6</span></td><td>네트워킹, 보안, 응용 및 클라우드 등 서비스 제공</td></tr>
+                <tr><td>반도체</td><td>엔비디아</td><td>NVDA</td><td>01월</td><td>4,154</td><td><span class="price-change price-decrease">-3.8</span></td><td><span class="price-change price-decrease">-8.4</span></td><td><span class="price-change price-increase">27.3</span></td><td><span class="price-change price-increase">56.3</span></td><td><span class="price-change price-increase">63.5</span></td><td><span class="price-change price-increase">56.3</span></td><td><span class="price-change price-increase">63.5</span></td><td>그래픽 (GPU), 연산 및 네트워킹 관련 반도체 칩 공급</td></tr>
+                <tr><td></td><td>브로드컴</td><td>AVGO</td><td>10월</td><td>1,540</td><td><span class="price-change price-decrease">-4.5</span></td><td><span class="price-change price-decrease">-4.9</span></td><td><span class="price-change price-increase">40.6</span></td><td><span class="price-change price-increase">47.7</span></td><td><span class="price-change price-increase">37.9</span></td><td><span class="price-change price-increase">47.7</span></td><td><span class="price-change price-increase">37.9</span></td><td>반도체와 인프라 소프트웨어 솔루션 설계</td></tr>
+                <tr><td></td><td>AMD</td><td>AMD</td><td>12월</td><td>323</td><td><span class="price-change price-decrease">-5.3</span></td><td><span class="price-change price-decrease">-17.6</span></td><td><span class="price-change price-increase">64.0</span></td><td><span class="price-change price-increase">19.4</span></td><td><span class="price-change price-increase">65.5</span></td><td><span class="price-change price-increase">19.4</span></td><td><span class="price-change price-increase">65.5</span></td><td>팹리스 반도체 기업. CPU, GPU 솔루션 등 제공</td></tr>
+                <tr><td>소프트웨어</td><td>마이크로소프트</td><td>MSFT</td><td>06월</td><td>3,539</td><td><span class="price-change price-decrease">-0.1</span></td><td><span class="price-change price-decrease">-6.2</span></td><td><span class="price-change price-increase">13.0</span></td><td><span class="price-change price-increase">18.0</span></td><td><span class="price-change price-increase">16.6</span></td><td><span class="price-change price-increase">18.0</span></td><td><span class="price-change price-increase">16.6</span></td><td>클라우드, Windows, MS 오피스, 콘솔 게임 등 공급</td></tr>
+                <tr><td></td><td>오라클</td><td>ORCL</td><td>05월</td><td>513</td><td><span class="price-change price-decrease">-5.4</span></td><td><span class="price-change price-decrease">-18.8</span></td><td><span class="price-change price-increase">7.1</span></td><td><span class="price-change price-increase">21.3</span></td><td><span class="price-change price-increase">8.8</span></td><td><span class="price-change price-increase">21.3</span></td><td><span class="price-change price-increase">8.8</span></td><td>기업형 IT 솔루션. 클라우드, 라이선스, 하드웨어 제공</td></tr>
+                <tr><td></td><td>팔란티어</td><td>PLTR</td><td>12월</td><td>405</td><td><span class="price-change price-decrease">-5.6</span></td><td><span class="price-change price-increase">3.5</span></td><td><span class="price-change price-increase">134.4</span></td><td><span class="price-change price-increase">76.1</span></td><td><span class="price-change price-increase">37.1</span></td><td><span class="price-change price-increase">76.1</span></td><td><span class="price-change price-increase">37.1</span></td><td>기업, 정부 운영 효율성을 개선하는 AI 소프트웨어</td></tr>
+                <tr><td></td><td>어도비</td><td>ADBE</td><td>12월</td><td>148</td><td><span class="price-change price-increase">1.9</span></td><td><span class="price-change price-increase">9.1</span></td><td><span class="price-change price-decrease">-20.2</span></td><td><span class="price-change price-increase">11.8</span></td><td><span class="price-change price-increase">13.1</span></td><td><span class="price-change price-increase">11.8</span></td><td><span class="price-change price-increase">13.1</span></td><td>이미지, 영상 편집 등의 소프트웨어 개발 및 제공</td></tr>
+                <tr><td></td><td>세일즈포스</td><td>CRM</td><td>01월</td><td>242</td><td><span class="price-change price-increase">1.3</span></td><td><span class="price-change price-increase">8.9</span></td><td><span class="price-change price-decrease">-22.8</span></td><td><span class="price-change price-increase">15.2</span></td><td><span class="price-change price-increase">11.9</span></td><td><span class="price-change price-increase">15.2</span></td><td><span class="price-change price-increase">11.9</span></td><td>고객관리시스템 (CRM) 서비스 제공</td></tr>
+                <tr><td>광고</td><td>알파벳</td><td>GOOGL</td><td>12월</td><td>3,338</td><td><span class="price-change price-decrease">-3.2</span></td><td><span class="price-change price-increase">4.1</span></td><td><span class="price-change price-increase">56.7</span></td><td><span class="price-change price-increase">32.0</span></td><td><span class="price-change price-increase">5.7</span></td><td><span class="price-change price-increase">32.0</span></td><td><span class="price-change price-increase">5.7</span></td><td>구글 검색, 유튜브 등의 광고 부문과 클라우드 사업 영위</td></tr>
+                <tr><td></td><td>메타 플랫폼스</td><td>META</td><td>12월</td><td>1,415</td><td><span class="price-change price-decrease">-1.2</span></td><td><span class="price-change price-increase">7.9</span></td><td><span class="price-change price-increase">10.9</span></td><td><span class="price-change price-decrease">-4.0</span></td><td><span class="price-change price-increase">30.1</span></td><td><span class="price-change price-decrease">-4.0</span></td><td><span class="price-change price-increase">30.1</span></td><td>소셜 플랫폼 (페이스북, 인스타그램 등). 광고/프로모션 서비스</td></tr>
+                <tr><td>금융 은행</td><td>JP모건</td><td>JPM</td><td>12월</td><td>857</td><td><span class="price-change price-decrease">-0.2</span></td><td><span class="price-change price-increase">4.9</span></td><td><span class="price-change price-increase">31.4</span></td><td><span class="price-change price-increase">11.0</span></td><td><span class="price-change price-increase">4.5</span></td><td><span class="price-change price-increase">11.0</span></td><td><span class="price-change price-increase">4.5</span></td><td>금융서비스 및 자산운용 사업을 영위하는 투자은행</td></tr>
+                <tr><td>증권</td><td>뱅크오브아메리카</td><td>BAC</td><td>12월</td><td>398</td><td><span class="price-change price-decrease">-0.5</span></td><td><span class="price-change price-increase">6.0</span></td><td><span class="price-change price-increase">24.1</span></td><td><span class="price-change price-increase">18.9</span></td><td><span class="price-change price-increase">14.4</span></td><td><span class="price-change price-increase">18.9</span></td><td><span class="price-change price-increase">14.4</span></td><td>은행, 투자 및 자산운용 등의 금융 서비스 제공하는 투자은행</td></tr>
+                <tr><td>서비스</td><td>모건스탠리</td><td>MS</td><td>12월</td><td>278</td><td><span class="price-change price-decrease">-1.0</span></td><td><span class="price-change price-increase">9.6</span></td><td><span class="price-change price-increase">39.0</span></td><td><span class="price-change price-increase">24.2</span></td><td><span class="price-change price-increase">7.2</span></td><td><span class="price-change price-increase">24.2</span></td><td><span class="price-change price-increase">7.2</span></td><td>증권업 및 자산관리 서비스를 제공하는 금융회사</td></tr>
+                <tr><td></td><td>비자</td><td>V</td><td>09월</td><td>581</td><td><span class="price-change price-decrease">-0.2</span></td><td><span class="price-change price-increase">5.7</span></td><td><span class="price-change price-increase">9.0</span></td><td><span class="price-change price-increase">11.5</span></td><td><span class="price-change price-increase">13.1</span></td><td><span class="price-change price-increase">11.5</span></td><td><span class="price-change price-increase">13.1</span></td><td>신용카드 및 전자 결제 서비스 관련 글로벌 1위 기업</td></tr>
+                <tr><td>소비재 자동차</td><td>테슬라</td><td>TSLA</td><td>12월</td><td>1,554</td><td><span class="price-change price-decrease">-4.6</span></td><td><span class="price-change price-increase">14.3</span></td><td><span class="price-change price-increase">15.7</span></td><td><span class="price-change price-decrease">-31.6</span></td><td><span class="price-change price-increase">31.3</span></td><td><span class="price-change price-decrease">-31.6</span></td><td><span class="price-change price-increase">31.3</span></td><td>글로벌 대표 전기차 기업. Model 3, Model Y 등 생산/판매</td></tr>
+                <tr><td>유통</td><td>아마존</td><td>AMZN</td><td>12월</td><td>2,365</td><td><span class="price-change price-decrease">-0.6</span></td><td><span class="price-change price-decrease">-5.0</span></td><td><span class="price-change price-increase">0.9</span></td><td><span class="price-change price-increase">29.2</span></td><td><span class="price-change price-increase">10.6</span></td><td><span class="price-change price-increase">29.2</span></td><td><span class="price-change price-increase">10.6</span></td><td>Amazon.com 이커머스 사업, AWS 클라우드 서비스 제공</td></tr>
+                <tr><td>음식료</td><td>월마트</td><td>WMT</td><td>01월</td><td>922</td><td><span class="price-change price-increase">0.2</span></td><td><span class="price-change price-increase">12.3</span></td><td><span class="price-change price-increase">28.0</span></td><td><span class="price-change price-increase">4.9</span></td><td><span class="price-change price-increase">12.8</span></td><td><span class="price-change price-increase">4.9</span></td><td><span class="price-change price-increase">12.8</span></td><td>오프라인 기반의 미국 대형 유통 기업</td></tr>
+                <tr><td></td><td>홈디포</td><td>HD</td><td>01월</td><td>355</td><td><span class="price-change price-increase">1.2</span></td><td><span class="price-change price-decrease">-0.4</span></td><td><span class="price-change price-decrease">-8.3</span></td><td><span class="price-change price-decrease">-4.9</span></td><td><span class="price-change price-increase">4.1</span></td><td><span class="price-change price-decrease">-4.9</span></td><td><span class="price-change price-increase">4.1</span></td><td>건자재, 셀프인테리어 및 수리, 정원 관리 용품 등을 유통/판매</td></tr>
+                <tr><td></td><td>맥도날드</td><td>MCD</td><td>12월</td><td>227</td><td><span class="price-change price-increase">1.3</span></td><td><span class="price-change price-increase">4.5</span></td><td><span class="price-change price-increase">9.9</span></td><td><span class="price-change price-increase">3.5</span></td><td><span class="price-change price-increase">9.2</span></td><td><span class="price-change price-increase">3.5</span></td><td><span class="price-change price-increase">9.2</span></td><td>패스트푸드 프랜차이즈</td></tr>
+                <tr><td></td><td>스타벅스</td><td>SBUX</td><td>10월</td><td>97</td><td><span class="price-change price-increase">0.2</span></td><td><span class="price-change price-increase">1.8</span></td><td><span class="price-change price-decrease">-6.6</span></td><td><span class="price-change price-increase">11.9</span></td><td><span class="price-change price-increase">26.5</span></td><td><span class="price-change price-increase">11.9</span></td><td><span class="price-change price-increase">26.5</span></td><td>세계 최대 커피 체인점</td></tr>
+                <tr><td>의류</td><td>나이키</td><td>NKE</td><td>05월</td><td>78</td><td><span class="price-change price-decrease">-2.1</span></td><td><span class="price-change price-increase">4.4</span></td><td><span class="price-change price-decrease">-13.2</span></td><td><span class="price-change price-decrease">-23.2</span></td><td><span class="price-change price-increase">51.3</span></td><td><span class="price-change price-decrease">-23.2</span></td><td><span class="price-change price-increase">51.3</span></td><td>스포츠 운동화, 어패럴, 기구 및 액세서리 등을 유통</td></tr>
+                <tr><td>미디어</td><td>넷플릭스</td><td>NFLX</td><td>12월</td><td>433</td><td><span class="price-change price-increase">0.2</span></td><td><span class="price-change price-decrease">-14.1</span></td><td><span class="price-change price-increase">6.3</span></td><td><span class="price-change price-increase">28.2</span></td><td><span class="price-change price-increase">27.6</span></td><td><span class="price-change price-increase">28.2</span></td><td><span class="price-change price-increase">27.6</span></td><td>글로벌 1위 OTT 기업</td></tr>
+                <tr><td></td><td>디즈니</td><td>DIS</td><td>09월</td><td>198</td><td><span class="price-change price-decrease">-0.9</span></td><td><span class="price-change price-increase">4.7</span></td><td><span class="price-change price-decrease">-0.6</span></td><td><span class="price-change price-increase">11.7</span></td><td><span class="price-change price-increase">11.5</span></td><td><span class="price-change price-increase">11.7</span></td><td><span class="price-change price-increase">11.5</span></td><td>세계적인 엔터테인먼트 기업. 테마파크, 애니메이션, OTT 제공</td></tr>
+                <tr><td>필수소비</td><td>P&G</td><td>PG</td><td>06월</td><td>345</td><td><span class="price-change price-increase">1.8</span></td><td><span class="price-change price-increase">1.4</span></td><td><span class="price-change price-decrease">-11.8</span></td><td><span class="price-change price-increase">2.4</span></td><td><span class="price-change price-increase">5.5</span></td><td><span class="price-change price-increase">2.4</span></td><td><span class="price-change price-increase">5.5</span></td><td>뷰티/홈케어, Ol ay, SK-I I, Br aun, Gi l lette, Or alB 브랜드 제공</td></tr>
+                <tr><td></td><td>펩시코</td><td>PEP</td><td>12월</td><td>205</td><td><span class="price-change price-decrease">-0.2</span></td><td><span class="price-change price-increase">1.5</span></td><td><span class="price-change price-decrease">-1.3</span></td><td><span class="price-change price-decrease">-0.6</span></td><td><span class="price-change price-increase">5.4</span></td><td><span class="price-change price-decrease">-0.6</span></td><td><span class="price-change price-increase">5.4</span></td><td>Fr i to-La y, Qu ake r Fo o ds, P epsiCo 보유한 식음료 기업</td></tr>
+                <tr><td>시클리컬 에너지</td><td>엑슨 모빌</td><td>XOM</td><td>12월</td><td>495</td><td><span class="price-change price-increase">2.4</span></td><td><span class="price-change price-decrease">-0.2</span></td><td><span class="price-change price-increase">9.1</span></td><td><span class="price-change price-decrease">-10.8</span></td><td><span class="price-change price-increase">3.6</span></td><td><span class="price-change price-decrease">-10.8</span></td><td><span class="price-change price-increase">3.6</span></td><td>석유와 천연가스 탐사, 생산, 운송, 판매하는 석유화학기업</td></tr>
+                <tr><td></td><td>셰브론</td><td>CVX</td><td>12월</td><td>301</td><td><span class="price-change price-increase">1.9</span></td><td><span class="price-change price-decrease">-3.4</span></td><td><span class="price-change price-increase">3.2</span></td><td><span class="price-change price-decrease">-27.5</span></td><td><span class="price-change price-increase">1.6</span></td><td><span class="price-change price-decrease">-27.5</span></td><td><span class="price-change price-increase">1.6</span></td><td>석유와 천연가스 생산, 수송, 정제, 마케팅 기업</td></tr>
+                <tr><td>화학</td><td>린드</td><td>LIN</td><td>12월</td><td>197</td><td><span class="price-change price-decrease">-0.3</span></td><td><span class="price-change price-increase">1.1</span></td><td><span class="price-change price-increase">0.9</span></td><td><span class="price-change price-increase">5.9</span></td><td><span class="price-change price-increase">8.7</span></td><td><span class="price-change price-increase">5.9</span></td><td><span class="price-change price-increase">8.7</span></td><td>세계 최고의 산업용가스 생산, 유통, 엔지니어링 비즈니스</td></tr>
+                <tr><td>자본재</td><td>버크셔 헤서웨이</td><td>BRK.B</td><td>12월</td><td>1,088</td><td><span class="price-change price-increase">0.9</span></td><td><span class="price-change price-increase">0.2</span></td><td><span class="price-change price-increase">11.2</span></td><td><span class="price-change price-decrease">-2.9</span></td><td><span class="price-change price-increase">1.8</span></td><td><span class="price-change price-decrease">-2.9</span></td><td><span class="price-change price-increase">1.8</span></td><td>가이코, 제너릴리, 시즈캔디 등을 자회사로 보유한 투자회사</td></tr>
+                <tr><td></td><td>레이테온</td><td>RTX</td><td>12월</td><td>238</td><td><span class="price-change price-decrease">-1.5</span></td><td><span class="price-change price-increase">0.9</span></td><td><span class="price-change price-increase">53.1</span></td><td><span class="price-change price-increase">8.4</span></td><td><span class="price-change price-increase">9.2</span></td><td><span class="price-change price-increase">8.4</span></td><td><span class="price-change price-increase">9.2</span></td><td>항공우주 산업에 첨단 기술 제품과 서비스 제공</td></tr>
+                <tr><td>운송</td><td>UPS</td><td>UPS</td><td>12월</td><td>75</td><td><span class="price-change price-increase">0.8</span></td><td><span class="price-change price-increase">7.2</span></td><td><span class="price-change price-decrease">-19.9</span></td><td><span class="price-change price-decrease">-10.9</span></td><td><span class="price-change price-increase">4.2</span></td><td><span class="price-change price-decrease">-10.9</span></td><td><span class="price-change price-increase">4.2</span></td><td>운송 서비스와 통관 중개, 보험/금융서비스 제공, 벤처투자</td></tr>
+                <tr><td>기계</td><td>캐터필러</td><td>CAT</td><td>12월</td><td>263</td><td><span class="price-change price-decrease">-4.6</span></td><td><span class="price-change price-increase">1.8</span></td><td><span class="price-change price-increase">54.9</span></td><td><span class="price-change price-decrease">-15.0</span></td><td><span class="price-change price-increase">19.4</span></td><td><span class="price-change price-decrease">-15.0</span></td><td><span class="price-change price-increase">19.4</span></td><td>세계 최대의 건설/광산용 장비업체, 가스 엔진, 가스터빈 생산</td></tr>
+                <tr><td>유틸리티</td><td>넥스트에라에너지</td><td>NEE</td><td>12월</td><td>167</td><td><span class="price-change price-decrease">-1.3</span></td><td><span class="price-change price-decrease">-6.4</span></td><td><span class="price-change price-increase">12.0</span></td><td><span class="price-change price-increase">7.4</span></td><td><span class="price-change price-increase">8.9</span></td><td><span class="price-change price-increase">7.4</span></td><td><span class="price-change price-increase">8.9</span></td><td>에너지 인프라 및 발전사 보유. 태양광 풍력을 통해 전력 생산</td></tr>
+                <tr><td>헬스케어 헬스케어</td><td>유나이티드헬스</td><td>UNH</td><td>12월</td><td>300</td><td><span class="price-change price-decrease">-0.8</span></td><td><span class="price-change price-increase">3.5</span></td><td><span class="price-change price-decrease">-34.4</span></td><td><span class="price-change price-decrease">-41.0</span></td><td><span class="price-change price-increase">8.7</span></td><td><span class="price-change price-decrease">-41.0</span></td><td><span class="price-change price-increase">8.7</span></td><td>보험, 의약품 배송, 데이터 분석 등 토탈 헬스케어 서비스 제공</td></tr>
+                <tr><td></td><td>일라이 릴리</td><td>LLY</td><td>12월</td><td>985</td><td><span class="price-change price-decrease">-1.2</span></td><td><span class="price-change price-increase">2.0</span></td><td><span class="price-change price-increase">34.9</span></td><td><span class="price-change price-increase">83.0</span></td><td><span class="price-change price-increase">36.7</span></td><td><span class="price-change price-increase">83.0</span></td><td><span class="price-change price-increase">36.7</span></td><td>당뇨병 및 대사질환 관련 제품 개발 및 공급</td></tr>
+                <tr><td></td><td>존슨 앤 존슨</td><td>JNJ</td><td>01월</td><td>507</td><td><span class="price-change price-increase">0.5</span></td><td><span class="price-change price-increase">5.4</span></td><td><span class="price-change price-increase">45.4</span></td><td><span class="price-change price-increase">8.9</span></td><td><span class="price-change price-increase">6.1</span></td><td><span class="price-change price-increase">8.9</span></td><td><span class="price-change price-increase">6.1</span></td><td>스킨케어, 항암 및 심장 질환 의약품, 수술용 의료기기 생산</td></tr>
+                <tr><td></td><td>머크</td><td>MRK</td><td>12월</td><td>246</td><td><span class="price-change price-increase">0.9</span></td><td><span class="price-change price-increase">6.8</span></td><td><span class="price-change price-decrease">-0.3</span></td><td><span class="price-change price-increase">17.3</span></td><td><span class="price-change price-decrease">-4.8</span></td><td><span class="price-change price-increase">17.3</span></td><td><span class="price-change price-decrease">-4.8</span></td><td>건강 솔루션, 백신, 생물학 치료, 동물 건강 의약품 등을 제공</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2>중국 주식 대표종목</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>섹터</th>
+                    <th>종목명</th>
+                    <th>티커</th>
+                    <th>결산</th>
+                    <th>시총 (¥bn)</th>
+                    <th colspan="3">주가 수익률 (%)</th>
+                    <th colspan="2">EPS (% yoy)</th>
+                    <th>기업 개요</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th>1D</th>
+                    <th>1M</th>
+                    <th>YTD</th>
+                    <th>FY1</th>
+                    <th>FY2</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>IT 소프트웨어</td><td>텐센트</td><td>700.HK</td><td>12월</td><td>5,003</td><td><span class="price-change price-increase">1.4</span></td><td><span class="price-change price-decrease">-4.9</span></td><td><span class="price-change price-increase">45.1</span></td><td><span class="price-change price-increase">18.2</span></td><td><span class="price-change price-increase">12.9</span></td><td>게임 글로벌 점유율 1위 기업. SNS, 광고, 핀테크 서비스 제공</td></tr>
+                <tr><td></td><td>넷이즈</td><td>9999.HK</td><td>12월</td><td>603</td><td><span class="price-change price-decrease">-0.4</span></td><td><span class="price-change price-decrease">-3.8</span></td><td><span class="price-change price-increase">51.9</span></td><td><span class="price-change price-increase">21.0</span></td><td><span class="price-change price-increase">5.8</span></td><td>중국 2위 게임 기업. 게임 외 광고, 뮤직스트리밍 등 서비스 제공</td></tr>
+                <tr><td></td><td>바이두</td><td>9888.HK</td><td>12월</td><td>248</td><td><span class="price-change price-increase">1.7</span></td><td><span class="price-change price-increase">4.4</span></td><td><span class="price-change price-increase">43.4</span></td><td><span class="price-change price-decrease">-30.0</span></td><td><span class="price-change price-increase">7.6</span></td><td>중국 최대 검색 엔진. 자율주행, 클라우드 서비스 제공</td></tr>
+                <tr><td>하드웨어</td><td>샤오미</td><td>1810.HK</td><td>12월</td><td>804</td><td><span class="price-change price-increase">0.8</span></td><td><span class="price-change price-decrease">-1.8</span></td><td><span class="price-change price-increase">19.5</span></td><td><span class="price-change price-increase">49.7</span></td><td><span class="price-change price-increase">78.7</span></td><td>중국 대표 휴대폰, IoT, 전기차 기업</td></tr>
+                <tr><td></td><td>부사강산업인터넷</td><td>601138</td><td>12월</td><td>1,221</td><td><span class="price-change price-increase">4.3</span></td><td><span class="price-change price-decrease">-5.3</span></td><td><span class="price-change price-increase">186.0</span></td><td><span class="price-change price-increase">27.5</span></td><td><span class="price-change price-increase">25.6</span></td><td>데이터센터 서버 ODM, 스위치, 스토리지 등 ICT장비 기업</td></tr>
+                <tr><td></td><td>입신정밀</td><td>002475</td><td>12월</td><td>427</td><td><span class="price-change price-increase">2.3</span></td><td><span class="price-change price-increase">3.7</span></td><td><span class="price-change price-increase">43.9</span></td><td><span class="price-change price-increase">27.5</span></td><td><span class="price-change price-increase">25.6</span></td><td>웨어러블 기기, 무선 이어폰 등의 OEM 생산. 애플 공급업체</td></tr>
+                <tr><td></td><td>중흥통신 (ZTE)</td><td>000063</td><td>12월</td><td>168</td><td><span class="price-change price-increase">3.3</span></td><td><span class="price-change price-decrease">-5.7</span></td><td><span class="price-change price-decrease">-8.5</span></td><td><span class="price-change price-decrease">-9.4</span></td><td><span class="price-change price-increase">13.0</span></td><td>중국 2위 통신장비 기업, 휴대폰도 제조</td></tr>
+                <tr><td>반도체</td><td>중심국제 (SMIC)</td><td>981.HK</td><td>12월</td><td>578</td><td><span class="price-change price-increase">2.0</span></td><td><span class="price-change price-decrease">-11.2</span></td><td><span class="price-change price-increase">103.6</span></td><td><span class="price-change price-increase">51.5</span></td><td><span class="price-change price-increase">46.5</span></td><td>중국 1위 반도체 파운드리 기업</td></tr>
+                <tr><td></td><td>북방화창</td><td>002371</td><td>12월</td><td>322</td><td><span class="price-change price-increase">0.4</span></td><td><span class="price-change price-increase">11.0</span></td><td><span class="price-change price-increase">53.6</span></td><td><span class="price-change price-increase">20.7</span></td><td><span class="price-change price-increase">33.5</span></td><td>중국 1위 국산 반도체 장비 (열처리. 식각, PVD 등) 기업</td></tr>
+                <tr><td></td><td>웨이얼반도체</td><td>603501</td><td>12월</td><td>152</td><td><span class="price-change price-increase">0.8</span></td><td><span class="price-change price-increase">3.6</span></td><td><span class="price-change price-increase">20.4</span></td><td><span class="price-change price-increase">34.5</span></td><td><span class="price-change price-increase">32.2</span></td><td>중국 1위 CIS(CMOS 이미지 센서) 기업</td></tr>
+                <tr><td>소비재 유통</td><td>알리바바</td><td>BABA</td><td>3월</td><td>2,524</td><td><span class="price-change price-decrease">-1.5</span></td><td><span class="price-change price-decrease">-6.7</span></td><td><span class="price-change price-increase">73.5</span></td><td><span class="price-change price-decrease">-30.8</span></td><td><span class="price-change price-increase">44.5</span></td><td>중국 1위 이커머스 기업. 클라우드 부문에서도 1위</td></tr>
+                <tr><td></td><td>PDD</td><td>PDD</td><td>12월</td><td>1,050</td><td><span class="price-change price-decrease">-3.7</span></td><td><span class="price-change price-decrease">-18.6</span></td><td><span class="price-change price-increase">8.3</span></td><td><span class="price-change price-decrease">-6.3</span></td><td><span class="price-change price-increase">14.7</span></td><td>사용자 기준 중국 2위 이커머스 기업</td></tr>
+                <tr><td></td><td>메이퇀</td><td>3690.HK</td><td>12월</td><td>508</td><td><span class="price-change price-increase">1.8</span></td><td><span class="price-change price-increase">1.0</span></td><td><span class="price-change price-decrease">-33.2</span></td><td>적전</td><td>흑전</td><td>중국 1위 배달서비스 기업. 호텔 숙박 예약 점유율 1위</td></tr>
+                <tr><td></td><td>JD.com</td><td>JD</td><td>12월</td><td>291</td><td><span class="price-change price-decrease">-0.9</span></td><td><span class="price-change price-decrease">-3.2</span></td><td><span class="price-change price-decrease">-17.5</span></td><td><span class="price-change price-decrease">-36.8</span></td><td><span class="price-change price-increase">26.9</span></td><td>알리바바에 이은 중국 2위 전자상거래 (GMV기준) 기업</td></tr>
+                <tr><td>자동차</td><td>BYD</td><td>002594</td><td>12월</td><td>650</td><td><span class="price-change price-increase">1.0</span></td><td><span class="price-change price-decrease">-2.9</span></td><td><span class="price-change price-increase">1.1</span></td><td><span class="price-change price-decrease">-13.0</span></td><td><span class="price-change price-increase">34.7</span></td><td>중국 전기차 1위. 배터리 등 다수 핵심 부품 내재화</td></tr>
+                <tr><td></td><td>새력사</td><td>601127</td><td>12월</td><td>194</td><td><span class="price-change price-decrease">-1.4</span></td><td><span class="price-change price-decrease">-9.0</span></td><td><span class="price-change price-decrease">-8.9</span></td><td><span class="price-change price-increase">40.2</span></td><td><span class="price-change price-increase">34.3</span></td><td>중국 대표 전기차 기업, 화웨이 협력 중고가 AITO 브랜드 판매</td></tr>
+                <tr><td></td><td>리오토</td><td>LI</td><td>12월</td><td>104</td><td><span class="price-change price-decrease">-3.2</span></td><td><span class="price-change price-decrease">-14.2</span></td><td><span class="price-change price-decrease">-32.7</span></td><td><span class="price-change price-decrease">-80.0</span></td><td><span class="price-change price-increase">151.8</span></td><td>중국 고가 스마트 SUV 전기차 생산, 판매</td></tr>
+                <tr><td>가전</td><td>메이디그룹</td><td>000333</td><td>12월</td><td>610</td><td><span class="price-change price-increase">0.6</span></td><td><span class="price-change price-increase">2.6</span></td><td><span class="price-change price-increase">7.0</span></td><td><span class="price-change price-increase">8.4</span></td><td><span class="price-change price-increase">8.5</span></td><td>중국 최대 가전업체. 자동차 칩, 로봇 산업으로 비즈니스 확장</td></tr>
+                <tr><td>의류</td><td>안타스포츠</td><td>2020.HK</td><td>12월</td><td>210</td><td><span class="price-change price-increase">1.7</span></td><td><span class="price-change price-increase">2.7</span></td><td><span class="price-change price-increase">6.6</span></td><td><span class="price-change price-decrease">-11.0</span></td><td><span class="price-change price-increase">12.5</span></td><td>대표 로컬 스포츠웨어 브랜드. Anta 외 Fila 등 멀티브랜드 운영</td></tr>
+                <tr><td>화장품</td><td>프로야화장품</td><td>603605</td><td>12월</td><td>27</td><td><span class="price-change price-increase">1.6</span></td><td><span class="price-change price-decrease">-4.8</span></td><td><span class="price-change price-decrease">-20.0</span></td><td><span class="price-change price-increase">3.7</span></td><td><span class="price-change price-increase">11.5</span></td><td>중국 상장사 중 스킨케어 매출 1위 기업</td></tr>
+                <tr><td>카지노</td><td>샌즈 중국</td><td>1928.HK</td><td>12월</td><td>147</td><td><span class="price-change price-increase">0.7</span></td><td><span class="price-change price-decrease">-4.2</span></td><td><span class="price-change price-decrease">-4.0</span></td><td><span class="price-change price-decrease">-0.7</span></td><td><span class="price-change price-increase">29.7</span></td><td>미국 카지노업체인 라스베가스 샌드의 마카오 사업체</td></tr>
+                <tr><td>필수소비</td><td>귀주모태주</td><td>600519</td><td>12월</td><td>1,795</td><td><span class="price-change price-increase">0.8</span></td><td><span class="price-change price-decrease">-2.6</span></td><td><span class="price-change price-decrease">-6.0</span></td><td><span class="price-change price-increase">5.6</span></td><td><span class="price-change price-increase">6.1</span></td><td>중국 1위 고가 백주 기업, 본토 주식시장 시가총액 1위 기업</td></tr>
+                <tr><td>여행</td><td>트립닷컴</td><td>TCOM</td><td>12월</td><td>352</td><td><span class="price-change price-increase">1.4</span></td><td><span class="price-change price-increase">1.4</span></td><td><span class="price-change price-increase">4.6</span></td><td><span class="price-change price-increase">73.1</span></td><td><span class="price-change price-decrease">-31.6</span></td><td>중국 1위 온라인 여행 예약(OTA) 기업</td></tr>
+                <tr><td>금융 금융</td><td>공상은행</td><td>601398</td><td>12월</td><td>2,580</td><td><span class="price-change price-increase">0.3</span></td><td><span class="price-change price-decrease">-4.4</span></td><td><span class="price-change price-increase">12.9</span></td><td><span class="price-change price-increase">2.8</span></td><td><span class="price-change price-increase">2.0</span></td><td>중국 1위 은행. 은행 및 관련 금융 서비스 제공</td></tr>
+                <tr><td></td><td>평안보험</td><td>601318</td><td>12월</td><td>1,164</td><td><span class="price-change price-increase">1.6</span></td><td><span class="price-change price-increase">13.7</span></td><td><span class="price-change price-increase">29.2</span></td><td><span class="price-change price-increase">14.2</span></td><td><span class="price-change price-increase">4.6</span></td><td>중국 최대 민영 보험사. 효율성 높은 에이젼시 확보</td></tr>
+                <tr><td></td><td>중신증권</td><td>600030</td><td>12월</td><td>396</td><td><span class="price-change price-increase">1.7</span></td><td><span class="price-change price-increase">2.4</span></td><td><span class="price-change price-decrease">-0.7</span></td><td><span class="price-change price-increase">41.0</span></td><td><span class="price-change price-increase">8.8</span></td><td>중국 1위 증권사. 투자은행, 중개, 거래, 자산관리 등 영위</td></tr>
+                <tr><td>시클리컬 에너지</td><td>페트로차이나</td><td>601857</td><td>12월</td><td>1,693</td><td><span class="price-change price-decrease">-0.5</span></td><td><span class="price-change price-decrease">-3.6</span></td><td><span class="price-change price-increase">6.4</span></td><td><span class="price-change price-decrease">-4.2</span></td><td><span class="price-change price-increase">2.2</span></td><td>원유, 천연가스 탐사, 생산, 가공, 운송, 판매하는 에너지 기업</td></tr>
+                <tr><td>철강</td><td>보산철강</td><td>600019</td><td>12월</td><td>155</td><td><span class="price-change price-increase">0.7</span></td><td><span class="price-change price-decrease">-7.2</span></td><td><span class="price-change price-increase">1.6</span></td><td><span class="price-change price-increase">47.4</span></td><td><span class="price-change price-increase">15.1</span></td><td>중국 1위 철강 기업. 철강 제조, 가공 및 유통 등의 사업을 영위</td></tr>
+                <tr><td>비철금속</td><td>자금광업</td><td>601899</td><td>12월</td><td>817</td><td><span class="price-change price-increase">1.8</span></td><td><span class="price-change price-increase">6.5</span></td><td><span class="price-change price-increase">104.2</span></td><td><span class="price-change price-increase">58.2</span></td><td><span class="price-change price-increase">24.9</span></td><td>다국적 광산기업. 중국 최대 금광 기업</td></tr>
+                <tr><td>화학</td><td>만화화학</td><td>600309</td><td>12월</td><td>232</td><td><span class="price-change price-increase">5.9</span></td><td><span class="price-change price-increase">11.8</span></td><td><span class="price-change price-increase">4.0</span></td><td><span class="price-change price-decrease">-3.7</span></td><td><span class="price-change price-increase">26.2</span></td><td>글로벌 최대 MDI기업. 순수석화-우레탄-스페셜티 제품</td></tr>
+                <tr><td>운송</td><td>경호고속철로</td><td>601816</td><td>12월</td><td>250</td><td><span class="price-change price-increase">1.0</span></td><td><span class="price-change price-decrease">-1.7</span></td><td><span class="price-change price-decrease">-16.9</span></td><td><span class="price-change price-increase">3.6</span></td><td><span class="price-change price-increase">6.1</span></td><td>베이징-상하이 고속철도와 관련 노선 건설, 운영</td></tr>
+                <tr><td>조선</td><td>중국선박공업</td><td>600150</td><td>12월</td><td>248</td><td><span class="price-change price-increase">0.4</span></td><td><span class="price-change price-decrease">-4.9</span></td><td><span class="price-change price-decrease">-8.4</span></td><td><span class="price-change price-increase">72.3</span></td><td><span class="price-change price-increase">56.8</span></td><td>선박의 제조 및 판매. 사업부문은 선박제조, 장비제조로 구분</td></tr>
+                <tr><td>기계</td><td>삼일중공업</td><td>600031</td><td>12월</td><td>193</td><td><span class="price-change price-increase">1.5</span></td><td><span class="price-change price-increase">2.4</span></td><td><span class="price-change price-increase">27.9</span></td><td><span class="price-change price-increase">40.3</span></td><td><span class="price-change price-increase">24.3</span></td><td>세계 3위 건설기계업체. 굴착기, 콘크리트 기계 등 제조, 유통</td></tr>
+                <tr><td>건설</td><td>중국 건축공정</td><td>601668</td><td>12월</td><td>214</td><td><span class="price-change price-increase">0.6</span></td><td><span class="price-change price-decrease">-3.5</span></td><td><span class="price-change price-decrease">-13.7</span></td><td><span class="price-change price-increase">2.1</span></td><td><span class="price-change price-increase">2.5</span></td><td>중국 최대의 건설기업, 부동산, 인프라 등 건설 사업 영위</td></tr>
+                <tr><td>방어주 유틸리티</td><td>장강전력</td><td>600900</td><td>12월</td><td>683</td><td><span class="price-change price-decrease">-0.2</span></td><td><span class="price-change price-decrease">-0.9</span></td><td><span class="price-change price-decrease">-5.5</span></td><td><span class="price-change price-increase">4.6</span></td><td><span class="price-change price-increase">6.3</span></td><td>중국 1위 수력발전 기업. 대형 수력발전소 운영관리, 유지보수</td></tr>
+                <tr><td></td><td>CGN 파워</td><td>003816</td><td>12월</td><td>180</td><td><span class="price-change">0.0</span></td><td><span class="price-change price-decrease">-2.8</span></td><td><span class="price-change price-decrease">-7.3</span></td><td><span class="price-change price-decrease">-9.8</span></td><td><span class="price-change price-increase">5.9</span></td><td>중국 1위 원전기업</td></tr>
+                <tr><td>통신</td><td>중국이동</td><td>600941</td><td>12월</td><td>1,664</td><td><span class="price-change price-decrease">-0.7</span></td><td><span class="price-change price-decrease">-4.1</span></td><td><span class="price-change price-decrease">-13.4</span></td><td><span class="price-change price-increase">4.0</span></td><td><span class="price-change price-increase">4.6</span></td><td>세계 최다 가입자를 보유한 이동통신사</td></tr>
+                <tr><td>제약</td><td>항서제약</td><td>600276</td><td>12월</td><td>401</td><td><span class="price-change price-increase">1.9</span></td><td><span class="price-change price-decrease">-2.4</span></td><td><span class="price-change price-increase">31.4</span></td><td><span class="price-change price-increase">34.5</span></td><td><span class="price-change price-increase">10.4</span></td><td>중국 1위 제약사. 항암제, 마취제, 조영제 등 생산 판매</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+
+<div style="margin-top: 40px; padding: 20px; border: 1px solid #ccc; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05); font-size: 13px; color: #666;">
+    <h2 style="color: #333; font-size: 18px; margin-bottom: 12px;">Compliance Notice</h2>
+    <p style="margin-bottom: 10px;">
+        금융투자업규정 4-20조 1항5호사목에 따라 작성일 현재 사전고지와 관련한 사항이 없으며, 당사의 금융투자분석사는 자료작성일 현재 본 자료에
+        관련하여 재산적 이해관계가 없습니다. 당사는 동 자료에 언급된 종목과 계열회사의 관계가 없으며 당사의 금융투자분석사는 본 자료의 작성과 관련하여
+        외부 부당한 압력이나 간섭을 받지 않고 본인의 의견을 정확하게 반영하였습니다.
+        본 자료는 투자자들의 투자판단에 참고가 되는 정보제공을 목적으로 배포되는 자료입니다. 본 자료에 수록된 내용은 당사 Research Center의 추정치로서
+        오차가 발생할 수 있으며 정확성이나 완벽성은 보장하지 않습니다. 본 자료를 이용하시는 분은 동 자료와 관련한 투자의 최종 결정은 자신의 판단으로
+        하시기 바랍니다.
+    </p>
+    <p style="font-size: 12px; color: #999; margin-top: 10px;">
+        ※ 본 콘텐츠는 당사 리서치센터 보고서를 기반으로 생성된 요약·해설 자료입니다.
+        본 자료는 인공지능(AI)을 활용하여 자동 생성되었으며, 투자자 이해를 돕기 위한 목적입니다.
+        일부 내용은 원문과 차이가 있을 수 있으며, 최종 투자 판단은 원문 보고서를 참고하시기 바랍니다.
+        본 자료는 투자 권유를 목적으로 하지 않으며, AI 생성 특성상 오류가 포함될 수 있습니다.
+    </p>
+</div>
+
+</html>
