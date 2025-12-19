@@ -1,0 +1,119 @@
+네, 요청하신 대로 보고서의 본문 내용만 추출하여 HTML 코드로 반환합니다. 차트, 표, 설명 등 본문 외의 정보는 모두 제외하였으며, 모바일 환경에서도 가독성이 높도록 디자인 요소를 추가했습니다.
+
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[대신증권 이경민] 마이크론, CPI, BOJ 이슈 소화국면. 4,000선 지지력 테스트 완료</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+            line-height: 1.7; /* 줄 간격 증가로 가독성 향상 */
+            color: #333;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 760px; /* 모바일 및 웹 환경 모두 고려한 최대 너비 */
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 26px;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            text-align: center;
+            line-height: 1.4;
+            word-break: keep-all; /* 한글 단어 끊김 방지 */
+        }
+        h2 {
+            font-size: 22px;
+            color: #34495e;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #eceff1; /* 소제목 아래 강조선 */
+            padding-bottom: 8px;
+            word-break: keep-all;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 15px;
+            word-break: keep-all;
+        }
+        p strong {
+            color: #1a5276; /* 강조 텍스트 색상 변경 */
+            font-weight: bold;
+        }
+        /* 모바일 기기 반응형 스타일 */
+        @media (max-width: 600px) {
+            body {
+                margin: 10px;
+            }
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
+            h2 {
+                font-size: 19px;
+                margin-top: 25px;
+            }
+            p {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>[대신증권 이경민] 마이크론, CPI, BOJ 이슈 소화국면. 4,000선 지지력 테스트 완료</h1>
+
+        <p>전일 <strong>마이크론</strong>의 실적 서프라이즈에 이어 미국 인플레이션 우려가 완화되었습니다. 미국 11월 <strong>CPI는 전년 대비 2.71%</strong>, <strong>Core CPI는 2.62%</strong>로 예상치(3.1%, 3%)를 하회했습니다.</p>
+        <p>일각에서는 10월 정부 셧다운으로 인한 데이터 공백, 주거비 둔화가 과장되었을 것이라는 문제제기에도 불구하고, 당초 4월, 7월 금리인하 기대가 3월, 7월로 앞당겨지며 금리인하 기대감이 상승했습니다.</p>
+        <p>금일 주요 이벤트였던 <strong>BOJ(일본은행) 금정위</strong>에서는 기준금리를 <strong>0.75%로 25bp 인상</strong>을 결정했습니다. 이는 11개월 만의 금리인상으로 30년래 가장 높은 기준금리 수준입니다.</p>
+        <p>이후 일본 국채 10년물이 2%를 상회하는 상승세를 보였으나, 시장에서 우려해 온 급격한 엔화 강세는 없었고 <strong>-0.03%</strong> 수준으로 마감했습니다.</p>
+        <p>BOJ 금리결정 이후 글로벌 금융시장은 불확실성 해소로 인식했습니다. 비트코인은 8.7만달러 회복 시도에 나서고, 미국 선물지수도 플러스 반전했습니다. <strong>KOSPI는 기관 수급 지속, 0.65% 상승한 4,020.5pt</strong>로 상승폭을 확대했습니다.</p>
+
+        <br><br>
+
+        <h2>Issue 1: KOSDAQ 활성화 대책, 기대에는 못 미쳤나</h2>
+        <p>금일 오후 2시 금융위원회 업무보고에서 <strong>KOSDAQ 활성화 대책</strong>이 발표되었습니다.</p>
+        <p>국민성장펀드 1호 <strong>'메가프로젝트' 7곳</strong>이 선정되었는데, AI 컴퓨팅센터, 용인 클러스터, 평택 파운드리 등이 포함되며 내년 첨단산업에 <strong>30조원 공급 계획</strong>을 밝혔습니다.</p>
+        <p>다만, 부양책 공개 이후 구체적인 투자 계획이 부재하다는 시각에 실망 매물이 출회되었습니다.</p>
+        <p>3시 30분 우에다 가즈오 BOJ 총재 기자회견에 대한 경계감 또한 위험회피 심리를 자극했습니다. <strong>KOSDAQ은 상승폭을 축소하며 1.55% 상승한 915.2pt</strong>로 마감했습니다.</p>
+
+        <br><br>
+
+        <h2>Issue 2: 특징 업종: 방산 / 조선 강세</h2>
+        <p><strong>방산 업종:</strong> 이재명 대통령이 ‘26년 외교 핵심 테마로 방산을 선정했습니다. 김동관 한화 부회장이 UAE 산업장관과 비공개 회동을 통해 지상방산·차세대 무기 협력을 논의했습니다. 관련하여 <strong>한화오션 (+5.8%), HD 현대중공업 (+3.4%), HD 한국조선해양 (+2.9%), 삼성중공업 (+6.7%)</strong> 등이 강세를 보였습니다.</p>
+        <p><strong>조선 업종:</strong> 한화오션이 유럽 지역 <strong>LNG 운반선 7척, 총 2조 6천억원 규모 계약</strong>을 체결하여 작년 매출의 24%에 해당하는 수주를 확보했습니다. MASGA(미국 선박 지원 프로그램) 기대가 재부각되었습니다. 관련하여 <strong>한화에어로스페이스 (+3.9%), 현대로템 (+2.5%), 한화시스템 (+10.9%), LIG 넥스원 (+8.6%)</strong> 등이 상승했습니다.</p>
+    </div>
+</body>
+
+
+<div style="margin-top: 40px; padding: 20px; border: 1px solid #ccc; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05); font-size: 13px; color: #666;">
+    <h2 style="color: #333; font-size: 18px; margin-bottom: 12px;">Compliance Notice</h2>
+    <p style="margin-bottom: 10px;">
+        금융투자업규정 4-20조 1항5호사목에 따라 작성일 현재 사전고지와 관련한 사항이 없으며, 당사의 금융투자분석사는 자료작성일 현재 본 자료에
+        관련하여 재산적 이해관계가 없습니다. 당사는 동 자료에 언급된 종목과 계열회사의 관계가 없으며 당사의 금융투자분석사는 본 자료의 작성과 관련하여
+        외부 부당한 압력이나 간섭을 받지 않고 본인의 의견을 정확하게 반영하였습니다.
+        본 자료는 투자자들의 투자판단에 참고가 되는 정보제공을 목적으로 배포되는 자료입니다. 본 자료에 수록된 내용은 당사 Research Center의 추정치로서
+        오차가 발생할 수 있으며 정확성이나 완벽성은 보장하지 않습니다. 본 자료를 이용하시는 분은 동 자료와 관련한 투자의 최종 결정은 자신의 판단으로
+        하시기 바랍니다.
+    </p>
+    <p style="font-size: 12px; color: #999; margin-top: 10px;">
+        ※ 본 콘텐츠는 당사 리서치센터 보고서를 기반으로 생성된 요약·해설 자료입니다.
+        본 자료는 인공지능(AI)을 활용하여 자동 생성되었으며, 투자자 이해를 돕기 위한 목적입니다.
+        일부 내용은 원문과 차이가 있을 수 있으며, 최종 투자 판단은 원문 보고서를 참고하시기 바랍니다.
+        본 자료는 투자 권유를 목적으로 하지 않으며, AI 생성 특성상 오류가 포함될 수 있습니다.
+    </p>
+</div>
+
+</html>
