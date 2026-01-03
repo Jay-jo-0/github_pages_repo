@@ -1,0 +1,1716 @@
+네, 요청하신 보고서 본문만 추출하여 모바일 환경에서도 가독성이 높은 HTML 코드로 제공해 드립니다. 제목이나 기타 설명, 차트 그림은 제외하고 보고서의 핵심 본문과 표만 포함했습니다. 소제목과 본문 내용은 명확히 구분했으며, 가독성을 위해 적절한 줄 바꿈과 강조 표시를 적용했습니다.
+
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>투자 유망 주식/ETF/펀드 (1월 1주차)</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        h1 {
+            font-size: 2.4em;
+            color: #0056b3;
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+        h2 {
+            font-size: 1.8em;
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 8px;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+        h3 {
+            font-size: 1.4em;
+            color: #0056b3;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        h4 {
+            font-size: 1.2em;
+            color: #555;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        p {
+            margin-bottom: 1.2em;
+            font-size: 1em;
+            line-height: 1.7;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 25px;
+            margin-bottom: 1.5em;
+        }
+        li {
+            margin-bottom: 0.5em;
+            font-size: 1em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            font-size: 0.9em;
+            table-layout: fixed; /* Ensures columns are of equal width or as defined */
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            word-wrap: break-word; /* Prevents long words from breaking layout */
+        }
+        th {
+            background-color: #e9f2f9;
+            font-weight: bold;
+            color: #333;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .asset-section {
+            border: 1px solid #eee;
+            padding: 20px;
+            margin-bottom: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .asset-subtitle {
+            font-size: 0.9em;
+            color: #777;
+            margin-left: 10px;
+            font-weight: normal;
+        }
+        .positive {
+            color: #28a745;
+            font-weight: 700;
+        }
+        .negative {
+            color: #dc3545;
+            font-weight: 700;
+        }
+        .neutral {
+            color: #0056b3;
+            font-weight: 700;
+        }
+        .footnote {
+            font-size: 0.8em;
+            color: #777;
+            margin-top: -15px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>투자 유망 주식/ETF/펀드 (1월 1주차)</h1>
+
+    <p style="text-align: right; font-size: 0.9em; color: #666; margin-bottom: 40px;">Weekly 2026년 1월 1주차</p>
+
+    <h2>주요 투자의견</h2>
+    <p>본 보고서는 2026년 1월 1주차 투자 유망 주식, ETF, 펀드에 대한 리서치 센터의 투자의견을 담고 있습니다. 글로벌 경제 지표와 기업 실적 전망을 종합하여 선호 섹터 및 자산군별 전략을 제시합니다.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>투자의견</th>
+                <th>선호 섹터</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">주식</td>
+                <td>한국 (유지)</td>
+                <td><span class="neutral">반도체, 자동차, 인터넷</span></td>
+            </tr>
+            <tr>
+                <td>선진국 (유지)</td>
+                <td><span class="neutral">스타일 (성장, 대형, 퀄리티)</span></td>
+            </tr>
+            <tr>
+                <td>신흥국 (유지)</td>
+                <td><span class="neutral">인도, 베트남, 멕시코</span></td>
+            </tr>
+            <tr>
+                <td rowspan="2">채권</td>
+                <td>국내채권 (유지)</td>
+                <td><span class="neutral">신용도 높은 채권 중심으로 매수 지속</span></td>
+            </tr>
+            <tr>
+                <td>해외채권 (유지)</td>
+                <td><span class="neutral">신용도 높은 채권 중심으로 매수 지속</span></td>
+            </tr>
+            <tr>
+                <td>기타</td>
+                <td>리츠 (유지)</td>
+                <td><span class="neutral">국내: 대형 리츠 / 미국: 데이터센터, 시니어하우징</span></td>
+            </tr>
+            <tr>
+                <td>원자재</td>
+                <td>원자재 (유지)</td>
+                <td><span class="neutral">원유, 은, 알루미늄</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Key Factor 전망과 자산군별 투자의견</h2>
+
+    <h3>Key Factor 전망 - 1/5 ~ 1/31</h3>
+
+    <h4>금리</h4>
+    <p>
+        <span class="neutral">韓 채권 과매도 영역 진입 이후 연초 수급 개선 기대. 美 완화 기조 확인에 따른 금리 하향 안정화</span>
+    </p>
+    <ul>
+        <li>한국은 25년 4분기 이후 진행됐던 급격한 채권 과매도 영역에서의 변화를 기대합니다. 연초 운용북 재정비 등을 통해 시장금리 <span class="negative">하락 시도</span>가 예상됩니다. 금융안정에 초점 맞춰진 통화정책은 부담 요인입니다.</li>
+        <li>미국은 3회 연속 금리가 인하된 이후 연준의 완화 기조가 재확인되었습니다. 하지만 장기물 중심으로 수급 우려가 지속되고 있고, 일본 금리 인상 이후 글로벌 금리 하단 영역 상향 가능성은 부담으로 작용합니다.</li>
+    </ul>
+
+    <h4>환율</h4>
+    <p>
+        <span class="neutral">달러원 환율 상승압력 vs. 당국 정책 대응. 대외 달러 약세 재개시 달러원 환율 정상화 전개 예상</span>
+    </p>
+    <ul>
+        <li>미 연준 통화정책 불확실성에도 후임 연준의장 기대, 비미국 재정 우려 완화 등에 <span class="negative">달러 약세 재개</span>가 가능할 전망입니다. 11월 미 고용 및 물가지표에서 경기 속도조절 시그널이 확인되었습니다.</li>
+        <li>달러원 환율은 직간접 해외투자 수요에 <span class="positive">상승 압력</span>이 여전합니다. 그러나 당국 정책적 대응 강화 및 경계가 지속되고 있습니다. 대외 달러약세 압력 확대 시 원/달러 환율 <span class="neutral">정상화 국면 전개</span>가 예상됩니다.</li>
+    </ul>
+
+    <h4>국내증시</h4>
+    <p>
+        <span class="neutral">다시 강해지는 실적 모멘텀. 반도체 주도 실적 전망 레벨업 = KOSPI 상승 여력 확대</span>
+    </p>
+    <ul>
+        <li>25년 4분기 프리어닝 시즌 돌입과 함께 다시 한 번 <span class="neutral">반도체 (특히, 삼성전자, SK하이닉스) 주도의 실적 전망 상향조정</span>이 가속화될 것입니다. 선행 PER 10배 4,100으로 상향, KOSPI <span class="positive">상승 여력</span>이 확대될 것입니다.</li>
+        <li>반도체 주도의 KOSPI <span class="positive">강한 상승추세 전개</span>가 예상됩니다 (9월, 10월과 유사한 패턴). 반도체 레벨업 이후 <span class="neutral">수출주 (자동차, 조선), 성장주 (인터넷, 제약/바이오, 2차전지) 중심의 2차 상승</span>이 예상됩니다.</li>
+    </ul>
+
+    <h4>글로벌증시</h4>
+    <p>
+        <span class="neutral">병오년 새해 증시, 지난해 산타 랠리에 이은 1월 효과 기대</span>
+    </p>
+    <ul>
+        <li>美 경제지표에 주목합니다 (9일 12월 고용, 13일 12월 CPI, 14일 12월 PPI). 1월 금리 동결 되더라도 올해 연준이 더 <span class="neutral">완화적인 통화정책 행보</span>를 밟지 않을까 하는 생각의 물꼬를 터주는 계기가 될 것입니다.</li>
+        <li>1월 중 트럼프, 차기 연준 의장 지명과 함께 새해 증시의 <span class="positive">1월 효과</span>가 뚜렷해질 것입니다. <span class="positive">상승 과정 속 증시 흔들림은 비중확대 기회</span> (AI 혁명: 미국, 대만, 한국, 위험 확산 및 성장 대응: 중국, 인도)입니다.</li>
+    </ul>
+
+    <h4>원자재</h4>
+    <p>
+        <span class="neutral">베네수엘라산 원유 수출 통제 강화한 트럼프 행정부. 다만, 비수기라는 점이 유가 상단 제한</span>
+    </p>
+    <ul>
+        <li>트럼프 미 행정부는 베네수엘라에 대한 압박 수위를 강화, 중국/홍콩계 유조선에 대한 제재까지 동원하며 수출을 통제했습니다. 베네수엘라 국영 석유 기업인 PDVSA 측은 수출 차질로 생산 중단 시사했습니다.</li>
+        <li>다만, 유가 상단은 여전히 제한적인 상황입니다. 중동 산유국 냉방 시즌 (4~9월) + 미 드라이빙 시즌 (7~9월) 전까지는 비수기입니다. 특히 <span class="neutral">러-우 전쟁 종전 기대감은 단기적으로 투자 심리를 방해</span>할 수 있습니다.</li>
+    </ul>
+
+    <h4>부동산</h4>
+    <p>
+        <span class="neutral">공급부족도 가격 상승도 높은 세후 수익률도 여전한 주택시장, 상업용 Quality 자산 선호도 지속</span>
+    </p>
+    <ul>
+        <li>주택: 추가 핀셋 규제 및 공급 대책이 예상되나, 주택의 세후 수익률을 크게 낮추는 새로운 규제나 시장 예상 수준을 크게 상회하는 공급 계획이 아니라면 <span class="negative">변곡점이 되기 어렵다</span>는 판단입니다.</li>
+        <li>상업: 임대 지표 둔화 속에서도 <span class="positive">우량 오피스에 대한 투자자들의 선호</span>가 지속되고 있으며, 물류센터 또한 우량 자산에 대한 투자자 유입이 확인될 2026년입니다.</li>
+    </ul>
+
+    <div style="height: 20px;"></div>
+
+    <h2>자산별 투자의견과 선호 섹터</h2>
+
+    <h3>국내 주식 10선</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>티커</th>
+                <th>종목명</th>
+                <th>편입일자</th>
+                <th>시가총액 (조원)</th>
+                <th>수익률 (%) YTD</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>005930</td><td>삼성전자</td><td>24.11.07</td><td>709.8</td><td><span class="positive">125.4</span></td></tr>
+            <tr><td>207940</td><td>삼성바이오로직스</td><td>25.07.14</td><td>78.5</td><td><span class="positive">21.4</span></td></tr>
+            <tr><td>000270</td><td>기아</td><td>25.11.10</td><td>47.6</td><td><span class="positive">21.0</span></td></tr>
+            <tr><td>015760</td><td>한국전력</td><td>25.12.08</td><td>30.3</td><td><span class="positive">135.4</span></td></tr>
+            <tr><td>035720</td><td>카카오</td><td>25.09.01</td><td>26.6</td><td><span class="positive">57.3</span></td></tr>
+            <tr><td>086790</td><td>하나금융지주</td><td>25.11.03</td><td>26.2</td><td><span class="positive">65.7</span></td></tr>
+            <tr><td>010120</td><td>LS ELECTRIC</td><td>25.04.14</td><td>13.8</td><td><span class="positive">186.1</span></td></tr>
+            <tr><td>030200</td><td>KT</td><td>24.07.08</td><td>13.3</td><td><span class="positive">20.0</span></td></tr>
+            <tr><td>000150</td><td>두산</td><td>25.11.03</td><td>12.6</td><td><span class="positive">206.3</span></td></tr>
+            <tr><td>071050</td><td>한국금융지주</td><td>25.08.18</td><td>9.0</td><td><span class="positive">126.8</span></td></tr>
+        </tbody>
+    </table>
+
+    <h3>해외 주식 10선</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>티커</th>
+                <th>종목명</th>
+                <th>편입일자</th>
+                <th>시가총액 (USD bn)</th>
+                <th>수익률 (%) YTD</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>GOOGL</td><td>알파벳</td><td>25.06.23</td><td>2,084.6</td><td><span class="positive">65.4</span></td></tr>
+            <tr><td>AMZN</td><td>아마존</td><td>25.11.03</td><td>2,467.5</td><td><span class="positive">5.2</span></td></tr>
+            <tr><td>AVGO</td><td>브로드컴</td><td>24.11.11</td><td>1,641.0</td><td><span class="positive">44.2</span></td></tr>
+            <tr><td>PLTR</td><td>팔란티어</td><td>25.02.24</td><td>1,286.3</td><td><span class="positive">135.0</span></td></tr>
+            <tr><td>HOOD</td><td>로빈후드</td><td>25.08.18</td><td>101.7</td><td><span class="positive">203.5</span></td></tr>
+            <tr><td>700-HK</td><td>텐센트</td><td>24.04.01</td><td>702.9</td><td><span class="positive">43.7</span></td></tr>
+            <tr><td>BABA-US</td><td>알리바바</td><td>25.11.03</td><td>349.8</td><td><span class="positive">74.3</span></td></tr>
+            <tr><td>388-HK</td><td>홍콩거래소</td><td>25.06.02</td><td>66.4</td><td><span class="positive">38.3</span></td></tr>
+            <tr><td>600276-CN</td><td>항서제약</td><td>24.03.11</td><td>54.2</td><td><span class="positive">29.8</span></td></tr>
+            <tr><td>HSAI-US</td><td>허사이 그룹</td><td>25.08.25</td><td>2.9</td><td><span class="positive">62.1</span></td></tr>
+        </tbody>
+    </table>
+
+    <h3>ETF/리츠 10선</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>티커</th>
+                <th>종목명</th>
+                <th>편입일자</th>
+                <th>시가총액 (LC bn)</th>
+                <th>수익률 (%) YTD</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>396500</td><td>TIGER 반도체 TOP10</td><td>25.04.07</td><td>2,827.5</td><td><span class="positive">120.5</span></td></tr>
+            <tr><td>0051G0</td><td>SOL 미국원자력 SMR</td><td>25.06.02</td><td>331.9</td><td><span class="positive">57.4</span></td></tr>
+            <tr><td>307520</td><td>TIGER 지주회사</td><td>25.11.03</td><td>278.4</td><td><span class="positive">71.4</span></td></tr>
+            <tr><td>365000</td><td>TIGER 인터넷 TOP10</td><td>25.08.11</td><td>77.4</td><td><span class="positive">24.3</span></td></tr>
+            <tr><td>AIQ-US</td><td>Global X Artificial Intelligence & Technology ETF</td><td>25.08.11</td><td>7.3</td><td><span class="positive">31.6</span></td></tr>
+            <tr><td>SPY-US</td><td>SPDR S&P 500 ETF Trust</td><td>24.03.11</td><td>707.8</td><td><span class="positive">16.4</span></td></tr>
+            <tr><td>NLR-US</td><td>VanEck Uranium and Nuclear ETF</td><td>25.06.02</td><td>3.6</td><td><span class="positive">52.7</span></td></tr>
+            <tr><td>TLT-US</td><td>iShares 20+ Year Treasury Bond ETF</td><td>25.06.09</td><td>47.9</td><td><span class="negative">-0.2</span></td></tr>
+            <tr><td>330590</td><td>롯데리츠</td><td>24.11.07</td><td>1,144.3</td><td><span class="positive">29.8</span></td></tr>
+            <tr><td>293940</td><td>신한알파리츠</td><td>25.09.05</td><td>676.1</td><td><span class="negative">-0.9</span></td></tr>
+        </tbody>
+    </table>
+
+    <div style="height: 20px;"></div>
+
+    <h2>국내 주식시장 전망과 국내 주식 10선</h2>
+
+    <h3>KOSPI 선행 EPS 상승 지속 = 상승 여력 확대. 반도체 쏠림 이후 성장주, 로봇, AI, 헬스케어 등으로 확산 예상</h3>
+    <ul>
+        <li><span class="positive">예상보다 빠르고 강한 KOSPI 선행 EPS 레벨업</span>이 진행 중입니다. 프리어닝 시즌 돌입과 함께 <span class="neutral">삼성전자, SK하이닉스 주도 25년 4Q, 26년 연간 이익전망 레벨업</span>이 나타났습니다. 삼성전자, SK하이닉스 26년 영업이익 컨센서스 (1개월)는 각각 104조원, 87조원으로 집계됩니다.</li>
+        <li>12월 16일 저점 이후 KOSPI 상승 과정에서 <span class="negative">반도체로 쏠림현상이 극심</span>했습니다. KOSPI를 Outperform한 업종은 반도체, 콘텐츠 뿐이었습니다. KOSPI 시가총액 증가의 101%를 삼성전자, SK하이닉스 두 종목이 차지하여, 하락 업종/종목이 더 많은 상황입니다.</li>
+        <li>9월, 10월 KOSPI 급등 과정에서 반도체 쏠림현상 이후 Non-반도체로 <span class="neutral">순환매가 전개</span>되었습니다. 다음 주 미국 경제지표 발표, CES와 JPM HC 컨퍼런스 등의 일정을 감안하면 <span class="positive">성장주, 로봇, 제약/바이오 업종으로 순환매 가능성이 높다</span>고 판단합니다.</li>
+    </ul>
+
+    <div style="height: 20px;"></div>
+
+    <div class="asset-section">
+        <h3>삼성전자 (005930) <span class="asset-subtitle">0.9배는 싸다</span></h3>
+        <h4>실적 전망</h4>
+        <p>2025년 매출 321.7조원, 영업이익 33.2조원 (OPM <span class="positive">+19%</span>)을 전망합니다. 상반기의 경우, 단기 실적보다는 <span class="positive">근원적 경쟁력 개선에 집중</span>하며, 개선 노력의 결실은 하반기부터 실적으로 연결되기 시작할 것입니다. DRAM은 3Q25부터, NAND는 3Q25-4Q25부터 판매 정상화를 예상합니다.</p>
+        <h4>핵심 포인트</h4>
+        <p>제품 전반에서 <span class="neutral">품질 개선 노력</span>이 지속되고 있으며, 하반기부터 개선 노력의 결실을 확인할 수 있을 것입니다. 중장기적으로는 <span class="neutral">사업 효율화, Value up을 통한 주주가치 강화 노력</span> 등에 주목합니다. <span class="positive">Valuation의 저점 통과 국면에 진입했다</span>는 판단입니다.</p>
+
+        <h4>영업실적 및 주요 투자 지표 (단위: 십억원, 원, 배, %)</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>구분</th><th>2022A</th><th>2023A</th><th>2024F</th><th>2025F</th><th>2026F</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>매출액</td><td>302,231</td><td>258,935</td><td>300,871</td><td>312,060</td><td>335,756</td></tr>
+                <tr><td>영업이익</td><td>43,377</td><td>6,567</td><td>32,726</td><td>30,978</td><td>45,659</td></tr>
+                <tr><td>세전순이익</td><td>46,440</td><td>11,006</td><td>37,530</td><td>37,555</td><td>50,307</td></tr>
+                <tr><td>총당기순이익</td><td>-9,214</td><td>-4,481</td><td>3,078</td><td>8,030</td><td>13,080</td></tr>
+                <tr><td>지배지분순이익</td><td>55,654</td><td>15,487</td><td>34,451</td><td>29,526</td><td>37,227</td></tr>
+                <tr><td>EPS</td><td>8,057</td><td>2,131</td><td>4,950</td><td>4,238</td><td>5,389</td></tr>
+                <tr><td>PER</td><td>6.9</td><td>36.8</td><td>10.7</td><td>13.4</td><td>10.6</td></tr>
+                <tr><td>BPS</td><td>50,817</td><td>52,002</td><td>57,663</td><td>60,997</td><td>65,161</td></tr>
+                <tr><td>PBR</td><td>1.1</td><td>1.5</td><td>0.9</td><td>0.9</td><td>0.9</td></tr>
+                <tr><td>ROE</td><td>17.1</td><td>4.1</td><td>9.0</td><td>7.1</td><td>8.5</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="asset-section">
+        <h3>삼성바이오로직스 (207940) <span class="asset-subtitle">CDMO Reboot</span></h3>
+        <h4>실적 전망 및 핵심 투자 포인트</h4>
+        <ul>
+            <li>26년 매출 5.4조원 (<span class="positive">+21.7% yoy</span>), 영업이익 2.5조원 (<span class="positive">+22.5% yoy</span>), OPM <span class="positive">46.7%</span>를 전망합니다.</li>
+            <li>동사는 인적 분할을 통해 <span class="neutral">순수 CDMO 구조로 재편</span>했습니다. 고객사와 이해상충 리스크가 제거되어, <span class="positive">수주 경쟁력이 강화</span>되어 추가 수주 가능성이 높다고 판단합니다.</li>
+            <li>1H25 트럼프 정부가 추진한 약가 인하, 의약품 관세 등 <span class="neutral">정책 불확실성이 대부분 해소</span>되었습니다. 생물보안법도 국방수권법(NDAA)에 포함되어 연내 승인될 가능성이 높습니다.</li>
+            <li>26년에는 <span class="positive">4공장 풀가동 및 5공장의 램프업으로 호실적이 지속</span>될 가능성이 높으며, 6공장 착공 및 미국 공장 검토 등 <span class="positive">중장기 성장 모멘텀</span>도 보유하고 있습니다.</li>
+        </ul>
+
+        <h4>영업실적 및 주요 투자 지표 (단위: 십억원, 원, 배, %)</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>구분</th><th>2022A</th><th>2023A</th><th>2024F</th><th>2025F</th><th>2026F</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>매출액</td><td>3,001</td><td>3,695</td><td>4,587</td><td>5,182</td><td>5,808</td></tr>
+                <tr><td>영업이익</td><td>984</td><td>1,114</td><td>1,355</td><td>1,569</td><td>1,843</td></tr>
+                <tr><td>세전순이익</td><td>1,009</td><td>1,120</td><td>1,378</td><td>1,607</td><td>1,898</td></tr>
+                <tr><td>총당기순이익</td><td>798</td><td>858</td><td>1,051</td><td>1,226</td><td>1,448</td></tr>
+                <tr><td>지배지분순이익</td><td>798</td><td>858</td><td>1,051</td><td>1,226</td><td>1,448</td></tr>
+                <tr><td>EPS</td><td>11,411</td><td>12,051</td><td>14,769</td><td>17,232</td><td>20,350</td></tr>
+                <tr><td>PER</td><td>71.9</td><td>63.1</td><td>66.8</td><td>57.3</td><td>48.5</td></tr>
+                <tr><td>BPS</td><td>128,464</td><td>138,119</td><td>152,908</td><td>170,157</td><td>190,524</td></tr>
+                <tr><td>PBR</td><td>6.4</td><td>5.5</td><td>6.5</td><td>5.8</td><td>5.2</td></tr>
+                <tr><td>ROE</td><td>11.4</td><td>9.1</td><td>10.1</td><td>10.7</td><td>11.3</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="asset-section">
+        <h3>한국전력 (015760) <span class="asset-subtitle">국내 전력 사업 실적 개선, 배당, 해외 원전 건설 시장 진출 확대</span></h3>
+        <h4>실적 전망</h4>
+        <p>4Q25 영업이익 2.91조원 (<span class="positive">+21%</span>, YoY), 2026년 영업이익 18.24조원 (<span class="positive">+26%</span>)을 전망합니다. 전기 요금 인상은 없으나, 4~5개월 전 <span class="negative">하락한 유가 하락분 영향</span>으로 LNG 수입가격 및 SMP 하락, 2H26 발전 믹스 개선 등으로 <span class="positive">실적 개선이 지속</span>될 것입니다.</p>
+        <h4>핵심 포인트</h4>
+        <ul>
+            <li>1) <span class="positive">큰 폭의 실적개선</span>과 함께 정부의 <span class="positive">배당 확대 정책</span>으로 배당성향 상승이 기대됩니다. <span class="positive">배당 매력 부각</span> (2025 FDPS 2,140원, 배당수익률 4.2% 기대하지만, 추가로 상승할 가능성 존재)됩니다.</li>
+            <li>2) 2026년 미국 AP1000 건설 참여, <span class="positive">해외 원전 사업 확대</span> 등으로 밸류 상단 PBR 0.6배를 넘어설 것 (저평가 요소 해소)으로 기대합니다.</li>
+        </ul>
+
+        <h4>영업실적 및 주요 투자 지표 (단위: 십억원, 원, 배, %)</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>구분</th><th>2023A</th><th>2024A</th><th>2025F</th><th>2026F</th><th>2027F</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>매출액</td><td>88,219</td><td>93,399</td><td>98,427</td><td>98,187</td><td>98,203</td></tr>
+                <tr><td>영업이익</td><td>-4,542</td><td>8,365</td><td>14,454</td><td>18,239</td><td>19,135</td></tr>
+                <tr><td>세전순이익</td><td>-7,554</td><td>5,257</td><td>12,172</td><td>14,579</td><td>15,443</td></tr>
+                <tr><td>총당기순이익</td><td>-4,716</td><td>3,622</td><td>8,792</td><td>11,080</td><td>11,736</td></tr>
+                <tr><td>지배지분순이익</td><td>-4,823</td><td>3,492</td><td>8,662</td><td>10,914</td><td>11,560</td></tr>
+                <tr><td>EPS</td><td>-7,512</td><td>5,439</td><td>13,493</td><td>17,001</td><td>18,008</td></tr>
+                <tr><td>PER</td><td>N/A</td><td>3.7</td><td>3.6</td><td>2.8</td><td>2.7</td></tr>
+                <tr><td>BPS</td><td>55,837</td><td>62,177</td><td>75,457</td><td>90,318</td><td>105,306</td></tr>
+                <tr><td>PBR</td><td>0.3</td><td>0.3</td><td>0.6</td><td>0.5</td><td>0.5</td></tr>
+                <tr><td>ROE</td><td>-12.6</td><td>9.2</td><td>19.6</td><td>20.5</td><td>18.4</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="asset-section">
+        <h3>기아 (000270) <span class="asset-subtitle">하방은 배당이 막아주고, 상방은 텔루라이드가 뚫어준다</span></h3>
+        <h4>실적 전망</h4>
+        <ul>
+            <li>‘25년 연간 매출 111.3조원 (YoY <span class="positive">+4%</span>), 영업이익 9.6조 (YoY <span class="negative">-24%</span>, OPM 8.7%)를 전망합니다.</li>
+            <li>‘26년 연간 매출 114.9조원 (YoY <span class="positive">+3%</span>), 영업이익 10.4조 (YoY <span class="positive">+7%</span>, OPM 9.0%)를 전망합니다.</li>
+            <li>15% 관세 인하 가시화됨에 따라 2026년 관세 영향 3.2조 => 1.4조원으로 <span class="positive">-1.9조원 축소</span>를 예상합니다.</li>
+        </ul>
+        <h4>핵심 포인트</h4>
+        <ul>
+            <li>‘26년 초로 가며 <span class="positive">배당 매력도 재차 강화</span>될 것입니다. 기아는 2025년 결산 DPS 6,500원으로 YoY 유지를 예상합니다.</li>
+            <li>‘26년 <span class="positive">텔루라이드 증설</span> (12=>17만대/연), 스포티지 메타플랜트 생산 (6만대/연) 가능성이 높다고 판단합니다. 이에, 미국 Mix Profile 레벨업되며 <span class="positive">수익성 개선을 견인</span>할 것으로 전망합니다.</li>
+        </ul>
+
+        <h4>영업실적 및 주요 투자 지표 (단위: 십억원, 원, 배, %)</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>구분</th><th>2023A</th><th>2024A</th><th>2025F</th><th>2026F</th><th>2027F</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>매출액</td><td>99,808</td><td>107,449</td><td>111,277</td><td>114,890</td><td>121,119</td></tr>
+                <tr><td>영업이익</td><td>11,608</td><td>12,667</td><td>9,652</td><td>10,351</td><td>11,536</td></tr>
+                <tr><td>세전순이익</td><td>12,677</td><td>13,500</td><td>10,620</td><td>11,506</td><td>12,609</td></tr>
+                <tr><td>총당기순이익</td><td>8,778</td><td>9,775</td><td>7,752</td><td>8,399</td><td>9,205</td></tr>
+                <tr><td>지배지분순이익</td><td>8,777</td><td>9,773</td><td>7,752</td><td>8,399</td><td>9,205</td></tr>
+                <tr><td>EPS</td><td>21,770</td><td>24,413</td><td>19,572</td><td>21,329</td><td>23,375</td></tr>
+                <tr><td>PER</td><td>4.6</td><td>4.1</td><td>5.4</td><td>5.0</td><td>4.5</td></tr>
+                <tr><td>BPS</td><td>115,468</td><td>139,469</td><td>154,067</td><td>169,945</td><td>186,966</td></tr>
+                <tr><td>PBR</td><td>0.9</td><td>0.7</td><td>0.8</td><td>0.7</td><td>0.6</td></tr>
+                <tr><td>ROE</td><td>20.4</td><td>19.1</td><td>13.3</td><td>13.1</td><td>13.1</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="asset-section">
+        <h3>카카오 (035720) <span class="asset-subtitle">AI 에이전트, 국내에서는 카카오톡에서 첫 시작</span></h3>
+        <h4>실적 전망</h4>
+        <ul>
+            <li>‘26년 연간 매출 9.2조원 (YoY <span class="positive">+14.5%</span>), 영업이익 8,448억원 (YoY <span class="positive">+38.8%</span>, OPM 9.2%)을 전망합니다.</li>
+            <li>AI가 도입된 톡비즈는 2026년 매출성장률 YoY <span class="positive">26%</span>를 전망합니다. 페이, 모빌리티, SM, 카카오게임즈 등 <span class="positive">연결 자회사들까지 모두 2026년 증익</span>이 예상되어 전사 <span class="positive">수익성 개선</span>을 전망합니다. 2025년 영업이익 8,448억원 (YoY 38.8%)을 전망합니다.</li>
+        </ul>
+        <h4>핵심 포인트</h4>
+        <ul>
+            <li>카카오톡은 10/28 ChatGPT를 도입했습니다. 11월 AI에이전트 출시 예정입니다. 2026년부터 새롭게 기대할 수 있는 매출은 1) 신규 구독, 2) 검색 광고입니다. 2027년에는 외부 파트너사들과의 결합을 통한 3) 거래 수수료 매출까지 발생할 전망입니다. <span class="positive">가파른 매출 성장률 회복으로 주가 우상향이 지속</span>될 것으로 전망합니다.</li>
+        </ul>
+
+        <h4>영업실적 및 주요 투자 지표 (단위: 십억원, 원, 배, %)</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>구분</th><th>2023A</th><th>2024A</th><th>2025F</th><th>2026F</th><th>2027F</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>매출액</td><td>7,557</td><td>7,872</td><td>7,995</td><td>9,150</td><td>10,424</td></tr>
+                <tr><td>영업이익</td><td>461</td><td>460</td><td>609</td><td>845</td><td>1,042</td></tr>
+                <tr><td>세전순이익</td><td>-1,648</td><td>-3</td><td>714</td><td>883</td><td>1,080</td></tr>
+                <tr><td>총당기순이익</td><td>-1,817</td><td>-162</td><td>618</td><td>671</td><td>821</td></tr>
+                <tr><td>지배지분순이익</td><td>-1,013</td><td>55</td><td>570</td><td>629</td><td>770</td></tr>
+                <tr><td>EPS</td><td>-2,276</td><td>124</td><td>1,288</td><td>1,425</td><td>1,743</td></tr>
+                <tr><td>PER</td><td>NA</td><td>306.9</td><td>46.3</td><td>41.8</td><td>34.2</td></tr>
+                <tr><td>BPS</td><td>21,951</td><td>22,839</td><td>24,146</td><td>25,540</td><td>27,216</td></tr>
+                <tr><td>PBR</td><td>2.5</td><td>1.7</td><td>2.5</td><td>2.3</td><td>2.2</td></tr>
+                <tr><td>ROE</td><td>-10.3</td><td>0.6</td><td>5.5</td><td>5.7</td><td>6.6</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="asset-section">
+        <h3>하나금융지주 (086790) <span class="asset-subtitle">가계대출규제의 역설</span></h3>
+        <h4>실적 전망</h4>
+        <p>3Q25 순이익 1.13조원 (QoQ <span class="negative">-3.5%</span>, YoY <span class="negative">-2.1%</span>)으로 <span class="positive">양호한 실적</span>을 기록했습니다. 은행업 전반적으로 무탈한 3분기였습니다. 기준금리 인하에도 마진이 예상보다 상당히 잘 방어되었고, 원화대출 성장도 예상을 상회, 인수금융 위주의 대규모 IB딜 소싱도 <span class="positive">호실적에 기여</span>했습니다.</p>
+        <h4>핵심 포인트</h4>
+        <p>각종 제재 및 생산적 금융 동참으로 수익성 훼손에 대한 우려가 존재하나 대부분 은행의 수익성을 훼손하지 않는 합리적이고 일반적인 것들이 많아 <span class="positive">환원에 대한 기대는 여전히 유효</span>합니다. 특히 <span class="positive">추가 자사주 매입 기대</span>가 존재하는 하나금융지주를 추천합니다.</p>
+
+        <h4>영업실적 및 주요 투자 지표 (단위: 십억원, 원, 배, %)</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>구분</th><th>3Q24</th><th>2Q25</th><th>3Q25P</th><th>QoQ</th><th>YoY</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>순이자이익</td><td>2,196</td><td>2,218</td><td>2,291</td><td><span class="positive">3.3%</span></td><td><span class="positive">4.3%</span></td></tr>
+                <tr><td>비이자이익</td><td>533</td><td>736</td><td>626</td><td><span class="negative">-14.9%</span></td><td><span class="positive">17.3%</span></td></tr>
+                <tr><td>총영업이익</td><td>2,729</td><td>2,954</td><td>2,917</td><td><span class="negative">-1.3%</span></td><td><span class="positive">6.9%</span></td></tr>
+                <tr><td>판관비</td><td>1,119</td><td>1,124</td><td>1,146</td><td><span class="positive">1.9%</span></td><td><span class="positive">2.4%</span></td></tr>
+                <tr><td>충당금 적립전 영업이익</td><td>1,610</td><td>1,830</td><td>1,771</td><td><span class="negative">-3.2%</span></td><td><span class="positive">10.0%</span></td></tr>
+                <tr><td>대손비용</td><td>278</td><td>336</td><td>293</td><td><span class="negative">-13.0%</span></td><td><span class="positive">5.1%</span></td></tr>
+                <tr><td>영업이익</td><td>1,331</td><td>1,493</td><td>1,478</td><td><span class="negative">-1.0%</span></td><td><span class="positive">11.0%</span></td></tr>
+                <tr><td>영업외손익</td><td>156</td><td>53</td><td>53</td><td><span class="negative">-1.0%</span></td><td><span class="negative">-66.2%</span></td></tr>
+                <tr><td>지배주주 순이익</td><td>1,156.6</td><td>1,173.3</td><td>1,132.4</td><td><span class="negative">-3.5%</span></td><td><span class="negative">-2.1%</span></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="asset-section">
+        <h3>두산 (000150) <span class="asset-subtitle">Data Center 투자 확대, 반도체 호황, 원전 르네상스 시대의 핵심 수혜</span></h3>
+        <h4>‘25년 3분기 실적 리뷰</h4>
+        <ul>
+            <li>매출액 4조 4,524억원 (<span class="positive">+15.2% yoy</span>), 영업이익 2,072억원 (<span class="positive">+88.1% yoy</span>)을 기록했습니다.</li>
+            <li>전자 BG 매출액은 4,399억원 (<span class="positive">+76.2% yoy</span>, <span class="negative">-7.6% qoq</span>)으로 당사 예상을 상회했습니다.</li>
+            <li>전자 BG를 포함한 자체사업 영업이익은 1,087억원 (<span class="positive">+206.2% yoy</span>)으로 전년동기대비 <span class="positive">대폭 성장</span>했습니다.</li>
+        </ul>
+        <h4>핵심 포인트</h4>
+        <ul>
+            <li><span class="positive">AI, Data Center 투자</span>와 <span class="positive">반도체 업황 Up-Cycle</span> 진입에 직접적으로 수혜 받으며 27년까지 <span class="positive">지속 성장</span>할 전망입니다.</li>
+            <li>전자 BG의 단기 실적 변동성에 동요 말고 <span class="neutral">전략적 장기 투자로 수익률 극대화</span>를 추천합니다.</li>
+            <li>자회사인 <span class="positive">두산에너빌리티, 두산로보틱스의 글로벌 원전 확대</span>와 <span class="positive">휴머노이드 로봇시장 성장의 수혜</span>도 기대됩니다.</li>
+        </ul>
+
+        <h4>영업실적 및 주요 투자 지표 (단위: 십억원, 원, 배, %)</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>구분</th><th>2023A</th><th>2024A</th><th>2025F</th><th>2026F</th><th>2027F</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>매출액</td><td>19,130</td><td>18,129</td><td>19,125</td><td>20,017</td><td>20,920</td></tr>
+                <tr><td>영업이익</td><td>1,436</td><td>1,004</td><td>1,254</td><td>1,842</td><td>2,066</td></tr>
+                <tr><td>세전순이익</td><td>451</td><td>593</td><td>757</td><td>1,373</td><td>1,617</td></tr>
+                <tr><td>총당기순이익</td><td>272</td><td>302</td><td>386</td><td>700</td><td>824</td></tr>
+                <tr><td>지배지분순이익</td><td>-388</td><td>-226</td><td>120</td><td>217</td><td>256</td></tr>
+                <tr><td>EPS</td><td>-18,133</td><td>-10,562</td><td>5,595</td><td>10,288</td><td>12,117</td></tr>
+                <tr><td>PER</td><td>-5.2</td><td>-24.1</td><td>158.9</td><td>86.4</td><td>73.4</td></tr>
+                <tr><td>BPS</td><td>75,846</td><td>69,123</td><td>74,062</td><td>84,674</td><td>96,129</td></tr>
+                <tr><td>PBR</td><td>1.2</td><td>3.7</td><td>12.0</td><td>10.5</td><td>9.2</td></tr>
+                <tr><td>ROE</td><td>-22.7</td><td>-14.6</td><td>7.8</td><td>12.9</td><td>13.4</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="asset-section">
+        <h3>LS ELECTRIC (010120) <span class="asset-subtitle">2026년 미국향 전력기기 매출 확대 & DC(직류) 전력기기 도입 확대 수혜</span></h3>
+        <h4>실적 전망</h4>
+        <ul>
+            <li>4Q25 매출액 1.57조원 (<span class="positive">+15.7%</span>, 이하 YoY), 영업이익 1,322억원 (<span class="positive">+10.3%</span>)을 전망합니다.</li>
+            <li>2026년 매출액 6.01조원 (<span class="positive">+20%</span>), 영업이익 6,387억원 (<span class="positive">+49%</span>)을 전망합니다.</li>
+            <li><span class="positive">빅테크향 전력기기, ESS, HVDC 1차 프로젝트 매출 증가, 초고압 변압기 증설</span> 등으로 <span class="positive">실적 개선</span>이 기대됩니다.</li>
+        </ul>
+        <h4>핵심 포인트</h4>
+        <ul>
+            <li><span class="positive">AI 데이터센터의 온사이트 자가발전 확대</span>로 발전기 연결용 중저압 전력기기 수요 급증에 따른 수혜가 예상됩니다.</li>
+            <li><span class="positive">국내 유일의 중저압용 DC 차단기 생산, ESS 및 연료전지향 DC 기반 전력기기 매출 급증</span>이 기대됩니다.</li>
+            <li>미국, 베트남 등 <span class="positive">해외 종속법인의 실적 개선 지속, 미국 법인 생산능력 확대 계획</span> 등도 긍정적입니다.</li>
+        </ul>
+
+        <h4>영업실적 및 주요 투자 지표 (단위: 십억원, 원, 배, %)</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>구분</th><th>2023A</th><th>2024A</th><th>2025F</th><th>2026F</th><th>2027F</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>매출액</td><td>4,230</td><td>4,552</td><td>5,015</td><td>6,014</td><td>7,007</td></tr>
+                <tr><td>영업이익</td><td>325</td><td>390</td><td>429</td><td>639</td><td>868</td></tr>
+                <tr><td>세전순이익</td><td>264</td><td>333</td><td>377</td><td>595</td><td>839</td></tr>
+                <tr><td>총당기순이익</td><td>208</td><td>242</td><td>279</td><td>452</td><td>638</td></tr>
+                <tr><td>지배지분순이익</td><td>206</td><td>239</td><td>278</td><td>439</td><td>619</td></tr>
+                <tr><td>EPS</td><td>6,865</td><td>7,957</td><td>9,270</td><td>14,617</td><td>20,631</td></tr>
+                <tr><td>PER</td><td>10.7</td><td>20.2</td><td>47.8</td><td>30.3</td><td>21.5</td></tr>
+                <tr><td>BPS</td><td>57,092</td><td>61,292</td><td>67,691</td><td>78,867</td><td>93,961</td></tr>
+                <tr><td>PBR</td><td>1.3</td><td>2.6</td><td>6.5</td><td>5.6</td><td>4.7</td></tr>
+                <tr><td>ROE</td><td>12.6</td><td>13.4</td><td>14.4</td><td>19.9</td><td>23.9</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="asset-section">
+        <h3>KT (030200) <span class="asset-subtitle">5천은 지키겠습니다.</span></h3>
+        <h4>실적 전망</h4>
+        <ul>
+            <li>25E OP 2.6조원 (<span class="positive">+218% yoy</span>)을 전망합니다. 부동산 일회성 제외 시 2.1조원 (<span class="positive">+156% yoy</span>)입니다. 26E OP는 2.3조원입니다. 15년 만에 <span class="positive">분기 5천억원대, 연간 2조원대 이익 복귀</span>가 예상됩니다. 24~28E OP CAGR 7.9%입니다.</li>
+            <li>3사 중 가장 먼저 26년부터 5G 초기 <span class="positive">상각비 감소 사이클에 진입</span>합니다. 2년간 감가비 3천억원 감소를 전망합니다.</li>
+            <li>컨텐츠, 부동산, 금융 등 자회사 이익 기여분은 20년 3.1천억원, 26E 6천억원에 이를 것입니다.</li>
+        </ul>
+        <h4>핵심 포인트</h4>
+        <ul>
+            <li>8월 자사주 취득 완료 후 해킹과 CEO 교체 진행되면서 연말까지 주가는 부진했습니다. <span class="positive">26년 초 반등</span>을 전망합니다.</li>
+            <li>총주주환원은 25E 8.3천억원, DPS 2.4천원, 배당금 5.8천억원, 자사주 2.5천억원입니다. 26E는 8.6천억원, DPS 2.7천원, 배당금 6.1천억원, 자사주 2.5천억원 + α입니다. 25~28년 1조원 취득에 <span class="positive">가속도가 붙을 가능성</span>이 있습니다.</li>
+        </ul>
+
+        <h4>영업실적 및 주요 투자 지표 (단위: 십억원, 원, 배, %)</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>구분</th><th>FY 22</th><th>FY 23</th><th>FY 24</th><th>FY 25E</th><th>FY 26E</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>매출액</td><td>25,650</td><td>26,376</td><td>26,431</td><td>28,177</td><td>27,402</td></tr>
+                <tr><td>증가율</td><td><span class="positive">3.0</span></td><td><span class="positive">2.8</span></td><td><span class="positive">0.2</span></td><td><span class="positive">6.6</span></td><td><span class="negative">-2.8</span></td></tr>
+                <tr><td>영업이익</td><td>1,690</td><td>1,650</td><td>809</td><td>2,573</td><td>2,280</td></tr>
+                <tr><td>증가율</td><td><span class="positive">1.1</span></td><td><span class="negative">-2.4</span></td><td><span class="negative">-50.9</span></td><td><span class="positive">217.9</span></td><td><span class="negative">-11.4</span></td></tr>
+                <tr><td>순이익</td><td>1,263</td><td>1,010</td><td>470</td><td>1,788</td><td>1,494</td></tr>
+                <tr><td>순이익률</td><td>4.9</td><td>3.8</td><td>1.8</td><td>6.9</td><td>6.1</td></tr>
+                <tr><td>EPS</td><td>4,835</td><td>3,887</td><td>1,850</td><td>7,093</td><td>5,956</td></tr>
+                <tr><td>PER</td><td>7.0</td><td>8.9</td><td>23.7</td><td>6.8</td><td>8.1</td></tr>
+                <tr><td>PBR</td><td>0.5</td><td>0.5</td><td>0.7</td><td>0.7</td><td>0.7</td></tr>
+                <tr><td>EV/EBITDA</td><td>3.4</td><td>3.4</td><td>4.3</td><td>3.3</td><td>3.4</td></tr>
+                <tr><td>ROE</td><td>8.0</td><td>6.1</td><td>2.3</td><td>10.7</td><td>8.5</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="asset-section">
+        <h3>한국금융지주 (071050) <span class="asset-subtitle">또 서프라이즈.?</span></h3>
+        <h4>실적 전망</h4>
+        <p>3Q25 연결 순이익 4,508억원으로 <span class="positive">컨센서스를 +25.1% 상회하는 어닝 서프라이즈 달성</span>을 전망합니다. 2분기 역대급 실적으로 Peak-out 우려가 있었으나 9월 들어 NXT와 KRX 합산 거래대금이 연일 30조원을 상회했습니다. PF 여파로 위축 예상되었던 IB는 인수금융 및 리파이낸싱, 회사채 발행 등으로 <span class="positive">양호한 실적</span>을 기록했습니다.</p>
+        <h4>핵심 포인트</h4>
+        <p>증권업 하반기 실적이 상반기를 넘기는 힘들고 주가도 실적을 선반영해 2분기와 같은 주가 급등은 어렵습니다. 따라서 <span class="neutral">우호적 환경을 최대한 이용해 실적을 극대화하는 기업에 투자</span>할 필요가 있습니다. 한국금융지주의 ‘24년 대비 ‘25년 순이익 증가율은 <span class="positive">61.2%로 커버리지 가운데 개선폭이 가장 클 것</span>입니다.</p>
+
+        <h4>영업실적 및 주요 투자 지표 (단위: 십억원, %)</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>구분</th><th>3Q24</th><th>2Q25</th><th>3Q25E</th><th>QoQ</th><th>YoY</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>순영업수익</td><td>729.8</td><td>997.1</td><td>930.1</td><td><span class="negative">-6.7%</span></td><td><span class="positive">27.4%</span></td></tr>
+                <tr><td>수수료순수익</td><td>303.1</td><td>378.7</td><td>335.2</td><td><span class="negative">-11.5%</span></td><td><span class="positive">10.6%</span></td></tr>
+                <tr><td>브로커리지</td><td>107.0</td><td>133.4</td><td>143.4</td><td><span class="positive">7.5%</span></td><td><span class="positive">34.0%</span></td></tr>
+                <tr><td>자산관리</td><td>36.9</td><td>43.4</td><td>38.8</td><td><span class="negative">-10.7%</span></td><td><span class="positive">5.0%</span></td></tr>
+                <tr><td>IB관련</td><td>104.5</td><td>143.8</td><td>145.0</td><td><span class="positive">0.8%</span></td><td><span class="positive">38.8%</span></td></tr>
+                <tr><td>기타</td><td>-82.5</td><td>-111.6</td><td>8.0</td><td>흑전</td><td>흑전</td></tr>
+                <tr><td>수수료비용</td><td>64.7</td><td>86.0</td><td>65.3</td><td><span class="negative">-24.0%</span></td><td><span class="positive">1.0%</span></td></tr>
+                <tr><td>순이자수익</td><td>315.7</td><td>373.9</td><td>373.9</td><td><span class="positive">0.0%</span></td><td><span class="positive">18.4%</span></td></tr>
+                <tr><td>상품운용손익</td><td>111.1</td><td>244.5</td><td>221.0</td><td><span class="negative">-9.6%</span></td><td><span class="positive">99.0%</span></td></tr>
+                <tr><td>판관비</td><td>366.9</td><td>411.6</td><td>366.9</td><td><span class="negative">-10.9%</span></td><td><span class="positive">0.0%</span></td></tr>
+                <tr><td>영업이익</td><td>363.0</td><td>585.6</td><td>563.2</td><td><span class="negative">-3.8%</span></td><td><span class="positive">55.2%</span></td></tr>
+                <tr><td>영업외이익</td><td>37.8</td><td>147.8</td><td>37.8</td><td><span class="negative">-74.4%</span></td><td><span class="positive">0.0%</span></td></tr>
+                <tr><td>당기순이익</td><td>314.5</td><td>540.2</td><td>450.8</td><td><span class="negative">-16.6%</span></td><td><span class="positive">43.3%</span></td></tr>
+                <tr><td>당기순이익 (지배주주)</td><td>312.7</td><td>539.0</td><td>450.8</td><td><span class="negative">-16.4%</span></td><td><span class="positive">44.2%</span></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div style="height: 20px;"></div>
+
+    <h2>글로벌 증시 전망과 해외주식 10선</h2>
+
+    <h3>트럼프 행정부의 고율관세 부과, 무역협정 피해 최소화, 통화/재정정책 강화는 유동자금이 증시로 유입되는 요인</h3>
+    <ul>
+        <li>현 글로벌 증시는 <span class="neutral">미국 증시의 역사적 사상 최고치 경신 후 자연스러운 숨 고르기 구간</span>에 들어선 상황입니다. 투자자들이 경험하고 있는 미국 증시는 펀더멘탈과 수급 그리고 정책 (통화, 재정) 기대가 맞물린 <span class="positive">추세적인 상승장</span>에 놓여 있습니다.</li>
+        <li>앞으로 모니터링해야 할 여러 가지 변수의 합이 우호적인 상황을 유지한다면, <span class="positive">올해 상반기까지는 큰 굴곡 없이 글로벌 증시는 우상향</span>할 것입니다 (글로벌 증시 베이스 시나리오는 1/4분기 상승, 2/4분기 상승 제한 or 하락).</li>
+        <li><span class="positive">새해 첫 달에 다른 달보다 더 많이 상승하는 1월 효과</span>가 기대되는 새해 증시가 될 것입니다. 1월 중 트럼프, 차기 연준 의장 지명, 1월 FOMC 전 발표되는 美 경제지표는 올해 <span class="neutral">더 완화적일 연준 통화정책 기대를 높이며 긍정적 역할</span>을 기대합니다.</li>
+    </ul>
+
+    <div style="height: 20px;"></div>
+
+    <div class="asset-section">
+        <h3>알파벳 (GOOGL) <span class="asset-subtitle">글로벌 1위 광고 기업</span></h3>
+        <h4>투자 전망</h4>
+        <ul>
+            <li><span class="positive">Gemini 3모델이 클라우드 성장률 가속화를 견인</span>할 전망입니다. TPU 판매 시 <span class="positive">추가 매출</span>이 기대됩니다.</li>
+            <li><span class="positive">AI 검색 도입</span>으로 신규 광고 슬롯을 창출하며, 검색 광고 매출도 <span class="positive">증가</span>할 것으로 기대됩니다.</li>
+        </ul>
+        <h4>핵심 포인트</h4>
+        <ul>
+            <li>AIMode, AIOverview를 도입하면서 <span class="positive">검색 쿼리 증가 및 신규 광고 키워드 발굴</span>이 예상됩니다.</li>
+            <li><span class="positive">자체 AI 모델 Gemini를 지속적으로 출시</span>하며, API 시장 점유율을 점차 높여가고 있습니다.</li>
+        </ul>
+
+        <h4>영업실적 및 주요 투자 지표 (단위: 십억달러, 달러, 배, %)</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>구분</th><th>2022</th><th>2023</th><th>2024</th><th>2025E</th><th>2026E</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>매출액</td><td>282.8</td><td>307.4</td><td>350.0</td><td>400.1</td><td>455.8</td></tr>
+                <tr><td>증가율</td><td><span class="positive">9.8</span></td><td><span class="positive">8.7</span></td><td><span class="positive">13.9</span></td><td><span class="positive">14.3</span></td><td><span class="positive">13.9</span></td></tr>
+                <tr><td>영업이익</td><td>94.2</td><td>107.3</td><td>135.1</td><td>144.0</td><td>169.1</td></tr>
+                <tr><td>증가율</td><td><span class="positive">0.1</span></td><td><span class="positive">13.9</span></td><td><span class="positive">26.0</span></td><td><span class="positive">6.6</span></td><td><span class="positive">17.4</span></td></tr>
+                <tr><td>순이익</td><td>76.1</td><td>95.1</td><td>100.1</td><td>135.5</td><td>145.3</td></tr>
+                <tr><td>순이익률</td><td>26.9</td><td>30.9</td><td>28.6</td><td>33.9</td><td>31.9</td></tr>
+                <tr><td>EPS</td><td>4.6</td><td>5.8</td><td>8.0</td><td>10.6</td><td>11.2</td></tr>
+                <tr><td>PER</td><td>19.3</td><td>24.1</td><td>23.5</td><td>29.5</td><td>27.9</td></tr>
+                <tr><td>PBR</td><td>4.4</td><td>6.2</td><td>7.2</td><td>9.2</td><td>7.4</td></tr>
+                <tr><td>EV/EBITDA</td><td>9.8</td><td>14.1</td><td>15.2</td><td>21.3</td><td>17.7</td></tr>
+                <tr><td>ROE</td><td>23.0</td><td>25.8</td><td>30.5</td><td>31.1</td><td>26.4</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="asset-section">
+        <h3>아마존 (AMZN) <span class="asset-subtitle">글로벌 1위 이커머스 & 클라우드 기업</span></h3>
+        <h4>투자 전망</h4>
+        <ul>
+            <li><span class="positive">신규 데이터센터 가동</span>으로 AWS 클라우드 성장률이 <span class="positive">반등</span>할 전망입니다. 2027년까지 데이터센터를 2배로 늘릴 계획입니다.</li>
+            <li><span class="positive">인력 감축을 통한 이익률 상승 추세가 지속</span>되며, 12개월 선행 EV/EBITDA 13배로 <span class="neutral">밸류 부담도 낮습니다</span>.</li>
+        </ul>
+        <h4>핵심 포인트</h4>
+        <ul>
+            <li>아마존의 미국 이커머스 시장 점유율은 <span class="positive">41%로 압도적인 1위</span>이며, 아마존 프라임 기반 <span class="neutral">소비자 충성도가 유지</span>되고 있습니다.</li>
+            <li><span class="positive">데이터센터 증설에 기반해 클라우드 성장률이 가속화</span>될 것으로 전망됩니다.</li>
+        </ul>
+
+        <h4>영업실적 및 주요 투자 지표 (단위: 십억달러, 달러, 배, %)</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>구분</th><th>2022</th><th>2023</th><th>2024</th><th>2025E</th><th>2026E</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>매출액</td><td>514.0</td><td>574.8</td><td>638.0</td><td>714.6</td><td>795.7</td></tr>
+                <tr><td>증가율</td><td><span class="positive">9.4</span></td><td><span class="positive">11.8</span></td><td><span class="positive">11.0</span></td><td><span class="positive">12.0</span></td><td><span class="positive">11.3</span></td></tr>
+                <tr><td>영업이익</td><td>33.1</td><td>61.6</td><td>91.4</td><td>103.1</td><td>125.2</td></tr>
+                <tr><td>증가율</td><td><span class="negative">-12.1</span></td><td><span class="positive">86.0</span></td><td><span class="positive">48.2</span></td><td><span class="positive">12.9</span></td><td><span class="positive">21.4</span></td></tr>
+                <tr><td>순이익</td><td>-2.7</td><td>30.4</td><td>59.2</td><td>77.0</td><td>86.5</td></tr>
+                <tr><td>순이익률</td><td><span class="negative">-0.5</span></td><td>5.3</td><td>9.3</td><td>10.8</td><td>10.9</td></tr>
+                <tr><td>EPS</td><td>-0.3</td><td>2.9</td><td>5.5</td><td>7.1</td><td>7.9</td></tr>
+                <tr><td>PER</td><td>-</td><td>52.4</td><td>39.7</td><td>32.3</td><td>29.2</td></tr>
+                <tr><td>PBR</td><td>5.9</td><td>7.9</td><td>8.2</td><td>6.5</td><td>5.3</td></tr>
+                <tr><td>EV/EBITDA</td><td>12.7</td><td>15.2</td><td>16.7</td><td>15.4</td><td>12.8</td></tr>
+                <tr><td>ROE</td><td><span class="negative">-1.9</span></td><td>15.0</td><td>20.7</td><td>20.1</td><td>18.1</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="asset-section">
+        <h3>브로드컴 (AVGO) <span class="asset-subtitle">커스텀 반도체 및 인프라 소프트웨어 기업</span></h3>
+        <h4>투자 전망</h4>
+        <ul>
+            <li><span class="positive">알파벳 클라우드 매출 증가</span>로 브로드컴과 개발한 TPU 수요가 <span class="positive">증가</span>할 전망입니다. 메타도 구매를 추진하고 있습니다.</li>
+            <li>OpenAI 수요가 감소할 경우 알파벳이 이를 메꿀 것으로 기대하며, <span class="positive">커스텀 AI칩 확대 추세는 지속</span>될 전망입니다.</li>
+        </ul>
+        <h4>핵심 포인트</h4>
+        <ul>
+            <li>알파벳을 중심으로 <span class="positive">클라우드 기업들도 커스텀 AI칩 채택을 늘려갈 전망</span>입니다.</li>
+            <li>VMware 인수 이후 <span class="positive">구독 서비스 전환</span>을 추진하면서 <span class="positive">매출 성장 및 이익률 상승</span>이 지속될 것입니다.</li>
+        </ul>
+
+        <h4>영업실적 및 주요 투자 지표 (단위: 십억달러, 달러, 배, %)</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>구분</th><th>FY 23</th><th>FY 24</th><th>FY 25</th><th>FY 26E</th><th>FY 27E</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>매출액</td><td>35.8</td><td>51.6</td><td>63.9</td><td>96.0</td><td>132.9</td></tr>
+                <tr><td>증가율</td><td><span class="positive">7.9</span></td><td><span class="positive">44.0</span></td><td><span class="positive">23.9</span></td><td><span class="positive">50.2</span></td><td><span class="positive">38.5</span></td></tr>
+                <tr><td>영업이익</td><td>22.1</td><td>30.7</td><td>42.0</td><td>62.3</td><td>85.1</td></tr>
+                <tr><td>증가율</td><td><span class="positive">9.0</span></td><td><span class="positive">38.9</span></td><td><span class="positive">36.6</span></td><td><span class="positive">48.4</span></td><td><span class="positive">36.4</span></td></tr>
+                <tr><td>순이익</td><td>18.4</td><td>23.7</td><td>33.7</td><td>50.1</td><td>69.6</td></tr>
+                <tr><td>순이익률</td><td>51.3</td><td>46.0</td><td>52.8</td><td>52.2</td><td>52.4</td></tr>
+                <tr><td>EPS</td><td>3.7</td><td>3.7</td><td>5.4</td><td>8.6</td><td>12.3</td></tr>
+                <tr><td>PER</td><td>19.9</td><td>34.9</td><td>54.2</td><td>34.2</td><td>24.5</td></tr>
+                <tr><td>PBR</td><td>15.0</td><td>11.7</td><td>22.2</td><td>15.5</td><td>11.2</td></tr>
+                <tr><td>EV/EBITDA</td><td>16.6</td><td>26.7</td><td>42.9</td><td>26.9</td><td>19.8</td></tr>
+                <tr><td>ROE</td><td>75.2</td><td>33.5</td><td>41.0</td><td>45.4</td><td>45.8</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="asset-section">
+        <h3>팔란티어 (PLTR) <span class="asset-subtitle">대표 AI 소프트웨어 기업</span></h3>
+        <h4>투자 전망</h4>
+        <ul>
+            <li><span class="neutral">AI 소프트웨어 대표 기업</span>으로, <span class="positive">효율화를 추구하는 트렌드에서의 수혜</span>를 예상합니다.</li>
+            <li><span class="positive">신규 수주잔고 증가</span>를 보면 <span class="positive">매출 우상향 추세</span>를 보일 전망이며, <span class="positive">장기 관점에서 꾸준한 성장</span>이 예상됩니다.</li>
+        </ul>
+        <h4>핵심 포인트</h4>
+        <ul>
+            <li>트럼프 행정부는 정부 지출 절감을 추진하며, 이는 효율성 높여주는 <span class="positive">AI 소프트웨어 사용 증가로 이어질 전망</span>입니다.</li>
+            <li>미국 기업들도 인력 채용을 더 늘리는 대신 <span class="positive">AI 소프트웨어를 통한 효율성 제고를 추진</span>하면서 수혜가 예상됩니다.</li>
+            <li>온톨로지에 기반한 팔란티어의 소프트웨어 서비스는 단기간에 <span class="negative">경쟁 기업들이 따라하기 어렵다</span>는 특징이 있습니다.</li>
+        </ul>
+
+        <h4>영업실적 및 주요 투자 지표 (단위: 십억달러, 달러, 배, %)</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>구분</th><th>2022</th><th>2023</th><th>2024</th><th>2025E</th><th>2026E</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>매출액</td><td>1.9</td><td>2.2</td><td>2.9</td><td>4.4</td><td>6.3</td></tr>
+                <tr><td>증가율</td><td><span class="positive">23.6</span></td><td><span class="positive">16.7</span></td><td><span class="positive">28.8</span></td><td><span class="positive">53.8</span></td><td><span class="positive">42.7</span></td></tr>
+                <tr><td>영업이익</td><td>0.4</td><td>0.6</td><td>1.1</td><td>2.2</td><td>3.1</td></tr>
+                <tr><td>증가율</td><td><span class="negative">-11.1</span></td><td><span class="positive">50.4</span></td><td><span class="positive">78.3</span></td><td><span class="positive">90.6</span></td><td><span class="positive">43.5</span></td></tr>
+                <tr><td>순이익</td><td>0.1</td><td>0.6</td><td>1.0</td><td>1.9</td><td>2.7</td></tr>
+                <tr><td>순이익률</td><td>7.1</td><td>25.7</td><td>35.0</td><td>42.1</td><td>42.5</td></tr>
+                <tr><td>EPS</td><td>0.1</td><td>0.3</td><td>0.4</td><td>0.7</td><td>1.0</td></tr>
+                <tr><td>PER</td><td>107.0</td><td>68.7</td><td>184.5</td><td>246.2</td><td>179.6</td></tr>
+                <tr><td>PBR</td><td>5.1</td><td>11.1</td><td>33.4</td><td>59.4</td><td>42.1</td></tr>
+                <tr><td>EV/EBITDA</td><td>24.6</td><td>54.2</td><td>155.6</td><td>210.5</td><td>143.0</td></tr>
+                <tr><td>ROE</td><td>4.8</td><td>16.1</td><td>18.1</td><td>24.1</td><td>23.4</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="asset-section">
+        <h3>로빈후드 (HOOD) <span class="asset-subtitle">주식, 선물, 옵션, 암호화폐를 모두 거래할 수 있는 금융 플랫폼</span></h3>
+        <h4>투자 전망</h4>
+        <ul>
+            <li><span class="positive">Prediction Market 등 신규 서비스를 지속 출시</span>하면서 기존 고객들의 자금 유입이 <span class="positive">증가</span>할 것입니다.</li>
+            <li>Gold 구독 서비스를 통해 <span class="positive">고객들의 락인 효과를 강화</span>하며, 고객들의 주거래 플랫폼으로 발돋움할 전망입니다.</li>
+        </ul>
+        <h4>핵심 포인트</h4>
+        <ul>
+            <li>주식, 선물, 옵션, 암호화폐에 이어 비상장 토큰 거래도 지원합니다. <span class="positive">신규 서비스를 지속 출시</span>하는 점도 긍정적입니다.</li>
+            <li><span class="positive">기존 고객의 추가 자금 유입만으로도 가파른 성장세</span>를 보일 전망입니다.</li>
+        </ul>
+
+        <h4>영업실적 및 주요 투자 지표 (단위: 십억달러, 달러, 배, %)</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>구분</th><th>2022</th><th>2023</th><th>2024</th><th>2025E</th><th>2026E</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>매출액</td><td>1.4</td><td>1.9</td><td>3.0</td><td>4.5</td><td>5.6</td></tr>
+                <tr><td>증가율</td><td><span class="negative">-25.2</span></td><td><span class="positive">37.3</span></td><td><span class="positive">58.2</span></td><td><span class="positive">53.2</span></td><td><span class="positive">24.6</span></td></tr>
+                <tr><td>영업이익</td><td>-1.0</td><td>-0.5</td><td>1.2</td><td>2.2</td><td>2.8</td></tr>
+                <tr><td>증가율</td><td>적지</td><td>적지</td><td>흑전</td><td><span class="positive">87.2</span></td><td><span class="positive">25.6</span></td></tr>
+                <tr><td>순이익</td><td>-0.4</td><td>0.3</td><td>1.5</td><td>2.1</td><td>2.5</td></tr>
+                <tr><td>순이익률</td><td><span class="negative">-27.5</span></td><td>17.7</td><td>50.5</td><td>46.1</td><td>44.5</td></tr>
+                <tr><td>EPS</td><td>-0.3</td><td>0.4</td><td>1.6</td><td>2.1</td><td>2.6</td></tr>
+                <tr><td>PER</td><td>-</td><td>-</td><td>23.9</td><td>56.2</td><td>44.5</td></tr>
+                <tr><td>PBR</td><td>1.0</td><td>1.7</td><td>4.1</td><td>11.3</td><td>9.6</td></tr>
+                <tr><td>EV/EBITDA</td><td>-</td><td>21.8</td><td>27.7</td><td>46.9</td><td>35.3</td></tr>
+                <tr><td>ROE</td><td><span class="negative">-15.0</span></td><td><span class="negative">-7.9</span></td><td>17.3</td><td>20.2</td><td>21.5</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="asset-section">
+        <h3>텐센트 (700.HK) <span class="asset-subtitle">중국 게임, SNS 1위</span></h3>
+        <h4>투자 전망</h4>
+        <ul>
+            <li><span class="positive">AI의 게임, 광고, 클라우드 등 실적 성장을 지속 견인</span>하며, 핀테크 부문도 소비 회복에 따라 <span class="positive">점진적 개선</span>이 예상됩니다.</li>
+            <li>12mf P/E 18배로 <span class="neutral">밸류에이션 부담이 낮은 구간</span>입니다.</li>
+        </ul>
+        <h4>핵심 포인트</h4>
+        <ul>
+            <li><span class="positive">인기 신작 출시와 기존 대작의 견조한 성장</span>으로 게임 부문 성장이 <span class="positive">가속화</span>될 것입니다.</li>
+            <li>AI 모델 기반 <span class="positive">광고 클릭률 및 전환율이 향상</span>되며, 트래픽 증가로 <span class="positive">광고 점유율이 확장 지속</span>될 것입니다.</li>
+            <li><span class="positive">AI 클라우드 매출 성장</span> 외에도 광고, 게임 등 전 부문이 <span class="positive">AI 모델 성능 강화에 따른 성장 수혜</span>를 받을 것입니다.</li>
+        </ul>
+
+        <h4>영업실적 및 주요 투자 지표 (단위: 십억위안, 위안, 배, %)</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>구분</th><th>2022</th><th>2023</th><th>2024</th><th>2025E</th><th>2026E</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>매출액</td><td>554.6</td><td>609.0</td><td>660.3</td><td>752.9</td><td>830.0</td></tr>
+                <tr><td>증가율</td><td><span class="negative">-1.0</span></td><td><span class="positive">9.8</span></td><td><span class="positive">8.4</span></td><td><span class="positive">14.0</span></td><td><span class="positive">10.2</span></td></tr>
+                <tr><td>영업이익</td><td>153.5</td><td>191.9</td><td>237.8</td><td>282.1</td><td>319.6</td></tr>
+                <tr><td>증가율</td><td><span class="negative">-3.8</span></td><td><span class="positive">25.0</span></td><td><span class="positive">23.9</span></td><td><span class="positive">18.6</span></td><td><span class="positive">13.3</span></td></tr>
+                <tr><td>순이익</td><td>115.6</td><td>157.7</td><td>222.7</td><td>260.4</td><td>290.6</td></tr>
+                <tr><td>순이익률</td><td>20.9</td><td>25.9</td><td>33.7</td><td>34.6</td><td>35.0</td></tr>
+                <tr><td>EPS</td><td>11.8</td><td>16.3</td><td>24.0</td><td>28.0</td><td>31.6</td></tr>
+                <tr><td>PER</td><td>23.3</td><td>16.6</td><td>16.2</td><td>19.2</td><td>17.6</td></tr>
+                <tr><td>PBR</td><td>3.6</td><td>3.2</td><td>3.7</td><td>4.2</td><td>3.7</td></tr>
+                <tr><td>EV/EBITDA</td><td>13.9</td><td>12.1</td><td>14.1</td><td>16.0</td><td>14.2</td></tr>
+                <tr><td>ROE</td><td>15.6</td><td>19.1</td><td>22.8</td><td>21.8</td><td>20.9</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="asset-section">
+        <h3>알리바바 (BABA/9988.HK) <span class="asset-subtitle">중국 이커머스, 클라우드 1위</span></h3>
+        <h4>투자 전망</h4>
+        <ul>
+            <li><span class="positive">중국 AI 수요 증가</span>로 Capex 상향이 전망되며, <span class="positive">클라우드 매출 성장</span>이 가속화될 것입니다.</li>
+            <li>중국 커머스는 <span class="positive">수수료율 상승</span>과 <span class="positive">퀵 커머스로 인한 타오바오 플랫폼 신규 유입 증가</span>로 <span class="positive">성장 반등</span>이 전망됩니다.</li>
+        </ul>
+        <h4>핵심 포인트</h4>
+        <ul>
+            <li>중국 AI 수요 증가로 <span class="positive">클라우드 매출 성장</span>이 가속화될 전망이며, <span class="positive">AI 클라우드 1위 기업으로 멀티플 상승</span>이 기대됩니다.</li>
+            <li><span class="positive">AI 클라우드 외 LLM 모델, AI Agent, 물리적 AI 등 AI 전방위 전략을 추진</span>하며, 중장기 <span class="positive">업사이드</span>가 기대됩니다.</li>
+            <li>CMR <span class="positive">수수료율 인상</span>과 함께 배달 부문과의 시너지로 <span class="positive">중국 커머스 성장률 반등</span>이 기대됩니다.</li>
+        </ul>
+
+        <h4>영업실적 및 주요 투자 지표 (단위: 십억위안, 위안, 배, %)</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>구분</th><th>FY 23</th><th>FY 24</th><th>FY 25</th><th>FY 26E</th><th>FY 27E</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>매출액</td><td>868.7</td><td>941.2</td><td>996.3</td><td>1,039.0</td><td>1,154.3</td></tr>
+                <tr><td>증가율</td><td><span class="positive">1.8</span></td><td><span class="positive">8.3</span></td><td><span class="positive">5.9</span></td><td><span class="positive">4.3</span></td><td><span class="positive">11.1</span></td></tr>
+                <tr><td>영업이익</td><td>134.4</td><td>137.2</td><td>160.0</td><td>106.2</td><td>161.3</td></tr>
+                <tr><td>증가율</td><td><span class="positive">6.3</span></td><td><span class="positive">2.0</span></td><td><span class="positive">16.7</span></td><td><span class="negative">-33.6</span></td><td><span class="positive">51.9</span></td></tr>
+                <tr><td>순이익</td><td>141.4</td><td>157.5</td><td>158.1</td><td>104.7</td><td>150.6</td></tr>
+                <tr><td>순이익률</td><td>16.3</td><td>16.7</td><td>15.9</td><td>10.1</td><td>13.0</td></tr>
+                <tr><td>EPS</td><td>54.6</td><td>62.2</td><td>65.4</td><td>43.9</td><td>63.1</td></tr>
+                <tr><td>PER</td><td>13.2</td><td>8.4</td><td>14.6</td><td>23.3</td><td>16.2</td></tr>
+                <tr><td>PBR</td><td>1.9</td><td>1.3</td><td>2.2</td><td>2.2</td><td>2.0</td></tr>
+                <tr><td>EV/EBITDA</td><td>9.5</td><td>5.5</td><td>10.7</td><td>17.2</td><td>12.2</td></tr>
+                <tr><td>ROE</td><td>14.3</td><td>15.5</td><td>15.2</td><td>9.4</td><td>12.1</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="asset-section">
+        <h3>항서제약 (600276) <span class="asset-subtitle">중국 제약사 1위</span></h3>
+        <h4>투자 전망</h4>
+        <ul>
+            <li><span class="positive">신약이 매출 성장을 견인</span>하며, 신약 매출 비중 50%를 달성할 것입니다. 25년 HER2 ADC 등 <span class="positive">신약 11개 승인 예정</span>입니다.</li>
+            <li><span class="positive">신약 해외 라이선스 아웃이 지속 증가</span>하며, 해외 기술 이전 매출 실적 기여가 전망됩니다.</li>
+        </ul>
+        <h4>핵심 포인트</h4>
+        <ul>
+            <li>중국 제약사 중 <span class="positive">가장 많은 신약 파이프라인을 확보</span>하고 있으며, 24년~26년 신약 매출 <span class="positive">26% 성장을 목표</span>로 합니다.</li>
+            <li><span class="positive">신약 수출이 가속화</span>되고 있습니다. 머크 등 해외 제약사와의 라이선스 아웃 계약 17건이 진행 중이며, <span class="positive">점진적 매출 기여</span>가 기대됩니다.</li>
+        </ul>
+
+        <h4>영업실적 및 주요 투자 지표 (단위: 십억위안, 위안, 배, %)</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>구분</th><th>2022</th><th>2023</th><th>2024</th><th>2025E</th><th>2026E</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>매출액</td><td>21.3</td><td>22.8</td><td>28.0</td><td>33.1</td><td>36.9</td></tr>
+                <tr><td>증가율</td><td><span class="negative">-17.9</span></td><td><span class="positive">7.3</span></td><td><span class="positive">22.6</span></td><td><span class="positive">18.2</span></td><td><span class="positive">11.7</span></td></tr>
+                <tr><td>영업이익</td><td>3.9</td><td>4.9</td><td>7.2</td><td>9.4</td><td>10.6</td></tr>
+                <tr><td>증가율</td><td><span class="negative">-17.0</span></td><td><span class="positive">26.7</span></td><td><span class="positive">46.7</span></td><td><span class="positive">31.0</span></td><td><span class="positive">12.3</span></td></tr>
+                <tr><td>순이익</td><td>3.9</td><td>4.3</td><td>6.3</td><td>8.8</td><td>9.8</td></tr>
+                <tr><td>순이익률</td><td>18.4</td><td>18.9</td><td>22.6</td><td>26.5</td><td>26.5</td></tr>
+                <tr><td>EPS</td><td>0.6</td><td>0.7</td><td>1.0</td><td>1.3</td><td>1.5</td></tr>
+                <tr><td>PER</td><td>63.2</td><td>67.5</td><td>46.4</td><td>44.8</td><td>40.3</td></tr>
+                <tr><td>PBR</td><td>6.5</td><td>7.1</td><td>6.4</td><td>6.4</td><td>5.7</td></tr>
+                <tr><td>EV/EBITDA</td><td>-</td><td>-</td><td>-</td><td>40.4</td><td>36.0</td></tr>
+                <tr><td>ROE</td><td>10.3</td><td>10.6</td><td>13.9</td><td>14.4</td><td>14.3</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="asset-section">
+        <h3>홍콩거래소 (388.HK) <span class="asset-subtitle">홍콩거래소</span></h3>
+        <h4>투자 전망</h4>
+        <ul>
+            <li>딥시크 이후 중국 기술주 <span class="positive">아웃퍼폼이 지속</span>되며, 테크 주식 비중이 높은 홍콩시장 <span class="positive">거래량 증가세가 지속</span>될 전망입니다.</li>
+            <li><span class="positive">중국 본토 기업들의 홍콩 상장 활성화</span> 및 미중 갈등에 따른 <span class="positive">미 ADR 기업들의 홍콩 2차 상장 증가</span>가 예상됩니다.</li>
+        </ul>
+        <h4>핵심 포인트</h4>
+        <ul>
+            <li>25년 1~3분기 일평균 거래액 2,564억 HKD, <span class="positive">126% YoY</span>를 기록했습니다. <span class="positive">거래수수료 매출 성장</span>이 전망됩니다.</li>
+            <li><span class="positive">중국 유동성 수혜</span>를 받고 있습니다. 본토 커넥트 거래량 증가 및 <span class="positive">홍콩 IPO 시장 성장으로 거래수수료 매출 고성장</span>이 전망됩니다.</li>
+        </ul>
+
+        <h4>영업실적 및 주요 투자 지표 (단위: 십억위안, 위안, 배, %)</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>구분</th><th>2022</th><th>2023</th><th>2024</th><th>2025E</th><th>2026E</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>매출액</td><td>16.2</td><td>18.9</td><td>20.9</td><td>25.7</td><td>27.0</td></tr>
+                <tr><td>증가율</td><td><span class="negative">-4.5</span></td><td><span class="positive">16.3</span></td><td><span class="positive">11.0</span></td><td><span class="positive">22.9</span></td><td><span class="positive">4.9</span></td></tr>
+                <tr><td>영업이익</td><td>10.3</td><td>12.3</td><td>13.9</td><td>18.6</td><td>19.1</td></tr>
+                <tr><td>증가율</td><td><span class="negative">-14.7</span></td><td><span class="positive">19.4</span></td><td><span class="positive">13.1</span></td><td><span class="positive">33.7</span></td><td><span class="positive">2.5</span></td></tr>
+                <tr><td>순이익</td><td>8.9</td><td>10.9</td><td>12.2</td><td>15.5</td><td>16.2</td></tr>
+                <tr><td>순이익률</td><td>54.6</td><td>57.8</td><td>58.3</td><td>60.4</td><td>60.1</td></tr>
+                <tr><td>EPS</td><td>7.0</td><td>8.6</td><td>9.6</td><td>12.3</td><td>12.8</td></tr>
+                <tr><td>PER</td><td>42.4</td><td>28.6</td><td>28.6</td><td>29.8</td><td>29.0</td></tr>
+                <tr><td>PBR</td><td>8.6</td><td>6.6</td><td>6.9</td><td>9.2</td><td>9.0</td></tr>
+                <tr><td>EV/EBITDA</td><td>11.7</td><td>9.3</td><td>10.2</td><td>9.5</td><td>9.5</td></tr>
+                <tr><td>ROE</td><td>20.2</td><td>23.1</td><td>24.2</td><td>31.0</td><td>31.0</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="asset-section">
+        <h3>허사이 (HSAI US) <span class="asset-subtitle">글로벌 라이다 1위</span></h3>
+        <h4>투자 전망</h4>
+        <ul>
+            <li><span class="positive">200$대 라이다 제품이 1Q25부터 양산</span>되며, <span class="positive">자율주행 보급률 + 라이다 침투율 상승의 이중수혜로 고성장</span>할 전망입니다.</li>
+            <li>리오토, 샤오미가 올해 전 모델에 라이다를 탑재하고, 비야디, 지리 등 <span class="positive">고객사 다각화</span>로 <span class="positive">점유율이 상승</span>할 전망입니다.</li>
+        </ul>
+        <h4>핵심 포인트</h4>
+        <ul>
+            <li><span class="positive">중국 및 글로벌 라이다 1위 기업</span>입니다. ADAS 용 라이다 점유율 35%, 로보택시 라이다 점유율 60%를 차지합니다.</li>
+            <li><span class="positive">라이다 가격 하락으로 중저가 모델에도 라이다가 탑재</span>되기 시작하며, <span class="positive">라이다 출하량 증가</span>가 전망됩니다.</li>
+            <li><span class="positive">자율주행 성능 향상에 따른 라이다 탑재 수 증가</span> 및 <span class="positive">로봇향 라이다 중장기 성장</span>이 긍정적으로 전망됩니다.</li>
+        </ul>
+
+        <h4>영업실적 및 주요 투자 지표 (단위: 십억위안, 위안, 배, %)</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>구분</th><th>2022</th><th>2023</th><th>2024</th><th>2025E</th><th>2026E</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>매출액</td><td>1.2</td><td>1.9</td><td>2.1</td><td>3.2</td><td>4.5</td></tr>
+                <tr><td>증가율</td><td>-</td><td><span class="positive">56.0</span></td><td><span class="positive">10.7</span></td><td><span class="positive">51.7</span></td><td><span class="positive">42.3</span></td></tr>
+                <tr><td>영업이익</td><td>-0.4</td><td>-</td><td>-</td><td>0.2</td><td>0.3</td></tr>
+                <tr><td>증가율</td><td>적전</td><td>-</td><td>-</td><td>흑전</td><td><span class="positive">97.7</span></td></tr>
+                <tr><td>순이익</td><td>-0.2</td><td>-0.2</td><td>0.0</td><td>0.4</td><td>0.7</td></tr>
+                <tr><td>순이익률</td><td><span class="negative">-16.3</span></td><td><span class="negative">-12.9</span></td><td>0.7</td><td>13.9</td><td>16.0</td></tr>
+                <tr><td>EPS</td><td>-6.5</td><td>-3.8</td><td>-0.8</td><td>2.9</td><td>4.5</td></tr>
+                <tr><td>PER</td><td>-</td><td>-</td><td>-</td><td>53.4</td><td>34.7</td></tr>
+                <tr><td>PBR</td><td>-</td><td>2.1</td><td>3.3</td><td>2.8</td><td>2.6</td></tr>
+                <tr><td>EV/EBITDA</td><td>-</td><td>-</td><td>-</td><td>47.3</td><td>22.7</td></tr>
+                <tr><td>ROE</td><td>-</td><td><span class="negative">-12.3</span></td><td><span class="negative">-2.6</span></td><td>5.3</td><td>7.6</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div style="height: 20px;"></div>
+
+    <h2>금리 전망과 주요 채권 관련 상품</h2>
+
+    <h3>역대급 작용과 반작용 : 25년 4분기를 과매도 국면으로 보는 이유</h3>
+    <p>
+        2025년 4분기 한국 채권시장에서의 <span class="positive">가파른 금리 상승</span>은 단순히 금리 수준만을 비교하면 다른 시기들에 비해 금리 상승 폭이 그렇게 크지는 않습니다. 하지만 <span class="neutral">기준금리 대비 국채 금리 간의 스프레드</span>로 보면 2024년 연말과 2025년 연초에 기록했던 <span class="negative">역대급 스프레드 마이너스 국면에서의 금리 반등</span>이라는 점에서 평가를 달리할 수 있습니다.
+    </p>
+    <p>
+        당시 정치적 불확실성 요인으로 인해 강력한 통화 완화가 불가피하다는 인식이 컸고, 그 결과 <span class="neutral">기준금리를 매우 큰 폭으로 하회하는 수준까지 시장금리가 하락하는 채권 랠리가 나타났습니다.</span> 따라서 2025년 인하의 속도 조절, 추가 금리 인하 가능성 검토 등으로 이어지는 통화당국의 매파적인 메시지에 더욱 민감하게 반응하며 시장금리가 <span class="negative">급격하게 반등</span>했습니다. 지나친 인하 기대와 되돌림 과정이었다는 점에서 <span class="neutral">지난해 4분기를 과매도 국면으로 평가하는 이유</span>입니다.
+    </p>
+
+    <h4>주요 채권 관련 ETF</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>대분류</th>
+                <th>중분류</th>
+                <th>티커</th>
+                <th>종목명</th>
+                <th>수익률 (%) 1W</th>
+                <th>수익률 (%) 3M</th>
+                <th>수익률 (%) 1년</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td rowspan="7">국채</td><td>1-3개월</td><td>BIL</td><td>SPDR® Blmbg 1-3 Mth T-Bill ETF</td><td>0.1</td><td><span class="negative">-0.4</span></td><td><span class="negative">-0.1</span></td></tr>
+            <tr><td>1년미만</td><td>SHV</td><td>iShares Short Treasury Bond ETF</td><td>0.1</td><td><span class="negative">-0.3</span></td><td>0.0</td></tr>
+            <tr><td>1-3년</td><td>SHY</td><td>iShares 1-3 Year Treasury Bond ETF</td><td>0.1</td><td><span class="negative">-0.2</span></td><td><span class="positive">1.0</span></td></tr>
+            <tr><td>3-7년</td><td>IEI</td><td>iShares 3-7 Year Treasury Bond ETF</td><td>0.0</td><td><span class="negative">-0.1</span></td><td><span class="positive">3.3</span></td></tr>
+            <tr><td>7-10년</td><td>IEF</td><td>iShares 7-10 Year Treasury Bond ETF</td><td><span class="negative">-0.2</span></td><td><span class="negative">-0.3</span></td><td><span class="positive">4.0</span></td></tr>
+            <tr><td>10-20년</td><td>TLH</td><td>iShares 10-20 Year Treasury Bond ETF</td><td><span class="negative">-0.4</span></td><td><span class="negative">-1.3</span></td><td><span class="positive">2.1</span></td></tr>
+            <tr><td>20년이상</td><td>TLT</td><td>iShares 20+ Year Treasury Bond ETF</td><td><span class="negative">-1.0</span></td><td><span class="negative">-2.5</span></td><td><span class="negative">-0.2</span></td></tr>
+            <tr><td rowspan="3">물가채</td><td></td><td>TIP</td><td>iShares TIPS Bond ETF</td><td><span class="negative">-0.1</span></td><td><span class="negative">-1.2</span></td><td><span class="positive">3.2</span></td></tr>
+            <tr><td>0-5년</td><td>VTIP</td><td>Vanguard Short-Term Infl-Prot Secs ETF</td><td>0.1</td><td><span class="negative">-2.3</span></td><td><span class="positive">2.2</span></td></tr>
+            <tr><td>1-10년</td><td>TIPX</td><td>SPDR® Blmbg 1-10 Year TIPS ETF</td><td>0.0</td><td><span class="negative">-1.1</span></td><td><span class="positive">3.2</span></td></tr>
+            <tr><td rowspan="1">물가채</td><td>15년이상</td><td>LTPZ</td><td>PIMCO 15+ Year US TIPS ETF</td><td><span class="negative">-1.1</span></td><td><span class="negative">-2.9</span></td><td><span class="negative">-0.6</span></td></tr>
+            <tr><td rowspan="1">변동금리</td><td></td><td>USFR</td><td>WisdomTree Floating Rate Treasury ETF</td><td><span class="negative">-0.2</span></td><td>0.1</td><td>0.0</td></tr>
+            <tr><td rowspan="1">STRIP</td><td></td><td>ZROZ</td><td>PIMCO 25+ Year Zero Coupon US Trs ETF</td><td><span class="negative">-3.2</span></td><td><span class="negative">-5.5</span></td><td><span class="negative">-6.4</span></td></tr>
+        </tbody>
+    </table>
+
+    <div style="height: 20px;"></div>
+
+    <h2>외환 및 원자재 전망</h2>
+
+    <h3>당국 개입에 달러원 급락, 달러화 약세 따라가자</h3>
+    <p>
+        12월 24일 정부와 당국의 외환시장 안정화 조치, 세제지원 패키지 발표에 <span class="negative">원/달러 환율이 레벨다운</span>되었습니다. 일방적인 약세를 보여왔던 원화의 <span class="neutral">빠른 정상화 진행 중</span>입니다. 물론, 달러 약세 지속이 관건이며, 다음 주 고용지표 결과에 따른 통화정책 컨센서스 변화가 중요합니다.
+    </p>
+    <p>
+        달러 수요가 견조한 수급 부담이 남아있지만, 정부 당국의 적극적인 안정화 의지를 피력한 만큼 <span class="negative">달러원 환율의 하향 안정세</span> 전개가 예상됩니다.
+    </p>
+
+    <h3>통화정책 성격의 변화, 금은 유동성 추가 반영 필요</h3>
+    <p>
+        <span class="positive">금은 사상 최고치를 경신</span>하며 한 해를 마무리했습니다. Fed 금리 인하와 장기채 신뢰 문제가 <span class="positive">헷지 수요를 야기한 결과</span>입니다. 물론 고민은 존재합니다. 유가 기저를 감안하면 연내 2차례 이상 금리 인하를 기대하지만, 금리 인하는 이미 8부 능선을 넘어선 상태로 2023년~2025년과 같은 속도는 제한적입니다.
+    </p>
+    <p>
+        그럼에도 <span class="positive">온스당 5,000달러 도달이 가능</span>합니다. 통화정책 성격은 금리 인하(M2↑)에서 비전통 방식(대차대조표↑)으로 이동하고 있으며, <span class="positive">상반기 중 유동성 추가 반영</span>이 필요합니다.
+    </p>
+
+    <h4>주요 통화가치 변화율</h4>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>1W</th>
+                <th>3M</th>
+                <th>1Y</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>달러화</td><td><span class="negative">0.4</span></td><td><span class="negative">0.5</span></td><td><span class="negative">-0.3</span></td></tr>
+            <tr><td>원화</td><td><span class="positive">0.3</span></td><td><span class="negative">-0.6</span></td><td><span class="positive">0.6</span></td></tr>
+            <tr><td>유로화</td><td><span class="negative">-2.3</span></td><td>0.0</td><td><span class="positive">1.9</span></td></tr>
+            <tr><td>위안화</td><td><span class="negative">-5.9</span></td><td><span class="negative">-10.0</span></td><td><span class="negative">-8.0</span></td></tr>
+            <tr><td>엔화</td><td><span class="positive">1.2</span></td><td><span class="negative">-0.8</span></td><td><span class="negative">-6.4</span></td></tr>
+        </tbody>
+    </table>
+
+    <h4>주요 원자재 변화율</h4>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>1W</th>
+                <th>3M</th>
+                <th>1Y</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>원유</td><td><span class="positive">0.4</span></td><td><span class="positive">0.5</span></td><td><span class="negative">-0.3</span></td></tr>
+            <tr><td>금</td><td><span class="positive">0.3</span></td><td><span class="negative">-0.6</span></td><td><span class="positive">0.6</span></td></tr>
+            <tr><td>은</td><td><span class="negative">-2.3</span></td><td>0.0</td><td><span class="positive">1.9</span></td></tr>
+            <tr><td>구리</td><td><span class="negative">-5.9</span></td><td><span class="negative">-10.0</span></td><td><span class="negative">-8.0</span></td></tr>
+            <tr><td>알루미늄</td><td><span class="positive">1.2</span></td><td><span class="negative">-0.8</span></td><td><span class="negative">-6.4</span></td></tr>
+        </tbody>
+    </table>
+
+    <div style="height: 20px;"></div>
+
+    <h2>ETF/리츠 10선과 관심 펀드</h2>
+
+    <h4>ETF/리츠 10선</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>티커</th>
+                <th>종목명</th>
+                <th>편입일자</th>
+                <th>시가총액 (LC bn)</th>
+                <th>수익률 (%) YTD</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>396500</td><td>TIGER 반도체 TOP10</td><td>25.04.07</td><td>2,827.5</td><td><span class="positive">120.5</span></td></tr>
+            <tr><td>0051G0</td><td>SOL 미국원자력 SMR</td><td>25.06.02</td><td>331.9</td><td><span class="positive">57.4</span></td></tr>
+            <tr><td>307520</td><td>TIGER 지주회사</td><td>25.11.03</td><td>278.4</td><td><span class="positive">71.4</span></td></tr>
+            <tr><td>365000</td><td>TIGER 인터넷 TOP10</td><td>25.08.11</td><td>77.4</td><td><span class="positive">24.3</span></td></tr>
+            <tr><td>AIQ-US</td><td>Global X Artificial Intelligence & Technology ETF</td><td>25.08.11</td><td>7.3</td><td><span class="positive">31.6</span></td></tr>
+            <tr><td>SPY-US</td><td>SPDR S&P 500 ETF Trust</td><td>24.03.11</td><td>707.8</td><td><span class="positive">16.4</span></td></tr>
+            <tr><td>NLR-US</td><td>VanEck Uranium and Nuclear ETF</td><td>25.06.02</td><td>3.6</td><td><span class="positive">52.7</span></td></tr>
+            <tr><td>TLT-US</td><td>iShares 20+ Year Treasury Bond ETF</td><td>25.06.09</td><td>47.9</td><td><span class="negative">-0.2</span></td></tr>
+            <tr><td>330590</td><td>롯데리츠</td><td>24.11.07</td><td>1,144.3</td><td><span class="positive">29.8</span></td></tr>
+            <tr><td>293940</td><td>신한알파리츠</td><td>25.09.05</td><td>676.1</td><td><span class="negative">-0.9</span></td></tr>
+        </tbody>
+    </table>
+
+    <h4>관심 펀드</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>종목명</th>
+                <th>설정액 (억원)</th>
+                <th>성과 (%) 1개월</th>
+                <th>성과 (%) 3개월</th>
+                <th>핵심 포인트</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td rowspan="3">국내채권 단기</td><td>대신내일출금단기채증권투자신탁 채권C</td><td>795</td><td><span class="positive">0.28</span></td><td><span class="positive">0.58</span></td><td>단기채 펀드의 장점에 익영업일 출금을 더해 효율적인 단기 투자</td></tr>
+            <tr><td>코레이트셀렉트단기채증권투자신탁채권 C</td><td>15,561</td><td><span class="positive">0.28</span></td><td><span class="positive">0.71</span></td><td>신용등급 A-이상의 회사채에 주로 투자하여 초과수익 추구</td></tr>
+            <tr><td>한국투자크레딧포커스 ESG 증권자투자신탁 1(채권)C</td><td>28,757</td><td><span class="positive">0.36</span></td><td><span class="positive">0.00</span></td><td>한투운용의 크레딧 전문인력과 자체 투자분석 시스템 활용 의사 결정</td></tr>
+            <tr><td>채권 혼합 공모주</td><td>트러스톤공모주알파증권투자신탁 채권혼합 C</td><td>345</td><td><span class="positive">0.64</span></td><td><span class="negative">-1.97</span></td><td>트러스톤자산운용의 리서치와 네트워크로 우량 공모주에 선택과 집중</td></tr>
+            <tr><td rowspan="2">국내주식 일반주식</td><td>한국밸류 10년투자배당증권투자신탁(주식)C</td><td>316</td><td><span class="positive">6.35</span></td><td><span class="positive">13.69</span></td><td>안정성 기반으로 고배당 지급 기업과 성장성 기반의 배당성향 확대 기업에 투자</td></tr>
+            <tr><td>KB액티브배당증권자투자신탁 (주식)C</td><td>744</td><td><span class="positive">8.37</span></td><td><span class="positive">24.15</span></td><td>배당주 프리미엄을 활용한 자본수익과 배당수익을 동시 추구</td></tr>
+        </tbody>
+    </table>
+
+    <div style="height: 20px;"></div>
+
+    <div class="asset-section">
+        <h3>TIGER Fn반도체 TOP10 (396500) <span class="asset-subtitle">국내 반도체 산업을 대표하는 10개 기업에 투자하는 ETF</span></h3>
+        <h4>ETF 개요</h4>
+        <ul>
+            <li>발행사: 미래에셋자산운용 (주)</li>
+            <li>투자대상: 국내 - 주식 - 업종테마 BM FnGuide 반도체 TOP10 지수</li>
+            <li>AUM (억원): 12,943</li>
+            <li>운용방식: 패시브</li>
+            <li>총보수 (%): 0.45</li>
+            <li>PER: 17.5</li>
+            <li>PBR: 2.7</li>
+        </ul>
+        <h4>보유비중 상위 10종목</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>종목명</th>
+                    <th>비중 (%)</th>
+                    <th>1개월 수익률 (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>SK하이닉스</td><td>27.7</td><td><span class="positive">32.6</span></td></tr>
+                <tr><td>삼성전자</td><td>23.4</td><td><span class="positive">13.9</span></td></tr>
+                <tr><td>한미반도체</td><td>16.1</td><td><span class="positive">55.7</span></td></tr>
+                <tr><td>리노공업</td><td>7.3</td><td><span class="positive">9.9</span></td></tr>
+                <tr><td>이오테크닉스</td><td>5.0</td><td><span class="negative">-4.7</span></td></tr>
+                <tr><td>원익 IPS</td><td>4.8</td><td><span class="positive">27.9</span></td></tr>
+                <tr><td>DB하이텍</td><td>4.6</td><td><span class="positive">1.6</span></td></tr>
+                <tr><td>HPSP</td><td>4.3</td><td><span class="positive">1.2</span></td></tr>
+                <tr><td>동진쎄미켐</td><td>3.6</td><td><span class="positive">1.2</span></td></tr>
+                <tr><td>솔브레인</td><td>0.0</td><td><span class="negative">-3.5</span></td></tr>
+            </tbody>
+        </table>
+        <h4>ETF 설명</h4>
+        <p>국내 <span class="neutral">반도체 산업을 이끌어가는 대표 반도체 기업 10종목으로 구성된 ETF</span>입니다. 코스피/코스닥 시장에 상장된 ‘반도체’ 업종 기업 중 1개월 평균 시가총액 상위 10개 기업으로 구성됩니다.</p>
+        <h4>핵심 포인트</h4>
+        <p>상호관세가 시장 예상보다 높은 수준으로 발표되면서 시장 불안심리가 정점에 도달했습니다. <span class="neutral">반도체 업종은 상호 관세에서 한 발 빗겨있다는 점에서 긍정적</span>입니다. 국내 반도체 업종은 <span class="positive">이익 모멘텀이 견고</span>하고 <span class="neutral">낙폭과대 구간</span>이라는 점에서 매력적입니다.</p>
+    </div>
+
+    <div class="asset-section">
+        <h3>TIGER 인터넷 TOP10 (365000) <span class="asset-subtitle">국내 인터넷 산업을 대표하는 10개 기업에 투자하는 ETF</span></h3>
+        <h4>ETF 개요</h4>
+        <ul>
+            <li>발행사: 미래에셋자산운용 (주)</li>
+            <li>투자대상: 국내 - 주식 - 업종테마 BM KRX 인터넷 TOP 10 지수</li>
+            <li>AUM (억원): 887</li>
+            <li>운용방식: 패시브</li>
+            <li>총보수 (%): 0.4</li>
+            <li>PER: 28.2</li>
+            <li>PBR: 2.2</li>
+        </ul>
+        <h4>보유비중 상위 10종목</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>종목명</th>
+                    <th>비중 (%)</th>
+                    <th>1개월 수익률 (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>더존비즈온</td><td>26.5</td><td><span class="positive">1.1</span></td></tr>
+                <tr><td>NAVER</td><td>25.3</td><td><span class="positive">10.1</span></td></tr>
+                <tr><td>카카오</td><td>24.0</td><td><span class="negative">-8.3</span></td></tr>
+                <tr><td>서진시스템</td><td>5.7</td><td><span class="positive">22.3</span></td></tr>
+                <tr><td>카페24</td><td>4.7</td><td><span class="negative">-12.8</span></td></tr>
+                <tr><td>SOOP</td><td>3.9</td><td><span class="negative">-3.7</span></td></tr>
+                <tr><td>안랩</td><td>2.7</td><td><span class="negative">-2.5</span></td></tr>
+                <tr><td>한글과컴퓨터</td><td>2.4</td><td><span class="negative">-6.5</span></td></tr>
+                <tr><td>디어유</td><td>2.3</td><td><span class="negative">-19.7</span></td></tr>
+                <tr><td>엠로</td><td>2.1</td><td><span class="positive">5.4</span></td></tr>
+            </tbody>
+        </table>
+        <h4>ETF 설명</h4>
+        <p>국내 주식시장에 상장된 <span class="neutral">인터넷 산업 시가총액 상위 10종목에 투자하는 ETF</span>입니다. 시가총액 상위 3개 종목은 각각 25%씩 투자하며, 나머지 7개 종목은 유동시가총액 가중방식을 적용합니다.</p>
+        <h4>핵심 포인트</h4>
+        <p>과거 카카오와 네이버 주가는 실적에 따라 움직이는 경향이 있었습니다. 최근 카카오는 <span class="positive">강도 높은 비용 통제로 2분기 실적 서프라이즈</span>를 기록했습니다. 현재는 NAVER와 카카오 모두 <span class="positive">외부 환경 개선과 AI 서비스 확대로 자체적인 본업의 경쟁력 강화를 통해 매출 성장률 회복</span>을 기대해볼 수 있는 시점입니다.</p>
+    </div>
+
+    <div class="asset-section">
+        <h3>TIGER 지주회사 (307520) <span class="asset-subtitle">한국 지주회사에 투자하는 ETF</span></h3>
+        <h4>ETF 개요</h4>
+        <ul>
+            <li>발행사: 미래에셋운용</li>
+            <li>투자대상: 국내 - 주식 - 지주회사 BM FnGuide 지주회사 지수</li>
+            <li>AUM (억원): 2,746</li>
+            <li>운용방식: 패시브</li>
+            <li>총보수 (%): 0.5</li>
+            <li>PER: 11.4</li>
+            <li>PBR: 1.0</li>
+        </ul>
+        <h4>보유비중 상위 10종목</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>종목명</th>
+                    <th>비중 (%)</th>
+                    <th>1개월 수익률 (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>두산</td><td>11.3</td><td><span class="positive">75.6</span></td></tr>
+                <tr><td>HD현대</td><td>10.5</td><td><span class="positive">35.1</span></td></tr>
+                <tr><td>삼성물산</td><td>9.4</td><td><span class="positive">23.0</span></td></tr>
+                <tr><td>SK</td><td>8.8</td><td><span class="positive">17.9</span></td></tr>
+                <tr><td>LG</td><td>7.4</td><td><span class="positive">14.9</span></td></tr>
+                <tr><td>POSCO 홀딩스</td><td>6.9</td><td><span class="positive">15.8</span></td></tr>
+                <tr><td>LS</td><td>6.4</td><td><span class="positive">30.2</span></td></tr>
+                <tr><td>한진칼</td><td>6.4</td><td><span class="positive">13.9</span></td></tr>
+                <tr><td>한화</td><td>4.5</td><td><span class="positive">16.1</span></td></tr>
+                <tr><td>CJ</td><td>3.9</td><td><span class="negative">-7.7</span></td></tr>
+            </tbody>
+        </table>
+        <h4>ETF 설명</h4>
+        <p><span class="neutral">유가증권 시장에서 공정거래위원회가 발표하는 지주회사 종목에 분산 투자</span>합니다. FnGuide 지주회사 지수 변동률과 유사하도록 국내 주식에 투자신탁 자산총액의 60% 이상을 투자합니다.</p>
+        <h4>핵심 포인트</h4>
+        <p><span class="positive">배당소득분리과세안 통과 기대감</span>, 상법 개정안 3차 통과 시 <span class="positive">지주 업종에 긍정적</span>으로 작용할 것입니다. 주식시장 상승으로 <span class="positive">할인율 축소 없이도 NAV 증가로 인한 주가 상승 업사이드가 충분</span>합니다.</p>
+    </div>
+
+    <div class="asset-section">
+        <h3>SOL 미국원자력 SMR (0051G0) <span class="asset-subtitle">원자력과 SMR 밸류체인에 집중 투자하는 ETF</span></h3>
+        <h4>ETF 개요</h4>
+        <ul>
+            <li>발행사: 신한자산운용 주식회사</li>
+            <li>투자대상: 국내 - 주식 - 업종테마 BM KEDI 미국원자력 SMR 지수 (PR)</li>
+            <li>AUM (억원): 2,164</li>
+            <li>운용방식: 패시브</li>
+            <li>총보수 (%): 0.45</li>
+            <li>PER: -</li>
+            <li>PBR: -</li>
+        </ul>
+        <h4>보유비중 상위 10종목</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>종목명</th>
+                    <th>비중 (%)</th>
+                    <th>1개월 수익률 (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Constellation Energy</td><td>19.2</td><td><span class="positive">8.7</span></td></tr>
+                <tr><td>Oklo Class A</td><td>11.6</td><td><span class="negative">-12.6</span></td></tr>
+                <tr><td>Cameco</td><td>11.6</td><td><span class="negative">-0.7</span></td></tr>
+                <tr><td>Zealand</td><td>8.7</td><td><span class="negative">-6.3</span></td></tr>
+                <tr><td>NuScale Power Class A</td><td>7.7</td><td><span class="negative">-9.8</span></td></tr>
+                <tr><td>BWX Technologies</td><td>6.5</td><td><span class="positive">12.3</span></td></tr>
+                <tr><td>Centrus Energy Class A</td><td>5.7</td><td><span class="positive">13.8</span></td></tr>
+                <tr><td>Uranium Energy</td><td>5.6</td><td><span class="negative">-3.8</span></td></tr>
+                <tr><td>Ge Vernova</td><td>5.0</td><td><span class="negative">-6.0</span></td></tr>
+                <tr><td>Nano Nuclear Energy</td><td>4.5</td><td><span class="negative">-8.3</span></td></tr>
+            </tbody>
+        </table>
+        <h4>ETF 설명</h4>
+        <p><span class="neutral">미국 주식시장에 상장된 원자력과 SMR 산업 관련 대표 기업에 투자하는 상품</span>입니다. 공시보고서와 뉴스에서 대형언어모델 (LLM)로 원자력과 SMR 키워드와 유사도가 높은 종목을 선정합니다.</p>
+        <h4>핵심 포인트</h4>
+        <p>트럼프는 최근 <span class="positive">원전 규제 완화 행정명령 4건에 서명</span>했습니다. 서명한 내용은 1) 원자력규제위원회 (NRC) 개혁, 2) 원자로 테스트 간소화, 3) 원전 기지 활성화, 4) 미국 내 우라늄 채굴과 농축 확대입니다. 미국은 <span class="positive">2050년까지 원전 발전 용량을 4배로 늘릴 것으로 예상</span>됩니다.</p>
+    </div>
+
+    <div class="asset-section">
+        <h3>SPDR S&P500 ETF Trust (SPY) <span class="asset-subtitle">미국 대형 우량주에 분산투자가 가능한 ETF</span></h3>
+        <h4>ETF 개요</h4>
+        <ul>
+            <li>발행사: State Street</li>
+            <li>투자대상: 미국 - 주식 - 대형주 BM S&P 500 Index</li>
+            <li>AUM (bn, $): 633</li>
+            <li>운용방식: 패시브</li>
+            <li>총보수 (%): 0.09</li>
+            <li>PER: 28.1</li>
+            <li>PBR: 5.1</li>
+        </ul>
+        <h4>보유비중 상위 10종목</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>종목명</th>
+                    <th>비중 (%)</th>
+                    <th>1개월 수익률 (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>NVIDIA</td><td>7.7</td><td><span class="positive">2.1</span></td></tr>
+                <tr><td>Microsoft</td><td>7.0</td><td><span class="positive">2.2</span></td></tr>
+                <tr><td>Apple</td><td>5.9</td><td><span class="positive">2.0</span></td></tr>
+                <tr><td>Amazon Com</td><td>4.0</td><td><span class="positive">0.2</span></td></tr>
+                <tr><td>Meta Platforms Class A</td><td>2.9</td><td><span class="negative">-2.8</span></td></tr>
+                <tr><td>Broadcom</td><td>2.5</td><td><span class="positive">1.6</span></td></tr>
+                <tr><td>Alphabet Class A</td><td>2.1</td><td><span class="positive">0.6</span></td></tr>
+                <tr><td>Tesla</td><td>1.7</td><td><span class="positive">5.4</span></td></tr>
+                <tr><td>Alphabet Class C</td><td>1.7</td><td><span class="positive">0.6</span></td></tr>
+                <tr><td>Berkshire Hathaway Class B</td><td>1.6</td><td><span class="negative">-0.8</span></td></tr>
+            </tbody>
+        </table>
+        <h4>ETF 설명</h4>
+        <p><span class="neutral">글로벌 선두 산업을 이끌며 세계 경제 주도권을 쥐고 있는 미국 주식시장에 투자할 수 있는 상품</span>입니다. S&P 500은 미국 상장기업 중 기업규모, 산업대표성 등을 감안하여 선정된 대형주 500종목으로 구성됩니다.</p>
+        <h4>핵심 포인트</h4>
+        <p>SPY는 <span class="positive">장기적으로 꾸준히 우상향의 움직임을 나타낸 미국 주식시장에 손쉽게 투자가 가능한 상품</span>입니다. 연초 이후 미국 증시는 쉬어가는 모습을 보이고 있고 비미국 증시가 강세를 보이고 있는 상황입니다. 단기적으로 투자심리가 과도하게 악화된 상황에서 <span class="positive">미국 주식시장의 조정은 비중확대 기회</span>입니다.</p>
+    </div>
+
+    <div class="asset-section">
+        <h3>VanEck Uranium and Nuclear ETF (NLR) <span class="asset-subtitle">글로벌 우라늄 채굴기업과 원자력 기업에 투자하는 ETF</span></h3>
+        <h4>ETF 개요</h4>
+        <ul>
+            <li>발행사: VanEck</li>
+            <li>투자대상: 글로벌 - 주식 - 업종테마 BM MVIS Global Uranium & Nuclear Energy Index</li>
+            <li>AUM (bn, $): 1</li>
+            <li>운용방식: 패시브</li>
+            <li>총보수 (%): 0.56</li>
+            <li>PER: -</li>
+            <li>PBR: -</li>
+        </ul>
+        <h4>보유비중 상위 10종목</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>종목명</th>
+                    <th>비중 (%)</th>
+                    <th>1개월 수익률 (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Constellation Energy</td><td>8.7</td><td><span class="positive">8.4</span></td></tr>
+                <tr><td>Oklo Class A</td><td>8.3</td><td><span class="positive">3.1</span></td></tr>
+                <tr><td>NuScale Power Class A</td><td>7.6</td><td><span class="negative">-18.0</span></td></tr>
+                <tr><td>Cameco</td><td>7.0</td><td><span class="negative">-4.0</span></td></tr>
+                <tr><td>Public Service Enterprise Group</td><td>6.0</td><td><span class="positive">1.9</span></td></tr>
+                <tr><td>Endesa</td><td>5.8</td><td><span class="positive">10.1</span></td></tr>
+                <tr><td>PG&E</td><td>5.6</td><td><span class="positive">12.3</span></td></tr>
+                <tr><td>3D Systems</td><td>4.6</td><td><span class="positive">38.0</span></td></tr>
+                <tr><td>Nexgen Energy</td><td>4.6</td><td><span class="negative">-7.4</span></td></tr>
+                <tr><td>BWX Technologies</td><td>4.4</td><td><span class="positive">17.6</span></td></tr>
+            </tbody>
+        </table>
+        <h4>ETF 설명</h4>
+        <p><span class="neutral">글로벌 우라늄 채굴 기업과 원자력 관련 기업에 투자하는 상품</span>입니다. 투자국가는 미국 (47.4%), 캐나다 (14.5%), 이탈리아 (7.3%) 등으로 구성됩니다.</p>
+        <h4>핵심 포인트</h4>
+        <p>트럼프는 최근 <span class="positive">원전 규제 완화 행정명령 4건에 서명</span>했습니다. 서명한 내용은 1) 원자력규제위원회 (NRC) 개혁, 2) 원자로 테스트 간소화, 3) 원전 기지 활성화, 4) 미국 내 우라늄 채굴과 농축 확대입니다. <span class="positive">유럽에서도 나타나고 있는 원전 복귀 움직임</span>이 주목됩니다. 이탈리아는 올해 3월 원자력 기술 사용 법안을 승인했으며, 벨기에 역시 탈원전 폐기를 공식화했습니다.</p>
+    </div>
+
+    <div class="asset-section">
+        <h3>Global X Artificial Intelligence & Technology ETF (AIQ) <span class="asset-subtitle">글로벌 AI 산업에 투자하는 ETF</span></h3>
+        <h4>ETF 개요</h4>
+        <ul>
+            <li>발행사: Global X</li>
+            <li>투자대상: 글로벌 - 주식 - 테마 BM Indxx Art. Int. & Big Data Index</li>
+            <li>AUM (bn, $): 4</li>
+            <li>운용방식: 패시브</li>
+            <li>총보수 (%): 0.68</li>
+            <li>PER: -</li>
+            <li>PBR: -</li>
+        </ul>
+        <h4>보유비중 상위 10종목</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>종목명</th>
+                    <th>비중 (%)</th>
+                    <th>1개월 수익률 (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Palantir Technologies Class A</td><td>3.5</td><td><span class="negative">-1.1</span></td></tr>
+                <tr><td>Meta Platforms Class A</td><td>3.3</td><td><span class="negative">-2.8</span></td></tr>
+                <tr><td>Broadcom</td><td>3.2</td><td><span class="positive">1.6</span></td></tr>
+                <tr><td>Oracle</td><td>3.2</td><td><span class="negative">-10.8</span></td></tr>
+                <tr><td>NVIDIA</td><td>3.2</td><td><span class="positive">2.1</span></td></tr>
+                <tr><td>Microsoft</td><td>3.1</td><td><span class="positive">2.2</span></td></tr>
+                <tr><td>Tencent Holdings</td><td>3.1</td><td><span class="negative">-0.4</span></td></tr>
+                <tr><td>Alphabet Class A</td><td>3.1</td><td><span class="positive">0.6</span></td></tr>
+                <tr><td>삼성전자</td><td>3.1</td><td><span class="positive">13.9</span></td></tr>
+                <tr><td>Advanced Micro Devices</td><td>3.1</td><td><span class="positive">46.1</span></td></tr>
+            </tbody>
+        </table>
+        <h4>ETF 설명</h4>
+        <p><span class="neutral">글로벌 AI 산업의 성장성에 투자할 수 있는 ETF</span>입니다. 미국 (69.8%), 중국 (7.2%), 한국 (4.7%) 등으로 구성됩니다.</p>
+        <h4>핵심 포인트</h4>
+        <p>7월 23일 트럼프 행정부는 <span class="positive">AI 액션 플랜을 발표</span>하여 AI 산업 정책 <span class="positive">모멘텀을 재점화</span>했습니다. 미국 2분기 어닝서프라이즈 비율이 가장 높은 섹터는 정보기술로, <span class="positive">AI를 활용한 생산성 향상 덕분</span>입니다. 글로벌 펀드 내 IT 비중이 역사적 평균 대비 낮아진 상황이라는 점도 <span class="neutral">수급 측면에서 우호적인 상황</span>입니다.</p>
+    </div>
+
+    <div class="asset-section">
+        <h3>iShares 20+ Year Treasury Bond ETF (TLT) <span class="asset-subtitle">미국 초장기 국채에 투자하는 ETF</span></h3>
+        <h4>ETF 개요</h4>
+        <ul>
+            <li>발행사: BlackRock</li>
+            <li>투자대상: 미국 - 채권 - 국채 BM ICE U.S. Treasury 20+ Year Bond TR USD</li>
+            <li>AUM (bn, $): 50</li>
+            <li>운용방식: 패시브</li>
+            <li>총보수 (%): 0.15</li>
+            <li>PER: -</li>
+            <li>PBR: -</li>
+        </ul>
+        <h4>보유비중 상위 10종목</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>종목명</th>
+                    <th>비중 (%)</th>
+                    <th>1개월 수익률 (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>United States Treasury</td><td>99.5</td><td>-</td></tr>
+            </tbody>
+        </table>
+        <h4>ETF 설명</h4>
+        <p><span class="neutral">잔존만기가 20년 이상인 미국 초장기 국채에 투자하는 상품</span>입니다. TLT의 가중평균 만기는 25.77년, 유효듀레이션은 15.64년 수준입니다.</p>
+        <h4>핵심 포인트</h4>
+        <p>하이일드와 투자등급 스프레드는 축소됐으나, 텀 프리미엄은 높아진 상황에서 <span class="positive">장기채 매력도가 부각</span>됩니다. 3분기 QRA 장기채 바이백, 8월 말 SLR 규제 완화, 하반기 기준금리 인하 사이클 재개 시 <span class="negative">시장금리 방향성은 중장기적으로 우하향 안정화</span>가 예상됩니다.</p>
+    </div>
+
+    <div class="asset-section">
+        <h3>롯데리츠 (330590) <span class="asset-subtitle">배당 성장 사이클, 지금부터 시작</span></h3>
+        <h4>종목 개요</h4>
+        <p>2019년 10월에 상장한 리츠로, 3.2조 원 규모의 16개 자산을 보유하고 있습니다. 스폰서는 롯데쇼핑 및 롯데물산입니다. 배당 결산월은 6월, 12월로 반기 배당을 실시하며, 2025년 예상 연간 주당 배당금은 240원입니다.</p>
+        <h4>핵심 포인트</h4>
+        <p>기존 롯데쇼핑 및 리테일 자산 중심에서 롯데물산으로 스폰서 확대 및 오피스, 호텔 등 <span class="neutral">포트폴리오 확대를 추진</span>하고 있습니다. 非리테일 비중 30%까지 확대 및 AUM 4.5조 원을 목표로 하며, <span class="positive">환금성 높은 자산 편입을 통한 자본 수익 추구 전략</span>을 펼칩니다. <span class="positive">안정적인 임대차 및 높은 신용등급 (AA-)으로 자금 조달 경쟁력</span>을 확보했습니다. <span class="positive">금리 하락에 따른 이자비용 감소와 임대수익 상승이 맞물려 본격적인 장기 배당 성장 사이클에 진입</span>하며, <span class="positive">연 평균 10% 배당 성장</span>이 기대됩니다.</p>
+    </div>
+
+    <div class="asset-section">
+        <h3>신한알파리츠 (293940) <span class="asset-subtitle">명실상부, 국내 대표 오피스 리츠</span></h3>
+        <h4>종목 개요</h4>
+        <p>2018년 8월에 상장했으며, 주요 권역 소재 3.6조 원 규모의 오피스 12개를 보유하고 있습니다. 모자리츠 구조를 보유하고 있습니다. 배당 결산월은 3, 9월로 반기 배당을 실시하며, 2025년 예상 연간 주당 배당금은 347원입니다.</p>
+        <h4>핵심 포인트</h4>
+        <p><span class="positive">자산 편입 및 유상증자를 통한 외형 성장을 지속</span>하고 있습니다. 현재 포트폴리오는 오피스 12개로, 권역별 비중은 CBD 51%, GBD 23%, BBD 26%입니다. AMC의 <span class="positive">능동적인 매입/매각 및 운용이 가능</span>합니다. <span class="positive">멀티테넌트 및 임대차 만기 분산으로 서울 오피스 시장 임대료 상승률을 시의성 있게 반영</span>합니다. 1H25 신규/재계약 면적 E.NOC는 <span class="positive">+30.7% 상승</span>했으며, 자산 전체 평균 임대율은 98.6%, WALE은 2.8년입니다.</p>
+    </div>
+
+    <div style="height: 20px;"></div>
+
+    <h2>관심펀드와 자산배분 포트폴리오</h2>
+
+    <h4>관심 펀드</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>종목명</th>
+                <th>설정액 (억원)</th>
+                <th>수익률 (3개월, %)</th>
+                <th>핵심 포인트</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>국내채권 단기</td><td>대신내일출금단기채증권투자신탁 채권 C-Re</td><td>1,136</td><td><span class="positive">0.48</span></td><td>단기채 펀드의 장점에 익영업일 출금을 더해 효율적인 단기 투자</td></tr>
+            <tr><td>국내채권 단기</td><td>코레이트셀렉트단기채증권투자신탁 채권C</td><td>24,761</td><td><span class="positive">0.66</span></td><td>신용등급 A-이상의 회사채에 주로 투자하여 초과수익 추구</td></tr>
+            <tr><td>국내채권 단기</td><td>한국투자크레딧포커스 ESG 증권자투자신탁 1호(채권)C-Re</td><td>34,641</td><td><span class="negative">-0.36</span></td><td>한투운용의 크레딧 전문인력과 자체 투자분석 시스템 활용 의사 결정</td></tr>
+            <tr><td>채권 혼합 공모주</td><td>트러스톤공모주알파증권투자신탁 채권혼합 C</td><td>417</td><td><span class="negative">-2.33</span></td><td>트러스톤자산운용의 리서치와 네트워크로 우량 공모주에 선택과 집중</td></tr>
+            <tr><td>국내주식 일반주식</td><td>한국밸류 10년투자배당증권투자신탁(주식)C</td><td>1,133</td><td><span class="positive">12.52</span></td><td>안정성 기반으로 고배당 지급 기업과 성장성 기반의 배당성향 확대 기업에 투자</td></tr>
+            <tr><td>국내주식 배당형</td><td>KB액티브배당증권자투자신탁 (주식)C</td><td>733</td><td><span class="positive">26.51</span></td><td>배당주 프리미엄을 활용한 자본수익과 배당수익을 동시 추구</td></tr>
+        </tbody>
+    </table>
+
+    <h4>위험성향별 자산배분 포트폴리오</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>상품명</th>
+                <th>위험추구형</th>
+                <th>중립</th>
+                <th>안정추구형</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>원리금보장</td><td>정기예금/ELB</td><td>10%</td><td>20%</td><td>40%</td></tr>
+            <tr><td rowspan="2">선진국주식</td><td>삼성미국 S&P500 인덱스증권자투신 H주식 Cpe 퇴직</td><td>30%</td><td>20%</td><td>10%</td></tr>
+            <tr><td>삼성글로벌 ChatAI 증권자투자신탁 H주식 Cpe (퇴직연금)</td><td></td><td></td><td></td></tr>
+            <tr><td rowspan="3">국내/신흥국주식</td><td>한국밸류 10년투자퇴직연금배당증권자투자신탁 (주식)CE</td><td>30%</td><td>20%</td><td>10%</td></tr>
+            <tr><td>KB액티브배당증권자투자신탁 (주식)C퇴직 e</td><td></td><td></td><td></td></tr>
+            <tr><td>미래에셋차이나그로스증권자투자신탁 1호(주식)C-P2e</td><td></td><td></td><td></td></tr>
+            <tr><td rowspan="2">채권</td><td>대신내일출금단기채증권투자신탁 채권 C-Re</td><td>30%</td><td>40%</td><td>40%</td></tr>
+            <tr><td>한국투자크레딧포커스 ESG 증권자투자신탁 1호(채권)C-Re</td><td></td><td></td><td></td></tr>
+        </tbody>
+    </table>
+
+    <div style="height: 20px;"></div>
+
+    <h2>추가 경제 지표</h2>
+
+    <h4>국내 경제전망 요약표 (단위: %, 전기비, 전년동기비, 억달러)</h4>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">구분</th>
+                <th colspan="4">2025</th>
+                <th colspan="4">2026</th>
+                <th rowspan="2">2024</th>
+                <th rowspan="2">2025</th>
+                <th rowspan="2">2026</th>
+                <th rowspan="2">2027</th>
+            </tr>
+            <tr>
+                <th>1Q</th><th>2Q</th><th>3Q</th><th>4Q</th>
+                <th>1Q</th><th>2Q</th><th>3Q</th><th>4Q</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>GDP</td><td><span class="negative">-0.2</span></td><td><span class="positive">0.7</span></td><td><span class="positive">1.2</span></td><td><span class="positive">0.5</span></td><td><span class="positive">0.4</span></td><td><span class="positive">0.2</span></td><td><span class="positive">0.2</span></td><td><span class="negative">-0.2</span></td><td><span class="positive">2.0</span></td><td><span class="positive">1.1</span></td><td><span class="positive">1.7</span></td><td><span class="positive">2.0</span></td></tr>
+            <tr><td>민간소비</td><td><span class="negative">-0.1</span></td><td><span class="positive">0.5</span></td><td><span class="positive">1.3</span></td><td><span class="positive">0.3</span></td><td><span class="positive">0.4</span></td><td><span class="positive">0.5</span></td><td>0.0</td><td><span class="negative">-0.1</span></td><td><span class="positive">1.8</span></td><td><span class="positive">1.3</span></td><td><span class="positive">1.7</span></td><td><span class="positive">1.7</span></td></tr>
+            <tr><td>건설 투자</td><td><span class="negative">-3.1</span></td><td><span class="negative">-1.2</span></td><td><span class="negative">-0.1</span></td><td>0.0</td><td><span class="positive">1.5</span></td><td><span class="positive">1.8</span></td><td><span class="positive">0.1</span></td><td><span class="positive">0.1</span></td><td><span class="positive">1.5</span></td><td><span class="negative">-9.5</span></td><td><span class="positive">2.6</span></td><td><span class="positive">2.0</span></td></tr>
+            <tr><td>설비 투자</td><td><span class="negative">-0.4</span></td><td><span class="negative">-2.1</span></td><td><span class="positive">2.4</span></td><td><span class="positive">1.6</span></td><td><span class="positive">1.8</span></td><td><span class="positive">0.7</span></td><td><span class="negative">-1.0</span></td><td><span class="negative">-2.8</span></td><td><span class="positive">1.1</span></td><td><span class="positive">2.8</span></td><td><span class="positive">2.9</span></td><td><span class="positive">1.8</span></td></tr>
+            <tr><td>수출 (통관기준)</td><td><span class="negative">-2.3</span></td><td><span class="positive">2.1</span></td><td><span class="positive">6.6</span></td><td><span class="positive">4.3</span></td><td><span class="positive">3.0</span></td><td><span class="positive">8.0</span></td><td><span class="positive">3.0</span></td><td><span class="negative">-1.0</span></td><td><span class="positive">8.2</span></td><td><span class="positive">2.7</span></td><td><span class="positive">3.3</span></td><td><span class="positive">2.4</span></td></tr>
+            <tr><td>수입 (통관기준)</td><td><span class="negative">-1.4</span></td><td><span class="negative">-1.7</span></td><td><span class="positive">1.5</span></td><td><span class="positive">2.7</span></td><td><span class="positive">8.4</span></td><td><span class="positive">4.8</span></td><td><span class="positive">2.6</span></td><td><span class="negative">-1.8</span></td><td><span class="negative">-1.4</span></td><td><span class="positive">0.3</span></td><td><span class="positive">3.5</span></td><td><span class="positive">2.8</span></td></tr>
+            <tr><td>무역수지</td><td>69</td><td>208</td><td>226</td><td>185</td><td>110</td><td>176</td><td>189</td><td>202</td><td>518</td><td>688</td><td>677</td><td>663</td></tr>
+            <tr><td>경상수지</td><td>193</td><td>301</td><td>334</td><td>162</td><td>200</td><td>340</td><td>340</td><td>390</td><td>990</td><td>990</td><td>1,270</td><td>1,200</td></tr>
+            <tr><td>소비자물가</td><td><span class="positive">2.1</span></td><td><span class="positive">2.1</span></td><td><span class="positive">2.0</span></td><td><span class="positive">2.3</span></td><td><span class="positive">1.9</span></td><td><span class="positive">2.0</span></td><td><span class="positive">2.1</span></td><td><span class="positive">2.0</span></td><td><span class="positive">2.3</span></td><td><span class="positive">2.0</span></td><td><span class="positive">2.0</span></td><td><span class="positive">2.0</span></td></tr>
+            <tr><td>원/달러 환율 (평균)</td><td>1,452</td><td>1,399</td><td>1,387</td><td>1,435</td><td>1,385</td><td>1,415</td><td>1,430</td><td>1,450</td><td>1,364</td><td>1,418</td><td>1,420</td><td>1,450</td></tr>
+            <tr><td>기준금리</td><td><span class="positive">2.75</span></td><td><span class="positive">2.50</span></td><td><span class="positive">2.50</span></td><td><span class="positive">2.50</span></td><td><span class="positive">2.50</span></td><td><span class="positive">2.25</span></td><td><span class="positive">2.25</span></td><td><span class="positive">2.25</span></td><td><span class="positive">3.00</span></td><td><span class="positive">2.50</span></td><td><span class="positive">2.25</span></td><td><span class="positive">2.25</span></td></tr>
+            <tr><td>국고 3년(평균)</td><td><span class="positive">2.59</span></td><td><span class="positive">2.37</span></td><td><span class="positive">2.46</span></td><td><span class="positive">2.83</span></td><td><span class="positive">2.70</span></td><td><span class="positive">2.55</span></td><td><span class="positive">2.60</span></td><td><span class="positive">2.65</span></td><td><span class="positive">3.11</span></td><td><span class="positive">2.56</span></td><td><span class="positive">2.65</span></td><td><span class="positive">2.70</span></td></tr>
+            <tr><td>국고 5년(평균)</td><td><span class="positive">2.69</span></td><td><span class="positive">2.51</span></td><td><span class="positive">2.61</span></td><td><span class="positive">3.01</span></td><td><span class="positive">2.80</span></td><td><span class="positive">2.65</span></td><td><span class="positive">2.70</span></td><td><span class="positive">2.75</span></td><td><span class="positive">3.16</span></td><td><span class="positive">2.70</span></td><td><span class="positive">2.75</span></td><td><span class="positive">2.80</span></td></tr>
+            <tr><td>국고 10년(평균)</td><td><span class="positive">2.82</span></td><td><span class="positive">2.73</span></td><td><span class="positive">2.84</span></td><td><span class="positive">3.18</span></td><td><span class="positive">3.00</span></td><td><span class="positive">2.85</span></td><td><span class="positive">2.90</span></td><td><span class="positive">3.00</span></td><td><span class="positive">3.23</span></td><td><span class="positive">2.88</span></td><td><span class="positive">2.95</span></td><td><span class="positive">3.00</span></td></tr>
+        </tbody>
+    </table>
+    <p class="footnote">주1: 실적치 음영표시<br>주2: GDP 세부항목은 전기비, 나머지 경제지표는 전년동기비</p>
+
+    <h4>해외 경제전망 요약표 (단위: %, % 연율, % 전년동기비)</h4>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">구분</th>
+                <th colspan="4">2025</th>
+                <th colspan="4">2026</th>
+                <th rowspan="2">2024</th>
+                <th rowspan="2">2025</th>
+                <th rowspan="2">2026</th>
+                <th rowspan="2">2027</th>
+            </tr>
+            <tr>
+                <th>1Q</th><th>2Q</th><th>3Q</th><th>4Q</th>
+                <th>1Q</th><th>2Q</th><th>3Q</th><th>4Q</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>미국 GDP(연율)*</td><td><span class="negative">-0.6</span></td><td><span class="positive">3.8</span></td><td><span class="positive">4.3</span></td><td><span class="positive">0.5</span></td><td><span class="positive">2.0</span></td><td><span class="positive">2.5</span></td><td><span class="positive">3.1</span></td><td><span class="positive">1.6</span></td><td><span class="positive">2.8</span></td><td><span class="positive">2.1</span></td><td><span class="positive">2.1</span></td><td><span class="positive">1.9</span></td></tr>
+            <tr><td>CPI</td><td><span class="positive">2.7</span></td><td><span class="positive">2.4</span></td><td><span class="positive">2.9</span></td><td><span class="positive">3.0</span></td><td><span class="positive">2.6</span></td><td><span class="positive">2.4</span></td><td><span class="positive">2.4</span></td><td><span class="positive">2.5</span></td><td><span class="positive">3.0</span></td><td><span class="positive">2.8</span></td><td><span class="positive">2.5</span></td><td><span class="positive">2.3</span></td></tr>
+            <tr><td>기준금리</td><td><span class="positive">4.50</span></td><td><span class="positive">4.50</span></td><td><span class="positive">4.25</span></td><td><span class="positive">3.75</span></td><td><span class="positive">3.50</span></td><td><span class="positive">3.25</span></td><td><span class="positive">3.25</span></td><td><span class="positive">3.25</span></td><td><span class="positive">4.50</span></td><td><span class="positive">3.75</span></td><td><span class="positive">3.25</span></td><td><span class="positive">3.25</span></td></tr>
+            <tr><td>TB2년 (평균)</td><td><span class="positive">4.16</span></td><td><span class="positive">3.87</span></td><td><span class="positive">3.72</span></td><td><span class="positive">3.54</span></td><td><span class="positive">3.50</span></td><td><span class="positive">3.35</span></td><td><span class="positive">3.35</span></td><td><span class="positive">3.35</span></td><td><span class="positive">4.37</span></td><td><span class="positive">3.82</span></td><td><span class="positive">3.40</span></td><td><span class="positive">3.50</span></td></tr>
+            <tr><td>TB10년 (평균)</td><td><span class="positive">4.46</span></td><td><span class="positive">4.37</span></td><td><span class="positive">4.26</span></td><td><span class="positive">4.10</span></td><td><span class="positive">3.90</span></td><td><span class="positive">3.75</span></td><td><span class="positive">3.80</span></td><td><span class="positive">3.85</span></td><td><span class="positive">4.21</span></td><td><span class="positive">4.30</span></td><td><span class="positive">3.85</span></td><td><span class="positive">3.90</span></td></tr>
+            <tr><td>유로존 GDP</td><td><span class="positive">0.6</span></td><td><span class="positive">0.1</span></td><td><span class="positive">0.2</span></td><td>0.0</td><td><span class="positive">0.4</span></td><td><span class="positive">0.3</span></td><td><span class="positive">0.3</span></td><td><span class="positive">0.1</span></td><td><span class="positive">0.9</span></td><td><span class="positive">1.4</span></td><td><span class="positive">0.9</span></td><td><span class="positive">1.4</span></td></tr>
+            <tr><td>CPI</td><td><span class="positive">2.3</span></td><td><span class="positive">2.0</span></td><td><span class="positive">2.1</span></td><td><span class="positive">2.1</span></td><td><span class="positive">1.8</span></td><td><span class="positive">2.0</span></td><td><span class="positive">2.0</span></td><td><span class="positive">2.1</span></td><td><span class="positive">2.4</span></td><td><span class="positive">2.1</span></td><td><span class="positive">2.0</span></td><td><span class="positive">2.1</span></td></tr>
+            <tr><td>달러/유로</td><td><span class="positive">1.05</span></td><td><span class="positive">1.13</span></td><td><span class="positive">1.17</span></td><td><span class="positive">1.16</span></td><td><span class="positive">1.17</span></td><td><span class="positive">1.16</span></td><td><span class="positive">1.15</span></td><td><span class="positive">1.11</span></td><td><span class="positive">1.08</span></td><td><span class="positive">1.13</span></td><td><span class="positive">1.15</span></td><td><span class="positive">1.10</span></td></tr>
+            <tr><td>일본 GDP</td><td><span class="positive">0.2</span></td><td><span class="positive">0.6</span></td><td><span class="negative">-0.4</span></td><td><span class="positive">0.2</span></td><td><span class="positive">0.6</span></td><td><span class="positive">0.2</span></td><td>0.0</td><td><span class="negative">-0.1</span></td><td><span class="positive">0.1</span></td><td><span class="positive">1.1</span></td><td><span class="positive">0.8</span></td><td><span class="positive">0.5</span></td></tr>
+            <tr><td>CPI</td><td><span class="positive">3.8</span></td><td><span class="positive">3.4</span></td><td><span class="positive">2.9</span></td><td><span class="positive">2.8</span></td><td><span class="positive">2.7</span></td><td><span class="positive">2.4</span></td><td><span class="positive">2.4</span></td><td><span class="positive">2.0</span></td><td><span class="positive">2.7</span></td><td><span class="positive">3.2</span></td><td><span class="positive">2.4</span></td><td><span class="positive">2.0</span></td></tr>
+            <tr><td>엔/달러</td><td>152</td><td>144</td><td>147</td><td>153</td><td>148</td><td>148</td><td>150</td><td>152</td><td>152</td><td>149</td><td>150</td><td>153</td></tr>
+            <tr><td>중국 GDP</td><td><span class="positive">5.4</span></td><td><span class="positive">5.2</span></td><td><span class="positive">4.8</span></td><td><span class="positive">4.5</span></td><td><span class="positive">4.5</span></td><td><span class="positive">4.9</span></td><td><span class="positive">4.8</span></td><td><span class="positive">5.1</span></td><td><span class="positive">5.0</span></td><td><span class="positive">4.8</span></td><td><span class="positive">4.2</span></td><td><span class="positive">4.2</span></td></tr>
+            <tr><td>CPI</td><td><span class="negative">-0.1</span></td><td>0.0</td><td><span class="negative">-0.2</span></td><td><span class="positive">0.3</span></td><td><span class="positive">0.5</span></td><td><span class="positive">0.3</span></td><td><span class="positive">0.4</span></td><td><span class="positive">0.8</span></td><td><span class="positive">0.2</span></td><td>0.0</td><td><span class="positive">0.5</span></td><td><span class="positive">1.4</span></td></tr>
+            <tr><td>위안/달러</td><td><span class="positive">7.28</span></td><td><span class="positive">7.23</span></td><td><span class="positive">7.16</span></td><td><span class="positive">7.11</span></td><td><span class="positive">7.07</span></td><td><span class="positive">7.10</span></td><td><span class="positive">7.18</span></td><td><span class="positive">7.25</span></td><td><span class="positive">7.20</span></td><td><span class="positive">7.20</span></td><td><span class="positive">7.15</span></td><td><span class="positive">7.25</span></td></tr>
+        </tbody>
+    </table>
+    <p class="footnote">주1: 연율 성장률 (Annualized growth rate)은 분기 성장률을 연간으로 환산<br>주2: 실적치 음영표시<br>주3: 기준금리는 기말 값<br>주4: 국가별 환율 수치는 기간 평균</p>
+
+    <h4>원자재전망 (평균) 요약표</h4>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">구분</th>
+                <th colspan="4">2025</th>
+                <th colspan="4">2026</th>
+                <th rowspan="2">2024</th>
+                <th rowspan="2">2025</th>
+                <th rowspan="2">2026</th>
+                <th rowspan="2">2027</th>
+            </tr>
+            <tr>
+                <th>1Q</th><th>2Q</th><th>3Q</th><th>4Q</th>
+                <th>1Q</th><th>2Q</th><th>3Q</th><th>4Q</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>국제유가</td><td>72</td><td>64</td><td>65</td><td>59</td><td>60</td><td>60</td><td>65</td><td>75</td><td>76</td><td>65</td><td>65</td><td>76</td></tr>
+            <tr><td>금</td><td>2,858</td><td>3,288</td><td>3,459</td><td>4,157</td><td>4,300</td><td>4,500</td><td>4,500</td><td>4,800</td><td>2,390</td><td>3,420</td><td>4,550</td><td>4,900</td></tr>
+            <tr><td>은</td><td>32</td><td>34</td><td>40</td><td>55</td><td>70</td><td>75</td><td>75</td><td>75</td><td>28</td><td>39</td><td>74</td><td>70</td></tr>
+            <tr><td>구리</td><td>9,339</td><td>9,506</td><td>9,810</td><td>11,129</td><td>12,000</td><td>12,500</td><td>12,500</td><td>12,500</td><td>9,150</td><td>9,850</td><td>12,500</td><td>13,000</td></tr>
+            <tr><td>알루미늄</td><td>2,624</td><td>2,444</td><td>2,621</td><td>2,831</td><td>3,000</td><td>3,250</td><td>3,400</td><td>3,600</td><td>2,422</td><td>2,630</td><td>3,300</td><td>3,400</td></tr>
+            <tr><td>니켈</td><td>15,575</td><td>15,166</td><td>15,031</td><td>15,093</td><td>16,000</td><td>16,500</td><td>17,000</td><td>20,000</td><td>16,826</td><td>15,200</td><td>17,500</td><td>22,000</td></tr>
+            <tr><td>옥수수</td><td>472</td><td>452</td><td>402</td><td>431</td><td>550</td><td>550</td><td>600</td><td>650</td><td>424</td><td>440</td><td>600</td><td>700</td></tr>
+            <tr><td>소맥</td><td>554</td><td>535</td><td>521</td><td>522</td><td>600</td><td>600</td><td>700</td><td>750</td><td>572</td><td>530</td><td>650</td><td>900</td></tr>
+            <tr><td>대두</td><td>1,024</td><td>1,044</td><td>1,013</td><td>1,075</td><td>1,100</td><td>1,200</td><td>1,250</td><td>1,300</td><td>1,103</td><td>1,030</td><td>1,250</td><td>1,600</td></tr>
+        </tbody>
+    </table>
+    <p class="footnote">주1: WTI는 $/bbl 기준<br>주2: 구리, 알루미늄, 니켈은 $/ton 기준<br>주3: 금, 은은 $/Oz 기준<br>주4: 옥수수, 소맥과 대두는 ¢/bsh 기준<br>주5: 실적치 음영표시<br>주6: 전망치 및 실적치는 각 기간 평균가격</p>
+
+    <h4>주간 주요 증시일정</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>일자</th><th>국가</th><th>일정</th><th>단위</th><th>예상치</th><th>전기치</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>2026-01-05</td><td>중국</td><td>12월 차이신 서비스업 PMI</td><td>pt</td><td>52.0</td><td>52.1</td></tr>
+            <tr><td>2026-01-06</td><td>미국</td><td>12월 ISM 제조업 PMI</td><td>pt</td><td>48.4</td><td>48.2</td></tr>
+            <tr><td></td><td>한국</td><td>12월 외환보유고</td><td>십억 달러</td><td>-</td><td>430.7</td></tr>
+            <tr><td>2026-01-07</td><td>미국</td><td>12월 ADP 취업자 변동</td><td>천 명</td><td>48.0</td><td>-32.0</td></tr>
+            <tr><td>2026-01-08</td><td>미국</td><td>12월 ISM 서비스업 PMI</td><td>pt</td><td>52.3</td><td>52.6</td></tr>
+            <tr><td></td><td>미국</td><td>11월 JOLTS 구인건수</td><td>백만 건</td><td>7.73</td><td>7.67</td></tr>
+            <tr><td></td><td>미국</td><td>3분기 비농업부문 노동생산성</td><td>%</td><td>3.7</td><td>3.3</td></tr>
+            <tr><td></td><td>미국</td><td>10월 무역수지</td><td>십억 달러</td><td>-58.8</td><td>-52.8</td></tr>
+            <tr><td>2026-01-09</td><td>독일</td><td>11월 산업생산</td><td>%mom</td><td>-0.3</td><td>1.8</td></tr>
+            <tr><td></td><td>미국</td><td>12월 비농업고용자수</td><td>천 명</td><td>55.0</td><td>64.0</td></tr>
+            <tr><td></td><td>미국</td><td>12월 실업률</td><td>%</td><td>4.5</td><td>4.6</td></tr>
+            <tr><td></td><td>미국</td><td>12월 시간당 평균 임금</td><td>%yoy /%mom</td><td>3.6/0.3</td><td>3.5/0.1</td></tr>
+            <tr><td>2026-01-10</td><td>미국</td><td>1월 미시간대 소비자심리지수</td><td>pt</td><td>-</td><td>52.9</td></tr>
+        </tbody>
+    </table>
+    <p class="footnote">주: 날짜는 한국 기준이며 예상치는 Bloomberg 기준</p>
+
+</body>
+
+
+<div style="margin-top: 40px; padding: 20px; border: 1px solid #ccc; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05); font-size: 13px; color: #666;">
+    <h2 style="color: #333; font-size: 18px; margin-bottom: 12px;">Compliance Notice</h2>
+    <p style="margin-bottom: 10px;">
+        금융투자업규정 4-20조 1항5호사목에 따라 작성일 현재 사전고지와 관련한 사항이 없으며, 당사의 금융투자분석사는 자료작성일 현재 본 자료에
+        관련하여 재산적 이해관계가 없습니다. 당사는 동 자료에 언급된 종목과 계열회사의 관계가 없으며 당사의 금융투자분석사는 본 자료의 작성과 관련하여
+        외부 부당한 압력이나 간섭을 받지 않고 본인의 의견을 정확하게 반영하였습니다.
+        본 자료는 투자자들의 투자판단에 참고가 되는 정보제공을 목적으로 배포되는 자료입니다. 본 자료에 수록된 내용은 당사 Research Center의 추정치로서
+        오차가 발생할 수 있으며 정확성이나 완벽성은 보장하지 않습니다. 본 자료를 이용하시는 분은 동 자료와 관련한 투자의 최종 결정은 자신의 판단으로
+        하시기 바랍니다.
+    </p>
+    <p style="font-size: 12px; color: #999; margin-top: 10px;">
+        ※ 본 콘텐츠는 당사 리서치센터 보고서를 기반으로 생성된 요약·해설 자료입니다.
+        본 자료는 인공지능(AI)을 활용하여 자동 생성되었으며, 투자자 이해를 돕기 위한 목적입니다.
+        일부 내용은 원문과 차이가 있을 수 있으며, 최종 투자 판단은 원문 보고서를 참고하시기 바랍니다.
+        본 자료는 투자 권유를 목적으로 하지 않으며, AI 생성 특성상 오류가 포함될 수 있습니다.
+    </p>
+</div>
+
+</html>
