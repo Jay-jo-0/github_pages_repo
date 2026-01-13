@@ -4,274 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>미국 마켓 레이더 Daily 26.01.14</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+            font-family: 'Noto Sans KR', sans-serif;
             line-height: 1.6;
             color: #333;
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 15px;
-            background-color: #f9f9f9;
+            max-width: 800px; /* 보고서 내용의 최대 너비 설정 */
+            margin: 20px auto; /* 가운데 정렬 및 상하 여백 */
+            padding: 0 15px; /* 좌우 패딩으로 모바일 가독성 향상 */
+            background-color: #f9f9f9; /* 약간 밝은 배경색 */
         }
         h1 {
-            font-size: 2.2em;
-            color: #1a4d8c;
-            text-align: center;
+            font-size: 2em; /* 폰트 크기 조정 (약 32px) */
+            color: #2c3e50; /* 어두운 남색 계열 */
             margin-bottom: 30px;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 15px;
+            text-align: center; /* 제목 가운데 정렬 */
+            line-height: 1.3;
         }
         h2 {
-            font-size: 1.8em;
-            color: #2c6dae;
+            font-size: 1.5em; /* 폰트 크기 조정 (약 24px) */
+            color: #2980b9; /* 파란색 계열 */
             margin-top: 40px;
             margin-bottom: 20px;
-            border-left: 5px solid #2c6dae;
-            padding-left: 10px;
-        }
-        h3 {
-            font-size: 1.4em;
-            color: #4a4a4a;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            border-bottom: 1px dashed #eee;
+            border-bottom: 2px solid #2980b9; /* 소제목 하단에 구분선 */
             padding-bottom: 5px;
         }
+        h3 {
+            font-size: 1.2em; /* 폰트 크기 조정 (약 19.2px) */
+            color: #34495e; /* 어두운 회색 계열 */
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
         p {
-            margin-bottom: 15px;
-            font-size: 1.05em;
+            margin-bottom: 25px; /* 문단 사이 여백을 늘려 2~3줄 공백 효과 */
+            font-size: 1em; /* 기본 폰트 크기 (약 16px) */
         }
         strong {
-            color: #000;
+            color: #e74c3c; /* 강조 텍스트 색상 (붉은색 계열) */
+            font-weight: 700; /* 굵게 */
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 30px;
-            font-size: 0.95em;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 10px 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #eef4f9;
-            font-weight: bold;
-            color: #333;
-        }
-        tr:nth-child(even) {
-            background-color: #f6f6f6;
-        }
-        .section-separator {
-            margin-top: 40px;
-            margin-bottom: 40px;
-            border-top: 1px solid #eee;
+        /* 모바일 기기에서의 가독성을 위한 미디어 쿼리 */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            h3 {
+                font-size: 1.1em;
+            }
+            p {
+                font-size: 0.95em;
+            }
+            body {
+                margin: 15px auto;
+                padding: 0 10px;
+            }
         }
     </style>
 </head>
 <body>
-
     <h1>미국 마켓 레이더 Daily 26.01.14</h1>
 
-    <h2>주요 지표 일일 동향</h2>
-
-    <h3>주요 지수</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>지수명</th>
-                <th>종가(P)</th>
-                <th>변화폭(P)</th>
-                <th>변화율(%)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>NASDAQ</td>
-                <td>23,709.9</td>
-                <td>-24.0</td>
-                <td>-0.1</td>
-            </tr>
-            <tr>
-                <td>S&P500</td>
-                <td>6,963.8</td>
-                <td>-13.5</td>
-                <td>-0.2</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h3>환율 및 채권</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>지수명</th>
-                <th>종가(P, %)</th>
-                <th>변화폭(P, bp)</th>
-                <th>변화율(%)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>달러인덱스</td>
-                <td>99.17</td>
-                <td>0.28</td>
-                <td>0.28</td>
-            </tr>
-            <tr>
-                <td>미국국채 (2년)</td>
-                <td>3.53</td>
-                <td>-0.40</td>
-                <td>-0.11</td>
-            </tr>
-            <tr>
-                <td>미국국채 (10년)</td>
-                <td>4.18</td>
-                <td>-0.39</td>
-                <td>-0.09</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h3>원자재</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>지수명</th>
-                <th>종가(달러)</th>
-                <th>변화폭(달러)</th>
-                <th>변화율(%)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>WTI</td>
-                <td>61.10</td>
-                <td>1.60</td>
-                <td>2.69</td>
-            </tr>
-            <tr>
-                <td>금</td>
-                <td>4,585.95</td>
-                <td>-12.60</td>
-                <td>-0.27</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <div class="section-separator"></div>
-
     <h2>시황</h2>
+    <p>
+        미국 주식 시장은 <strong>2026년 1월 13일 하락세로 마감</strong>했습니다. S&P 500 지수는 0.2% 하락하였고, 기술주 중심의 NASDAQ 지수는 0.1% 하락 마감하며 전반적인 시장의 약세를 반영한 하루였습니다.
+    </p>
 
-    <p>미국 주식 시장은 2026년 1월 13일 하락세로 마감했습니다. <strong>S&P 500 지수는 0.2% 하락</strong>하였고, 기술주 중심의 <strong>NASDAQ 지수는 0.1% 하락</strong> 마감하며 전반적인 시장의 약세를 반영한 하루였습니다.</p>
+    <p>
+        <strong>금융주는 도널드 트럼프 대통령의 신용카드 이자율 상한선 제안에 대한 우려로 하락을 주도</strong>했습니다. JP모건 경영진은 이 제안이 소비자와 경제에 해를 끼칠 것이라고 경고하며 금융 부문의 전반적인 약세에 영향을 미쳤습니다.
+    </p>
 
-    <p>금융주는 도널드 트럼프 대통령의 신용카드 이자율 상한선 제안에 대한 우려로 하락을 주도했습니다. JP모건 경영진은 이 제안이 소비자와 경제에 해를 끼칠 것이라고 경고하며 금융 부문의 전반적인 약세에 영향을 미쳤습니다.</p>
+    <p>
+        소비자 물가 지수(CPI) 상승률이 예상치와 부합했지만, 트럼프 행정부의 <strong>제롬 파월 Fed 의장에 대한 수사 소식은 Fed 독립성 우려를 증폭시키며 시장의 불확실성을 더했습니다</strong>. 미국 국채 2년물 및 10년물 금리는 소폭 하락했습니다.
+    </p>
 
-    <p>소비자 물가 지수(CPI) 상승률이 예상치와 부합했지만, 트럼프 행정부의 제롬 파월 Fed 의장에 대한 수사 소식은 Fed 독립성 우려를 증폭시키며 시장의 불확실성을 더했습니다. 미국 국채 2년물 및 10년물 금리는 소폭 하락했습니다.</p>
-
-    <p>에너지 섹터는 국제 유가 상승에 힘입어 <strong>1.53%의 상승</strong>을 기록했습니다. 이는 미국의 베네수엘라 원유 산업의 단기 재건 어려움, 이란과의 긴장 고조가 원유 공급에 대한 우려를 키우며 유가 상승 압력으로 작용한 결과입니다.</p>
-
-    <br><br>
+    <p>
+        <strong>에너지 섹터는 국제 유가 상승에 힘입어 1.53%의 상승을 기록</strong>했습니다. 이는 미국의 베네수엘라 원유 산업의 단기 재건 어려움, 이란과의 긴장 고조가 원유 공급에 대한 우려를 키우며 유가 상승 압력으로 작용한 결과입니다.
+    </p>
 
     <h2>뉴스</h2>
-
+    <h3>L3해리스 로켓 모터 사업 10억 달러 투자</h3>
     <p>
-        <strong>L3해리스 로켓 모터 사업 10억 달러 투자</strong> - Reuters<br>
-        미 국방부가 미사일 모터 공급 안정을 위해 L3해리스 사업에 10억 달러를 투자하며, 2026년 IPO를 계획 중인 사업 확장
-    </p>
-    <p>
-        <strong>트럼프 신용카드 금리 상한 제안에 금융주 하락</strong> - Reuters<br>
-        트럼프의 신용카드 금리 상한 제안에 JP모건 등 금융사들은 소비자 및 경제에 심각한 피해 우려를 나타냄
-    </p>
-    <p>
-        <strong>금, 은 사상 최고가 기록, 금리 인하 기대감</strong> - Reuters<br>
-        미국 인플레이션 데이터로 연준 금리 인하 기대가 확고해지며 금과 은 가격이 사상 최고치를 경신하는 움직임
+        미 국방부가 미사일 모터 공급 안정을 위해 L3해리스 사업에 10억 달러를 투자하며, 2026년 IPO를 계획 중인 사업 확장을 지원합니다. (출처: Reuters)
     </p>
 
-    <br><br>
+    <h3>트럼프 신용카드 금리 상한 제안에 금융주 하락</h3>
+    <p>
+        도널드 트럼프 전 대통령의 신용카드 금리 상한 제안에 JP모건 등 금융사들은 소비자 및 경제에 심각한 피해를 초래할 수 있다는 우려를 나타냈습니다. (출처: Reuters)
+    </p>
 
-    <h2>주요 종목 동향</h2>
-
-    <h3>52주 신고가 (S&P500)</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>코드</th>
-                <th>종목명</th>
-                <th>섹터</th>
-                <th>현재가 (달러)</th>
-                <th>시가 총액 (십억달러)</th>
-                <th>상승률 (1D,%)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td>GOOGL</td><td>알파벳</td><td>통신 서비스</td><td>336.0</td><td>2,237.6</td><td>1.2</td></tr>
-            <tr><td>GOOG</td><td>알파벳</td><td>통신 서비스</td><td>336.4</td><td>1,819.1</td><td>1.1</td></tr>
-            <tr><td>XOM</td><td>엑손모빌</td><td>에너지</td><td>126.5</td><td>533.6</td><td>2.0</td></tr>
-            <tr><td>CAT</td><td>캐터필러</td><td>산업</td><td>636.5</td><td>297.9</td><td>1.1</td></tr>
-            <tr><td>RTX</td><td>RTX</td><td>산업</td><td>194.1</td><td>260.2</td><td>0.1</td></tr>
-            <tr><td>INTC</td><td>인텔</td><td>정보 기술</td><td>47.3</td><td>225.6</td><td>7.3</td></tr>
-            <tr><td>BA</td><td>보잉</td><td>산업</td><td>244.6</td><td>191.5</td><td>2.0</td></tr>
-            <tr><td>KLAC</td><td>KLA</td><td>정보 기술</td><td>1,441.8</td><td>189.4</td><td>1.0</td></tr>
-            <tr><td>APH</td><td>앰페놀</td><td>정보 기술</td><td>149.0</td><td>182.3</td><td>2.7</td></tr>
-            <tr><td>LOW</td><td>로우스</td><td>임의소비재</td><td>274.2</td><td>153.8</td><td>1.2</td></tr>
-        </tbody>
-    </table>
-
-    <h3>일일 수익률 Top10 (S&P500)</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>코드</th>
-                <th>종목명</th>
-                <th>섹터</th>
-                <th>현재가 (달러)</th>
-                <th>시가 총액 (십억달러)</th>
-                <th>상승률 (1D,%)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td>MRNA</td><td>모더나</td><td>헬스케어</td><td>39.6</td><td>15.5</td><td>17.0</td></tr>
-            <tr><td>INTC</td><td>인텔</td><td>정보 기술</td><td>47.3</td><td>225.6</td><td>7.3</td></tr>
-            <tr><td>AMD</td><td>AMD</td><td>정보 기술</td><td>221.0</td><td>359.7</td><td>6.4</td></tr>
-            <tr><td>RVTY</td><td>레비티</td><td>헬스케어</td><td>110.1</td><td>12.5</td><td>6.0</td></tr>
-            <tr><td>VTRS</td><td>바이아트리스</td><td>헬스케어</td><td>13.4</td><td>15.4</td><td>5.4</td></tr>
-            <tr><td>ANET</td><td>아리스타 네</td><td>정보 기술</td><td>129.9</td><td>163.6</td><td>5.3</td></tr>
-            <tr><td>TKO</td><td>TKO 그룹</td><td>통신 서비스</td><td>208.9</td><td>40.8</td><td>4.9</td></tr>
-            <tr><td>ALB</td><td>앨버말</td><td>소재</td><td>176.9</td><td>20.8</td><td>4.5</td></tr>
-            <tr><td>CSGP</td><td>코스타그룹</td><td>부동산</td><td>61.8</td><td>26.2</td><td>4.2</td></tr>
-            <tr><td>COIN</td><td>코인베이스</td><td>금융</td><td>252.7</td><td>68.1</td><td>4.0</td></tr>
-        </tbody>
-    </table>
-
-    <h3>시가총액 상위 Top10</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>코드</th>
-                <th>종목명</th>
-                <th>섹터</th>
-                <th>현재가 (달러)</th>
-                <th>시가 총액 (십억달러)</th>
-                <th>상승률 (1D,%)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td>GOOGL</td><td>알파벳</td><td>통신 서비스</td><td>336.0</td><td>2,237.6</td><td>1.2</td></tr>
-            <tr><td>GOOG</td><td>알파벳</td><td>통신 서비스</td><td>336.4</td><td>1,819.1</td><td>1.1</td></tr>
-            <tr><td>AVGO</td><td>브로드컴</td><td>정보 기술</td><td>354.6</td><td>1,681.3</td><td>0.7</td></tr>
-            <tr><td>NVDA</td><td>엔비디아</td><td>정보 기술</td><td>185.8</td><td>4,515.2</td><td>0.5</td></tr>
-            <tr><td>AAPL</td><td>애플</td><td>정보 기술</td><td>261.1</td><td>3,836.9</td><td>0.3</td></tr>
-            <tr><td>LLY</td><td>일라이 릴리</td><td>헬스케어</td><td>1,077.2</td><td>1,018.4</td><td>-0.4</td></tr>
-            <tr><td>TSLA</td><td>테슬라</td><td>임의소비재</td><td>447.2</td><td>1,487.3</td><td>-0.4</td></tr>
-            <tr><td>MSFT</td><td>마이크로소프</td><td>정보 기술</td><td>470.7</td><td>3,498.2</td><td>-1.4</td></tr>
-            <tr><td>AMZN</td><td>아마존</td><td>임의소비재</td><td>242.6</td><td>2,593.4</td><td>-1.6</td></tr>
-            <tr><td>META</td><td>메타 플랫폼</td><td>통신 서비스</td><td>631.1</td><td>1,590.7</td><td>-1.7</td></tr>
-        </tbody>
-    </table>
-
+    <h3>금, 은 사상 최고가 기록, 금리 인하 기대감</h3>
+    <p>
+        미국 인플레이션 데이터로 연준의 금리 인하 기대감이 확고해지면서, 금과 은 가격이 사상 최고치를 경신하는 움직임을 보였습니다. (출처: Reuters)
+    </p>
 </body>
 
 
