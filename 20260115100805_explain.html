@@ -3,90 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[대신증권 해외주식] 미국주식 일일 동향</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <title>[대신증권 최진영] 이란산 원유 겨눈 트럼프, 빨라질 중국의 물가 상승</title>
     <style>
         body {
-            font-family: 'Noto Sans KR', sans-serif;
+            font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+            line-height: 1.6;
             margin: 0;
-            padding: 20px;
-            background-color: #f8f8f8;
+            padding: 15px;
+            background-color: #f8f9fa;
             color: #333;
-            line-height: 1.7;
+            box-sizing: border-box;
+        }
+        .section {
+            margin-bottom: 25px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        .summary {
+            background-color: #e6f7ff;
+            border-left: 5px solid #007bff;
+            padding: 15px 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            color: #0056b3;
             font-size: 1.1em;
+            line-height: 1.5;
         }
         h1 {
             font-size: 1.8em;
-            color: #1a1a1a;
+            color: #0056b3;
             text-align: center;
             margin-bottom: 30px;
-            font-weight: 700;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #007bff;
+            word-break: keep-all; /* 단어 단위로 줄 바꿈 */
         }
         h2 {
             font-size: 1.4em;
-            color: #333;
+            color: #007bff;
+            margin-top: 25px;
             margin-bottom: 15px;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 8px;
-            font-weight: 700;
+            padding-bottom: 5px;
+            border-bottom: 1px dashed #ced4da;
+            word-break: keep-all;
         }
-        h3 {
-            font-size: 1.2em;
-            color: #0056b3;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-        .section {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-            margin-bottom: 30px;
-        }
-        .summary {
-            background-color: #f0faff; /* Light blue background for summary */
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            border: 1px solid #cceeff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
-        }
-        .summary h2 {
-            color: #0056b3;
-            font-size: 1.5em;
-            margin-top: 0;
-            border-bottom: none;
-            padding-bottom: 0;
+        p {
+            font-size: 1.05em;
+            margin-bottom: 1em;
+            word-break: keep-all;
         }
         .highlight {
-            color: #0056b3;
+            color: #dc3545;
             font-weight: bold;
         }
-        .highlight-red {
-            color: #d9534f;
-            font-weight: bold;
-        }
-        .info-box {
+        .explanation {
             font-size: 0.9em;
             color: #555;
-            background-color: #f0f8ff;
+            background-color: #f2f2f2;
             padding: 10px;
             border-radius: 5px;
             margin-top: 15px;
-            border-left: 4px solid #0056b3;
+            border-left: 3px solid #ccc;
+            word-break: keep-all;
         }
-        .info-box p {
-            margin: 0;
-            line-height: 1.5;
+        .explanation strong {
+            color: #007bff;
         }
         ul {
             list-style-type: disc;
-            margin-left: 25px;
-            padding: 0;
+            margin-left: 20px;
+            padding-left: 0;
+            font-size: 1.05em;
         }
-        li {
+        ul li {
             margin-bottom: 8px;
+            word-break: keep-all;
+        }
+
+        /* 모바일 환경 최적화 */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+                font-size: 15px; /* 기본 폰트 크기 조정 */
+            }
+            .section {
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+            .summary {
+                padding: 12px 15px;
+                font-size: 1em;
+            }
+            h1 {
+                font-size: 1.6em;
+                margin-bottom: 25px;
+            }
+            h2 {
+                font-size: 1.25em;
+                margin-top: 20px;
+                margin-bottom: 12px;
+            }
+            p {
+                font-size: 1em;
+                margin-bottom: 0.9em;
+            }
+            .explanation {
+                font-size: 0.85em;
+                padding: 8px;
+            }
+            ul {
+                font-size: 1em;
+                margin-left: 15px;
+            }
         }
     </style>
 </head>
@@ -103,114 +133,72 @@ li {
 }
 </style>
 
-    <h1>[대신증권 해외주식] 미국주식 일일 동향</h1>
 
-    <div class="summary">
-        <h2>핵심 요약</h2>
-        <p>오늘 대신증권의 보고서는 2026년 1월 15일 목요일의 미국 주식 시장 상황을 알려주고 있습니다. 어제 하루 동안 미국의 주요 주식 시장은 대부분 주식 가격이 조금씩 내려갔습니다. 특히 기술 관련 회사들의 주식 가격이 많이 떨어진 날입니다.</p>
-        <p>하지만 모든 회사의 주식 가격이 내려간 것은 아닙니다. 석유나 가스처럼 에너지를 다루는 회사들, 그리고 사람들이 매일 꼭 쓰는 물건을 만드는 회사들의 주식 가격은 오히려 올랐습니다.</p>
-        <p>이 보고서에서는 <span class="highlight">셰브론, 엔비디아, 테슬라, 브로드컴, 에어비앤비</span> 같은 유명 회사들에 대한 중요한 소식들도 자세히 설명하고 있습니다. 이 소식들이 각 회사의 주식 가격에 어떤 영향을 주었는지 함께 살펴보도록 하겠습니다.</p>
-    </div>
+    <h1>[대신증권 최진영] 이란산 원유 겨눈 트럼프, 빨라질 중국의 물가 상승</h1>
 
     <div class="section">
-        <h2>주요 주식 시장은 어땠나요?</h2>
-        <p>이 보고서에 따르면, 어제 하루 동안 미국 주식 시장의 전체적인 분위기는 좋지 않았습니다. 마치 우리 반 친구들 대부분이 시험을 잘 못 본 것과 같은 상황이라고 생각하시면 이해하기 쉽습니다. 큰 회사들의 주식 가격을 모아서 보여주는 세 가지 중요한 숫자들(<span class="highlight">주요지수</span>)이 모두 주식 가격이 내려갔다고 이야기하고 있습니다.</p>
-        <ul>
-            <li><span class="highlight">S&P 500</span> 지수는 어제보다 <span class="highlight-red">0.5% 내려갔습니다.</span></li>
-            <li><span class="highlight">NASDAQ (나스닥)</span> 지수는 어제보다 <span class="highlight-red">1.0% 내려갔습니다.</span></li>
-            <li><span class="highlight">DOW JONES (다우존스)</span> 지수는 어제보다 <span class="highlight-red">0.1% 내려갔습니다.</span></li>
-        </ul>
-        <p>특히 <span class="highlight">나스닥</span>은 기술 관련 회사들이 많이 모여 있는 곳인데, 다른 곳들보다 주식 가격이 더 많이 내려간 것을 볼 수 있습니다.</p>
-        <div class="info-box">
-            <p><span class="highlight" style="font-weight: bold;">용어 설명:</span></p>
-            <p><span style="font-weight: bold;">주요지수</span>는 어떤 나라의 주식 시장 전체가 얼마나 잘하고 있는지 한눈에 보여주는 대표적인 숫자입니다. 예를 들어, <span style="font-weight: bold;">S&P 500</span>은 미국에서 가장 크고 중요한 500개 회사의 주식 가격을 모아놓은 것이고, <span style="font-weight: bold;">NASDAQ</span>은 주로 컴퓨터나 인터넷 같은 기술 관련 회사들, <span style="font-weight: bold;">DOW JONES</span>는 미국의 오래되고 유명한 30개 큰 회사의 주식 가격을 나타냅니다. 이 숫자가 내려가면 전체적으로 주식 가격이 내려갔다는 뜻입니다.</p>
+        <p>안녕하세요. 지금부터 대신증권 최진영 애널리스트가 작성한 보고서의 내용을 여러분께 아주 쉽고 자세하게 설명해 드립니다. 어려운 경제나 금융 용어 없이, 마치 이야기를 듣는 것처럼 편안하게 이해하실 수 있도록 풀어서 설명하겠습니다.</p>
+
+        <div class="summary">
+            <p><strong>이 보고서에서 가장 중요한 내용들을 먼저 말씀드립니다.</strong></p>
+            <ul>
+                <li>미국의 <span class="highlight">트럼프 전 대통령이 이란의 석유와 천연가스 거래를 막으려 합니다.</span> 이는 이란이 핵무기를 개발하려는 것을 막기 위한 목적이 있다고 합니다.</li>
+                <li>이 조치 때문에 <span class="highlight">중국의 정유 회사들이 큰 손해를 볼 수 있습니다.</span> 중국은 이란에서 싸게 원유를 많이 사 왔는데, 앞으로는 그러기 어려워진다는 이야기입니다.</li>
+                <li>결국, <span class="highlight">중국의 물가가 예상보다 빨리 오를 수 있다</span>는 것이 이 보고서의 핵심 내용입니다. 중국이 싸게 사 오던 원유를 더 이상 싸게 사 오지 못하게 되면, 물건을 만드는 비용이 올라가 물가가 오를 수 있기 때문입니다.</li>
+            </ul>
         </div>
     </div>
 
     <div class="section">
-        <h2>어떤 회사들이 모인 그룹(<span class="highlight">섹터</span>)의 주식이 좋았고, 나빴나요?</h2>
-        <p>주식 시장에는 다양한 종류의 회사들이 있습니다. 이 회사들을 비슷한 성격끼리 묶어 놓은 것을 <span class="highlight">섹터</span>라고 부릅니다. 이 보고서는 각 <span class="highlight">섹터</span>별로 주식 가격이 어떻게 변했는지 알려주고 있습니다.</p>
-
-        <h3>주식 가격이 오른 섹터:</h3>
-        <ul>
-            <li>가장 많이 오른 곳은 <span class="highlight">에너지</span> 섹터로 <span class="highlight">2.3% 올랐습니다.</span> (석유, 가스 등을 다루는 회사들입니다.)</li>
-            <li><span class="highlight">필수소비재</span> 섹터도 <span class="highlight">1.2% 올랐습니다.</span> (사람들이 매일 꼭 필요한 물건을 만드는 회사들입니다.)</li>
-            <li><span class="highlight">부동산</span>, <span class="highlight">유틸리티</span> (전기, 가스, 수도처럼 생활에 꼭 필요한 서비스를 제공하는 회사들), <span class="highlight">헬스케어</span> (병원, 약, 건강 관련 서비스를 제공하는 회사들) 섹터도 조금씩 올랐습니다.</li>
-        </ul>
-        <h3>주식 가격이 내려간 섹터:</h3>
-        <ul>
-            <li>가장 많이 내려간 곳은 <span class="highlight">경기소비재</span> 섹터로 <span class="highlight-red">1.8% 내려갔습니다.</span> (경기가 좋을 때 사람들이 더 많이 사는 물건을 만드는 회사들입니다.)</li>
-            <li><span class="highlight">IT</span> (정보 기술) 섹터도 <span class="highlight-red">1.4% 내려가면서</span> 많이 좋지 않았습니다.</li>
-            <li>그 외 <span class="highlight">커뮤니케이션</span>, <span class="highlight">금융</span>, <span class="highlight">소재</span> 섹터도 주식 가격이 내려갔습니다.</li>
-        </ul>
-        <div class="info-box">
-            <p><span class="highlight" style="font-weight: bold;">용어 설명:</span></p>
-            <p><span style="font-weight: bold;">섹터</span>는 산업 분야를 뜻합니다. 예를 들어, 먹고 마시는 것을 파는 회사들은 '필수소비재' 섹터, 컴퓨터나 스마트폰 관련 회사들은 'IT' 섹터에 속하는 식입니다. 이 섹터별로 주식 가격의 움직임이 다를 수 있습니다.</p>
+        <h2>트럼프 대통령이 이란을 겨냥한 이유</h2>
+        <p>지난 1월 12일, 트럼프 전 미국 대통령은 앞으로 <span class="highlight">이란과 물건을 사고파는 모든 나라에 미국이 25%의 세금을 더 받겠다</span>고 발표했습니다. 이 말은 이란과 거래하면 미국과 거래할 때 불이익을 주겠다는 뜻입니다. 이 조치는 발표되는 즉시 효력이 발생한다고 했습니다.</p>
+        <p>겉으로 보기에는 이란 정부가 시위대를 무력으로 진압하는 것에 대한 경고처럼 보입니다. 하지만 보고서에서는 이것이 진짜 목적이 아니라고 설명합니다. 실제로는 이란이 핵무기를 만들려는 것을 막기 위해 <span class="highlight">이란 혁명수비대라는 조직의 돈줄을 끊으려는 것</span>이라고 합니다. 혁명수비대는 이란에서 핵무기 개발과 군사 활동을 이끄는 중요한 조직입니다.</p>
+        <div class="explanation">
+            <strong>이란 혁명수비대 (IRGC)</strong>: 이란에서 군사적으로 매우 큰 힘을 가진 조직입니다. 보고서에서는 이 조직이 핵무기 개발을 주도한다고 설명합니다.
         </div>
+        <p>이란의 가장 큰 돈벌이는 바로 석유와 천연가스를 다른 나라에 파는 것입니다. 이란이 수출하는 물건의 절반이 넘는 <span class="highlight">56%가 석유와 천연가스</span>이고, 이 석유와 천연가스가 <span class="highlight">이란 나라 전체가 버는 돈(GDP)의 약 19%</span>를 차지할 정도로 매우 중요합니다.</p>
+        <div class="explanation">
+            <strong>GDP (국내총생산)</strong>: 한 나라 안에서 1년 동안 만들어진 모든 물건과 서비스의 가치를 돈으로 합한 것입니다. 한 나라의 경제가 얼마나 큰지, 얼마나 잘사는지를 보여주는 중요한 지표입니다.
+        </div>
+        <p>트럼프 전 대통령은 이란이 핵무기 개발을 다시 시도하면 강력히 대응하겠다고 경고했는데, 이란도 지지 않겠다는 반응을 보였습니다. 그래서 지금 트럼프 전 대통령은 이란의 가장 중요한 수입원인 석유와 천연가스를 직접 공격해서, 혹시 모를 핵무기 개발 위험을 미리 없애려는 것입니다.</p>
     </div>
 
     <div class="section">
-        <h2>주목해야 할 주요 회사들의 소식은 무엇인가요?</h2>
-        <p>이 보고서에서는 몇몇 중요한 회사들의 최신 소식들을 상세하게 알려주고 있습니다. 이런 소식들이 주식 가격에 어떤 영향을 주었는지 살펴보겠습니다.</p>
-
-        <h3>1. <span class="highlight">셰브론 (CVX)</span>: 베네수엘라에서 석유 사업을 더 할 수 있게 됩니다.</h3>
-        <p>셰브론은 큰 석유 회사입니다. 보고서는 이 회사가 베네수엘라라는 나라에서 석유 사업을 할 수 있는 <span class="highlight">허가(라이선스)</span>를 미국 정부로부터 더 많이 받을 것으로 예상된다고 합니다. 현재 셰브론은 베네수엘라에서 유일하게 석유를 생산하는 미국 회사이며, 미국 정부의 <span class="highlight">제재</span>로부터 벗어나 석유를 수출하고 있습니다. 이러한 좋은 소식 때문에 어제 셰브론의 주식 가격은 <span class="highlight">2.1% 올랐습니다.</span></p>
-        <div class="info-box">
-            <p><span class="highlight" style="font-weight: bold;">용어 설명:</span></p>
-            <p><span style="font-weight: bold;">라이선스</span>는 어떤 사업을 할 수 있도록 정부에서 내주는 허락증 같은 것입니다. <span style="font-weight: bold;">제재</span>는 다른 나라가 어떤 나라나 회사에게 경제적으로 불이익을 주는 것입니다. 예를 들어, "이 나라랑은 물건을 사고팔지 마!" 같은 규칙을 만드는 것이죠.</p>
+        <h2>중국 정유사들이 어려워지는 이유</h2>
+        <p>이번 트럼프 전 대통령의 조치가 중요한 이유는 바로 <span class="highlight">중국의 '티팟(Teapot)' 기업들에게 나쁜 영향을 줄 수 있기 때문</span>입니다. 티팟 기업은 중국의 작은 민간 정유 회사들을 말하는데, 특히 산둥 지역에 많이 모여 있습니다.</p>
+        <div class="explanation">
+            <strong>티팟(Teapot) 기업</strong>: 중국에 있는 작은 규모의 민간 정유 회사들을 부르는 말입니다. 주로 이란 같은 곳에서 싸게 원유를 사와서 기름을 만듭니다.
+            <br><strong>정유 회사</strong>: 원유(지하에서 나는 가공하지 않은 기름)를 가져다가 우리가 쓰는 휘발유, 경유 같은 기름으로 만드는 회사입니다.
         </div>
-
-        <h3>2. <span class="highlight">엔비디아 (NVDA)</span>: 중국 세관 당국이 엔비디아의 핵심 칩 수입을 금지했습니다.</h3>
-        <p>엔비디아는 인공지능(AI) 기술에 아주 중요한 컴퓨터 부품(칩)을 만드는 회사입니다. 보고서에 따르면, 중국의 <span class="highlight">세관 당국</span>이 엔비디아의 아주 중요한 <span class="highlight">H200 칩</span>을 중국으로 들여오지 못하게 막았다고 합니다. 게다가 중국 정부는 자기 나라의 기술 회사들에게 이 칩을 사지 말라고 강력하게 지시했습니다. 이 소식 때문에 엔비디아의 주식 가격은 <span class="highlight-red">1.4% 내려갔습니다.</span></p>
-        <div class="info-box">
-            <p><span class="highlight" style="font-weight: bold;">용어 설명:</span></p>
-            <p><span style="font-weight: bold;">인공지능(AI)</span>은 컴퓨터가 사람처럼 생각하고 배우고 판단하게 만드는 기술입니다. <span style="font-weight: bold;">H200 칩</span>은 엔비디아에서 만든, 인공지능 계산을 아주 빨리 할 수 있도록 도와주는 특별한 컴퓨터 부품입니다. <span style="font-weight: bold;">세관 당국</span>은 나라의 국경에서 어떤 물건이 들어오고 나가는지 검사하고 관리하는 정부 기관입니다.</p>
+        <p>현재 이란이 다른 나라에 파는 원유의 <span class="highlight">약 90%는 중국으로 수출됩니다.</span> 중국의 티팟 기업들은 이란산 원유가 미국의 제재를 받고 있다는 점을 이용해, 시장에서 일반적으로 거래되는 가격보다 <span class="highlight">10~15%나 더 싸게</span> 사 왔습니다.</p>
+        <div class="explanation">
+            <strong>시가</strong>: 시장에서 형성되는 물건의 보통 가격을 말합니다.
+            <br><strong>할인된 가격</strong>: 물건이나 서비스의 원래 가격보다 싸게 파는 가격을 말합니다.
         </div>
-
-        <h3>3. <span class="highlight">테슬라 (TSLA)</span>: 자율주행 기능을 한 번에 사는 대신 이제 매달 돈을 내야 합니다.</h3>
-        <p>테슬라는 전기차를 만드는 회사입니다. 테슬라의 사장인 일론 머스크는 다음 달부터 테슬라 자동차의 <span class="highlight">완전 자율주행(FSD)</span> 기능을 한 번에 돈을 내고 살 수 없게 하고, 매달 일정 금액을 내는 <span class="highlight">구독제</span>로만 판매하겠다고 발표했습니다. 현재 이 기능을 한 번에 사려면 8,000달러(약 천만 원)가 들었지만, 이제는 한 달에 99달러(약 13만 원)를 내야 합니다. 이 소식 때문에 테슬라의 주식 가격은 <span class="highlight-red">1.8% 내려갔습니다.</span></p>
-        <div class="info-box">
-            <p><span class="highlight" style="font-weight: bold;">용어 설명:</span></p>
-            <p><span style="font-weight: bold;">완전 자율주행(FSD)</span>은 테슬라 자동차가 운전자 없이 스스로 움직이는 아주 뛰어난 기능의 이름입니다. <span style="font-weight: bold;">구독제</span>는 넷플릭스처럼 매달 돈을 내고 서비스를 계속 이용하는 방식입니다. 반대로 <span style="font-weight: bold;">일시불</span>은 한 번에 모든 돈을 내고 물건을 사는 방식입니다.</p>
-        </div>
-
-        <h3>4. <span class="highlight">브로드컴 (AVGO)</span>: 중국이 미국 및 이스라엘의 사이버 보안 소프트웨어 사용을 금지했습니다.</h3>
-        <p>브로드컴은 컴퓨터 부품과 소프트웨어를 만드는 회사입니다. 보고서에 따르면, 중국 정부가 자기 나라 기업들에게 국가의 중요한 정보를 보호하는 <span class="highlight">사이버 보안 소프트웨어</span>를 미국과 이스라엘 회사들 것으로는 사용하지 말라고 지시했습니다. 중국은 미국과의 <span class="highlight">기술 패권</span> 경쟁이 치열해지면서 자국의 기술을 더 많이 쓰려고 하고 있습니다. 브로드컴은 중국에 여러 사업장이 있어서 이 소식에 영향을 받았고, 어제 주식 가격이 <span class="highlight-red">4.15%나 크게 내려갔습니다.</span> 다른 미국의 소프트웨어 회사들의 주식 가격도 함께 내려갔다고 합니다.</p>
-        <div class="info-box">
-            <p><span class="highlight" style="font-weight: bold;">용어 설명:</span></p>
-            <p><span style="font-weight: bold;">사이버 보안 소프트웨어</span>는 컴퓨터나 인터넷을 통해 들어오는 나쁜 공격으로부터 정보를 보호해주는 프로그램입니다. 마치 우리 집의 문을 잠그고 도둑을 막는 것과 비슷합니다. <span style="font-weight: bold;">기술 패권</span>은 어떤 나라가 기술 분야에서 다른 나라들보다 가장 강력한 힘을 가지려고 하는 경쟁을 말합니다.</p>
-        </div>
-
-        <h3>5. <span class="highlight">에어비앤비 (ABNB)</span>: 중요한 기술 담당 사장님(CTO)을 새로 뽑았습니다.</h3>
-        <p>에어비앤비는 사람들이 자기 집을 다른 사람들에게 빌려줄 수 있게 연결해주는 서비스를 제공하는 회사입니다. 이 회사는 메타라는 회사에서 <span class="highlight">생성형 인공지능</span> 분야를 이끌던 아주 똑똑한 사람을 새로운 <span class="highlight">기술 최고 책임자 (CTO)</span>로 데려왔다고 합니다. 원래 있던 CTO는 7년 넘게 일하고 그만두었습니다. 새로운 인물을 영입하는 것은 보통 회사에 좋은 소식으로 여겨지지만, 어제 에어비앤비의 주식 가격은 <span class="highlight-red">5.2%나 크게 내려갔습니다.</span> 아마도 다른 이유로 인해 주식 가격이 내려간 것으로 보입니다.</p>
-        <div class="info-box">
-            <p><span class="highlight" style="font-weight: bold;">용어 설명:</span></p>
-            <p><span style="font-weight: bold;">기술 최고 책임자 (CTO)</span>는 회사의 기술 관련 일을 가장 높은 곳에서 책임지는 사람입니다. <span style="font-weight: bold;">생성형 인공지능</span>은 컴퓨터가 글, 그림, 음악 같은 새로운 것을 스스로 만들어내는 기술을 말합니다. 예를 들어, 인공지능이 새로운 이야기를 쓰거나 그림을 그리는 것과 같습니다.</p>
-        </div>
+        <p>작년 6월까지는 트럼프 전 대통령이 중국이 이란산 원유를 사는 것을 모른 척 봐주었기 때문에, 중국은 이란산 원유에 더 많이 의존할 수 있었습니다. 하지만 이제 이란산 원유를 싸게 사 오는 것이 매우 어려워지면, 중국의 티팟 기업들은 큰 피해를 볼 수밖에 없습니다.</p>
     </div>
 
     <div class="section">
-        <h2>보고서에 소개된 다른 회사들은 어떤가요?</h2>
-        <p>이 보고서에는 미국 주식 시장의 여러 중요한 회사들에 대한 정보도 담겨 있습니다. 이 정보들을 보면 각 회사가 어떤 일을 하는지, 얼마나 큰 회사인지, 그리고 얼마나 돈을 잘 벌고 있는지 등을 알 수 있습니다. 원래 이 정보들은 복잡한 표로 되어 있지만, 제가 쉽게 설명해 드리겠습니다.</p>
-
-        <h3>회사의 크기와 돈벌이 능력</h3>
-        <p>각 회사에는 <span class="highlight">시가총액</span>이라는 숫자가 있는데, 이 숫자는 그 회사의 주식들을 모두 합쳤을 때의 총 가격을 말합니다. 이 숫자가 클수록 아주 큰 회사라는 뜻입니다. 예를 들어, <span class="highlight">애플</span>은 3,841억 달러 (약 500조 원이 넘는 돈)의 시가총액을 가진 아주 큰 회사이고, <span class="highlight">엔비디아</span>는 4,450억 달러로 더욱 거대한 회사입니다. 이런 큰 회사들은 어제 주식 가격이 대체로 조금씩 내려간 모습을 보였습니다.</p>
-        <p>또한, <span class="highlight">EPS</span>라는 숫자는 회사가 주식 한 개당 얼마나 많은 돈을 벌었는지를 보여줍니다. 이 숫자가 크면 클수록 회사가 돈을 아주 잘 벌고 있다는 뜻입니다. 예를 들어, 엔비디아는 올해 작년보다 56.5% 더 많은 돈을 벌 것으로 예상되며, 팔란티어는 무려 76.2%나 더 많이 벌 것으로 예상되어 돈을 아주 잘 벌고 있는 회사로 보고서는 이야기합니다.</p>
-        <div class="info-box">
-            <p><span class="highlight" style="font-weight: bold;">용어 설명:</span></p>
-            <p><span style="font-weight: bold;">시가총액</span>은 회사의 모든 주식을 합친 총 가격으로, 회사의 크기를 알려주는 숫자입니다. <span style="font-weight: bold;">EPS</span>는 '주식 한 개당 회사가 벌어들인 돈'을 말합니다. 이 숫자가 높으면 회사가 돈을 잘 벌고 있다는 뜻입니다.</p>
+        <h2>중국의 물가가 오를 수 있는 이유</h2>
+        <p>이 문제는 단순히 석유 시장만의 이야기가 아닙니다. 보고서에서는 궁극적으로 <span class="highlight">중국이 겪고 있는 '디플레이션' 상황을 뒤바꿀 수 있는 매우 중요한 사건</span>이라고 말합니다.</p>
+        <div class="explanation">
+            <strong>디플레이션</strong>: 물건값이 계속해서 떨어지는 현상을 말합니다. 물건값이 싸지면 소비자들이 물건 사는 것을 미루게 되고, 기업들은 물건을 덜 만들게 되어 경제가 어려워질 수 있습니다. 반대로 물건값이 계속 오르는 것은 '인플레이션'이라고 합니다.
+            <br><strong>물가</strong>: 여러 가지 물건이나 서비스의 가격을 평균 내어 나타낸 것입니다. 물가가 오르면 같은 돈으로 살 수 있는 물건의 양이 줄어들게 됩니다.
         </div>
-
-        <h3>몇몇 회사를 더 살펴볼까요?</h3>
-        <ul>
-            <li><span class="highlight">IT 하드웨어 회사들</span>: <span class="highlight">애플(AAPL)</span>은 아이폰 같은 기기를 만들고, <span class="highlight">AMD(AMD)</span>는 컴퓨터의 중요한 부품인 반도체를 만듭니다. 어제는 애플의 주식 가격이 <span class="highlight-red">0.4% 내려갔지만</span>, AMD는 <span class="highlight">1.2% 올랐습니다.</span></li>
-            <li><span class="highlight">소프트웨어 회사들</span>: <span class="highlight">마이크로소프트(MSFT)</span>는 윈도우 운영체제와 클라우드 서비스를 제공하는데, 어제는 <span class="highlight-red">2.4% 내려갔습니다.</span> <span class="highlight">어도비(ADBE)</span>는 사진이나 영상 편집 프로그램을 만드는데, <span class="highlight-red">1.8% 내려갔습니다.</span></li>
-            <li><span class="highlight">소비재 회사들</span>: 온라인 쇼핑몰로 유명한 <span class="highlight">아마존(AMZN)</span>은 <span class="highlight-red">2.5% 내려갔고</span>, 전 세계적인 패스트푸드 체인인 <span class="highlight">맥도날드(MCD)</span>는 <span class="highlight-red">0.4% 내려갔습니다.</span> 하지만 커피 전문점 <span class="highlight">스타벅스(SBUX)</span>는 <span class="highlight">0.7% 올랐습니다.</span></li>
-            <li><span class="highlight">에너지 회사들</span>: 앞에서 언급했듯이 <span class="highlight">엑슨 모빌(XOM)</span>이나 <span class="highlight">셰브론(CVX)</span> 같은 큰 석유 회사들은 어제 각각 <span class="highlight">2.9%</span>, <span class="highlight">2.1%씩 주식 가격이 올랐습니다.</span></li>
-            <li><span class="highlight">헬스케어 회사들</span>: <span class="highlight">존슨 앤 존슨(JNJ)</span>은 여러 의약품과 건강 관련 제품을 만드는데, 어제 주식 가격이 <span class="highlight">2.3% 올랐습니다.</span></li>
-        </ul>
-        <p>이처럼 보고서는 다양한 회사들의 주식 가격 변화와 그 회사들이 어떤 일을 하는지에 대한 기본적인 정보를 제공하고 있습니다. 하지만 이 정보는 투자를 결정할 때 참고만 하는 자료이며, 투자의 최종 결정은 항상 본인의 판단으로 해야 합니다.</p>
+        <p>그동안 중국은 물건을 싸게 만들 수 있었는데, 그 이유 중 하나는 미국이 제재하는 나라들로부터 <span class="highlight">싸게 원유를 수입했기 때문</span>입니다. 중국이 수입하는 전체 원유의 약 38%가 이렇게 싸게 들어왔습니다.</p>
+        <p>하지만 상황이 변했습니다. 중국이 수입하던 원유의 6%를 차지하던 <span class="highlight">베네수엘라산 원유는 이제 미국의 압력으로 시장 가격에 팔리고 있습니다.</span> 그리고 이제 12%를 차지하던 <span class="highlight">이란산 원유까지 싸게 사 오기 어려워지고 있습니다.</span></p>
+        <p>러시아산 원유도 남아 있기는 하지만, 러시아와 우크라이나 전쟁이 끝나면 러시아에 대한 제재가 풀릴 수도 있어서, 이 역시 안심할 수만은 없는 상황입니다.</p>
+        <p>물가를 끌어올리는 중요한 자산인 원유를 더 이상 싸게 살 수 없게 되면, <span class="highlight">공장에서 물건을 만드는 비용이 올라가서 생산자 물가 지수(PPI)가 오르는 것은 당연한 결과</span>입니다.</p>
+        <div class="explanation">
+            <strong>생산자 물가 지수 (PPI)</strong>: 공장이나 농장에서 물건을 만들어내는 생산자들이 팔 때 받는 가격을 평균 내어 보여주는 지표입니다. 이 숫자가 오르면 나중에 소비자들이 사는 물건값도 오를 가능성이 큽니다.
+        </div>
+        <p>물론 지금 중국은 부동산 시장이 좋지 않고, 사람들이 물건을 잘 사지 않으려 하는 등 여러 가지 경제적인 어려움을 겪고 있습니다. 그래서 당장 디플레이션이 완전히 끝났다고 말하기는 어렵고, 물가가 빠르게 오르기 어려울 수도 있습니다. 하지만 <span class="highlight">디플레이션의 중요한 원인 중 하나가 사라지고 있다는 것은 분명합니다.</span></p>
+        <p>이러한 이유 때문에 베네수엘라에 이어 이란에 대한 제재가 가져올 <span class="highlight">'나비 효과'에 주목해야 할 때</span>라고 보고서는 강조합니다.</p>
+        <div class="explanation">
+            <strong>나비 효과</strong>: 아주 작은 변화나 사건이 나중에 예상하지 못한 큰 결과를 가져올 수 있다는 뜻입니다. 여기서는 이란에 대한 미국의 작은 제재가 중국 경제 전반의 물가에 큰 영향을 줄 수 있다는 의미로 사용되었습니다.
+        </div>
     </div>
+
 </body>
 
 
