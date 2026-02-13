@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국주식 일일 동향</title>
+    <style>
+        body {
+            font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 15px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            font-size: 2em;
+            color: #0056b3;
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #0056b3;
+        }
+        h2 {
+            font-size: 1.6em;
+            color: #0056b3;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        h3 {
+            font-size: 1.3em;
+            color: #28a745;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        p {
+            margin-bottom: 15px;
+            font-size: 1em;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+            font-size: 0.95em;
+        }
+        li strong {
+            color: #000;
+        }
+        .stock-change {
+            font-size: 0.9em;
+            color: #666;
+            margin-left: 10px;
+        }
+        .stock-change.up {
+            color: #dc3545; /* Red for up */
+        }
+        .stock-change.down {
+            color: #007bff; /* Blue for down */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+            margin-bottom: 30px;
+            font-size: 0.9em;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #e9ecef;
+            color: #495057;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        tr:hover {
+            background-color: #e2f0fb;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>미국주식 일일 동향</h1>
+
+    <h2>미국 주요 이슈/동향</h2>
+
+    <h3>일라이 릴리 (LLY)<span class="stock-change up">전일 주가 ▲ 2.3%</span></h3>
+    <ul>
+        <li>일라이 릴리가 FDA의 4월 승인 결정을 앞두고 자사의 경구용 비만치료제 후보물질에 대해 15억 달러의 출시 전 재고를 확보했습니다.</li>
+        <li>지난 해 일라이 릴리의 출시 전 재고는 약 5억 5천만 달러 수준이었으며, 미국 승인을 획득할 경우 여러 국가에서 거의 동시에 출시할 수 있을 만큼 충분한 공급량을 확보할 것이라 언급한 바 있습니다.</li>
+        <li>한편, 덴마크의 경쟁사 노보 노디스크는 지난달 초 미국에서 하루 한 번 복용하는 경구용 체중감량제를 출시했으며, 출시 후 2주 만에 처방량이 26,000건을 넘어선 것으로 확인되었습니다.</li>
+    </ul>
+
+    <br><br>
+
+    <h3>알파벳 (GOOGL)<span class="stock-change down">전일 주가 ▼ 0.6%</span></h3>
+    <ul>
+        <li>EU 규제 당국은 구글이 온라인 광고 가격을 부당하게 인상시키고 있다는 우려를 표명했습니다.</li>
+        <li>당국은 구글 검색 광고 판매 중 경매 시스템을 지목하며, 구글이 광고주에게 불리하게 경매의 낙찰가를 인위적으로 인상해온 점을 문제삼은 것으로 전해졌습니다.</li>
+        <li>구글 측은 광고 가격은 광고주들 간의 경쟁과 광고 품질 등을 고려해 사람들에게 가장 관련성 높은 광고를 보여주기 위한 실시간 경매로 결정된다고 설명했습니다.</li>
+    </ul>
+
+    <br><br>
+
+    <h3>아마존 (AMZN)<span class="stock-change down">전일 주가 ▼ 2.2%</span></h3>
+    <ul>
+        <li>이탈리아 세무경찰이 아마존에 대한 새로운 탈세 수사 이환으로 밀라노 본사를 압수수색했습니다.</li>
+        <li>이번 수사는 아마존이 2019년부터 2024년까지 이탈리아에 비공개 상설 거점 운영 여부와, 이에 따른 추가 세금 납부 의무를 규명하기 위한 조사에서 파생된 것으로 알려졌습니다.</li>
+        <li>아마존은 성명을 통해 해당 조치가 "공격적이고 불균형적"이라며 이탈리아 세무 당국과 투명한 대화를 진행 중이라고 밝혔습니다.</li>
+    </ul>
+
+    <br><br>
+
+    <h2>미국 주식 대표종목 섹터</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>섹터</th>
+                <th>종목명</th>
+                <th>티커</th>
+                <th>시총 ($bn)</th>
+                <th>주가 수익률 (%) 1D</th>
+                <th>기업 개요</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>IT 하드웨어</td>
+                <td>애플</td>
+                <td>AAPL</td>
+                <td>3,842</td>
+                <td>-5.0</td>
+                <td>아이폰, 아이패드, 맥북 등을 디자인/판매</td>
+            </tr>
+            <tr>
+                <td>IT 하드웨어</td>
+                <td>시스코</td>
+                <td>CSCO</td>
+                <td>296</td>
+                <td>-12.3</td>
+                <td>네트워킹, 보안, 응용 및 클라우드 등 서비스 제공</td>
+            </tr>
+            <tr>
+                <td>반도체</td>
+                <td>엔비디아</td>
+                <td>NVDA</td>
+                <td>4,543</td>
+                <td>-1.6</td>
+                <td>그래픽 (GPU), 연산 및 네트워킹 관련 반도체 칩 공급</td>
+            </tr>
+            <tr>
+                <td>반도체</td>
+                <td>브로드컴</td>
+                <td>AVGO</td>
+                <td>1,570</td>
+                <td>-3.4</td>
+                <td>반도체와 인프라 소프트웨어 솔루션 설계</td>
+            </tr>
+            <tr>
+                <td>반도체</td>
+                <td>AMD</td>
+                <td>AMD</td>
+                <td>336</td>
+                <td>-3.6</td>
+                <td>팹리스 반도체 기업. CPU, GPU 솔루션 등 제공</td>
+            </tr>
+            <tr>
+                <td>소프트웨어</td>
+                <td>마이크로소프트</td>
+                <td>MSFT</td>
+                <td>2,984</td>
+                <td>-0.6</td>
+                <td>클라우드, Windows, MS 오피스, 콘솔 게임 등 공급</td>
+            </tr>
+            <tr>
+                <td>소프트웨어</td>
+                <td>오라클</td>
+                <td>ORCL</td>
+                <td>450</td>
+                <td>-0.4</td>
+                <td>기업형 IT 솔루션. 클라우드, 라이선스, 하드웨어 제공</td>
+            </tr>
+            <tr>
+                <td>소프트웨어</td>
+                <td>팔란티어</td>
+                <td>PLTR</td>
+                <td>295</td>
+                <td>-4.8</td>
+                <td>기업, 정부 운영 효율성을 개선하는 AI 소프트웨어</td>
+            </tr>
+            <tr>
+                <td>소프트웨어</td>
+                <td>어도비</td>
+                <td>ADBE</td>
+                <td>108</td>
+                <td>2.1</td>
+                <td>이미지, 영상 편집 등의 소프트웨어 개발 및 제공</td>
+            </tr>
+            <tr>
+                <td>소프트웨어</td>
+                <td>세일즈포스</td>
+                <td>CRM</td>
+                <td>174</td>
+                <td>0.2</td>
+                <td>고객관리시스템 (CRM) 서비스 제공</td>
+            </tr>
+            <tr>
+                <td>광고</td>
+                <td>알파벳</td>
+                <td>GOOGL</td>
+                <td>3,481</td>
+                <td>-0.6</td>
+                <td>구글 검색, 유튜브 등의 광고 부문과 클라우드 사업 영위</td>
+            </tr>
+            <tr>
+                <td>광고</td>
+                <td>메타 플랫폼스</td>
+                <td>META</td>
+                <td>1,421</td>
+                <td>-2.8</td>
+                <td>소셜 플랫폼 (페이스북, 인스타그램 등). 광고/프로모션 서비스</td>
+            </tr>
+            <tr>
+                <td>은행</td>
+                <td>JP 모건</td>
+                <td>JPM</td>
+                <td>824</td>
+                <td>-2.6</td>
+                <td>금융서비스 및 자산운용 사업을 영위하는 투자은행</td>
+            </tr>
+            <tr>
+                <td>증권</td>
+                <td>뱅크오브아메리카</td>
+                <td>BAC</td>
+                <td>379</td>
+                <td>-2.5</td>
+                <td>은행, 투자 및 자산운용 등의 금융 서비스 제공하는 투자은행</td>
+            </tr>
+            <tr>
+                <td>서비스</td>
+                <td>모건스탠리</td>
+                <td>MS</td>
+                <td>267</td>
+                <td>-4.9</td>
+                <td>증권업 및 자산관리 서비스를 제공하는 금융회사</td>
+            </tr>
+            <tr>
+                <td>서비스</td>
+                <td>비자</td>
+                <td>V</td>
+                <td>545</td>
+                <td>-1.5</td>
+                <td>신용카드 및 전자 결제 서비스 관련 글로벌 1위 기업</td>
+            </tr>
+            <tr>
+                <td>자동차</td>
+                <td>테슬라</td>
+                <td>TSLA</td>
+                <td>1,565</td>
+                <td>-2.6</td>
+                <td>글로벌 대표 전기차 기업. Model 3, Model Y 등 생산/판매</td>
+            </tr>
+            <tr>
+                <td>유통</td>
+                <td>아마존</td>
+                <td>AMZN</td>
+                <td>2,143</td>
+                <td>-2.2</td>
+                <td>Amazon.com 이커머스 사업, AWS 클라우드 서비스 제공</td>
+            </tr>
+            <tr>
+                <td>음식료</td>
+                <td>월마트</td>
+                <td>WMT</td>
+                <td>1,065</td>
+                <td>3.8</td>
+                <td>오프라인 기반의 미국 대형 유통 기업</td>
+            </tr>
+            <tr>
+                <td>음식료</td>
+                <td>홈디포</td>
+                <td>HD</td>
+                <td>388</td>
+                <td>-0.1</td>
+                <td>건자재, 셀프인테리어 및 수리, 정원 관리 용품 등을 유통/판매</td>
+            </tr>
+            <tr>
+                <td>음식료</td>
+                <td>맥도날드</td>
+                <td>MCD</td>
+                <td>236</td>
+                <td>2.7</td>
+                <td>패스트푸드 프랜차이즈</td>
+            </tr>
+            <tr>
+                <td>음식료</td>
+                <td>스타벅스</td>
+                <td>SBUX</td>
+                <td>110</td>
+                <td>-2.4</td>
+                <td>세계 최대 커피 체인점</td>
+            </tr>
+            <tr>
+                <td>의류</td>
+                <td>나이키</td>
+                <td>NKE</td>
+                <td>73</td>
+                <td>-2.0</td>
+                <td>스포츠 운동화, 어페럴, 기구 및 액세서리 등을 유통</td>
+            </tr>
+            <tr>
+                <td>미디어</td>
+                <td>넷플릭스</td>
+                <td>NFLX</td>
+                <td>320</td>
+                <td>-4.7</td>
+                <td>글로벌 1위 OTT 기업</td>
+            </tr>
+            <tr>
+                <td>미디어</td>
+                <td>디즈니</td>
+                <td>DIS</td>
+                <td>181</td>
+                <td>-5.3</td>
+                <td>세계적인 엔터테인먼트 기업. 테마파크, 애니메이션, OTT 제공</td>
+            </tr>
+            <tr>
+                <td>필수소비</td>
+                <td>P&G</td>
+                <td>PG</td>
+                <td>375</td>
+                <td>0.8</td>
+                <td>뷰티/홈케어, Olay, SK-II, Braun, Gillette, OralB 브랜드 제공</td>
+            </tr>
+            <tr>
+                <td>필수소비</td>
+                <td>펩시코</td>
+                <td>PEP</td>
+                <td>229</td>
+                <td>-1.2</td>
+                <td>Frito-Lay, Quaker Foods, PepsiCo 보유한 식음료 기업</td>
+            </tr>
+            <tr>
+                <td>에너지</td>
+                <td>엑슨 모빌</td>
+                <td>XOM</td>
+                <td>632</td>
+                <td>-3.6</td>
+                <td>석유와 천연가스 탐사, 생산, 운송, 판매하는 석유화학기업</td>
+            </tr>
+            <tr>
+                <td>에너지</td>
+                <td>셰브론</td>
+                <td>CVX</td>
+                <td>367</td>
+                <td>-1.8</td>
+                <td>석유와 천연가스 생산, 수송, 정제, 마케팅 기업</td>
+            </tr>
+            <tr>
+                <td>화학</td>
+                <td>린드</td>
+                <td>LIN</td>
+                <td>221</td>
+                <td>1.1</td>
+                <td>세계 최고의 산업용가스 생산, 유통, 엔지니어링 비즈니스</td>
+            </tr>
+            <tr>
+                <td>자본재</td>
+                <td>버크셔 헤서웨이</td>
+                <td>BRK.B</td>
+                <td>1,078</td>
+                <td>0.0</td>
+                <td>가이코, 제너릴리, 시즈캔디 등을 자회사로 보유한 투자회사</td>
+            </tr>
+            <tr>
+                <td>자본재</td>
+                <td>레이테온</td>
+                <td>RTX</td>
+                <td>270</td>
+                <td>2.4</td>
+                <td>항공우주 산업에 첨단 기술 제품과 서비스 제공</td>
+            </tr>
+            <tr>
+                <td>운송</td>
+                <td>UPS</td>
+                <td>UPS</td>
+                <td>87</td>
+                <td>-1.6</td>
+                <td>운송 서비스와 통관 중개, 보험/금융서비스 제공, 벤처투자</td>
+            </tr>
+            <tr>
+                <td>기계</td>
+                <td>캐터필러</td>
+                <td>CAT</td>
+                <td>355</td>
+                <td>-2.2</td>
+                <td>세계 최대의 건설/광산용 장비업체, 가스 엔진, 가스터빈 생산</td>
+            </tr>
+            <tr>
+                <td>유틸리티</td>
+                <td>넥스트에라에너지</td>
+                <td>NEE</td>
+                <td>191</td>
+                <td>0.6</td>
+                <td>에너지 인프라 및 발전사 보유. 태양광 풍력을 통해 전력 생산</td>
+            </tr>
+            <tr>
+                <td>헬스케어</td>
+                <td>유나이티드헬스</td>
+                <td>UNH</td>
+                <td>258</td>
+                <td>2.0</td>
+                <td>보험, 의약품 배송, 데이터 분석 등 토탈 헬스케어 서비스 제공</td>
+            </tr>
+            <tr>
+                <td>헬스케어</td>
+                <td>일라이 릴리</td>
+                <td>LLY</td>
+                <td>982</td>
+                <td>2.3</td>
+                <td>당뇨병 및 대사질환 관련 제품 개발 및 공급</td>
+            </tr>
+            <tr>
+                <td>헬스케어</td>
+                <td>존슨 앤 존슨</td>
+                <td>JNJ</td>
+                <td>589</td>
+                <td>1.5</td>
+                <td>스킨케어, 항암 및 심장 질환 의약품, 수술용 의료기기 생산</td>
+            </tr>
+            <tr>
+                <td>헬스케어</td>
+                <td>머크</td>
+                <td>MRK</td>
+                <td>296</td>
+                <td>-0.1</td>
+                <td>건강 솔루션, 백신, 생물학 치료, 동물 건강 의약품 등을 제공</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+
+<div style="margin-top: 40px; padding: 20px; border: 1px solid #ccc; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05); font-size: 13px; color: #666;">
+    <h2 style="color: #333; font-size: 18px; margin-bottom: 12px;">Compliance Notice</h2>
+    <p style="margin-bottom: 10px;">
+        금융투자업규정 4-20조 1항5호사목에 따라 작성일 현재 사전고지와 관련한 사항이 없으며, 당사의 금융투자분석사는 자료작성일 현재 본 자료에
+        관련하여 재산적 이해관계가 없습니다. 당사는 동 자료에 언급된 종목과 계열회사의 관계가 없으며 당사의 금융투자분석사는 본 자료의 작성과 관련하여
+        외부 부당한 압력이나 간섭을 받지 않고 본인의 의견을 정확하게 반영하였습니다.
+        본 자료는 투자자들의 투자판단에 참고가 되는 정보제공을 목적으로 배포되는 자료입니다. 본 자료에 수록된 내용은 당사 Research Center의 추정치로서
+        오차가 발생할 수 있으며 정확성이나 완벽성은 보장하지 않습니다. 본 자료를 이용하시는 분은 동 자료와 관련한 투자의 최종 결정은 자신의 판단으로
+        하시기 바랍니다.
+    </p>
+    <p style="font-size: 12px; color: #999; margin-top: 10px;">
+        ※ 본 콘텐츠는 당사 리서치센터 보고서를 기반으로 생성된 요약·해설 자료입니다.
+        본 자료는 인공지능(AI)을 활용하여 자동 생성되었으며, 투자자 이해를 돕기 위한 목적입니다.
+        일부 내용은 원문과 차이가 있을 수 있으며, 최종 투자 판단은 원문 보고서를 참고하시기 바랍니다.
+        본 자료는 투자 권유를 목적으로 하지 않으며, AI 생성 특성상 오류가 포함될 수 있습니다.
+    </p>
+</div>
+
+</html>
