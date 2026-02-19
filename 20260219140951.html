@@ -1,0 +1,333 @@
+네, 요청하신 대로 보고서 텍스트에서 본문 내용만 추출하여 웹페이지에 바로 게시할 수 있는 HTML 코드로 변환해 드립니다. 차트와 그림은 제외하고, 표는 도움이 되는 정보가 있는 "전주 주요 이슈·이벤트" 부분만 보기 좋게 포함했습니다. 모바일 가독성을 고려하여 폰트 크기, 색상, 강조, 줄바꿈 등을 적용했습니다.
+
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[대신증권 문건우] THE GLOBAL 마켓 파인더(02/09~02/13)</title>
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding: 15px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            font-size: 1.8em;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+            word-break: keep-all; /* 긴 제목이 잘리지 않도록 */
+        }
+        h3 {
+            font-size: 1.3em;
+            color: #2980b9;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #dcdcdc;
+            word-break: keep-all;
+        }
+        p {
+            margin-bottom: 1.5em; /* 한 문단/주제 후 줄바꿈 2~3회 효과 */
+            word-break: keep-all;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 1.5em;
+        }
+        li {
+            margin-bottom: 0.8em;
+            word-break: keep-all;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 25px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+            word-break: keep-all;
+        }
+        th {
+            background-color: #ecf0f1;
+            font-weight: bold;
+            color: #34495e;
+            font-size: 0.9em;
+        }
+        td {
+            font-size: 0.85em;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f8f8;
+        }
+        .market-impact {
+            font-weight: bold;
+        }
+        .positive {
+            color: #27ae60; /* 녹색 */
+        }
+        .negative {
+            color: #e74c3c; /* 빨간색 */
+        }
+        strong {
+            color: #34495e;
+        }
+        /* 모바일 최적화 */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+                margin-bottom: 20px;
+            }
+            h3 {
+                font-size: 1.1em;
+                margin-top: 25px;
+                margin-bottom: 10px;
+            }
+            body {
+                padding: 10px;
+            }
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            tr { border: 1px solid #ccc; margin-bottom: 10px; }
+            td {
+                border: none;
+                border-bottom: 1px solid #eee;
+                position: relative;
+                padding-left: 50%;
+                text-align: right;
+                font-size: 0.8em;
+            }
+            td:before {
+                position: absolute;
+                top: 10px;
+                left: 6px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                text-align: left;
+                font-weight: bold;
+                color: #555;
+            }
+            /* 각 td에 대응하는 label (<th> 텍스트) */
+            td:nth-of-type(1):before { content: "권역/국가"; }
+            td:nth-of-type(2):before { content: "이슈명"; }
+            td:nth-of-type(3):before { content: "증시 영향"; }
+            td:nth-of-type(4):before { content: "주요 내용"; }
+
+            /* 카테고리 행 스타일 조정 */
+            td[colspan="4"] {
+                text-align: center;
+                font-size: 1em;
+                background-color: #f0f0f0;
+                padding: 10px;
+                border: none;
+                border-bottom: 1px solid #ddd;
+            }
+            td[colspan="4"]:before {
+                content: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>[대신증권 문건우] THE GLOBAL 마켓 파인더(02/09~02/13)</h1>
+
+    <h3>글로벌 금융 시장 동향</h3>
+    <p>
+        2월 둘째 주(02/09~02/13) 글로벌 증시는 <strong>인공지능(AI) 산업 교란 우려</strong>와 미국 고용 지표 상회 등 여러 요인으로 변동폭이 확대되었습니다. IT 서비스 및 소프트웨어 업종을 중심으로 하락세가 두드러졌습니다.
+    </p>
+
+    <h3>전주 주요 이슈 / 뉴스</h3>
+    <ul>
+        <li>
+            <strong>인공지능 (AI) 산업 교란 우려:</strong>
+            2.9-2.13일 인공지능(AI)이 기존 산업을 교란할 수 있다는 전망에 증시 변동폭이 확대되었습니다. AI 스타트업 앤트로픽의 클로드 코워크, 클로드 오퍼스 4.6, 알트루이스트의 헤이즐 등이 연이어 발표된 이후 소프트웨어, 부동산, 물류, 금융 서비스 업종 등으로 우려가 확산되었습니다.
+            미국 노동부 1월 비농업고용자수가 예상치를 상회했음에도 불구하고, 의료∙돌봄 분야를 제외한 금융, 전문∙비즈니스 고용자수는 크게 감소했습니다.
+        </li>
+        <li>
+            <strong>미국 테마별 주간 수익률:</strong>
+            미국 증시에서는 주간 <strong>제지(+13.1%)</strong>, 전력생산(+10.15%), 리츠-특수(+9.69%), 원유-시추(+8.55%), 금(+7.72%) 순으로 상승 마감했습니다.
+            반면, <strong>인력 및 고용 서비스(-20.04%)</strong>, 도박(-13.91%), 부동산-서비스(-12.2%), IT 서비스(-9.49%), 개인서비스(-9.34%) 순으로 하락 마감하며 AI 관련 우려를 반영했습니다.
+        </li>
+        <li>
+            <strong>중국 테마별 주간 수익률:</strong>
+            중국 증시에서는 주간 <strong>인터넷(+8.26%)</strong>, IDC(+7.93%), 클라우드 컴퓨팅(+7.7%), 사이버 보안(+6.51%), AI(+6.37%) 순으로 상승 마감했습니다.
+            반면, 백주(-3.85%), 의료미용(-2.71%), 섬유의류(-2.68%), 보험(-2.52%), 음료(-2.48%) 순으로 하락 마감했습니다.
+        </li>
+        <li>
+            <strong>글로벌 마켓 파인더:</strong>
+            <p>
+                S&P500 지수에서는 IT서비스(-9.27%), 소비자금융(-6.27%)이 하락했고, EUROSTOXX50 지수에서는 금융서비스(-20.9%), 전문서비스(-4.85%)가 하락했습니다.
+                니케이지수에서도 전문서비스(-12.75%), IT서비스(-3.58%) 등 <strong>인공지능(AI) 산업 교란 우려에 IT서비스와 소프트웨어 업종</strong>을 중심으로 하락세가 나타났습니다.
+            </p>
+            <p>
+                반면, CSI300 지수에서는 인터랙티브 미디어 및 서비스(+10.2%), 항공우주 및 방산(+7.19%), 건축 자재(+6.56%)가 상승하며 중국 경기 부양책과 춘절 소비 진작책 발표에 따른 <strong>정책 수혜 업종</strong>을 중심으로 상승했습니다.
+            </p>
+        </li>
+    </ul>
+
+    <h3>전주 주요 이슈·이벤트</h3>
+    <p>주간 글로벌 금융 시장의 주요 이슈와 각 국가별 이벤트 및 증시 영향을 요약합니다.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>권역/국가</th>
+                <th>이슈명</th>
+                <th>증시 영향</th>
+                <th>주요 내용</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="4"><strong>전세계</strong></td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>인공지능 (AI) 산업 교란 우려</td>
+                <td><span class="market-impact negative">▼</span></td>
+                <td>2.9-2.13일 인공지능 (AI)이 기존 산업을 교란할 수 있다는 전망에 증시 변동폭 확대. AI 스타트업 앤트로픽의 클로드 코워크와 클로드 오퍼스 4.6, 알트루이스트의 헤이즐 등이 연이어 발표된 이후 소프트웨어, 부동산, 물류, 금융 서비스 업종 등으로 우려가 확장. 미국 노동부 1월 비농업고용자수의 예상치 상회에도 의료∙돌봄 분야를 제외하고 금융, 전문∙비즈니스 고용자수는 크게 감소.</td>
+            </tr>
+            <tr>
+                <td colspan="4"><strong>선진국</strong></td>
+            </tr>
+            <tr>
+                <td>미국</td>
+                <td>1월 물가지표</td>
+                <td><span class="market-impact positive">▲</span></td>
+                <td>2.13일(현지시간) 미국 노동부에 따르면 1월 소비자물가지수(CPI)가 전년동월대비 2.4% 상승했다고 발표. 전월(12월) 2.7%와 시장 예상치 2.5%를 하회한 수치에 해당. 1월 근원 CPI는 전년동월대비 2.5% 상승하며 시장 예상치에 부합. 물가 상승세 둔화가 추가 금리 인하 기대로 연결.</td>
+            </tr>
+            <tr>
+                <td>유럽</td>
+                <td>영국 경제성장률</td>
+                <td>-</td>
+                <td>2.12일(현지시간) 영국통계청(ONS)에 따르면 25.4/4분기 영국 경제성장률이 직전분기대비 0.1%를 기록했다고 발표. 시장 예상치 0.2%를 하회한 수치로 기업투자(-2.7%), 민간소비(+0.2%) 등 기록. 2025년 경제성장률은 전년대비 1.3%를 기록하며 프랑스(+0.7%)와 독일(+0.4%)을 상회했으나, 둔화세 확인.</td>
+            </tr>
+            <tr>
+                <td>일본</td>
+                <td>자동차 산업 관세 영향</td>
+                <td><span class="market-impact negative">▼</span></td>
+                <td>2.13일(현지시간) 일본 현지언론에 따르면 트럼프 행정부의 상호 관세 부과로 2025 회계연도 일본 자동차 업계가 2.1조원 규모의 피해를 봤다고 보도. 미국산 수출 비중이 높은 닛산 자동차의 2025 회계연도 매출액은 8.58조엔으로 전년동월대비 -6.2% 감소했으며, 순손익은 2,502억엔 적자를 기록.</td>
+            </tr>
+            <tr>
+                <td colspan="4"><strong>신흥국</strong></td>
+            </tr>
+            <tr>
+                <td>중국</td>
+                <td>춘절 소비 진작 계획</td>
+                <td><span class="market-impact positive">▲</span></td>
+                <td>2.11일(현지시간) 중국 상무부 성추핑 차관이 2026년 춘절 소비 진작책 발표. 2.15-23일 춘절 연휴 기간 1) 20.5억 위안 규모의 상품권, 보조금, 현금 지급 등 직접 지원, 2) 10억 위안의 경품 및 당첨금 지급, 3) 시 정부 지방 소비 촉진 및 민간 유치금 7,000억 위안, 4) 외국인 관광객에 대한 최대 10% 면세 혜택 등 언급.</td>
+            </tr>
+            <tr>
+                <td>한국</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>대만</td>
+                <td>대만-미국 최종 합의문 공개</td>
+                <td>-</td>
+                <td>2.12일(현지시간) 대만-미국 무역협정 최종 합의문 공개. 미국은 대만에 대한 관세를 기존 20%에서 15%로 인하. 대만은 1) 미국산 에너지 제품 444억 달러, 항공기 152억 달러, 인프라 252억 달러 구매, 2) 미국산 쇠고기, 유제품, 옥수수에 대한 관세 철폐 또는 인하, 3) 자동차 비관세 장벽 철폐 등을 약속.</td>
+            </tr>
+            <tr>
+                <td>인도</td>
+                <td>1월 물가 지표</td>
+                <td>-</td>
+                <td>2.12일(현지시간) 인도중앙은행에 따르면 1월 소비자물가지수(CPI)가 전년동월대비 2.75% 상승을 기록했다고 발표. 전월(12월) 1.17%와 시장 예상치 2.4%를 크게 상회한 수치에 해당. 다만 5년마다 이뤄지는 지수 구성 종목 변경 시행. 변동성이 높은 식품 비중을 하향하고 귀금속 비중을 상향 조정한데 따른 변동에 해당. 그럼에도 연내 추가 금리 인하 기대감이 축소.</td>
+            </tr>
+            <tr>
+                <td>베트남</td>
+                <td>1월 무역 통계</td>
+                <td><span class="market-impact positive">▲</span></td>
+                <td>2.11일(현지시간) 베트남 통계총국에 따르면 1월 무역수지 17.8억 달러 적자를 기록했다고 발표. 1월 베트남 수출액은 431.9억 달러로 전년동월대비 29.7% 상승했으나, 수입액 449.7억 달러로 전년동월대비 49.2% 상승한 점에 기인. 세부적으로 수출은 전자·컴퓨터 및 부품 95.6억 달러(+57.6%), 기계·설비·부품 54.3억 달러(+40.2%), 휴대전화 및 부품 56.6억 달러(+17.3%) 등 제조업 품목이 급증.</td>
+            </tr>
+            <tr>
+                <td>멕시코</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>브라질</td>
+                <td>1월 물가 지표</td>
+                <td>-</td>
+                <td>2.10일(현지시간) 브라질 통계청(IBGE)에 따르면 1월 소비자물가지수(CPI)가 전년동월대비 4.44% 상승했다고 발표. 전월(12월) 4.26%와 시장 예상치 4.43%를 상회한 수치에 해당.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>미국 주식 시장 동향</h3>
+    <p>
+        지난주 미국 주식 시장은 특정 업종에서 두드러지는 변화를 보였습니다.
+        <br>특히, AI 산업 교란 우려가 제기되면서 IT 서비스와 하드웨어 등 관련 업종이 하락세를 면치 못했습니다.
+        반면, 무선 통신 서비스, 전문 REITs, 전력 유틸리티 등은 상승하며 다른 양상을 보였습니다.
+    </p>
+
+    <h3>유럽 주식 시장 동향</h3>
+    <p>
+        유럽 주식 시장에서는 필수 소비재 유통 및 소매, 복합 통신 서비스, 음료 업종 등이 상승세를 기록했습니다.
+        <br>하지만 금융 서비스와 종합 소매, 개인 용품 업종은 하락세를 보이며 시장 전반에 걸쳐 업종별 차이가 나타났습니다.
+    </p>
+
+    <h3>일본 주식 시장 동향</h3>
+    <p>
+        일본 증시에서는 금융 서비스, 부동산 관리 및 개발, 전문 소매 업종이 긍정적인 수익률을 보였습니다.
+        <br>반대로 전문 서비스, 인터랙티브 미디어 및 서비스, 헬스케어 기술 업종은 하락하며 혼조세를 나타냈습니다.
+    </p>
+
+    <h3>중국 주식 시장 동향</h3>
+    <p>
+        중국 CSI300 지수 내에서는 인터랙티브 미디어 및 서비스, 항공우주 및 방산, 건축 자재 업종이 강세를 보였습니다.
+        <br>이는 중국 정부의 경기 부양책과 춘절 소비 진작책 발표에 따른 정책 수혜 기대감이 반영된 것으로 풀이됩니다.
+        반면 항공 운송, 건축 제품, 섬유 의류 업종은 약세를 기록했습니다.
+    </p>
+
+    <h3>인도 주식 시장 동향</h3>
+    <p>
+        인도 NIFTY 지수에서는 소비자 금융, 헬스케어 제공 및 서비스, 전문 소매 업종이 상승세를 이끌었습니다.
+        <br>그러나 IT 서비스, 개인 용품, 담배 업종은 하락하며 시장의 전반적인 움직임과 대조를 이루었습니다.
+    </p>
+
+</body>
+
+
+<div style="margin-top: 40px; padding: 20px; border: 1px solid #ccc; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05); font-size: 13px; color: #666;">
+    <h2 style="color: #333; font-size: 18px; margin-bottom: 12px;">Compliance Notice</h2>
+    <p style="margin-bottom: 10px;">
+        금융투자업규정 4-20조 1항5호사목에 따라 작성일 현재 사전고지와 관련한 사항이 없으며, 당사의 금융투자분석사는 자료작성일 현재 본 자료에
+        관련하여 재산적 이해관계가 없습니다. 당사는 동 자료에 언급된 종목과 계열회사의 관계가 없으며 당사의 금융투자분석사는 본 자료의 작성과 관련하여
+        외부 부당한 압력이나 간섭을 받지 않고 본인의 의견을 정확하게 반영하였습니다.
+        본 자료는 투자자들의 투자판단에 참고가 되는 정보제공을 목적으로 배포되는 자료입니다. 본 자료에 수록된 내용은 당사 Research Center의 추정치로서
+        오차가 발생할 수 있으며 정확성이나 완벽성은 보장하지 않습니다. 본 자료를 이용하시는 분은 동 자료와 관련한 투자의 최종 결정은 자신의 판단으로
+        하시기 바랍니다.
+    </p>
+    <p style="font-size: 12px; color: #999; margin-top: 10px;">
+        ※ 본 콘텐츠는 당사 리서치센터 보고서를 기반으로 생성된 요약·해설 자료입니다.
+        본 자료는 인공지능(AI)을 활용하여 자동 생성되었으며, 투자자 이해를 돕기 위한 목적입니다.
+        일부 내용은 원문과 차이가 있을 수 있으며, 최종 투자 판단은 원문 보고서를 참고하시기 바랍니다.
+        본 자료는 투자 권유를 목적으로 하지 않으며, AI 생성 특성상 오류가 포함될 수 있습니다.
+    </p>
+</div>
+
+</html>
