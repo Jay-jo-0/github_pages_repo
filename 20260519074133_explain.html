@@ -6,96 +6,80 @@
     <title>[Morning Meeting Brief]_2026년 05월 19일</title>
     <style>
         body {
-            font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+            font-family: 'Malgun Gothic', sans-serif;
             line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f8f9fa;
             color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            font-size: 28px;
-            color: #0056b3;
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #0056b3;
-            padding-bottom: 10px;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
         }
         .section {
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #eee;
-        }
-        .section:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-        h2 {
-            font-size: 22px;
-            color: #007bff;
-            margin-bottom: 15px;
-        }
-        h3 {
-            font-size: 18px;
-            color: #17a2b8;
-            margin-top: 25px;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 15px;
-            margin-bottom: 15px;
-            text-align: justify;
+            background-color: #ffffff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
         .summary {
-            background-color: #e7f3ff;
-            border-left: 5px solid #007bff;
-            padding: 15px 20px;
+            background-color: #e9f5ff;
+            border-left: 5px solid #2a7fff;
+            padding: 15px;
             margin-bottom: 20px;
             border-radius: 5px;
         }
         .summary h3 {
-            color: #0056b3;
             margin-top: 0;
-            font-size: 19px;
+            color: #2a7fff;
+            font-size: 1.2em;
         }
-        .summary p {
-            font-size: 14px;
-            margin-bottom: 10px;
-            color: #333;
+        .title {
+            font-size: 1.6em;
+            color: #0056b3;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+        h1, h2, h3, h4 {
+            color: #1a1a1a;
+            margin-bottom: 15px;
+        }
+        h1 { font-size: 1.8em; }
+        h2 { font-size: 1.5em; }
+        h3 { font-size: 1.2em; }
+        h4 { font-size: 1.1em; }
+        p {
+            margin-bottom: 15px;
+            font-size: 1em;
         }
         .highlight {
-            font-weight: bold;
             color: #0056b3;
+            font-weight: bold;
         }
-        .term-explanation {
-            font-size: 12px;
-            color: #6c757d;
+        .concept-explanation {
+            font-size: 0.85em;
+            color: #555;
             margin-top: 5px;
             margin-bottom: 15px;
-            padding-left: 15px;
-            border-left: 2px solid #dee2e6;
+            padding-left: 10px;
+            border-left: 2px solid #d0d0d0;
         }
-        .term-explanation strong {
-            color: #495057;
-        }
-        .company-name {
+        .stock-name {
             font-weight: bold;
-            color: #28a745;
+            color: #007bff;
         }
-        .stock-ticker {
-            font-weight: bold;
-            color: #dc3545;
-            font-size: 14px;
-            margin-left: 5px;
+        .date {
+            font-size: 0.9em;
+            color: #666;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .analyst-name {
+            font-size: 0.9em;
+            color: #666;
+            text-align: right;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -112,90 +96,163 @@ li {
 }
 </style>
 
-    <div class="container">
-        <h1>[Morning Meeting Brief]_2026년 05월 19일</h1>
 
-        <div class="summary section">
+    <div class="section">
+        <div class="title">[Morning Meeting Brief]_2026년 05월 19일</div>
+
+        <div class="summary">
             <h3>오늘의 핵심 요약</h3>
-            <p><span class="highlight">미국 주식 시장</span>은 꾸준히 오르고 있으며, 특히 <span class="highlight">기술주</span>들이 힘을 내고 있습니다. 5월 21일에 <span class="highlight">엔비디아</span>라는 큰 회사의 실적이 발표되는데, 이게 시장을 더 좋게 만들 수도 있습니다. 중국에서는 <span class="highlight">로봇 만드는 회사</span>들에 돈을 더 많이 투자하고 있고, <span class="highlight">피그마</span>라는 디자인 프로그램은 사용한 만큼 돈을 내는 방식으로 사업을 더 잘 할 것으로 기대됩니다. <span class="highlight">웰타워</span>라는 회사는 나이 드신 분들이 살기 좋은 집을 짓는 사업이 계속 잘 될 것으로 보입니다.</p>
-            <p>이번 주에는 <span class="highlight">중국 로봇 관련 펀드</span>(<span class="company-name">Global X China Robotics and AI ETF</span>, 종목 코드: <span class="stock-ticker">2807-HK</span>), <span class="highlight">미국 주식</span> <span class="company-name">피그마</span>(<span class="stock-ticker">FIG</span>), 그리고 <span class="highlight">글로벌 부동산 회사</span> <span class="company-name">웰타워</span>(<span class="stock-ticker">WELL</span>)에 주목해 볼 만합니다.</p>
+            <p>미국 주식 시장이 계속해서 좋은 흐름을 이어가고 있으며, 특히 <span class="highlight">S&P 500 지수</span>가 7,000선을 넘어 안정적으로 상승하고 있습니다. 5월 21일에 발표될 <span class="highlight">엔비디아의 실적</span>이 매우 중요하며, 이로 인해 인공지능(AI)과 관련된 기업들의 주가가 더 오를 것으로 예상됩니다. 중국에서는 로봇 관련 회사들에 돈을 많이 투자하고 있으며, '피그마'라는 회사는 사용량에 따라 돈을 받는 방식으로 수익을 낼 것으로 기대됩니다. '웰타워'라는 회사는 나이가 많은 분들이 사는 집(시니어 하우징) 사업이 잘 될 것으로 보입니다.</p>
         </div>
 
-        <div class="section">
-            <h2>미국 주식 시장, 꾸준히 상승하며 7,000선 안착</h2>
-            <p>미국에서 가장 중요한 주식 시장 지표 중 하나인 <span class="highlight">S&P 500 지수</span>는 7,000선을 굳건히 지키며 계속해서 적당한 속도로 오르고 있습니다. 특별히 큰 어려움 없이 순조로운 흐름을 이어가고 있습니다.</p>
-            <p>몇 가지 이유가 있습니다. 첫째, 미국과 중국은 서로 경제적으로 많이 얽혀 있어서, 두 나라가 너무 심하게 싸우는 것을 막으려고 노력하고 있다는 점이 확인되었습니다. 둘째, <span class="highlight">클래리티 법안</span>이라는 것이 상원에서 중요한 위원회를 통과했습니다. 셋째, 기름값이 비싸고 금리가 높은 어려운 상황에도 불구하고, 주식 시장이 많이 떨어지지 않고 잘 버텨냈습니다. 지난주에 시장이 조금 흔들렸지만, 그 낙폭이 크지 않았습니다.</p>
-            <p>또, 5월 21일에는 <span class="highlight">엔비디아</span>라는 아주 중요한 반도체 회사의 실적 발표가 있습니다. 이 회사의 실적이 좋게 나오면, <span class="highlight">AI(인공지능) 관련 기술주</span>들과 <span class="highlight">AI가 돌아가는 데 필요한 인프라를 만드는 회사들</span>의 주가에 긍정적인 영향을 줄 것으로 예상됩니다. 쉽게 말해, AI 기술이 계속 발전하고 퍼져나가는 데 필요한 부품이나 서비스를 만드는 회사들이 더 잘 나갈 수 있다는 뜻입니다.</p>
-            <p>참고로 <span class="highlight">FOMC 의사록</span>이라는 것은 미국 중앙은행이 앞으로 금리를 어떻게 할지에 대한 생각을 보여주는 것인데, 이번에는 시장이 이미 예상하고 있던 내용들이 주로 나와서 큰 충격을 주지는 않았습니다. 오히려 엔비디아 실적이 시장 기대만큼 나오거나 더 좋게 나온다면, AI 관련 투자 열기가 더 뜨거워질 가능성이 있습니다.</p>
+        <p>이번 주에는 특히 <span class="highlight">미국 시장</span>을 주목해야 합니다. 하지만 미국뿐만 아니라 <span class="highlight">중국 로봇 관련 ETF</span>, <span class="highlight">피그마</span>, 그리고 <span class="highlight">웰타워</span>와 같은 회사들의 주가 움직임도 살펴볼 필요가 있습니다.</p>
+
+        <p>현재 주식 시장은 마치 경주를 하듯 빠르게 달려왔기 때문에, 잠시 숨을 고르며 팔고 사는 사람들이 서로 힘겨루기를 하는 중입니다. 이번 주에 시장이 얼마나 흔들리느냐에 따라 앞으로 주가가 얼마나 조정을 받을지가 결정될 것입니다. 하지만 이런 흔들림도 오히려 지금보다 더 많은 주식을 살 수 있는 좋은 기회가 될 수 있습니다. 저희는 2026년 한국 주식 시장이 <span class="highlight">8,800p</span>까지 오를 것으로 보고 있습니다.</p>
+
+        <p>많은 회사들의 실적 발표가 이제 거의 끝났기 때문에, 앞으로는 경제 상황이나 나라 간의 관계 같은 더 큰 이야기들이 주가에 더 큰 영향을 미칠 것입니다. 특히 <span class="highlight">엔비디아의 CEO인 젠슨 황의 말</span> 한마디 한마디가 시장에 큰 영향을 줄 수 있으니 귀 기울여 들어야 합니다.</p>
+
+        <p>얼마 전 <span class="highlight">삼성전자 노사 협상</span>에 대한 이야기가 있었습니다. 협상이 잘 될 수도 있다는 기대감 때문에 코스피 지수가 잠시 오르기도 했습니다. 하지만 여전히 이자율, 기름값, 그리고 우리나라 돈과 다른 나라 돈의 교환 비율(환율)이 부담이 되고 있어서, 안전한 투자를 선호하는 분위기가 이어지고 있습니다. 결국, 이익을 본 사람들이 주식을 팔고, 떨어진 가격에 주식을 사려는 사람들이 서로 경쟁하면서, 여러 가지 종목들이 돌아가면서 오르내리는 장세가 펼쳐지고 있습니다.</p>
+    </div>
+
+    <div class="section">
+        <h2>이번 주 해외 시장과 주목할 만한 회사들</h2>
+
+        <h3>미국 증시, 꾸준한 상승세를 유지합니다.</h3>
+        <p>미국 시장을 대표하는 <span class="highlight">S&P 500 지수</span>가 7,000이라는 중요한 숫자를 넘어섰고, 이제는 적당한 속도로 계속해서 오르고 있습니다. 특히 5월 21일에 발표될 <span class="highlight">엔비디아의 실적 발표</span>가 매우 기대됩니다. 엔비디아는 인공지능(AI) 칩을 만드는 회사인데, 이번 실적이 좋게 나오면 AI와 관련된 많은 회사들, 그리고 AI 기술을 위한 컴퓨터 시설 등을 만드는 회사들의 주가가 더 힘을 받을 것으로 보입니다.</p>
+        <div class="concept-explanation">
+            <strong>S&P 500 지수</strong>: 미국에 상장된 회사들 중 규모가 크고 중요한 500개 회사의 주가를 평균 내어 나타내는 지표입니다. 미국 주식 시장의 전반적인 건강 상태를 보여줍니다.
+        </div>
+        <div class="concept-explanation">
+            <strong>엔비디아 (NVIDIA)</strong>: 주로 컴퓨터 그래픽 처리 장치(GPU)를 만드는 회사로, 인공지능(AI) 개발에 필수적인 칩을 생산하여 'AI 대장주'로 불립니다.
         </div>
 
-        <div class="section">
-            <h2>중국, 로봇 산업에 대한 투자 확대</h2>
-            <p>중국에서는 <span class="highlight">휴머노이드 로봇</span>, 즉 사람처럼 생긴 로봇을 만드는 회사들에 대한 투자가 크게 늘어나고 있습니다. 최근 발표된 자료에 따르면, 2026년 1분기에 중국에서 만든 로봇을 수출한 금액이 꽤 많았다고 합니다. 또한, 중국의 여러 로봇 관련 회사들이 로봇 개발 및 생산을 위해 수조 원에 달하는 투자를 받았다는 소식도 있습니다.</p>
-            <p>특히, <span class="highlight">유니트리</span>라는 중국의 대표적인 로봇 회사는 세계 최초로 대량 생산이 가능한 로봇을 공개하기도 했습니다. 얼마 전 있었던 미국과 중국 정상회담에서 큰 합의는 없었지만, 두 나라 관계가 좋아지는 쪽으로 가고 있다는 해석이 나오고 있습니다. 이러한 분위기 덕분에 중국의 <span class="highlight">로봇 및 AI 기술 관련 기업들</span>이 앞으로 더 성장할 수 있을 것이라는 기대가 커지고 있습니다.</p>
-            <p>이런 상황에서 <span class="company-name">Global X China Robotics and AI ETF</span>(<span class="stock-ticker">2807-HK</span>)와 같은 펀드는 중국의 로봇 및 AI 기술에 투자하고 싶을 때 고려해 볼 수 있습니다.</p>
+        <p>미국과 중국이 서로 큰 갈등 없이 관계를 회복하려는 노력을 보이고 있다는 점, 그리고 미국 상원에서 금융 관련 중요한 법안이 통과된 점도 긍정적인 신호입니다. 비록 기름값이 비싸고 이자율이 높아도, 주가가 크게 떨어지지 않고 잘 버텨주고 있습니다. 4월에 있었던 미국 중앙은행(FOMC) 회의록에서는 이미 예상했던 내용이 나왔기 때문에 시장에 큰 충격을 주지는 않을 것으로 보입니다. 오히려 <span class="highlight">엔비디아의 실적이 시장 기대치에 부합</span>하면서, AI 반도체에 대한 투자가 계속될 것이라는 점을 다시 한번 확인시켜 줄 것으로 예상됩니다. 이는 AI 칩을 만드는 회사와 AI 기술을 위한 기반 시설을 제공하는 회사들의 주가에 좋은 영향을 줄 것으로 보입니다.</p>
+
+        <h3>중국, 로봇 투자에 열을 올립니다.</h3>
+        <p>중국에서는 <span class="highlight">로봇 사업</span>에 대한 투자가 크게 늘고 있습니다. 최근 중국에서 로봇을 수출한 금액이 꽤 되고, 중국 내에서 로봇과 관련된 회사들에만 수조 원에 달하는 투자가 이루어졌다는 소식도 있습니다. 중국의 한 유명 로봇 회사에서는 세계 최초로 대량 생산할 수 있는 로봇을 선보이기도 했습니다.</p>
+        <div class="concept-explanation">
+            <strong>휴머노이드 로봇</strong>: 사람의 모습과 행동을 흉내 내도록 설계된 로봇입니다.
+        </div>
+        <div class="concept-explanation">
+            <strong>ETF (Exchange Traded Fund, 상장지수펀드)</strong>: 여러 주식이나 채권 등을 모아 놓은 하나의 묶음 상품으로, 주식처럼 거래소에서 사고팔 수 있습니다. 특정 시장이나 산업을 따라 움직이도록 만들어집니다. <span class="stock-name">Global X China Robotics and AI ETF(2807-HK)</span>는 중국의 로봇 및 AI 관련 기업들에 투자하는 ETF입니다.
+        </div>
+        <div class="concept-explanation">
+            <strong>피그마(Figma)</strong>: 웹사이트나 앱 디자인을 만들 때 사람들이 함께 작업할 수 있도록 도와주는 온라인 도구(플랫폼)입니다.
         </div>
 
-        <div class="section">
-            <h2>피그마, AI 사용량 기반으로 더 많은 수익 기대</h2>
-            <p><span class="company-name">피그마</span>는 컴퓨터나 인터넷을 통해 사용할 수 있는 디자인 프로그램과 협업 도구를 만드는 회사입니다. 최근에 발표된 실적을 보면, 예상했던 것보다 더 많은 돈을 벌었고, 예상보다 더 좋은 성적을 거두었습니다.</p>
-            <p>특히 주목할 만한 점은, <span class="highlight">AI(인공지능) 기능</span>을 사용하기 위해 충전했던 금액을 다 쓴 고객들 중 75% 이상이 다시 돈을 충전해서 사용했다는 것입니다. 이것은 <span class="highlight">사용량만큼 돈을 내는 사업 모델</span>이 잘 통할 수 있다는 것을 보여줍니다. 즉, 사람들이 더 많이 사용할수록 회사도 더 많이 벌 수 있다는 뜻입니다.</p>
-            <p>또한, 기존 고객들이 계속해서 더 많은 돈을 쓰는 경향을 나타내는 지표가 좋아졌습니다. 이는 피그마의 서비스가 계속해서 고객들에게 가치를 제공하고 있음을 의미하며, 앞으로도 꾸준한 성장이 예상됩니다.</p>
+        <p>미국과 중국 정상회담에서 큰 합의는 없었지만, 두 나라 관계가 다시 좋아지는 분위기라는 해석이 나오고 있습니다. 이로 인해 앞으로 중국이 수출하는 물건에 대한 세금(관세)이 낮아지고, 다른 무역 장벽도 줄어들 것으로 기대됩니다. 이러한 기대감이 로봇과 AI 분야를 중심으로 한 중국 기술 기업들의 주가를 더 끌어올릴 수 있습니다.</p>
+
+        <h3>피그마, 사용량에 따라 수익을 낼 것으로 기대됩니다.</h3>
+        <p>피그마는 온라인에서 디자인을 만들고 여러 사람이 함께 작업할 수 있게 도와주는 회사인데, 최근 좋은 실적을 발표했습니다. 특히, 인공지능(AI) 기능을 사용한 고객들이 계속해서 더 많은 AI 기능을 사용하기 위해 돈을 지불하고 있다는 점이 주목받고 있습니다. 이는 앞으로 <span class="highlight">피그마가 사용량에 따라 돈을 받는 사업 모델</span>을 잘 만들어서 수익을 낼 수 있다는 기대를 갖게 합니다. 기존 고객들이 회사에 쓰는 돈이 계속 늘어나고 있다는 점도 긍정적입니다.</p>
+
+        <h3>웰타워, 나이가 많은 분들을 위한 주거 사업이 계속 성장합니다.</h3>
+        <p>웰타워라는 회사는 나이가 많은 어르신들이 사는 주택(시니어 하우징) 사업을 하는 회사인데, 최근 실적이 예상보다 좋았습니다. 특히 어르신들이 사는 주택에서 나오는 수익이 계속해서 20% 이상씩 늘어나고 있다는 점은, 이 사업이 잠깐 좋아진 것이 아니라 앞으로도 꾸준히 성장할 것이라는 것을 보여줍니다. 이 회사는 앞으로도 계속해서 새로운 주택을 짓고 사업을 확장할 계획이며, 이것이 회사가 버는 돈을 늘리는 데 도움이 될 것으로 예상됩니다. 시니어 하우징 관련 회사들 중에서 <span class="highlight">웰타워는 독보적으로 매출과 수익을 동시에 늘리고</span> 있습니다. 따라서 주가가 다소 조정 받을 때 매수하는 전략이 유효해 보입니다.</p>
+        <div class="concept-explanation">
+            <strong>시니어 하우징 (Senior Housing)</strong>: 주로 은퇴한 노인들이 거주할 수 있도록 마련된 주택 단지나 시설을 의미합니다. 편의 시설과 의료 서비스 등이 포함되기도 합니다.
         </div>
-
-        <div class="section">
-            <h2>웰타워, 고령층 주거 사업의 지속적인 성장</h2>
-            <p><span class="company-name">웰타워</span>는 여러 건물을 관리하고 임대해주는 회사인데, 특히 <span class="highlight">시니어 하우징(Senior Housing)</span>, 즉 어르신들이 편안하게 살 수 있는 주거 공간 사업이 매우 좋습니다.</p>
-            <p>최근 발표된 실적을 보면, 회사가 벌어들인 돈과 주식 한 주당 이익이 예상보다 좋았습니다. 특히, 어르신 주거 사업 부문에서 나오는 수익이 13분기 연속으로 20% 이상 성장했습니다. 이는 어르신 주거 공간에 대한 수요가 일시적인 것이 아니라, 꾸준히 이어질 것이라는 것을 보여줍니다.</p>
-            <p>회사는 앞으로도 100억 달러 이상의 많은 돈을 투자해서 사업을 더 키울 계획이며, 이는 회사의 이익을 더욱 늘릴 것으로 예상됩니다. 현재 <span class="highlight">P/FFO</span>라는 지표는 34배인데, 이는 다른 비슷한 회사들과 비교했을 때 높은 편이지만, 웰타워의 높은 성장률과 수익성을 생각하면 충분히 이해할 만한 수준입니다. 어르신 주거 사업 분야에서 이처럼 높은 성장과 수익 개선을 동시에 이루는 회사는 매우 드물기 때문에, 앞으로도 <span class="highlight">웰타워</span>는 좋은 성과를 낼 것으로 기대됩니다. 주가가 조금 떨어질 때 매수하는 전략이 유효할 것으로 보입니다.</p>
+        <div class="concept-explanation">
+            <strong>NOI (Net Operating Income, 순영업소득)</strong>: 건물에서 발생하는 총수입에서 운영비를 제외한 순수한 이익을 말합니다. 부동산의 수익성을 나타내는 지표로 사용됩니다.
         </div>
-
-        <div class="section">
-            <h2>이번 주 투자 전략: 시장의 변동성을 기회로 삼아야 합니다</h2>
-            <p>지금 주식 시장은 <span class="highlight">실적 장세</span>와 <span class="highlight">매크로 장세</span>가 겹쳐 있습니다.
-            <span class="term-explanation">
-                <strong>실적 장세</strong>: 기업들의 실제 이익(실적)이 좋아서 주가가 오르는 장세입니다.<br>
-                <strong>매크로 장세</strong>: 경제 전반의 상황(금리, 물가, 경기 등)이 주식 시장에 큰 영향을 미치는 장세입니다.
-            </span>
-            이런 상황에서 금리가 오르는 것은 일시적인 '노이즈'(소음) 정도로 생각해도 될 것 같습니다. 금리가 좀 오르더라도 기업 실적이나 경제 성장이 튼튼하다면 충분히 극복할 수 있습니다.</p>
-            <p>최근 주식 시장이 너무 빠르게 올랐기 때문에, 잠깐 숨을 고르며 <span class="highlight">매물을 소화하는 과정</span>에 들어갔습니다. 이번 주에 시장이 얼마나 흔들리느냐에 따라 앞으로 가격이 얼마나 떨어질지가 결정될 것입니다. 하지만 이런 흔들림도 오히려 좋은 주식을 더 많이 살 수 있는 <span class="highlight">기회</span>가 될 수 있습니다. 올해 연말까지 <span class="highlight">KOSPI 지수</span>는 <span class="highlight">8,800p</span>까지 오를 것으로 예상됩니다.</p>
-            <p>기업들의 실적 발표가 거의 끝났기 때문에, 이제는 <span class="highlight">경제 전반의 지표들</span>(예: 물가, 경제 성장률 등)이 주식 시장에 더 큰 영향을 줄 수 있습니다. 또한, 5월 21일에 발표될 <span class="highlight">엔비디아의 실적 발표</span>와 <span class="highlight">젠슨 황 CEO의 발언</span>에도 주목해야 합니다. 만약 엔비디아 실적이 아주 좋게 나오고, AI 기술이나 반도체 분야의 협력이 더 확대될 것이라는 내용이 나온다면, 시장 분위기를 반전시킬 수도 있습니다.</p>
-            <p>지금까지 주가를 이끌어왔던 <span class="highlight">반도체, 자동차, 2차전지, 전력기기, 조선, 방산</span> 같은 종목들은 이번 시장 변동성을 <span class="highlight">비중을 늘리는 기회</span>로 삼는 것이 좋습니다. 반면에, 기업 실적에 비해 아직 가격이 저렴한 <span class="highlight">소프트웨어, 건강관리, 은행, 비철금속, 운송, 호텔/레저</span> 같은 종목들은 단기적으로 사고파는 거래를 통해 수익을 낼 기회가 될 수 있습니다.</p>
+        <div class="concept-explanation">
+            <strong>FFO (Funds From Operations, 영업활동으로 인한 현금흐름)</strong>: 부동산 투자 신탁(REITs)의 수익성을 나타내는 지표로, 순이익보다 더 실제 현금 흐름을 잘 반영합니다.
         </div>
-
-        <div class="section">
-            <h2>삼성전자 노사 협상, 시장에 긍정적 영향</h2>
-            <p>최근 <span class="highlight">삼성전자 노사 협상</span>에 대한 기대감이 생기면서, 주식 시장이 안정을 찾고 있습니다. 지난 주에는 시장에 충격을 주었던 <span class="highlight">금리, 유가, 환율</span>(달러 대비 원화 가치)의 상승 부담이 계속되고 있습니다.</p>
-            <p>중동 지역의 불안감도 다시 커지고 있고, 일본의 금리가 크게 오르면서 미국 금리에도 영향을 주고 있습니다. 이런 상황은 투자자들이 안전한 곳에 돈을 두려고 하게 만들어, 주식과 같은 위험한 자산에 대한 선호도를 낮추는 요인이 됩니다. 또한, 외국인 투자자들이 계속해서 한국 주식을 팔면서 <span class="highlight">달러-원 환율</span>이 1,500원 근처에서 오르내리는 것도 주식 시장에 부담을 주고 있습니다.</p>
-            <p>하지만 <span class="highlight">삼성전자</span>는 노사 협상에 대한 긍정적인 소식이 나오면서 주가가 올랐고, 이는 전체 <span class="highlight">KOSPI 지수</span>를 강하게 끌어올렸습니다. 비록 시장에는 차익실현(이익을 얻은 만큼 파는 것) 매물과 저가매수(가격이 싸졌을 때 사는 것) 물량이 서로 경쟁하고 있지만, 업종별로 주도주가 바뀌는 <span class="highlight">순환매 장세</span>가 나타나고 있습니다.</p>
-        </div>
-
-        <div class="section">
-            <h2>기업 분석: 주목할 만한 회사들</h2>
-
-            <h3>비에이치(090460): 로봇 시대, 새로운 부품 사업 기회</h3>
-            <p><span class="company-name">비에이치</span>라는 회사는 <span class="highlight">연성 PCB</span>와 <span class="highlight">R/F PCB</span>라는 특별한 종류의 전자 부품을 만드는 회사입니다.
-            <span class="term-explanation">
-                <strong>연성 PCB (Flexible PCB)</strong>: 얇고 유연하게 구부러지는 인쇄회로기판입니다.
-                <strong>R/F PCB (Rigid-Flex PCB)</strong>: 딱딱한 부분과 부드러운 부분이 합쳐진 복합적인 인쇄회로기판입니다.
-            </span>
-            </p>
-            <p>최근 <span class="highlight">로봇, 특히 휴머노이드 로봇</span> 시장이 커지면서, 이 로봇들을 더 싸고 성능 좋게 만들기 위해 연성 PCB와 R/F PCB 같은 부품을 사용하려는 움직임이 있습니다. 로봇은 아주 정밀하게 움직여야 하고, 무게도 가벼워야 하기 때문에 이런 유연하고 가벼운 부품이 중요해지고 있습니다.</p>
-            <p><span class="company-name">비에이치</span>는 이런 요구에 딱 맞는 부품을 만들 수 있는 능력이 있고, 이미 <span class="highlight">애플</span>과 <span class="highlight">자동차 회사들</span>에 부품을 공급하며 기술력을 인정받았습니다. 또한, 미국에 공장을 가지고 있어서 국제적인 관계에서도 유리한 면이 있습니다. 따라서 로봇 산업이 발전함에 따라 <span class="company-name">비에이치</span>의 사업도 크게 성장할 수 있을 것으로 기대됩니다.</p>
-            <p>이에 따라, <span class="company-name">비에이치</span>에 대한 투자의견은 <span class="highlight">매수(BUY)</span>로 유지하며, 목표 주가는 52,000원으로 정했습니다.</p>
-
-            <h3>KH바텍(060720): 2분기 실적 개선과 신사업 기대</h3>
-            <p><span class="company-name">KH바텍</span>은 <span class="highlight">스마트폰 부품</span>을 주로 만들던 회사인데, 앞으로 <span class="highlight">로봇</span>과 <span class="highlight">자동차 전장 부품</span> 사업을 강화하며 새로운 성장 동력을 확보하려는 움직임을 보이고 있습니다.</p>
-            <p>2026년 1분기 실적은 예상보다 조금 아쉬웠지만, 2026년 2분기에는 매출과 이익이 크게 늘어날 것으로 예상됩니다. 특히, <span class="highlight">삼성전자의 폴더블폰 판매 확대</span>는 KH바텍에 긍정적인 영향을 줄 것입니다. 또한, 로봇 회사에 부품을 공급하는 사업을 시작했고, 자동차 부품 사업도 확대하고 있어 장기적인 성장 가능성이 높습니다.</p>
-            <p>이러한 점들을 고려하여, <span class="company-name">KH바텍</span>에 대한 투자의견은 <span class="highlight">매수(BUY)</span>로 유지하지만, 목표 주가는 17,000원으로 조금 낮추었습니다. 중장기적인 관점에서는 꾸준히 투자할 만한 가치가 있다고 판단됩니다.</p>
-
-            <h3>CJ (001040): 올리브영의 성장과 자사주 활용 전략 주목</h3>
-            <p><span class="company-name">CJ</span>는 여러 사업 부문을 가지고 있는 큰 그룹인데, 특히 <span class="highlight">CJ올리브영</span>의 해외 진출이 앞으로 회사의 성장에 중요한 역할을 할 것으로 보입니다.</p>
-            <p>2026년 1분기 실적이 조금 부진했지만, <span class="highlight">CJ올리브영</span>은 한국뿐만 아니라 해외에서도 좋은 성장세를 보이고 있습니다. 2분기부터는 미국 시장에도 본격적으로 진출할 예정이라, 이는 CJ의 전체 기업 가치를 다시 평가받게 하는 계기가 될 수 있습니다.</p>
-            <p>또한, CJ는 현재 <span class="highlight">자사주</span>(회사가 발행한 자기 회사 주식)를 7.3% 정도 가지고 있습니다. 앞으로 이 자사주를 어떻게 활용할지에 대한 계획이 주가에 영향을 줄 수 있습니다. 새로운 배당 정책도 발표될 예정이라, 자사주 처리 방향과 함께 주목할 필요가 있습니다. CJ올리브영의 높은 성장성과 자사주 활용 계획이 앞으로 CJ의 주가 흐름에 중요한 변수가 될 것입니다.</p>
-            <p><span class="company-name">CJ</span>에 대한 투자의견은 <span class="highlight">매수(BUY)</span>로 유지하며, 목표 주가는 260,000원으로 그대로 두었습니다.</p>
+        <div class="concept-explanation">
+            <strong>P/FFO (Price to FFO)</strong>: 주가를 FFO로 나눈 값으로, 부동산 회사나 리츠(REITs)의 주가 수준을 평가하는 데 사용됩니다. 낮을수록 저평가되었다고 볼 수 있습니다.
         </div>
     </div>
+
+    <div class="section">
+        <h2>주식 시장 전략: 지금은 잠깐 쉬어가는 타이밍</h2>
+
+        <p>지금까지 주식 시장이 너무 빠르게 달려왔기 때문에, 이제는 잠시 멈춰서 팔고 사려는 사람들이 서로 눈치를 보는 시기입니다. 이번 주에 시장이 얼마나 흔들리느냐에 따라 앞으로 주가가 얼마나 떨어질지가 결정될 것입니다. 하지만 혹시 주가가 떨어진다면, 오히려 <span class="highlight">지금보다 더 많은 주식을 살 수 있는 좋은 기회</span>가 될 수 있습니다. 저희는 2026년 한국 주식 시장의 목표치를 <span class="highlight">8,800p</span>로 잡고 있습니다.</p>
+        <div class="concept-explanation">
+            <strong>KOSPI</strong>: 한국거래소(KRX)에 상장된 모든 주식의 가격을 바탕으로 계산되는 우리나라 대표 주가 지수입니다.
+        </div>
+        <div class="concept-explanation">
+            <strong>PER (Price Earnings Ratio, 주가수익비율)</strong>: 주가를 주당순이익(EPS)으로 나눈 값으로, 회사가 벌어들이는 돈에 비해 주가가 얼마나 비싼지를 나타냅니다.
+        </div>
+        <div class="concept-explanation">
+            <strong>P/E 8배</strong>: 주당순이익 대비 주가가 8배 수준이라는 의미입니다.
+        </div>
+
+        <p>많은 회사들의 실적 발표가 끝났기 때문에, 이제는 <span class="highlight">이자율, 기름값, 환율</span>과 같은 경제 상황이 주가에 더 큰 영향을 미칠 것입니다. 이자율이 오르는 것은 주식 같은 위험한 투자보다는 안전한 채권에 투자하는 것이 더 좋아 보이게 만들기 때문에, 주식 시장에는 좋지 않은 영향을 줄 수 있습니다. 하지만 다행히도 한국의 경제 성장률 전망이 좋아지고 있고, 회사들이 벌어들일 것으로 예상되는 이익도 계속 늘어나고 있습니다. 현재 한국 주식 시장의 주가는 회사가 버는 돈에 비해 비싸지 않은 편이라서, 앞으로 더 오를 가능성이 있다고 보고 있습니다.</p>
+
+        <p>이번 주에는 중국의 경제 지표, 그리고 주요 국가들의 제조업 구매관리자지수(PMI) 발표를 눈여겨봐야 합니다. 이러한 경제 지표들이 좋게 나오면 경제가 더 좋아질 것이라는 기대를 갖게 할 것이고, 나쁘게 나오면 경기를 살리기 위한 정책이 나올 것이라는 기대를 갖게 할 것입니다. 또한, <span class="highlight">엔비디아 실적 발표와 CEO의 발언</span>도 시장의 분위기를 바꿀 수 있습니다.</p>
+
+        <p>지금까지 시장을 이끌어왔던 반도체, 자동차, 2차전지 같은 주식들은 이번 시장 흔들림을 오히려 더 많은 주식을 살 기회로 삼는 것이 좋습니다. 반면에, 회사 실적에 비해 아직 주가가 덜 오른 소프트웨어, 건강관리, 은행, 운송, 호텔/레저 같은 분야의 주식들은 단기적으로 이익을 얻기 위한 매매에 집중하는 것이 좋겠습니다.</p>
+    </div>
+
+    <div class="section">
+        <h2>삼성전자 노사 협상, 시장에 어떤 영향을 미칠까?</h2>
+
+        <p>최근 <span class="highlight">삼성전자 노사 협상</span> 소식이 있었습니다. 협상에 대한 긍정적인 전망이 나오면서 코스피 지수가 반등하는 모습을 보였습니다. 비록 시장에 충격을 주었던 이자율, 기름값, 환율 상승에 대한 부담은 여전히 남아있지만, 중동 지역의 불안감도 다시 커지고 있는 상황입니다. 일본의 국채 금리가 1999년 이후 최고치를 기록하면서 미국 국채 금리에도 영향을 미치고, 이는 주식과 같은 위험 자산에 투자하려는 심리를 위축시키고 있습니다.</p>
+        <div class="concept-explanation">
+            <strong>사이드카 (Side Car)</strong>: 주가가 갑자기 너무 많이 떨어질 때, 거래를 잠시 중단시켜 투자자들의 패닉을 막기 위한 제도입니다.
+        </div>
+        <div class="concept-explanation">
+            <strong>위험 자산 선호 심리</strong>: 투자자들이 안전한 자산(예: 금, 채권)보다 수익률이 더 높을 수 있지만 위험도 더 큰 자산(예: 주식, 암호화폐)에 투자하려는 경향을 말합니다.
+        </div>
+        <div class="concept-explanation">
+            <strong>환율 (달러-원 환율)</strong>: 1달러와 교환되는 원화의 금액을 의미합니다. 환율이 오르면(예: 1,500원) 외국에서 물건을 수입하는 비용이 늘어나고, 우리나라 물건을 수출하는 비용은 줄어듭니다.
+        </div>
+
+        <p>결국, 지금은 주가가 많이 오른 만큼 이익을 실현하려는 사람들과, 가격이 떨어진 주식을 사려는 사람들 사이에서 팽팽한 줄다리기가 벌어지고 있습니다. 이러한 상황 속에서 여러 산업 분야의 종목들이 돌아가면서 오르내리는 <span class="highlight">업종별 순환매 장세</span>가 나타나고 있습니다.</p>
+    </div>
+
+    <div class="section">
+        <h2>기업 분석: 주목할 만한 회사들</h2>
+
+        <h3>비에이치 (090460): 로봇 시대, 왜 '연성 PCB'에 주목해야 할까?</h3>
+        <p>세계적으로 로봇, 특히 사람처럼 생긴 <span class="highlight">휴머노이드 로봇</span> 개발이 활발해지면서, <span class="highlight">연성 PCB</span>라는 부품의 중요성이 커지고 있습니다. 연성 PCB는 구부러지거나 접을 수 있는 얇은 회로 기판으로, 로봇의 움직임을 정밀하게 제어하고 부품 수를 줄여 가격을 낮추는 데 도움이 될 수 있습니다. 또한, 로봇의 무게를 줄여 배터리 사용 시간을 늘리는 데도 기여할 수 있습니다.</p>
+        <div class="concept-explanation">
+            <strong>연성 PCB (Flexible Printed Circuit Board, FPCB)</strong>: 얇고 유연하여 구부리거나 접을 수 있는 회로 기판입니다. 스마트폰, 웨어러블 기기 등 다양한 전자제품에 사용됩니다.
+        </div>
+        <div class="concept-explanation">
+            <strong>R/F PCB (Rigid-Flex PCB)</strong>: 딱딱한 기판(Rigid PCB)과 연성 기판(Flexible PCB)이 합쳐진 형태의 회로 기판입니다.
+        </div>
+        <div class="concept-explanation">
+            <strong>액츄에이터 (Actuator)</strong>: 전기 신호를 받아 움직임(힘, 속도)으로 변환하는 장치로, 로봇 팔이나 다리의 움직임을 만드는 데 사용됩니다.
+        </div>
+        <div class="concept-explanation">
+            <strong>SMT (Surface Mount Technology, 표면실장기술)</strong>: 전자 부품을 회로 기판 표면에 직접 부착하는 기술입니다.
+        </div>
+
+        <p>비에이치는 국내에서 연성 PCB와 딱딱한 PCB를 모두 만들 수 있고, 자회사를 통해 전자 부품을 기판에 조립하는 기술(SMT)까지 제공하는 <span class="highlight">종합 솔루션 제공 업체</span>입니다. 이러한 점 때문에 애플이나 자동차 회사들과 거래하며 신뢰를 쌓아왔고, 미국에도 생산 시설을 가지고 있어 앞으로 로봇 시장에서 중요한 역할을 할 것으로 기대됩니다. 비에이치의 주가가 앞으로 더 오를 수 있다는 전망과 함께, 목표 주가는 52,000원으로 유지됩니다.</p>
+
+        <h3>KH바텍 (060720): 2분기 실적 반등 기대, 로봇과 자동차 부품 사업 강화</h3>
+        <p>KH바텍은 2026년 1분기에 예상보다 실적이 좋지 못했지만, 2분기에는 크게 반등할 것으로 기대됩니다. 특히 <span class="highlight">폴더블폰 시장의 성장</span>과 함께, 앞으로 <span class="highlight">로봇 부품 사업과 자동차 부품 사업</span>을 강화하여 새로운 성장 동력을 확보할 계획입니다. 회사는 스마트폰 중심의 사업 구조를 자동차(전장용)와 로봇 분야로 넓혀가고 있으며, 이는 2027년부터 매출 증대에 크게 기여할 것으로 보입니다. 따라서 KH바텍에 대한 투자의견은 '매수'를 유지하지만, 목표 주가는 17,000원으로 다소 낮춰 잡았습니다.</p>
+        <div class="concept-explanation">
+            <strong>전장용 부품</strong>: 자동차에 사용되는 전자기기 및 부품을 의미합니다.
+        </div>
+        <div class="concept-explanation">
+            <strong>qoq (quarter-on-quarter)</strong>: 이전 분기 대비를 의미합니다.
+        </div>
+        <div class="concept-explanation">
+            <strong>yoy (year-on-year)</strong>: 전년 동기 대비를 의미합니다.
+        </div>
+
+        <h3>CJ (001040): 올리브영 글로벌 성장과 자사주 활용이 중요 변수</h3>
+        <p>CJ는 2026년 1분기에 매출은 늘었지만, 이익은 줄어드는 모습을 보였습니다. 하지만 <span class="highlight">CJ올리브영의 해외 진출</span>과 앞으로 <span class="highlight">자사주(회사가 자기 회사 주식을 보유하는 것)를 어떻게 활용할지</span>가 CJ의 주가에 중요한 영향을 미칠 것으로 보입니다. CJ는 자사주를 많이 가지고 있어서, 이를 어떻게 처리하느냐에 따라 주가가 달라질 수 있습니다. 특히 CJ올리브영은 해외에서도 잘 성장하고 있기 때문에, 이러한 성장세가 CJ 전체의 가치를 높이는 데 기여할 것으로 기대됩니다. 목표 주가는 260,000원으로 유지됩니다.</p>
+        <div class="concept-explanation">
+            <strong>NAV (Net Asset Value, 순자산가치)</strong>: 회사가 보유한 자산에서 부채를 뺀 순수한 자산의 가치를 의미합니다.
+        </div>
+        <div class="concept-explanation">
+            <strong>자사주 소각</strong>: 회사가 보유한 자기 회사 주식을 없애는 것을 말합니다. 이는 주식 수를 줄여 주당 가치를 높이는 효과를 가져올 수 있습니다.
+        </div>
+        <div class="concept-explanation">
+            <strong>정관 변경</strong>: 회사의 운영에 관한 기본적인 규칙을 담고 있는 '정관'의 내용을 바꾸는 것을 의미합니다.
+        </div>
+        <div class="concept-explanation">
+            <strong>SOTP (Sum of the Parts) 방식</strong>: 여러 사업 부문으로 이루어진 회사의 가치를 평가할 때, 각 사업 부문의 가치를 따로 계산하여 합산하는 방식입니다.
+        </div>
+        <div class="concept-explanation">
+            <strong>연결 매출액</strong>: 모회사와 자회사들의 매출을 모두 합한 금액입니다.
+        </div>
+        <div class="concept-explanation">
+            <strong>영업이익</strong>: 회사가 주된 사업 활동으로 벌어들인 이익을 의미합니다.
+        </div>
+    </div>
+
 </body>
 
 
